@@ -23,4 +23,4 @@ with gr.Blocks() as demo:
         add_btn.click(add, inputs=[a_input, b_input], outputs=calc_output)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7864)
