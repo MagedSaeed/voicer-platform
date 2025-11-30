@@ -9,7 +9,7 @@ ENV_PATH="/home/ubuntu/miniconda3/envs/voicer-env"
 PYTHON_PATH="$ENV_PATH/bin/python"
 PIP_PATH="$ENV_PATH/bin/pip"
 
-# All services in the platform (canonical list)
+# All services in the platform
 ALL_SERVICES=(
     "voicer-main"
     "voicer-ar"
@@ -18,7 +18,6 @@ ALL_SERVICES=(
     "voicer-prev"
 )
 
-# File to remember last deployed commit
 LAST_DEPLOY_FILE="$APP_DIR/.last_deploy_commit"
 
 ######################################################################
@@ -26,21 +25,31 @@ LAST_DEPLOY_FILE="$APP_DIR/.last_deploy_commit"
 echo "🚀 Starting Voicer platform deployment..."
 cd "$APP_DIR"
 
-### 0. Decide which services to deploy ################################
+### 0. Process arguments ##############################################
+
+FORCE=false
+SERVICES=()
 
 if [ "$#" -gt 0 ]; then
-    # User passed service names as arguments
-    SERVICES=("$@")
-    echo "🧩 Selected services to deploy (from arguments): ${SERVICES[*]}"
-else
-    # No args → deploy all services
-    SERVICES=("${ALL_SERVICES[@]}")
-    echo "🧩 No services specified, deploying ALL: ${SERVICES[*]}"
+    if [ "$1" = "f" ]; then
+        FORCE=true
+        shift
+    fi
+    if [ "$#" -gt 0 ]; then
+        SERVICES=("$@")
+        echo "🧩 Services selected: ${SERVICES[*]}"
+    fi
 fi
 
+if [ "${#SERVICES[@]}" -eq 0 ]; then
+    SERVICES=("${ALL_SERVICES[@]}")
+    echo "🧩 No services specified → deploying ALL: ${SERVICES[*]}"
+fi
+
+echo "🔧 Force mode: $FORCE"
 echo
 
-### 1. Detect previous commit #########################################
+### 1. Detect previous commit ########################################
 
 if git rev-parse HEAD >/dev/null 2>&1; then
     PREV_COMMIT="$(git rev-parse HEAD)"
@@ -50,86 +59,83 @@ fi
 
 echo "🔎 Previous commit: ${PREV_COMMIT:-<none>}"
 
-### 2. Pull latest code from origin/main ##############################
+### 2. Pull latest code ###############################################
 
-echo "📥 Pulling latest code from GitHub (reset to origin/main)..."
+echo "📥 Pulling latest code from GitHub..."
 git fetch --all
 git reset --hard origin/main
 
 CURRENT_COMMIT="$(git rev-parse HEAD)"
-echo "🧾 Current commit:  $CURRENT_COMMIT"
+echo "🧾 Current commit: $CURRENT_COMMIT"
 
-# If nothing changed, bail out early
-if [ -n "$PREV_COMMIT" ] && [ "$PREV_COMMIT" = "$CURRENT_COMMIT" ]; then
-    echo "✅ No new commits on origin/main. Skipping dependency install and service restarts."
-    echo "$CURRENT_COMMIT" > "$LAST_DEPLOY_FILE"
-    exit 0
+### 3. Change detection ################################################
+
+if [ "$FORCE" = false ]; then
+    if [ -n "$PREV_COMMIT" ] && [ "$PREV_COMMIT" = "$CURRENT_COMMIT" ]; then
+        echo "⚠️ No new commits AND not using force mode."
+        echo "⏭️ Skipping deploy & restart."
+        echo "$CURRENT_COMMIT" > "$LAST_DEPLOY_FILE"
+        exit 0
+    fi
+    echo "🆕 Code changed → continuing deploy."
+else
+    echo "⚠️ FORCE MODE ENABLED → restarting selected services even without code changes."
 fi
 
-### 2.5 Show changed files ###########################################
+### 3.5 List changed files ############################################
 
-if [ -n "$PREV_COMMIT" ]; then
+if [ -n "$PREV_COMMIT" ] && [ "$PREV_COMMIT" != "$CURRENT_COMMIT" ]; then
     echo "📂 Files changed since last deploy:"
     CHANGED_FILES=$(git diff --name-only "$PREV_COMMIT" "$CURRENT_COMMIT" || true)
     echo "$CHANGED_FILES"
 else
-    echo "📂 Initial deploy or no previous commit recorded. Treating as fresh deployment."
-    CHANGED_FILES=$(git ls-files)
-    echo "$CHANGED_FILES"
+    echo "📂 Force mode or initial deploy → skipping diff."
+    CHANGED_FILES=""
 fi
 echo
 
-### 3. Install dependencies (only if requirements.txt changed) ########
+### 4. Install requirements only if changed ###########################
 
 if echo "$CHANGED_FILES" | grep -q '^requirements.txt$'; then
-    echo "📦 requirements.txt changed → updating Python dependencies in conda env..."
+    echo "📦 requirements.txt changed → installing dependencies..."
     "$PIP_PATH" install -r requirements.txt --upgrade
 else
-    echo "📦 requirements.txt unchanged → skipping pip install."
+    echo "📦 requirements unchanged → skipping pip install."
 fi
 
-### 4. Reload systemd units ###########################################
+### 5. Reload systemd ##################################################
 
-echo "🔁 Reloading systemd units (daemon-reload)..."
+echo "🔄 Reloading systemd (daemon-reload)..."
 sudo systemctl daemon-reload
 
-### 5. Restart only the selected services #############################
+### 6. Restart selected services ######################################
 
-echo "🔄 Restarting selected services: ${SERVICES[*]}"
+echo "🔁 Restarting services: ${SERVICES[*]}"
 
 for svc in "${SERVICES[@]}"; do
-    # Optional: sanity check it's in the known list
-    if [[ ! " ${ALL_SERVICES[*]} " =~ " ${svc} " ]]; then
-        echo "   ⚠️  Warning: $svc is not in ALL_SERVICES list. Trying to restart anyway..."
-    fi
-
     echo "   ↻ Restarting $svc..."
-    sudo systemctl restart "$svc" || {
-        echo "   ❌ Failed to restart $svc"
-        sudo systemctl status "$svc" --no-pager || true
-        exit 1
-    }
+    sudo systemctl restart "$svc"
     sleep 1
 done
 
-### 6. Verify selected services #######################################
+### 7. Verify services #################################################
 
 echo "🩺 Checking service statuses..."
 for svc in "${SERVICES[@]}"; do
     if systemctl is-active --quiet "$svc"; then
         echo "   ✅ $svc is running"
     else
-        echo "   ❌ $svc FAILED to start!"
+        echo "   ❌ $svc failed!"
         sudo systemctl status "$svc" --no-pager
         exit 1
     fi
 done
 
-### 7. Log deployment & remember commit ###############################
+### 8. Save deployment #################################################
 
-echo "📘 Logging deployment timestamp..."
+echo "📘 Logging deployment..."
 mkdir -p /home/ubuntu/.voicer
-echo "$(date): Deployment completed successfully (commit $CURRENT_COMMIT) [services: ${SERVICES[*]}]" >> /home/ubuntu/.voicer/deploy.log
+echo "$(date): Deployed commit $CURRENT_COMMIT [services: ${SERVICES[*]}]" >> /home/ubuntu/.voicer/deploy.log
 
 echo "$CURRENT_COMMIT" > "$LAST_DEPLOY_FILE"
 
