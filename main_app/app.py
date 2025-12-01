@@ -632,7 +632,7 @@ def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str
         meta_file.write_text("audio_file|text\n", encoding="utf-8")
 
     country_code, dialect = split_dialect_code(dialect_code)
-    filename = f"{country_code}_{dialect}_{username}_{sentence_id}.wav"
+    filename = f"{username}_{sentence_id}.wav"
     dest = wav_dir / filename
 
     Path(audio_path).replace(dest)
