@@ -62,12 +62,32 @@ AVAILABLE_COUNTRIES = [
     "Egypt", "Saudi Arabia", "Morocco"
 ]
 
-COUNTRIES = [
-    "Algeria", "Bahrain", "Egypt", "Iraq", "Jordan", "Kuwait", "Lebanon",
-    "Libya", "Mauritania", "Morocco", "Oman", "Palestine", "Qatar",
-    "Saudi Arabia", "Somalia", "Sudan", "Syria", "Tunisia",
-    "United Arab Emirates", "Yemen"
-]
+COUNTRY_EMOJIS = {
+    "dz": "🇩🇿",  # Algeria
+    "bh": "🇧🇭",  # Bahrain
+    "eg": "🇪🇬",  # Egypt
+    "iq": "🇮🇶",  # Iraq
+    "jo": "🇯🇴",  # Jordan
+    "kw": "🇰🇼",  # Kuwait
+    "lb": "🇱🇧",  # Lebanon
+    "ly": "🇱🇾",  # Libya
+    "mr": "🇲🇷",  # Mauritania
+    "ma": "🇲🇦",  # Morocco
+    "om": "🇴🇲",  # Oman
+    "ps": "🇵🇸",  # Palestine
+    "qa": "🇶🇦",  # Qatar
+    "sa": "🇸🇦",  # Saudi Arabia
+    "so": "🇸🇴",  # Somalia
+    "sd": "🇸🇩",  # Sudan
+    "sy": "🇸🇾",  # Syria
+    "tn": "🇹🇳",  # Tunisia
+    "ae": "🇦🇪",  # United Arab Emirates
+    "ye": "🇾🇪",  # Yemen
+}
+
+
+RECORDING_TARGET_MINUTES = 30 # target total recording time per user
+RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
 
 COUNTRY_CODES = {
     "Algeria": "dz",
@@ -652,11 +672,36 @@ def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str
 
     return duration
 
+def make_progress_bar(current_seconds: float, target_seconds: float, bar_length: int = 20) -> str:
+    """
+    Text progress bar based on time.
+    Example: [████████░░░░░░░░░░] 40.0%
+    """
+    if target_seconds <= 0:
+        bar = "░" * bar_length
+        return f"[{bar}] 0.0%"
+
+    ratio = current_seconds / target_seconds
+    ratio = max(0.0, min(1.0, ratio))  # clamp 0–1
+
+    filled = int(bar_length * ratio)
+    bar = "█" * filled + "░" * (bar_length - filled)
+    return f"[{bar}] {ratio * 100:.1f}%"
 
 def compute_progress(completed_count: int, total_duration: float):
+    """
+    Progress based on total recording time vs RECORDING_TARGET_SECONDS.
+    """
+    bar = make_progress_bar(total_duration, RECORDING_TARGET_SECONDS)
+
     mins = int(total_duration // 60)
     secs = int(total_duration % 60)
-    return f"{completed_count} sentences, {mins}m {secs}s recorded"
+    target_mins = int(RECORDING_TARGET_SECONDS // 60)
+
+    # Example:
+    # [██████░░░░░░░░░░░░] 30.0%
+    # 10m 43s / 30m target • 294 sentences
+    return f"{bar}\n{mins}m {secs}s / {target_mins}m target • {completed_count} sentences"
 
 
 # ===============================
@@ -674,17 +719,25 @@ def build_app():
             "current_sentence_id": "",
             "current_sentence_text": "",
         })
+       
+        gr.Markdown("""
+<div style="text-align: center; padding: 20px 0;">
+  <h1 style="margin-bottom: 10px;"> 🗣️ Arabic Speech Dataset Recorder | مسجّل مجموعة البيانات الصوتية العربية 🎤</h1>
+  <p style="font-size: 1.1rem; color: #555;">
+    منصة لجمع تسجيلات صوتية من مختلف اللهجات العربية لدعم البحث العلمي في كشف الأصوات المزيفة وتقنيات الذكاء الاصطناعي الصوتية.
+  </p>
+</div>
+""")
 
-        gr.Markdown("## Arabic TTS Dataset Recorder")
 
         # ---------- LOGIN PAGE ----------
         with gr.Column(visible=True) as login_view:
-            gr.Markdown("### Login")
+            gr.Markdown("### تسحيل الدخول")
             login_email = gr.Textbox(label="Email")
             login_pw = gr.Textbox(label="Password", type="password")
-            login_btn = gr.Button("Login")
+            login_btn = gr.Button("تسجيل الدخول", variant="primary")
             login_msg = gr.Markdown("")
-            goto_register_btn = gr.Button("Create new account")
+            goto_register_btn = gr.Button("إنشاء حساب جديد")
             with gr.Accordion("Forgot password?", open=False, visible=False):
                 fp_email = gr.Textbox(label="Email")
                 fp_btn = gr.Button("Create reset token")
@@ -696,7 +749,7 @@ def build_app():
 
         # ---------- REGISTER PAGE ----------
         with gr.Column(visible=False) as register_view:
-            gr.Markdown("### Register")
+            gr.Markdown("### إنشاء حساب جديد")
             reg_name = gr.Textbox(label="Name (Latin)")
             reg_email = gr.Textbox(label="Email")
             reg_pw = gr.Textbox(label="Password", type="password")
@@ -719,19 +772,19 @@ def build_app():
             )
             with gr.Accordion("إتفاقية التسجيل بالموقع واستخدام البيانات", open=True, visible=True):
                 inst_output = gr.Markdown(CONSENT_DETAILS)
-            reg_btn = gr.Button("Register", variant="primary")
+            reg_btn = gr.Button("إنشاء حساب", variant="primary")
             reg_msg = gr.Markdown("")
-            back_to_login_btn = gr.Button("Back to login")
+            back_to_login_btn = gr.Button("الرجوع لتسجيل الدخول")
 
         # ---------- MAIN PAGE ----------
         with gr.Column(visible=False) as main_view:
             info = gr.Markdown("")
-            logout_btn = gr.Button("Logout")
+            logout_btn = gr.Button("تسجيل الخروج")
             with gr.Accordion("تعليمات مهمة للتسجيل", open=True, visible=True):
                 rec_inst_output = gr.Markdown(RECORDING_INSTRUCTIONS)
-            username_box = gr.Textbox(label="Username", interactive=False)
-            progress_box = gr.Textbox(label="Progress", interactive=False)
-            sentence_box = gr.Textbox(label="Sentence", interactive=True, lines=3)
+            username_box = gr.Textbox(label="👤 Username", interactive=False, visible=False)
+            progress_box = gr.Textbox(label="📊 الإنجاز", interactive=False)
+            sentence_box = gr.Textbox(label="✍️الجملة (يمكنك تعديل الجملة)", interactive=True, lines=3)
             sentence_id_box = gr.Textbox(label="Sentence ID", interactive=False, visible=False)
             audio_rec = gr.Audio(sources=["microphone"], type="filepath", label="Record")
             save_btn = gr.Button("Save & Next", variant="primary")
@@ -863,8 +916,10 @@ def build_app():
                 "current_sentence_text": sentence_text,
             })
 
+            country = dialect_code.split("-", 1)[0]
             progress = compute_progress(len(completed), total_dur)
-            info_text = f"Logged in as **{username}** (dialect: `{dialect_code}`)."
+            username_show = " ".join(username.split("_")[:-3]).title()
+            info_text = f"## **{username_show}** ({COUNTRY_EMOJIS[country]} {COUNTRY_EMOJIS[country]})    "
 
             return (
                 st,
