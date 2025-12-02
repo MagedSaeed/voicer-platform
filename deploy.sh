@@ -27,26 +27,40 @@ cd "$APP_DIR"
 
 ### 0. Process arguments ##############################################
 
-FORCE=false
+FORCE_RESTART=false
+FORCE_REQUIREMENTS=false
 SERVICES=()
 
-if [ "$#" -gt 0 ]; then
-    if [ "$1" = "f" ]; then
-        FORCE=true
-        shift
-    fi
-    if [ "$#" -gt 0 ]; then
-        SERVICES=("$@")
-        echo "🧩 Services selected: ${SERVICES[*]}"
-    fi
-fi
+# Flags:
+#   f → force restart services even if no new commits
+#   r → force reinstall requirements.txt
+#   remaining args → service names
+while [[ "$#" -gt 0 ]]; do
+    case "$1" in
+        f)
+            FORCE_RESTART=true
+            shift
+            ;;
+        r)
+            FORCE_REQUIREMENTS=true
+            shift
+            ;;
+        *)
+            SERVICES+=("$1")
+            shift
+            ;;
+    esac
+done
 
 if [ "${#SERVICES[@]}" -eq 0 ]; then
     SERVICES=("${ALL_SERVICES[@]}")
     echo "🧩 No services specified → deploying ALL: ${SERVICES[*]}"
+else
+    echo "🧩 Services selected: ${SERVICES[*]}"
 fi
 
-echo "🔧 Force mode: $FORCE"
+echo "🔧 Force restart: $FORCE_RESTART"
+echo "🔧 Force requirements reinstall: $FORCE_REQUIREMENTS"
 echo
 
 ### 1. Detect previous commit ########################################
@@ -70,16 +84,19 @@ echo "🧾 Current commit: $CURRENT_COMMIT"
 
 ### 3. Change detection ################################################
 
-if [ "$FORCE" = false ]; then
+# Only auto-skip when there are no force flags at all
+if [ "$FORCE_RESTART" = false ] && [ "$FORCE_REQUIREMENTS" = false ]; then
     if [ -n "$PREV_COMMIT" ] && [ "$PREV_COMMIT" = "$CURRENT_COMMIT" ]; then
-        echo "⚠️ No new commits AND not using force mode."
+        echo "⚠️ No new commits and no force flags."
         echo "⏭️ Skipping deploy & restart."
         echo "$CURRENT_COMMIT" > "$LAST_DEPLOY_FILE"
         exit 0
     fi
     echo "🆕 Code changed → continuing deploy."
 else
-    echo "⚠️ FORCE MODE ENABLED → restarting selected services even without code changes."
+    echo "⚠️ One or more force flags enabled:"
+    [ "$FORCE_RESTART" = true ] && echo "   • FORCE_RESTART → services will restart even without code changes."
+    [ "$FORCE_REQUIREMENTS" = true ] && echo "   • FORCE_REQUIREMENTS → requirements will be reinstalled."
 fi
 
 ### 3.5 List changed files ############################################
@@ -89,23 +106,23 @@ if [ -n "$PREV_COMMIT" ] && [ "$PREV_COMMIT" != "$CURRENT_COMMIT" ]; then
     CHANGED_FILES=$(git diff --name-only "$PREV_COMMIT" "$CURRENT_COMMIT" || true)
     echo "$CHANGED_FILES"
 else
-    echo "📂 Force mode or initial deploy → skipping diff."
+    echo "📂 No code changes or explicit force → skipping diff."
     CHANGED_FILES=""
 fi
 echo
 
-### 4. Install requirements only if changed ###########################
+### 4. Install requirements only if needed ############################
 
-if [ "$FORCE" = true ]; then
-    echo "📦 FORCE MODE → installing dependencies regardless of changes..."
-    pip install -r requirements.txt --upgrade
+if [ "$FORCE_REQUIREMENTS" = true ]; then
+    echo "📦 FORCE REQUIREMENTS MODE → reinstalling dependencies..."
+    "$PIP_PATH" install -r requirements.txt --upgrade
+
+elif echo "$CHANGED_FILES" | grep -q "^requirements.txt$"; then
+    echo "📦 requirements.txt changed → installing dependencies..."
+    "$PIP_PATH" install -r requirements.txt --upgrade
+
 else
-    if echo "$CHANGED_FILES" | grep -q "^requirements.txt$"; then
-        echo "📦 requirements.txt changed → installing dependencies..."
-        pip install -r requirements.txt --upgrade
-    else
-        echo "📦 requirements unchanged → skipping pip install."
-    fi
+    echo "📦 requirements unchanged → skipping pip install."
 fi
 
 ### 5. Reload systemd ##################################################
