@@ -709,7 +709,7 @@ def compute_progress(completed_count: int, total_duration: float):
 # ===============================
 
 def build_app():
-    with gr.Blocks(title="TTS Dataset Recorder") as demo:
+    with gr.Blocks(title="Arabic Speech Recorder") as demo:
         state = gr.State({
             "logged_in": False,
             "username": None,
