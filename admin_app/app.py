@@ -83,7 +83,7 @@ COUNTRY_CODES = {
 
 COUNTRY_FILTER_CHOICES = ["All"] + sorted(COUNTRY_CODES.keys())
 
-RECORDING_TARGET_MINUTES = 30
+RECORDING_TARGET_MINUTES = 60
 RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
 
 
@@ -338,8 +338,9 @@ def compute_global_stats(rows):
 
 def make_gender_plot(rows):
     counts = {}
+    g_dict = {"ذكر": "Male", "أنثى": "Female"}  # Arabic to English
     for r in rows:
-        g = (r["gender"] or "Unknown").strip() or "Unknown"
+        g = (g_dict[r["gender"]] or "Unknown").strip() or "Unknown"
         counts[g] = counts.get(g, 0) + 1
 
     if not counts:
@@ -376,6 +377,36 @@ def make_dialect_plot(rows, max_labels=10):
     ax.bar(labels, values)
     ax.set_title("Dialect distribution (top {})".format(max_labels))
     ax.set_ylabel("Number of users")
+    ax.set_xlabel("Dialect code")
+    ax.set_xticks(range(len(labels)))
+    ax.set_xticklabels(labels, rotation=45, ha="right")
+    fig.tight_layout()
+    return fig
+
+def make_dialect_time_plot(rows, max_labels=10):
+    """
+    Total recording minutes per dialect (top N by time).
+    """
+    if not rows:
+        return None
+
+    totals = {}
+    for r in rows:
+        d = (r["dialect_code"] or "Unknown").strip() or "Unknown"
+        totals[d] = totals.get(d, 0.0) + r["total_duration"]
+
+    if not totals:
+        return None
+
+    # Sort dialects by total recording time (descending)
+    sorted_items = sorted(totals.items(), key=lambda x: x[1], reverse=True)
+    labels = [k for k, _ in sorted_items[:max_labels]]
+    values = [v / 60.0 for _, v in sorted_items[:max_labels]]  # minutes
+
+    fig, ax = plt.subplots()
+    ax.bar(labels, values)
+    ax.set_title(f"Top {len(labels)} dialects by total recording time")
+    ax.set_ylabel("Total minutes recorded")
     ax.set_xlabel("Dialect code")
     ax.set_xticks(range(len(labels)))
     ax.set_xticklabels(labels, rotation=45, ha="right")
@@ -443,10 +474,10 @@ def make_country_progress_plot(rows, target_seconds=RECORDING_TARGET_SECONDS):
     fig, ax = plt.subplots()
     x = range(len(labels))
 
-    ax.bar(x, target_min, label="Target (30 min per user)", alpha=0.3)
+    ax.bar(x, target_min, label="Target per user)", alpha=0.3)
     ax.bar(x, achieved_min, label="Achieved", width=0.5)
 
-    ax.set_title("Country progress vs 30-min target")
+    ax.set_title("Country progress vs target")
     ax.set_ylabel("Total minutes")
     ax.set_xlabel("Country")
     ax.set_xticks(list(x))
@@ -474,9 +505,9 @@ def make_duration_histogram(rows, scope_label):
     return fig
 
 
-def make_user_progress_plot(rows, scope_label, top_n=50):
+def make_user_progress_plot(rows, scope_label, top_n=5):
     """
-    Per-speaker progress vs 30-minute target (%), for a single country.
+    Per-speaker progress vs target (%), for a single country.
     """
     if not rows:
         return None
@@ -497,7 +528,7 @@ def make_user_progress_plot(rows, scope_label, top_n=50):
     x = range(len(labels))
     ax.bar(x, pct_vals)
     ax.axhline(100, linestyle="--", linewidth=1)
-    ax.set_title(f"Speaker progress vs 30-min target – {scope_label}")
+    ax.set_title(f"Speaker progress vs target – {scope_label}")
     ax.set_ylabel("% of target")
     ax.set_xlabel("Speakers (sorted by duration)")
     ax.set_xticks(list(x))
@@ -621,8 +652,10 @@ Manage admins, view user recordings from S3, and monitor progress.
 
                     gender_plot = gr.Plot(label="Gender distribution")
                     dialect_plot = gr.Plot(label="Dialect distribution")
+                    dialect_time_plot = gr.Plot(label="Top dialects by recording time")
                     plot_3 = gr.Plot(label="Recording / country overview")
                     plot_4 = gr.Plot(label="Progress vs target")
+
 
         # ======================
         # AUTH CALLBACKS
@@ -846,6 +879,7 @@ Manage admins, view user recordings from S3, and monitor progress.
                     None,
                     None,
                     None,
+                    None,
                 )
 
             # Keep only users who actually recorded something
@@ -855,10 +889,12 @@ Manage admins, view user recordings from S3, and monitor progress.
 
             total_sec = stats["total_duration"]
             total_min = int(total_sec // 60)
+            total_h  = int(total_min / 60)
             total_sec_rem = int(total_sec % 60)
 
             avg_sec = stats["avg_duration"]
             avg_min = int(avg_sec // 60)
+            avg_h   = int(avg_min / 60)
             avg_sec_rem = int(avg_sec % 60)
 
             # How many users hit / did not hit the 30-min target
@@ -877,13 +913,13 @@ Manage admins, view user recordings from S3, and monitor progress.
 #### Global statistics ({scope_label})
 
 - Users with any data: **{stats['num_users']}**
-- Total recording time: **{total_min}m {total_sec_rem}s** (≈ {total_sec:.1f} s)
+- Total recording time: **{total_min}m {total_sec_rem}s** (≈ {total_h:.1f} h)
 - Total recorded sentences: **{stats['total_sentences']}**
-- Average duration per user: **{avg_min}m {avg_sec_rem}s** (≈ {avg_sec:.1f} s)
+- Average duration per user: **{avg_min}m {avg_sec_rem}s** (≈ {avg_h:.1f} h)
 - Average #sentences per user: **{stats['avg_sentences']:.2f}**
 
-- Users at or above 30 min: **{users_above_target}**
-- Users below 30 min: **{users_below_target}**
+- Users at or above {RECORDING_TARGET_MINUTES} min: **{users_above_target}**
+- Users below {RECORDING_TARGET_MINUTES} min: **{users_below_target}**
 """
 
             # Per-user table: top 50 by duration, with % of target
@@ -912,6 +948,7 @@ Manage admins, view user recordings from S3, and monitor progress.
             #  - plot_3 and plot_4 depend on whether we are in "All" or per-country mode
             gender_fig = make_gender_plot(rows)
             dialect_fig = make_dialect_plot(rows)
+            dialect_time_fig = make_dialect_time_plot(rows)
 
             if not country_filter or country_filter == "All":
                 # Cross-country overview
@@ -922,12 +959,12 @@ Manage admins, view user recordings from S3, and monitor progress.
                 country_compare_fig = make_duration_histogram(rows, scope_label)
                 progress_fig = make_user_progress_plot(rows, scope_label)
 
-            return md, table, gender_fig, dialect_fig, country_compare_fig, progress_fig
+            return md, table, gender_fig, dialect_fig, dialect_time_fig, country_compare_fig, progress_fig
 
         compute_stats_btn.click(
             fn=handle_compute_stats,
             inputs=[country_filter_stats],
-            outputs=[stats_md, stats_df, gender_plot, dialect_plot, plot_3, plot_4],
+            outputs=[stats_md, stats_df, gender_plot, dialect_plot, dialect_time_plot, plot_3, plot_4],
         )
 
     return demo
