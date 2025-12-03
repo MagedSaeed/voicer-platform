@@ -12,10 +12,6 @@ PIP_PATH="$ENV_PATH/bin/pip"
 # All services in the platform
 ALL_SERVICES=(
     "voicer-main"
-    "voicer-admin"
-    "voicer-stats"
-    "voicer-anno"
-    "voicer-prev"
 )
 
 LAST_DEPLOY_FILE="$APP_DIR/.last_deploy_commit"
