@@ -643,7 +643,7 @@ Manage admins, view user recordings from S3, and monitor progress.
                     stats_df = gr.Dataframe(
                         headers=[
                             "username", "country", "dialect_code",
-                            "total_duration(sec)", "#sentences", "% of 30-min target"
+                            "total_duration(sec)", "#sentences", "% of target"
                         ],
                         interactive=False,
                         label="Per-user stats (top 50 by duration)",

@@ -4,7 +4,6 @@ import uuid
 from pathlib import Path
 from datetime import datetime
 import random
-
 from dotenv import load_dotenv
 import boto3
 import gradio as gr
@@ -59,35 +58,35 @@ S3_CLIENT = _create_s3_client()
 # ===============================
 # COUNTRIES & DIALECTS
 # ===============================
-
 AVAILABLE_COUNTRIES = [
     "Egypt", "Saudi Arabia", "Morocco"
 ]
 
 COUNTRY_EMOJIS = {
-    "dz": "🇩🇿",
-    "bh": "🇧🇭",
-    "eg": "🇪🇬",
-    "iq": "🇮🇶",
-    "jo": "🇯🇴",
-    "kw": "🇰🇼",
-    "lb": "🇱🇧",
-    "ly": "🇱🇾",
-    "mr": "🇲🇷",
-    "ma": "🇲🇦",
-    "om": "🇴🇲",
-    "ps": "🇵🇸",
-    "qa": "🇶🇦",
-    "sa": "🇸🇦",
-    "so": "🇸🇴",
-    "sd": "🇸🇩",
-    "sy": "🇸🇾",
-    "tn": "🇹🇳",
-    "ae": "🇦🇪",
-    "ye": "🇾🇪",
+    "dz": "🇩🇿",  # Algeria
+    "bh": "🇧🇭",  # Bahrain
+    "eg": "🇪🇬",  # Egypt
+    "iq": "🇮🇶",  # Iraq
+    "jo": "🇯🇴",  # Jordan
+    "kw": "🇰🇼",  # Kuwait
+    "lb": "🇱🇧",  # Lebanon
+    "ly": "🇱🇾",  # Libya
+    "mr": "🇲🇷",  # Mauritania
+    "ma": "🇲🇦",  # Morocco
+    "om": "🇴🇲",  # Oman
+    "ps": "🇵🇸",  # Palestine
+    "qa": "🇶🇦",  # Qatar
+    "sa": "🇸🇦",  # Saudi Arabia
+    "so": "🇸🇴",  # Somalia
+    "sd": "🇸🇩",  # Sudan
+    "sy": "🇸🇾",  # Syria
+    "tn": "🇹🇳",  # Tunisia
+    "ae": "🇦🇪",  # United Arab Emirates
+    "ye": "🇾🇪",  # Yemen
 }
 
-RECORDING_TARGET_MINUTES = 30
+
+RECORDING_TARGET_MINUTES = 30 # target total recording time per user
 RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
 
 COUNTRY_CODES = {
@@ -332,18 +331,19 @@ CONSENT_DETAILS = """
 </section>
 """
 
+
 AGES = [
-    "4–9",
-    "10–14",
-    "15–19",
-    "20–24",
-    "25–34",
-    "35–44",
-    "45–54",
-    "55–64",
-    "65–74",
-    "75–84",
-    "85+"
+    "4–9",   # baby
+    "10–14", # child
+    "15–19", # teen
+    "20–24", # young adult
+    "25–34", # adult
+    "35–44", # mid-age adult
+    "45–54", # older adult
+    "55–64", # senior
+    "65–74", # elderly
+    "75–84", # aged
+    "85+"    # very aged
 ]
 
 GENDER = [
@@ -374,15 +374,35 @@ SENTENCES_CACHE = {}  # {country_code: [(id, text, [dialects]), ...]}
 
 
 def get_sentences_file_for_country(country_code: str) -> Path:
+    """
+    Return the path to the sentences file for a given country code,
+    e.g. 'eg' -> BASE_DIR / 'sentences_eg.json'.
+    """
     return BASE_DIR / f"sentences_{country_code}.json"
 
 
 def load_sentences_for_country(country_code: str):
+    """
+    Load and cache all sentences for a given country code.
+
+    Expected JSON structure:
+    {
+      "sentences": [
+        {
+          "unique_id": "105130",
+          "text": "...",
+          "dialect": ["eg-ca", "eg-al", ...]
+        },
+        ...
+      ]
+    }
+    """
     if country_code in SENTENCES_CACHE:
         return SENTENCES_CACHE[country_code]
 
     path = get_sentences_file_for_country(country_code)
 
+    # If missing, initialise an empty file (or you can raise an error if you prefer)
     if not path.exists():
         path.write_text(
             json.dumps({"sentences": []}, ensure_ascii=False, indent=2),
@@ -399,7 +419,16 @@ def load_sentences_for_country(country_code: str):
     return SENTENCES_CACHE[country_code]
 
 
+
 def filter_sentences(dialect_code: str, completed_ids):
+    """
+    Return all (sentence_id, text) pairs for a given dialect_code,
+    excluding any sentence IDs in completed_ids.
+
+    - dialect_code looks like 'sa-hj', 'eg-ca', etc.
+    - We infer the country_code ('sa', 'eg', ...) from dialect_code,
+      then load the corresponding sentences_{country_code}.json.
+    """
     completed_set = set(completed_ids or [])
 
     country_code, _ = split_dialect_code(dialect_code)
@@ -464,7 +493,6 @@ def create_user(name: str, email: str, password: str, country: str, dialect_labe
         "gender": gender,
         "age": age,
         "created_at": datetime.utcnow().isoformat(),
-        "session_token": None,
     }
 
     try:
@@ -511,6 +539,7 @@ def create_password_reset_token(email: str):
         supabase.table("password_resets").insert(payload).execute()
         return True, token
     except Exception as e:
+        # nice clean message instead of raw dict
         print("create_password_reset_token error:", e)
         return False, "Password reset is not configured on the server (missing password_resets table)."
 
@@ -568,40 +597,6 @@ def save_session(username: str, completed_sentences, total_duration: float):
     except Exception as e:
         print("save_session error:", e)
 
-# ===============================
-# SESSION TOKENS (stateless auth)
-# ===============================
-
-def create_session_token_for_user(username: str):
-    if not supabase:
-        return None
-    token = uuid.uuid4().hex
-    try:
-        supabase.table("users").update({"session_token": token}).eq("username", username).execute()
-        return token
-    except Exception as e:
-        print("create_session_token_for_user error:", e)
-        return None
-
-
-def get_user_by_session_token(token: str):
-    if not supabase or not token:
-        return None
-    try:
-        resp = supabase.table("users").select("*").eq("session_token", token).execute()
-        return resp.data[0] if resp.data else None
-    except Exception as e:
-        print("get_user_by_session_token error:", e)
-        return None
-
-
-def clear_session_token(token: str):
-    if not supabase or not token:
-        return
-    try:
-        supabase.table("users").update({"session_token": None}).eq("session_token", token).execute()
-    except Exception as e:
-        print("clear_session_token error:", e)
 
 # ===============================
 # STORAGE / AUDIO
@@ -641,6 +636,14 @@ def upload_file_to_s3(local_path: Path, s3_key: str):
 
 
 def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str, sentence_text: str, audio_path: str):
+    """
+    Local:
+      ~/.tts_dataset_creator/users/{country}/{dialect}/{username}/wavs/{country}_{dialect}_{username}_{sentence}.wav
+
+    S3 (country-level folder only):
+      {country_code}/{username}/wavs/{country}_{dialect}_{username}_{sentence}.wav
+      {country_code}/{username}/metadata.csv
+    """
     user_dir = ensure_user_dirs(username, dialect_code)
     wav_dir = user_dir / "wavs"
     meta_file = user_dir / "metadata.csv"
@@ -648,7 +651,7 @@ def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str
     if not meta_file.exists():
         meta_file.write_text("audio_file|text\n", encoding="utf-8")
 
-    country_code, _dialect = split_dialect_code(dialect_code)
+    country_code, dialect = split_dialect_code(dialect_code)
     filename = f"{username}_{sentence_id}.wav"
     dest = wav_dir / filename
 
@@ -669,28 +672,37 @@ def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str
 
     return duration
 
-
 def make_progress_bar(current_seconds: float, target_seconds: float, bar_length: int = 20) -> str:
+    """
+    Text progress bar based on time.
+    Example: [████████░░░░░░░░░░] 40.0%
+    """
     if target_seconds <= 0:
         bar = "░" * bar_length
         return f"[{bar}] 0.0%"
 
     ratio = current_seconds / target_seconds
-    ratio = max(0.0, min(1.0, ratio))
+    ratio = max(0.0, min(1.0, ratio))  # clamp 0–1
 
     filled = int(bar_length * ratio)
     bar = "█" * filled + "░" * (bar_length - filled)
     return f"[{bar}] {ratio * 100:.1f}%"
 
-
 def compute_progress(completed_count: int, total_duration: float):
+    """
+    Progress based on total recording time vs RECORDING_TARGET_SECONDS.
+    """
     bar = make_progress_bar(total_duration, RECORDING_TARGET_SECONDS)
 
     mins = int(total_duration // 60)
     secs = int(total_duration % 60)
     target_mins = int(RECORDING_TARGET_SECONDS // 60)
 
+    # Example:
+    # [██████░░░░░░░░░░░░] 30.0%
+    # 10m 43s / 30m target • 294 sentences
     return f"{bar}\n{mins}m {secs}s / {target_mins}m target • {completed_count} sentences"
+
 
 # ===============================
 # GRADIO APP (3 PAGES)
@@ -698,7 +710,6 @@ def compute_progress(completed_count: int, total_duration: float):
 
 def build_app():
     with gr.Blocks(title="Arabic Speech Recorder") as demo:
-        # per-session server state (rebuildable from token)
         state = gr.State({
             "logged_in": False,
             "username": None,
@@ -708,12 +719,7 @@ def build_app():
             "current_sentence_id": "",
             "current_sentence_text": "",
         })
-
-        # browser-local storage (persists across refresh and across instances)
-        browser_state = gr.BrowserState(
-            {"session_token": None},
-        )
-
+       
         gr.Markdown("""
 <div style="text-align: center; padding: 20px 0;">
   <h1 style="margin-bottom: 10px;"> 🗣️ Arabic Speech Dataset Recorder | مسجّل مجموعة البيانات الصوتية العربية 🎤</h1>
@@ -722,6 +728,7 @@ def build_app():
   </p>
 </div>
 """)
+
 
         # ---------- LOGIN PAGE ----------
         with gr.Column(visible=True) as login_view:
@@ -750,17 +757,17 @@ def build_app():
             default_dialects = get_dialects_for_country("Saudi Arabia")
             reg_dialect = gr.Dropdown(
                 choices=default_dialects,
-                value=None,
+                value=None,   # user must choose
                 label="Dialect"
             )
             reg_gender = gr.Dropdown(
                 choices=GENDER,
-                value=None,
+                value=None,   # user must choose
                 label="Gender"
             )
             reg_age = gr.Dropdown(
                 choices=AGES,
-                value=None,
+                value=None,   # user must choose
                 label="Age Group"
             )
             with gr.Accordion("إتفاقية التسجيل بالموقع واستخدام البيانات", open=True, visible=True):
@@ -800,6 +807,13 @@ def build_app():
                 gr.update(visible=False),
             )
 
+        def show_main():
+            return (
+                gr.update(visible=False),
+                gr.update(visible=False),
+                gr.update(visible=True),
+            )
+
         goto_register_btn.click(
             show_register,
             inputs=[],
@@ -816,6 +830,7 @@ def build_app():
 
         def update_dialects(country):
             dialects = get_dialects_for_country(country)
+            # IMPORTANT FIX: don't try to set a default value; let user choose
             return gr.update(choices=dialects, value=None)
 
         reg_country.change(
@@ -858,73 +873,13 @@ def build_app():
             outputs=[state, reg_msg, login_view, register_view, main_view],
         )
 
-        # ---------- Helpers for stateless auth ----------
-
-        def next_sentence_for_state(st):
-            available = filter_sentences(st["dialect_code"], st["completed_sentences"])
-            if not available:
-                st["current_sentence_id"] = ""
-                st["current_sentence_text"] = "No more sentences."
-            else:
-                sid, text = random.choice(available)
-                st["current_sentence_id"] = sid
-                st["current_sentence_text"] = text
-
-        def hydrate_from_browser_state(st, bs):
-            token = (bs or {}).get("session_token")
-            user = get_user_by_session_token(token)
-            if not user:
-                return st, None
-
-            username = user["username"]
-            dialect_code = user.get("dialect_code", "sa-hj")
-            sess = load_session(username)
-            completed = sess["completed_sentences"]
-            total_dur = sess["total_recording_duration"]
-
-            if not st.get("logged_in"):
-                next_sentence_for_state({
-                    "dialect_code": dialect_code,
-                    "completed_sentences": completed,
-                    "current_sentence_id": st.get("current_sentence_id", ""),
-                    "current_sentence_text": st.get("current_sentence_text", ""),
-                })
-                # We don't call next_sentence_for_state directly here to avoid changing st twice.
-
-            # Ensure current sentence
-            if not st.get("current_sentence_id") or not st.get("current_sentence_text"):
-                temp_state = {
-                    "dialect_code": dialect_code,
-                    "completed_sentences": completed,
-                    "current_sentence_id": "",
-                    "current_sentence_text": "",
-                }
-                next_sentence_for_state(temp_state)
-                current_sentence_id = temp_state["current_sentence_id"]
-                current_sentence_text = temp_state["current_sentence_text"]
-            else:
-                current_sentence_id = st["current_sentence_id"]
-                current_sentence_text = st["current_sentence_text"]
-
-            st.update({
-                "logged_in": True,
-                "username": username,
-                "dialect_code": dialect_code,
-                "completed_sentences": completed,
-                "total_duration": total_dur,
-                "current_sentence_id": current_sentence_id,
-                "current_sentence_text": current_sentence_text,
-            })
-            return st, user
-
         # ---------- Login + password reset ----------
 
-        def do_login(email, pw, st, bs):
+        def do_login(email, pw, st):
             ok, result = authenticate(email, pw)
             if not ok:
                 return (
                     st,
-                    bs,
                     f"❌ {result}",
                     "",
                     "",
@@ -939,24 +894,6 @@ def build_app():
             username = result
             user = get_user_by_username(username)
             dialect_code = user.get("dialect_code", "sa-hj") if user else "sa-hj"
-
-            token = create_session_token_for_user(username)
-            if not token:
-                return (
-                    st,
-                    bs,
-                    "❌ Could not create session token.",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    gr.update(visible=True),
-                    gr.update(visible=False),
-                    gr.update(visible=False),
-                )
-
-            bs = {"session_token": token}
 
             sess = load_session(username)
             completed = sess["completed_sentences"]
@@ -979,15 +916,13 @@ def build_app():
                 "current_sentence_text": sentence_text,
             })
 
-            country_code, _ = split_dialect_code(dialect_code)
+            country = dialect_code.split("-", 1)[0]
             progress = compute_progress(len(completed), total_dur)
             username_show = " ".join(username.split("_")[:-3]).title()
-            flag = COUNTRY_EMOJIS.get(country_code, "")
-            info_text = f"## **{username_show}** ({flag} {flag})"
+            info_text = f"## **{username_show}** ({COUNTRY_EMOJIS[country]} {COUNTRY_EMOJIS[country]})    "
 
             return (
                 st,
-                bs,
                 "",
                 info_text,
                 username,
@@ -1001,10 +936,9 @@ def build_app():
 
         login_btn.click(
             do_login,
-            inputs=[login_email, login_pw, state, browser_state],
+            inputs=[login_email, login_pw, state],
             outputs=[
                 state,
-                browser_state,
                 login_msg,
                 info,
                 username_box,
@@ -1037,30 +971,39 @@ def build_app():
 
         # ---------- Main page logic ----------
 
-        def handle_save(audio_path, edited_sentence, st, bs):
-            st, user = hydrate_from_browser_state(st, bs)
-            if not user:
+        def next_sentence_for_state(st):
+            available = filter_sentences(st["dialect_code"], st["completed_sentences"])
+            if not available:
+                st["current_sentence_id"] = ""
+                st["current_sentence_text"] = "No more sentences."
+            else:
+                sid, text = random.choice(available)
+                st["current_sentence_id"] = sid
+                st["current_sentence_text"] = text
+
+        def handle_save(audio_path, edited_sentence, st):
+            if not st.get("logged_in"):
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             if not audio_path:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, "⚠️ Record audio first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, "⚠️ Record audio first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             sentence_text = (edited_sentence or st["current_sentence_text"]).strip()
             if not sentence_text:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, "⚠️ Sentence text is empty.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, "⚠️ Sentence text is empty.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             sid = st["current_sentence_id"]
             if not sid:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, "⚠️ No active sentence.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, "⚠️ No active sentence.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             ok, msg, _dur = validate_audio(audio_path)
             if not ok:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, f"❌ Audio error: {msg}", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, f"❌ Audio error: {msg}", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             duration = save_recording_and_upload(
                 st["username"],
@@ -1077,19 +1020,18 @@ def build_app():
 
             next_sentence_for_state(st)
             progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-            return st, bs, "✅ Saved", st["current_sentence_text"], st["current_sentence_id"], progress, None
+            return st, "✅ Saved", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
         save_btn.click(
             handle_save,
-            inputs=[audio_rec, sentence_box, state, browser_state],
-            outputs=[state, browser_state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec],
+            inputs=[audio_rec, sentence_box, state],
+            outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec],
         )
 
-        def handle_skip(st, bs):
-            st, user = hydrate_from_browser_state(st, bs)
-            if not user:
+        def handle_skip(st):
+            if not st.get("logged_in"):
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, bs, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+                return st, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
             sid = st["current_sentence_id"]
             if sid and sid not in st["completed_sentences"]:
@@ -1098,18 +1040,15 @@ def build_app():
 
             next_sentence_for_state(st)
             progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-            return st, bs, "Skipped.", st["current_sentence_text"], st["current_sentence_id"], progress, None
+            return st, "Skipped.", st["current_sentence_text"], st["current_sentence_id"], progress, None
 
         skip_btn.click(
             handle_skip,
-            inputs=[state, browser_state],
-            outputs=[state, browser_state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec],
+            inputs=[state],
+            outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec],
         )
 
-        def do_logout(st, bs):
-            token = (bs or {}).get("session_token")
-            clear_session_token(token)
-
+        def do_logout(st):
             st.update({
                 "logged_in": False,
                 "username": None,
@@ -1119,11 +1058,8 @@ def build_app():
                 "current_sentence_id": "",
                 "current_sentence_text": "",
             })
-            bs = {"session_token": None}
-
             return (
                 st,
-                bs,
                 "",
                 "",
                 "",
@@ -1135,10 +1071,9 @@ def build_app():
 
         logout_btn.click(
             do_logout,
-            inputs=[state, browser_state],
+            inputs=[state],
             outputs=[
                 state,
-                browser_state,
                 info,
                 username_box,
                 progress_box,
@@ -1146,55 +1081,6 @@ def build_app():
                 login_view,
                 register_view,
                 main_view,
-            ],
-        )
-
-        # ---------- Auto-login on page load ----------
-
-        def auto_login_on_load(st, bs):
-            st, user = hydrate_from_browser_state(st, bs)
-            if not user:
-                # show login view
-                return (
-                    st,
-                    gr.update(visible=True),
-                    gr.update(visible=False),
-                    gr.update(visible=False),
-                    "",
-                    "",
-                    "",
-                    "",
-                )
-
-            progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-            country_code, _ = split_dialect_code(st["dialect_code"])
-            username_show = " ".join(st["username"].split("_")[:-3]).title()
-            flag = COUNTRY_EMOJIS.get(country_code, "")
-            info_text = f"## **{username_show}** ({flag} {flag})"
-
-            return (
-                st,
-                gr.update(visible=False),
-                gr.update(visible=False),
-                gr.update(visible=True),
-                info_text,
-                st["username"],
-                progress,
-                st["current_sentence_text"],
-            )
-
-        demo.load(
-            auto_login_on_load,
-            inputs=[state, browser_state],
-            outputs=[
-                state,
-                login_view,
-                register_view,
-                main_view,
-                info,
-                username_box,
-                progress_box,
-                sentence_box,
             ],
         )
 
@@ -1209,3 +1095,4 @@ if __name__ == "__main__":
         server_port=port,
         debug=False,
     )
+# ===============================
