@@ -1207,8 +1207,8 @@ def build_app():
 if __name__ == "__main__":
     port = int(os.environ.get("GRADIO_SERVER_PORT", 7860))
     app = build_app()
-    app.queue(max_size=20)
-    app.load(concurrency_limit=4)
+    # app.queue(max_size=20)
+    # app.load(concurrency_limit=4)
     app.launch(
         server_name="0.0.0.0",
         server_port=port,
