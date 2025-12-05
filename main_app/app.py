@@ -796,7 +796,7 @@ def build_app():
             
             temp_audio_path = gr.Textbox(label="Temp audio path", visible=False)
 
-            save_btn = gr.Button("Save & Next", variant="primary")
+            save_btn = gr.Button("Save & Next", variant="primary", interactive=False)
             skip_btn = gr.Button("Skip")
             msg_box = gr.Markdown("")
 
@@ -862,6 +862,16 @@ def build_app():
             outputs=[state, temp_audio_path, audio_rec, save_btn, skip_btn],
         )
 
+        def on_clear():
+            """
+            Called when the user clears the recording.
+            We can use this to clear any previous temp audio path.
+            """
+            return gr.update(interactive=False)
+        audio_rec.clear(
+            fn=on_clear,
+            outputs=[save_btn],
+        )
 
         goto_register_btn.click(
             show_register,
