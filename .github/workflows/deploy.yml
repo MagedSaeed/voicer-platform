@@ -1,0 +1,20 @@
+    name: Deploy on Push
+
+    on:
+      push:
+        branches:
+          - main # or your primary branch like 'master'
+
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest # Or another suitable runner environment
+
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4 # Action to checkout your code
+
+          - name: Make deploy script executable
+            run: chmod +x ./deploy.sh # Ensure your script has execute permissions
+
+          - name: Run deployment script
+            run: ./deploy.sh # Execute your deployment script
