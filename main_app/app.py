@@ -14,7 +14,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from supabase import create_client, Client
 
 # ===============================
-# CONFIG & GLOBALS   
+# CONFIG & GLOBALS    
 # ===============================
 
 load_dotenv()
