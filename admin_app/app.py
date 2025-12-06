@@ -12,7 +12,7 @@ from supabase import create_client, Client
 from werkzeug.security import generate_password_hash, check_password_hash
 
 # ===============================
-# CONFIG & GLOBALS
+# CONFIG & GLOBALS 
 # ===============================
 
 load_dotenv()
