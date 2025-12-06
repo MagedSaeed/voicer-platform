@@ -4,16 +4,19 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'admin_app/**'                         # only when main_app/ changes
+      - '.github/workflows/deploy-main.yml'  # re-run if you edit this workflow
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (still useful for version info, etc.)
+      - name: Checkout repository (for context/version)
         uses: actions/checkout@v4
 
-      - name: Deploy to remote server over SSH
+      - name: Deploy ADMIN app to servers
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -22,4 +25,4 @@ jobs:
           port: ${{ secrets.SERVER_SSH_PORT }} # optional, default 22
           script: |
             cd /opt/voicer-platform
-            bash deploy.sh
+            bash deploy-admin.sh
