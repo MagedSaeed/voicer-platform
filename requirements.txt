@@ -12,3 +12,4 @@ supabase==2.24.0
 supabase_auth==2.24.0
 python-dotenv==1.0.1
 matplotlib
+youtube-transcript-api==1.2.3
