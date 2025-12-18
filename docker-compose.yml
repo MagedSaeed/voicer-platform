@@ -1,0 +1,59 @@
+services:
+  # Main Voice Recording App
+  voicer-main:
+    build:
+      context: .
+      dockerfile: Dockerfile.main
+    container_name: voicer-main
+    ports:
+      - "7860:7860"
+    environment:
+      # Supabase
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      # AWS S3
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}
+      - S3_BUCKET=${S3_BUCKET:-voicer-storage}
+      - AWS_REGION=${AWS_REGION:-me-south-1}
+      # Gradio
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+    volumes:
+      # Mount app code for hot reload during development
+      - ./main_app:/app/main_app:ro
+    restart: unless-stopped
+    networks:
+      - voicer-network
+
+  # Admin Dashboard
+  voicer-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile.admin
+    container_name: voicer-admin
+    ports:
+      - "7861:7861"
+    environment:
+      # Supabase (prefer service role key for admin)
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      # AWS S3
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}
+      - S3_BUCKET=${S3_BUCKET:-voicer-storage}
+      - AWS_REGION=${AWS_REGION:-me-south-1}
+      # Gradio
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=${GRADIO_ADMIN_PORT:-7860}
+      - GRADIO_ADMIN_PORT=${GRADIO_ADMIN_PORT:-7861}
+    volumes:
+      # Mount app code for hot reload during development
+      - ./admin_app:/app/admin_app:ro
+    restart: unless-stopped
+    networks:
+      - voicer-network
+
+networks:
+  voicer-network:
+    driver: bridge

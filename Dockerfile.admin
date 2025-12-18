@@ -1,0 +1,27 @@
+# Dockerfile for Admin Dashboard (voicer-admin)
+FROM python:3.12-slim
+
+# Install system dependencies for audio processing and matplotlib
+RUN apt-get update && apt-get install -y \
+    libsndfile1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy requirements and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY admin_app/ ./admin_app/
+
+# Environment variables
+ENV GRADIO_SERVER_NAME=0.0.0.0
+ENV GRADIO_SERVER_PORT=7861
+ENV GRADIO_ADMIN_PORT=7861
+
+EXPOSE 7861
+
+# Run the admin app
+CMD ["python", "admin_app/app.py"]
