@@ -867,28 +867,92 @@ def get_user_rank_country(country_code: str, username: str) -> int | None:
         print("get_user_rank_country error:", e)
         return None
 
-
 APP_CSS = """
 <style>
   :root{
-    --card-bg: rgba(255,255,255,0.03);
-    --card-border: rgba(255,255,255,0.08);
-    --muted: rgba(255,255,255,0.65);
-    --muted2: rgba(255,255,255,0.50);
-    --accent: rgba(255,255,255,0.12);
+    --card-bg: rgba(255,255,255,0.78);
+    --card-border: rgba(15,23,42,0.12);
+    --muted: rgba(15,23,42,0.72);
+    --muted2: rgba(15,23,42,0.56);
+    --accent: rgba(15,23,42,0.06);
+
+    --shadow-sm: 0 1px 2px rgba(2,6,23,0.06);
+    --shadow-md: 0 8px 24px rgba(2,6,23,0.10);
+    --shadow-lg: 0 14px 44px rgba(2,6,23,0.14);
   }
+
+  /* Dark mode friendliness */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --card-bg: rgba(255,255,255,0.04);
+      --card-border: rgba(255,255,255,0.10);
+      --muted: rgba(255,255,255,0.72);
+      --muted2: rgba(255,255,255,0.55);
+      --accent: rgba(255,255,255,0.10);
+
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.22);
+      --shadow-md: 0 10px 30px rgba(0,0,0,0.28);
+      --shadow-lg: 0 18px 60px rgba(0,0,0,0.34);
+    }
+  }
+
+  /* ============================
+     Gradio layout fixes (mobile)
+     ============================ */
+
+  /* Stop "centered narrow app" on phones */
+  .gradio-container,
+  .gradio-container .main,
+  .gradio-container .wrap,
+  .gradio-container .contain{
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Use screen width */
+  .gradio-container .contain{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* Prevent dropdown/autofill/popovers being clipped by overflow hidden/auto */
+  .gradio-container,
+  .gradio-container .main,
+  .gradio-container .wrap,
+  .gradio-container .contain{
+    overflow: visible !important;
+  }
+
+  /* Ensure Gradio children can shrink instead of "vertical letters" */
+  .gradio-container *{
+    min-width: 0;
+  }
+
+  /* Your app wrapper */
   .app-shell{
     max-width: 980px;
     margin: 0 auto;
+    padding: 10px;
   }
+
   .hero{
     border: 1px solid var(--card-border);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 18px 18px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.70));
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(10px);
   }
-  .hero h1{ margin: 0; font-size: 22px; font-weight: 800; }
-  .hero p{ margin: 6px 0 0 0; color: var(--muted); line-height: 1.5; }
+  @media (prefers-color-scheme: dark){
+    .hero{
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow-sm);
+    }
+  }
+
+  .hero h1{ margin: 0; font-size: 22px; font-weight: 900; }
+  .hero p{ margin: 8px 0 0 0; color: var(--muted); line-height: 1.6; }
+
   .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -897,112 +961,205 @@ APP_CSS = """
   @media (max-width: 920px){
     .grid-2{ grid-template-columns: 1fr; }
   }
+
   .card{
     border: 1px solid var(--card-border);
-    border-radius: 14px;
+    border-radius: 16px;
     background: var(--card-bg);
     padding: 14px;
+    box-shadow: var(--shadow-sm);
   }
   .card h3{
     margin: 0 0 10px 0;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
   }
+
   .hint{
     color: var(--muted2);
     font-size: 12px;
-    margin-top: 6px;
-    line-height: 1.4;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  .status-ok, .status-warn, .status-bad{
+    border-radius: 14px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow-sm);
   }
   .status-ok{
-    border: 1px solid rgba(0,255,150,0.18);
-    background: rgba(0,255,150,0.06);
-    border-radius: 12px;
-    padding: 10px 12px;
+    border: 1px solid rgba(16,185,129,0.30);
+    background: rgba(16,185,129,0.10);
   }
   .status-warn{
-    border: 1px solid rgba(255,190,0,0.22);
-    background: rgba(255,190,0,0.07);
-    border-radius: 12px;
-    padding: 10px 12px;
+    border: 1px solid rgba(245,158,11,0.30);
+    background: rgba(245,158,11,0.10);
   }
   .status-bad{
-    border: 1px solid rgba(255,0,80,0.20);
-    background: rgba(255,0,80,0.07);
-    border-radius: 12px;
-    padding: 10px 12px;
+    border: 1px solid rgba(239,68,68,0.30);
+    background: rgba(239,68,68,0.10);
   }
+
   .topbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap: 10px;
+    flex-wrap: wrap;
   }
+
   .chip{
     display:inline-flex;
     align-items:center;
     gap: 8px;
-    padding: 6px 10px;
+    padding: 7px 11px;
     border-radius: 999px;
     border: 1px solid var(--card-border);
-    background: rgba(255,255,255,0.03);
-    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.70);
+    box-shadow: var(--shadow-sm);
+    color: rgba(15,23,42,0.88);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 800;
   }
+  @media (prefers-color-scheme: dark){
+    .chip{
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.88);
+    }
+  }
+
   .mono{
     font-variant-numeric: tabular-nums;
     white-space: pre-line;
   }
   .rtl{ direction: rtl; text-align: right; }
+
+  /* RTL accordion header alignment + arrow direction */
+  .rtl .gr-accordion .label-wrap,
+  .rtl .gr-accordion .label-wrap > div{
+    direction: rtl !important;
+    text-align: right !important;
+    justify-content: space-between !important;
+  }
+  .rtl .gr-accordion .label-wrap svg{
+    transform: scaleX(-1);
+  }
+
+  /* ============================
+     Mobile tightening
+     ============================ */
+  @media (max-width: 640px){
+    .gradio-container .contain{
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+
+    .app-shell{ padding: 8px; }
+
+    .hero{
+      padding: 14px;
+      border-radius: 16px;
+      backdrop-filter: none !important; /* avoids stacking bugs on some mobile browsers */
+    }
+    .hero h1{ font-size: 18px; }
+
+    .card{
+      padding: 12px;
+      border-radius: 14px;
+    }
+    .card h3{ font-size: 15px; }
+    .hint{ font-size: 11.5px; }
+
+    /* Force rows to stack instead of squeezing */
+    .gradio-container .gr-row{
+      flex-wrap: wrap !important;
+      gap: 10px !important;
+    }
+    .gradio-container .gr-row > *{
+      flex: 1 1 100% !important;
+    }
+
+    /* Make buttons & controls easier to tap */
+    .gradio-container button,
+    .gradio-container .gr-button{
+      width: 100% !important;
+    }
+
+    .gradio-container input,
+    .gradio-container textarea,
+    .gradio-container select{
+      font-size: 14px !important;
+    }
+  }
 </style>
 """
+
 
 LEADERBOARD_CSS = """
 <style>
   .lb-wrap{
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
+    border: 1px solid rgba(15,23,42,0.12);
+    border-radius: 14px;
     padding: 14px;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.72);
+    box-shadow: 0 10px 28px rgba(2,6,23,0.10);
   }
+  @media (prefers-color-scheme: dark){
+    .lb-wrap{
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+    }
+  }
+
   .lb-header{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:space-between;
     margin-bottom: 10px;
     gap: 10px;
+    flex-wrap: wrap;
   }
   .lb-title{
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
   }
   .lb-sub{
     font-size: 12px;
-    opacity: 0.7;
+    opacity: 0.75;
     white-space: nowrap;
   }
+
   .lb-colhdr{
     display:grid;
     grid-template-columns: 44px 1fr 110px 110px;
     gap: 10px;
     padding: 8px 10px;
     font-size: 12px;
-    opacity: 0.65;
+    opacity: 0.70;
     border-radius: 10px;
-    background: rgba(255,255,255,0.04);
+    background: rgba(15,23,42,0.04);
     margin-bottom: 6px;
   }
+  @media (prefers-color-scheme: dark){
+    .lb-colhdr{ background: rgba(255,255,255,0.05); }
+  }
+
   .lb-row{
     display:grid;
     grid-template-columns: 44px 1fr 110px 110px;
     gap: 10px;
     padding: 10px 10px;
     align-items:center;
-    border-top: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid rgba(15,23,42,0.08);
     border-radius: 10px;
   }
+  @media (prefers-color-scheme: dark){
+    .lb-row{ border-top: 1px solid rgba(255,255,255,0.08); }
+  }
+
   .lb-row:first-child{ border-top:none; }
+
   .lb-rank{
     width: 34px;
     height: 34px;
@@ -1011,42 +1168,93 @@ LEADERBOARD_CSS = """
     align-items:center;
     justify-content:center;
     font-weight: 900;
-    background: rgba(255,255,255,0.06);
+    background: rgba(15,23,42,0.06);
   }
+  @media (prefers-color-scheme: dark){
+    .lb-rank{ background: rgba(255,255,255,0.06); }
+  }
+
   .lb-name{
     display:flex;
     align-items:center;
     gap: 8px;
-    font-weight: 800;
+    font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    min-width: 0 !important;
   }
+
   .lb-meta{
     text-align:right;
     font-variant-numeric: tabular-nums;
     opacity: 0.95;
-    font-weight: 700;
+    font-weight: 800;
+    white-space: nowrap;
   }
+
   .lb-highlight{
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(15,23,42,0.04);
+    border: 1px solid rgba(15,23,42,0.10);
   }
+  @media (prefers-color-scheme: dark){
+    .lb-highlight{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+  }
+
   .lb-badge{
     padding: 2px 8px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.08);
-    font-weight: 800;
+    background: rgba(15,23,42,0.08);
+    font-weight: 900;
     font-size: 12px;
+    white-space: nowrap;
   }
+  @media (prefers-color-scheme: dark){
+    .lb-badge{ background: rgba(255,255,255,0.08); }
+  }
+
   .lb-you{
     font-size: 12px;
-    opacity: 0.80;
+    opacity: 0.85;
     margin-top: 10px;
     display:flex;
     justify-content:space-between;
     gap: 10px;
     flex-wrap: wrap;
+  }
+
+  /* ============================
+     Mobile leaderboard: stacked rows
+     ============================ */
+  @media (max-width: 640px){
+    .lb-sub{ white-space: normal !important; }
+    .lb-colhdr{ display:none !important; }
+
+    .lb-row{
+      grid-template-columns: 44px 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 6px;
+    }
+
+    /* rank stays left, name top-right */
+    .lb-rank{ grid-row: 1 / span 2; }
+
+    /* Put time+sentences on row 2 */
+    .lb-row .lb-meta:nth-of-type(1){
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: start;
+      opacity: 0.90;
+    }
+    .lb-row .lb-meta:nth-of-type(2){
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: end;
+      opacity: 0.90;
+    }
   }
 </style>
 """
