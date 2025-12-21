@@ -75,7 +75,7 @@ S3_CLIENT = _create_s3_client()
 # COUNTRIES & DIALECTS
 # ===============================
 
-AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco"]
+AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen"]
 
 COUNTRY_EMOJIS = {
     "dz": "🇩🇿",
@@ -170,6 +170,7 @@ COUNTRY_DIALECTS = {
         "عدنية": "ad",
         "حضرمية": "ha",
         "تهامية": "ti",
+        "تعزية": "ta",
         "أخرى": "oth"
     },
     "Jordan": {
@@ -1301,9 +1302,7 @@ def render_leaderboard_html_country(country_code: str, current_username: str | N
             html.append(
                 f"<div class='{row_cls}'>"
                 f"<div class='lb-rank'>{idx}</div>"
-                f"<div class='lb-name'>{emoji} <span title='{alias}'>{alias}</span>"
-                f"{' <span class=\"lb-badge\">أنت</span>' if is_me else ''}"
-                f"</div>"
+                f"<div class='lb-name'>{emoji} <span title='{alias}'>{alias}</span>{emoji}</div>"
                 f"<div class='lb-meta'>{t}</div>"
                 f"<div class='lb-meta'>{s}</div>"
                 f"</div>"
@@ -1482,7 +1481,7 @@ def build_app():
         def show_login():
             return gr.update(visible=True), gr.update(visible=False), gr.update(visible=False)
 
-        def show_main()
+        def show_main():
             return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True)
 
         goto_register_btn.click(show_register, inputs=[], outputs=[login_view, register_view, main_view])
