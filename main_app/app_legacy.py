@@ -14,7 +14,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from supabase import create_client, Client
 
 # ===============================
-# CONFIG & GLOBALS
+# CONFIG & GLOBALS           
 # ===============================
 
 load_dotenv()
@@ -79,13 +79,14 @@ COUNTRY_EMOJIS = {
     "sa": "🇸🇦",  # Saudi Arabia
     "so": "🇸🇴",  # Somalia
     "sd": "🇸🇩",  # Sudan
-    "sy": "🇱🇾",  # Syria (note: emoji typo in original code kept)
+    "sy": "🇸🇾",  # Syria
     "tn": "🇹🇳",  # Tunisia
     "ae": "🇦🇪",  # United Arab Emirates
     "ye": "🇾🇪",  # Yemen
 }
 
-RECORDING_TARGET_MINUTES = 30  # target total recording time per user
+
+RECORDING_TARGET_MINUTES = 30 # target total recording time per user
 RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
 
 COUNTRY_CODES = {
@@ -330,18 +331,19 @@ CONSENT_DETAILS = """
 </section>
 """
 
+
 AGES = [
-    "4–9",
-    "10–14",
-    "15–19",
-    "20–24",
-    "25–34",
-    "35–44",
-    "45–54",
-    "55–64",
-    "65–74",
-    "75–84",
-    "85+"
+    "4–9",   # baby
+    "10–14", # child
+    "15–19", # teen
+    "20–24", # young adult
+    "25–34", # adult
+    "35–44", # mid-age adult
+    "45–54", # older adult
+    "55–64", # senior
+    "65–74", # elderly
+    "75–84", # aged
+    "85+"    # very aged
 ]
 
 GENDER = [
@@ -363,15 +365,6 @@ def split_dialect_code(dialect_code: str):
     if len(parts) == 2:
         return parts[0], parts[1]
     return parts[0], "gen"
-
-
-def get_fallback_dialect_code(user_dialect_code: str) -> str:
-    """
-    Fallback dialect for a given user dialect.
-    Example: 'eg-ca' -> 'eg-oth'
-    """
-    country_code, _ = split_dialect_code(user_dialect_code)
-    return f"{country_code}-oth"
 
 # ===============================
 # SENTENCES (per-country, cached)
@@ -409,7 +402,7 @@ def load_sentences_for_country(country_code: str):
 
     path = get_sentences_file_for_country(country_code)
 
-    # If missing, initialise an empty file
+    # If missing, initialise an empty file (or you can raise an error if you prefer)
     if not path.exists():
         path.write_text(
             json.dumps({"sentences": []}, ensure_ascii=False, indent=2),
@@ -426,36 +419,26 @@ def load_sentences_for_country(country_code: str):
     return SENTENCES_CACHE[country_code]
 
 
-def filter_sentences(dialect_code: str, completed_ids, allow_fallback: bool = True):
-    """
-    Return a list of tuples: (sentence_id, text, used_dialect_code)
 
-    - First tries the exact dialect_code (e.g. 'eg-ca')
-    - If empty and allow_fallback=True, tries '{country}-oth' (e.g. 'eg-oth')
-    - Excludes any completed sentence IDs
+def filter_sentences(dialect_code: str, completed_ids):
+    """
+    Return all (sentence_id, text) pairs for a given dialect_code,
+    excluding any sentence IDs in completed_ids.
+
+    - dialect_code looks like 'sa-hj', 'eg-ca', etc.
+    - We infer the country_code ('sa', 'eg', ...) from dialect_code,
+      then load the corresponding sentences_{country_code}.json.
     """
     completed_set = set(completed_ids or [])
 
-    dialect_code = (dialect_code or "").strip().lower() or "unk-gen"
     country_code, _ = split_dialect_code(dialect_code)
     all_sentences = load_sentences_for_country(country_code)
 
-    def _pick(dcode: str):
-        return [
-            (sid, text, dcode)
-            for sid, text, dialects in all_sentences
-            if sid not in completed_set and dcode in (dialects or [])
-        ]
-
-    primary = _pick(dialect_code)
-    if primary:
-        return primary
-
-    if allow_fallback:
-        fallback = get_fallback_dialect_code(dialect_code)
-        return _pick(fallback)
-
-    return []
+    return [
+        (sid, text)
+        for sid, text, dialects in all_sentences
+        if sid not in completed_set and dialect_code in dialects
+    ]
 
 # ===============================
 # AUTH / SUPABASE
@@ -556,6 +539,7 @@ def create_password_reset_token(email: str):
         supabase.table("password_resets").insert(payload).execute()
         return True, token
     except Exception as e:
+        # nice clean message instead of raw dict
         print("create_password_reset_token error:", e)
         return False, "Password reset is not configured on the server (missing password_resets table)."
 
@@ -613,6 +597,7 @@ def save_session(username: str, completed_sentences, total_duration: float):
     except Exception as e:
         print("save_session error:", e)
 
+
 # ===============================
 # STORAGE / AUDIO
 # ===============================
@@ -649,125 +634,43 @@ def upload_file_to_s3(local_path: Path, s3_key: str):
         print("upload_file_to_s3 error:", e)
         return False
 
-def download_s3_text_if_exists(s3_key: str) -> str | None:
+
+def save_recording_and_upload(username: str, dialect_code: str, sentence_id: str, sentence_text: str, audio_path: str):
     """
-    Return S3 object content as text if it exists, else None.
+    Local:
+      ~/.tts_dataset_creator/users/{country}/{dialect}/{username}/wavs/{country}_{dialect}_{username}_{sentence}.wav
+
+    S3 (country-level folder only):
+      {country_code}/{username}/wavs/{country}_{dialect}_{username}_{sentence}.wav
+      {country_code}/{username}/metadata.csv
     """
-    if not S3_CLIENT or not S3_BUCKET:
-        return None
-    try:
-        obj = S3_CLIENT.get_object(Bucket=S3_BUCKET, Key=s3_key)
-        return obj["Body"].read().decode("utf-8", errors="replace")
-    except Exception:
-        # Most common case: NoSuchKey
-        return None
-
-
-def append_row_to_s3_metadata(s3_key: str, row_line: str):
-    """
-    Append row_line to an S3 metadata file (audio_file|text) if it's not already there.
-    Keeps a header "audio_file|text".
-    Safe for ephemeral local storage because it never overwrites S3 with a partial local file.
-    """
-    header = "audio_file|text\n"
-    existing = download_s3_text_if_exists(s3_key)
-
-    row_line = (row_line or "").strip()
-    if not row_line:
-        return
-
-    if not existing or not existing.strip():
-        merged = header + row_line + "\n"
-    else:
-        lines = existing.splitlines()
-        # detect header
-        has_header = len(lines) > 0 and lines[0].strip() == header.strip()
-        rows = lines[1:] if has_header else lines
-
-        # de-dupe
-        existing_set = {r.strip() for r in rows if r.strip()}
-        if row_line not in existing_set:
-            # rebuild with header + existing rows + new row
-            merged_rows = [r.strip() for r in rows if r.strip()] + [row_line]
-            merged = header + "\n".join(merged_rows) + "\n"
-        else:
-            # already present; keep as-is (ensure trailing newline)
-            merged = existing if existing.endswith("\n") else existing + "\n"
-
-    # Upload merged content using a temp file
-    tmp_path = Path("/tmp") / f"metadata_{uuid.uuid4().hex}.csv"
-    tmp_path.write_text(merged, encoding="utf-8")
-    upload_file_to_s3(tmp_path, s3_key)
-    try:
-        tmp_path.unlink()
-    except Exception:
-        pass
-
-def save_recording_and_upload(
-    username: str,
-    active_dialect_code: str,
-    user_dialect_code: str,
-    sentence_id: str,
-    sentence_text: str,
-    audio_path: str
-):
-    """
-    - Keeps metadata format as: audio_file|text
-    - Uses separate metadata file per dialect:
-        * original dialect => metadata.csv
-        * other dialects   => metadata_<dialect>.csv  (e.g., metadata_oth.csv)
-    - S3 is treated as source-of-truth for metadata:
-        * append row to S3 metadata file instead of uploading a possibly-partial local file.
-    """
-    user_dir = ensure_user_dirs(username, active_dialect_code)
+    user_dir = ensure_user_dirs(username, dialect_code)
     wav_dir = user_dir / "wavs"
+    meta_file = user_dir / "metadata.csv"
 
-    country_code, active_dialect = split_dialect_code(active_dialect_code)
-    _, user_dialect = split_dialect_code(user_dialect_code)
+    if not meta_file.exists():
+        meta_file.write_text("audio_file|text\n", encoding="utf-8")
 
-    # Choose metadata filename (no migration, no format changes)
-    if active_dialect == user_dialect:
-        meta_filename = "metadata.csv"
-    else:
-        meta_filename = f"metadata_{active_dialect}.csv"
-
-    meta_file = user_dir / meta_filename
-
+    country_code, dialect = split_dialect_code(dialect_code)
     filename = f"{username}_{sentence_id}.wav"
     dest = wav_dir / filename
 
-    # Move temp audio to final destination
     Path(audio_path).replace(dest)
 
-    # Compute duration
     try:
         with sf.SoundFile(dest) as f:
             duration = len(f) / f.samplerate
     except Exception:
         duration = 0.0
 
-    # Build metadata row (legacy format only)
-    row_line = f"{filename}|{sentence_text.strip()}"
-
-    # OPTIONAL: keep a local metadata file (append-only, never truncates)
-    # This is not required for correctness (S3 is the truth), but it's useful for debugging/local packaging.
-    meta_file.parent.mkdir(parents=True, exist_ok=True)
-    needs_header = (not meta_file.exists()) or (meta_file.stat().st_size == 0)
     with meta_file.open("a", encoding="utf-8") as f:
-        if needs_header:
-            f.write("audio_file|text\n")
-        f.write(row_line + "\n")
+        f.write(f"{filename}|{sentence_text.strip()}\n")
 
-    # Upload WAV (safe even with ephemeral storage)
     base_prefix = f"{country_code}/{username}"
     upload_file_to_s3(dest, f"{base_prefix}/wavs/{filename}")
-
-    # ✅ Append metadata row to S3 file (prevents overwriting history)
-    s3_meta_key = f"{base_prefix}/{meta_filename}"
-    append_row_to_s3_metadata(s3_meta_key, row_line)
+    upload_file_to_s3(meta_file, f"{base_prefix}/metadata.csv")
 
     return duration
-
 
 def make_progress_bar(current_seconds: float, target_seconds: float, bar_length: int = 20) -> str:
     """
@@ -785,7 +688,6 @@ def make_progress_bar(current_seconds: float, target_seconds: float, bar_length:
     bar = "█" * filled + "░" * (bar_length - filled)
     return f"[{bar}] {ratio * 100:.1f}%"
 
-
 def compute_progress(completed_count: int, total_duration: float):
     """
     Progress based on total recording time vs RECORDING_TARGET_SECONDS.
@@ -796,7 +698,11 @@ def compute_progress(completed_count: int, total_duration: float):
     secs = int(total_duration % 60)
     target_mins = int(RECORDING_TARGET_SECONDS // 60)
 
+    # Example:
+    # [██████░░░░░░░░░░░░] 30.0%
+    # 10m 43s / 30m target • 294 sentences
     return f"{bar}\n{mins}m {secs}s / {target_mins}m target • {completed_count} sentences"
+
 
 # ===============================
 # GRADIO APP (3 PAGES)
@@ -807,20 +713,13 @@ def build_app():
         state = gr.State({
             "logged_in": False,
             "username": None,
-
-            # NEW: separate user dialect vs active sentence dialect
-            "user_dialect_code": None,
-            "active_dialect_code": None,
-
-            # keep for backward compatibility (mirrors user_dialect_code)
             "dialect_code": None,
-
             "completed_sentences": [],
             "total_duration": 0.0,
             "current_sentence_id": "",
             "current_sentence_text": "",
         })
-
+       
         gr.Markdown("""
 <div style="text-align: center; padding: 20px 0;">
   <h1 style="margin-bottom: 10px;"> 🗣️ Arabic Speech Dataset Recorder | مسجّل مجموعة البيانات الصوتية العربية 🎤</h1>
@@ -829,6 +728,7 @@ def build_app():
   </p>
 </div>
 """)
+
 
         # ---------- LOGIN PAGE ----------
         with gr.Column(visible=True) as login_view:
@@ -886,14 +786,14 @@ def build_app():
             progress_box = gr.Textbox(label="📊 الإنجاز", interactive=False)
             sentence_box = gr.Textbox(label="✍️الجملة (يمكنك تعديل الجملة)", interactive=True, lines=3)
             sentence_id_box = gr.Textbox(label="Sentence ID", interactive=False, visible=False)
-
+             # 👇 give the audio component a stable DOM id
             audio_rec = gr.Audio(
                 sources=["microphone"],
                 type="filepath",
                 label="Record",
                 format="wav",
             )
-
+            
             temp_audio_path = gr.Textbox(label="Temp audio path", visible=False)
 
             save_btn = gr.Button("Save & Next", variant="primary", interactive=False)
@@ -901,6 +801,7 @@ def build_app():
             msg_box = gr.Markdown("")
 
         # ---------- Navigation helpers ----------
+
         def show_register():
             return (
                 gr.update(visible=False),
@@ -921,29 +822,38 @@ def build_app():
                 gr.update(visible=False),
                 gr.update(visible=True),
             )
-
+        
         def on_start_recording():
+            """
+            Called when the user starts recording.
+            We can use this to clear any previous temp audio path.
+            """
             return gr.update(interactive=False), gr.update(interactive=False)
-
         audio_rec.start_recording(
             fn=on_start_recording,
             outputs=[save_btn, skip_btn],
         )
 
         def on_stop_recording(audio_path, st):
+            """
+            Called when the user stops recording.
+            For type="filepath", `audio_path` is a string path to the WAV on the server.
+            """
             if not audio_path:
+                # nothing recorded
                 return st, "", gr.update(value=None), gr.update(interactive=True), gr.update(interactive=True)
 
+            # Store for later use if you want
             st["last_temp_audio_path"] = audio_path
             print("Stored temp audio at:", audio_path)
 
-            time.sleep(1)
+            time.sleep(1)  # simulate processing delay / UX
             return (
                 st,
-                audio_path,
-                gr.update(value=audio_path),
-                gr.update(interactive=True),
-                gr.update(interactive=True),
+                audio_path,                  # -> temp_audio_path Textbox
+                gr.update(value=audio_path), # set Audio value to that file (preview uses file)
+                gr.update(interactive=True), # re-enable Save
+                gr.update(interactive=True), # re-enable Skip
             )
 
         audio_rec.stop_recording(
@@ -953,8 +863,11 @@ def build_app():
         )
 
         def on_clear():
+            """
+            Called when the user clears the recording.
+            We can use this to clear any previous temp audio path.
+            """
             return gr.update(interactive=False)
-
         audio_rec.clear(
             fn=on_clear,
             outputs=[save_btn],
@@ -973,8 +886,10 @@ def build_app():
         )
 
         # ---------- Register callbacks ----------
+
         def update_dialects(country):
             dialects = get_dialects_for_country(country)
+            # IMPORTANT FIX: don't try to set a default value; let user choose
             return gr.update(choices=dialects, value=None)
 
         reg_country.change(
@@ -1018,6 +933,7 @@ def build_app():
         )
 
         # ---------- Login + password reset ----------
+
         def do_login(email, pw, st):
             ok, result = authenticate(email, pw)
             if not ok:
@@ -1036,38 +952,33 @@ def build_app():
 
             username = result
             user = get_user_by_username(username)
-            user_dialect_code = user.get("dialect_code", "sa-hj") if user else "sa-hj"
+            dialect_code = user.get("dialect_code", "sa-hj") if user else "sa-hj"
 
             sess = load_session(username)
             completed = sess["completed_sentences"]
             total_dur = sess["total_recording_duration"]
 
-            available = filter_sentences(user_dialect_code, completed, allow_fallback=True)
+            available = filter_sentences(dialect_code, completed)
             if not available:
                 sentence_id = ""
-                sentence_text = "No more sentences for your dialect (including general)."
-                active_dialect_code = user_dialect_code
+                sentence_text = "No more sentences for your dialect."
             else:
-                sentence_id, sentence_text, active_dialect_code = random.choice(available)
+                sentence_id, sentence_text = random.choice(available)
 
             st.update({
                 "logged_in": True,
                 "username": username,
-
-                "user_dialect_code": user_dialect_code,
-                "active_dialect_code": active_dialect_code,
-
-                "dialect_code": user_dialect_code,  # backward compat
+                "dialect_code": dialect_code,
                 "completed_sentences": completed,
                 "total_duration": total_dur,
                 "current_sentence_id": sentence_id,
                 "current_sentence_text": sentence_text,
             })
 
-            country = user_dialect_code.split("-", 1)[0]
+            country = dialect_code.split("-", 1)[0]
             progress = compute_progress(len(completed), total_dur)
             username_show = " ".join(username.split("_")[:-3]).title()
-            info_text = f"## **{username_show}** ({COUNTRY_EMOJIS.get(country, '')} {COUNTRY_EMOJIS.get(country, '')})    "
+            info_text = f"## **{username_show}** ({COUNTRY_EMOJIS[country]} {COUNTRY_EMOJIS[country]})    "
 
             return (
                 st,
@@ -1118,18 +1029,16 @@ def build_app():
         rp_btn.click(do_reset_password, inputs=[rp_token, rp_new_pw], outputs=[rp_output])
 
         # ---------- Main page logic ----------
+
         def next_sentence_for_state(st):
-            user_dialect = st.get("user_dialect_code") or st.get("dialect_code")
-            available = filter_sentences(user_dialect, st["completed_sentences"], allow_fallback=True)
+            available = filter_sentences(st["dialect_code"], st["completed_sentences"])
             if not available:
                 st["current_sentence_id"] = ""
                 st["current_sentence_text"] = "No more sentences."
-                st["active_dialect_code"] = user_dialect
             else:
-                sid, text, used_dialect = random.choice(available)
+                sid, text = random.choice(available)
                 st["current_sentence_id"] = sid
                 st["current_sentence_text"] = text
-                st["active_dialect_code"] = used_dialect
 
         def handle_save(audio_path, edited_sentence, temp_path, st):
             if not st.get("logged_in"):
@@ -1150,7 +1059,11 @@ def build_app():
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
                 return st, "⚠️ No active sentence.", st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
+            # Choose which filepath to use:
+            # 1) Prefer current audio_rec value (audio_path)
+            # 2) Fallback to temp_path from stop_recording
             tmp_path = audio_path or temp_path
+
             if not tmp_path:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
                 return st, "❌ Could not find recorded audio.", st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
@@ -1160,13 +1073,9 @@ def build_app():
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
                 return st, f"❌ Audio error: {msg}", st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
-            active_dialect = st.get("active_dialect_code") or st.get("dialect_code")
-            user_dialect = st.get("user_dialect_code") or st.get("dialect_code")
-
             duration = save_recording_and_upload(
                 st["username"],
-                active_dialect,
-                user_dialect,
+                st["dialect_code"],
                 sid,
                 sentence_text,
                 tmp_path,
@@ -1187,28 +1096,29 @@ def build_app():
                 st["current_sentence_text"],
                 st["current_sentence_id"],
                 progress,
-                gr.update(value=None),
+                gr.update(value=None),  # clear audio UI if you want
                 gr.update(interactive=True),
             )
 
-        
         def disable_skip():
             return gr.update(interactive=False)
-
+        
         save_btn.click(
             disable_skip,
             inputs=[],
             outputs=[skip_btn],
+
         ).then(
             handle_save,
             inputs=[audio_rec, sentence_box, temp_audio_path, state],
             outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec, skip_btn],
         )
 
+
         def handle_skip(st):
             if not st.get("logged_in"):
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return st, "Please login first.", st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None) , gr.update(interactive=True)
 
             sid = st["current_sentence_id"]
             if sid and sid not in st["completed_sentences"]:
@@ -1221,7 +1131,7 @@ def build_app():
 
         def disable_save():
             return gr.update(interactive=False)
-
+        
         skip_btn.click(
             disable_save,
             inputs=[],
@@ -1236,11 +1146,7 @@ def build_app():
             st.update({
                 "logged_in": False,
                 "username": None,
-
-                "user_dialect_code": None,
-                "active_dialect_code": None,
                 "dialect_code": None,
-
                 "completed_sentences": [],
                 "total_duration": 0.0,
                 "current_sentence_id": "",
