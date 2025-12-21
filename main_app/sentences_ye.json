@@ -1,0 +1,7708 @@
+{
+  "sentences": [
+    {
+      "unique_id": "1",
+      "text": "مره كان به عندنا بنات خالتنا وبنات عماتنا وأخوات زوجي..فعلنا جلسه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "2",
+      "text": "مابلا. قد الازمه وقلة الزلط قيدتهم. ..وما يقيد الله الا وحوش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "3",
+      "text": "قالت حموده ولله انو صدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "4",
+      "text": "قالت ابسروا كيف تزوج زوج اختي وقد صبرت عليه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "5",
+      "text": "وبعدا ما ينقصها ولاشي لكن رجال مالهم امان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "6",
+      "text": "المهم دخلت في حوار مع بنت عمتها انو مش كلهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "7",
+      "text": "وان زوجها لو يدوا له ملكات جمال العالم ما يغرنه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "8",
+      "text": "قالت حموده.. ..هيا ادين لي تلفون وشريحه وانا اثبت لكن ان كلامي صح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "9",
+      "text": "ونطارح الذي عيطلعع زوجها وفي ادي لها خمسه الف وانو العكس تدي لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "10",
+      "text": "قالين مشش خمسه خليها الفين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "11",
+      "text": "لكن بشرط تختبري الناس كلهم حتى ابوش واخوتش وازواج خواتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "12",
+      "text": "قالت مش بعدا تحنقين ولاتقلين خربت بيوتكم..قالين ولالله مانتحاكى",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "13",
+      "text": "قالت بنت عمتها انا معي تلفون والثانيه قالت وانا عليا الشريحه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "14",
+      "text": "قلت حموده لاتصدقي لهن عتفعلي حرشه كبيره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "15",
+      "text": "قالت ما دراهم من انا وبعدا هن راضيات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "16",
+      "text": "رسلت له صوره بنت منن الانترنت ياسعم بالغلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "17",
+      "text": "وبعدا قالت له انا اسفه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "18",
+      "text": "اهلي عيذبحوني انا كنت اشتي ارسلها لأختي لكن ارتسلت بالغلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "19",
+      "text": "قال لاتقلقي يختي والله لامسحها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "20",
+      "text": "قالوا لها مسمها. قالت شامه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "21",
+      "text": "قالت لهم انا بنت محترمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "22",
+      "text": "وما يعجبني ارسال احد..وكل واحد قالت له ما عتراسله الا اذا هو بيحبها صدق ويتزوج بها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "23",
+      "text": "كلهم قالوا انهم بيحبوها ويموتون عليها موت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "24",
+      "text": "قلت قلي لعمي يعبي لش رصيد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "25",
+      "text": "قلت خلاص اخوش والامعه خمسه ابسر ما عيفعل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "26",
+      "text": "رسلت له رصيد نفسي اكلمك في موضوع مهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "27",
+      "text": "جاء قال لي فاطمه معش الف ونص",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "28",
+      "text": "قلت للمه قال اشتي ارسل كرت لصاحبي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "29",
+      "text": "قال لوتبسري. ابنه بين الحياه والموت. في المستشفى وعياله الاثنين مفلتين ويشتي يكن يطمن عليهم..وهو حراف قلت افعل خير واشتري له كرت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "30",
+      "text": "قلت مابش معي والا لدي لك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "31",
+      "text": "قلت ارقد والصبح يصبح كل خير",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "32",
+      "text": "قال كيف ارقد شاسير اتسلف من صاحب الدكان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "33",
+      "text": "تقلي ما شل له رهن قد فوقي له خيرات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "34",
+      "text": "ولله لوتبسرني بين اموت ماترهن الجنبيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "35",
+      "text": "قال كن افهمي عياله مفلتين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "36",
+      "text": "قلت امانه راسلي عمي نبسر ماعيقل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "37",
+      "text": "قالت له ولله اننا احبك واموت عليك..وانت عندي اغلى الناس. على قلبي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "38",
+      "text": "ولو تبسر كم اعزكم واحبكم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "39",
+      "text": "وهو فرح. ..وبدات تحكي له ان تلفونها بيعلق وتشتي تلفون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "40",
+      "text": "قام الصبح بين اسمعه بيقل لعمتي تدي له الخمسين الالف الذي قال عيصلح بها اسنان عمتي صاحبه ابنه صدموه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "41",
+      "text": "وهو جالس باب المستشفى مارضوش يدخلوه الا بزلظ",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "42",
+      "text": "لاترضيش اسنانش اهم قال مابتقلي لها عيموت الولد وبعدا اسنانها عيسبقنها للجنه لماتنقذ نفس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "43",
+      "text": "قالت حرام صدق شل الزلط. ..المهم مكنته وطار واتصادم هو ابنه في الدرج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "44",
+      "text": "وكان يقل استضي ياعقي والديك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "45",
+      "text": "قلت مش وقت ياعم عيموت الولد..احمل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "46",
+      "text": "وابنك ساع ماانت معه صاحب عياله مفلتين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "47",
+      "text": "سار ورجع خبى التلفون في غرفته وصوره لحموده تدي له العنوان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "48",
+      "text": "طننت عليهمم على قلة عقل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "49",
+      "text": "قلت كمل الكرت..قال الان اطير ادي لش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "50",
+      "text": "وحمل ساع الريح يشتي يخلص مني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "51",
+      "text": "قلت سبحان الله منين نزلت عليك الطيبه والخفه هذه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "52",
+      "text": "المهم وذيك زوج الذي قالت مابش مثله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "53",
+      "text": "قالت له امها مريضه وتشتي مية الف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "54",
+      "text": "قال لها عيعالج امها على حسابه..قال لمرته تدي له ذهب مارضتش وسار باع الالي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "55",
+      "text": "واخر يوم قالت لهم انها ضابحه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "56",
+      "text": "واحد كان ينهق وواحد يقل ميو..يقلد الدمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "57",
+      "text": "وواحد يقلد الثور وناس الطللي وواحد الكلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "58",
+      "text": "وبعدا فعلت لهم مجموعه واضافتهم كلهم ونسوانهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "59",
+      "text": "وورسلت. كل المحادثات للمجموعه ..وسمت المجموعه احباب شامه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "60",
+      "text": "تخيلين ان عمي لاكان سمع دمه يقوم بدون شعور يلاحقها على سبب لاتقلش.",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "61",
+      "text": "مابلا. قد الازمه وقلة الزلط قيدتهم. ..وما يقيد الله الا وحوش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "62",
+      "text": "قالت حموده ولله انو صدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "63",
+      "text": "قالت ابسروا كيف تزوج زوج اختي وقد صبرت عليه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "64",
+      "text": "وبعدا ما ينقصها ولاشي لكن رجال مالهم امان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "65",
+      "text": "المهم دخلت في حوار مع بنت عمتها انو مش كلهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "66",
+      "text": "وان زوجها لو يدوا له ملكات جمال العالم ما يغرنه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "67",
+      "text": "قالت حموده.. ..هيا ادين لي تلفون وشريحه وانا اثبت لكن ان كلامي صح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "68",
+      "text": "ونطارح الذي عيطلعع زوجها وفي ادي لها خمسه الف وانو العكس تدي لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "69",
+      "text": "قالين مش خمسه خليها الفين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "70",
+      "text": "لكنن بشرط تختبري الناس كلهم حتى ابوش واخوتش وازواج خواتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "71",
+      "text": "قالتمش بعدا تحنقين ولاتقلين خربت بيوتكم..قالين ولالله مانتحاكى",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "72",
+      "text": "قالت بنت عمتها انا معي تلفون والثانيه قالت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "73",
+      "text": "المهم وصلت عند العريس وكلما فك ورقه لقى ورقه ثانيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "74",
+      "text": "قام اتصل لأبوها قال..يا أخي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "75",
+      "text": "خارجني بنتك في أي صفحه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "76",
+      "text": "وبعدا بتقلي يافطوملوتبسري به واحده صديقتي في الفيس قالت اسجل لها اسر محتاجه تدي لهم مساعده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "77",
+      "text": "قالت تقلي من اسجلقلت حارتنا كلهم هذه الايام محتاجين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "78",
+      "text": "وجلست اعدد لها لوتبسرين بيت فلان مارحمهم..وبيت فلان..المهم اقتنعت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "79",
+      "text": "قالت غدوه نقطب العمل ونبكر نسجل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "80",
+      "text": "وكان يفرحوا. ..واحنا نفرح لهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "81",
+      "text": "المهم روحنا وعمتي قالت اين سرتن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "82",
+      "text": "قنا لها..قالت مابشمعاكن ضابط عاد الناس يستشيروا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "83",
+      "text": "وبعدا من هيه هذه المره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "84",
+      "text": "قلت لما ادتش ياسعم عيقطعوا الرقبه عنقلهم مدتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "85",
+      "text": "قال يابابه به رجال قال يشتي مساعده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "86",
+      "text": "قال قله عيساعدني ويساعده الله..جا قال يابابه به ناس خيرات يشتو مساعده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "87",
+      "text": "ضحك ..واحنا انا وحموده نسينا الموضوع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "88",
+      "text": "قالت جي ابسري كم ياناس بيجابرهم اخي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "89",
+      "text": "نزلنا لاعند عمتي قنا غوري علينا من ابنش..شكله عيطلع لنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "90",
+      "text": "طلعوهو بيجابر نفسه قال يمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "91",
+      "text": "ولوتبسري قد به امه جو قالوا ان احنا بنوزع مساعدات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "92",
+      "text": "قلت لهم ياخبره ولله اننا عادنا بين ادور من يساعدني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "93",
+      "text": "سكتنا كلنا..وكان يحاكينا واحناقد احنا في غير العالم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "94",
+      "text": "قلي ادي له بين القلص ماء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "95",
+      "text": "وحموده كان يجابرها وتجلس ساعه لما ترد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "96",
+      "text": "المهم بتراسل المره وأرسلت لها كل شي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "97",
+      "text": "ويوم ثاني بدورها ولاعد لقتها قديه مستخدم فيس بوك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "98",
+      "text": "قلت سهل يمكن هكروا حسابها عترجعه.. وترجع تحاكيش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "99",
+      "text": "لايوم ماسمعنا الا واحد بيصيح لزوجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "100",
+      "text": "قال ماذلحين عتنكروا سجلتونا واستلمتوا وبعتوا لكن ولله لانشارعكم طلع قال لعمتي ياناس قد اثرت عليهم. الازمه. وجننوا.والاقدنا مجنون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "101",
+      "text": "جابرته ما فعلنا وهو طلع كان يخلس العسيب ويلبسنيقال انتي رجال البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "102",
+      "text": "وهوبتضحكي انتي راس المصايبقالت ياخي صلي على النبي..وانا مادراني قصدي افعل خيرقال اقطبي مساعدات لناس معش لاغدوه تدي صاحبتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "103",
+      "text": "قالت منين اديها قد ضاعتقال كيف ضاعت تشتي.تجننيني قالت هيه في الفيس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "104",
+      "text": "المهم بكرنا من من فجري نشرح للجيران. ماحصل البعض صدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "105",
+      "text": "والبعض جالس متوهم انو كذب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "106",
+      "text": "المهم اليوم الثاني ساروا اثنين من جيراننا ادوا لنا احضار..من القسم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "107",
+      "text": "والقسم هو في حارتنا والضابط جارنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "108",
+      "text": "ولما لقيوها فرحوا وسار ادوا لها جميع الالعاب وماعد رفضوش لها طلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "109",
+      "text": "قالت حموده اسكه اتخبي نبسر اخي ما عيدي لش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "110",
+      "text": "قلت اتخبي انتي البنت اتخبت على امها وابوها مش على زوجها خلينا نبسرماعييدوا لش عمي وعمتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "111",
+      "text": "لكن نصين.كل شي يقع لش ضروري لي نصه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "112",
+      "text": "وانا نزلت لاعند عمتي قلت عمه حموده عندكم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "113",
+      "text": "قلت قد دورتها في البيت كله ولا لقيتها..الله يستر لاحد قد خطفها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "114",
+      "text": "وعمتي كان تلطم راسها وتقل يافضيحتاه ماعنقل وكيف ندور.يوه والفعله بنت عزبه تختفي فجاءه وهذه الساع يوه لوقبرتش ياحموده انو احسن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "115",
+      "text": "وعمي يصيح فوق عمتي اعرف بنت من راسش..مشنتي داريه اين بنتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "116",
+      "text": "قالت يوه انا فدالهم كم بيحبوني قلي لهم..صدق حرام",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "117",
+      "text": "وانا فتحت الدولاب وحموده شخرت..وعمي فعل لها ركضه لما عيخرجها من الشق الثاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "118",
+      "text": "وعمتي هزرتها بشعرها وخرجتها لاوسط المكان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "119",
+      "text": "وانا قدنا مبلوده..يعوه بين اقل ان احنا ساع الامريكان ..جعلهم مصيبه هولا الأمريكيين مامنهم الا المصايب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "120",
+      "text": "ان معي عرس واشتي اسير السوق..اشتري لي فستان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "121",
+      "text": "وخرجت من البيت ولا لقيت سياره استأجر. ..كلهن واقفات مابش بترول",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "122",
+      "text": "المهم خطيت وان قد وقفت لي سياره وانو صاحب زوجي يجلس يجابرني منه لكن في الحقيقه ما اعرفش..بين ابسر وان زوجي جنبه..فرحت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "123",
+      "text": "قلت جنه اوصل السوق بسرعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "124",
+      "text": "طلعت. ..وكنت ابسر الساعه وقدو شرق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "125",
+      "text": "ما ركزش ما بين اقل قربت الصبوح..قلت كيف حال صاحبكقال ماذكرش صاحبي من صباح الصبح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "126",
+      "text": "قلت بين احلمه امس طول اليل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "127",
+      "text": "وهو قلب الصبوح وصاح لما بهتنيبتحلمي صاحبي طول اليل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "128",
+      "text": "قال قد عرف لي بتقلي شلوك عتخليني اكمل الحلم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "129",
+      "text": "قلت اكمل الحلم اشتري الفستان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "130",
+      "text": "قلتايش هذا الدبور من الصبح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "131",
+      "text": "من قل ابي اقله ماحلمت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "132",
+      "text": "قلت شلوك ايحين انا اعرف صاحبك.. حتى في الحلم كنت جالسه قفاه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "133",
+      "text": "قال غدوه عد اقله المره تشتي تتعرف عليك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "134",
+      "text": "قلت اليوم حلمت قفا صاحبك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "135",
+      "text": "غدوه احلم تجاهه..لاعد تدعيه ولا..اهم شي لاتقيمنيش الصبح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "136",
+      "text": "قالت ياسعم مدري اين عتسيري",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "137",
+      "text": "هوذا في الحاره الذي جنبنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "138",
+      "text": "ومع الروحه قالت معي طريق مختصر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "139",
+      "text": "قلت خلينا نروح من نفس الطريق الذي جينا منه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "140",
+      "text": "قالت لاعد يطرح المطر مره ثانيه ونتخضر.. خلينا نرروح بسرعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "141",
+      "text": "المهم مشينا من ارضيه كبيره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "142",
+      "text": "بين ابسر وان به ناس في جهه وناس في جهه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "143",
+      "text": "قالت انبطحي ذلحين مش وقت. لاجيلنا رصاصه ابتطحنا بين الخلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "144",
+      "text": "وهم اطلقوا الرصاص وكان نزحف زحف بين الخلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "145",
+      "text": "وحموده كان تغور ياغارتاه عتقتلونا وانا كان اقل يعوه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "146",
+      "text": "ياحموده ماعيقل اخوش حن يقلوا له لقينا مراتك ميته في الارضيه يوه ياربي لاتموتني هانا..يارب اخر مره..اخرج بدون استأذان اخر مره اصدقش ياحموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "147",
+      "text": "وقمنا قد احنا ملان خلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "148",
+      "text": "قالت ماعد احد عيدري من احنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "149",
+      "text": "امانه لو لقيتيني عتدري من انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "150",
+      "text": "قلت ماشي..قد انتي ساع العفاريت ..قالت وانتي والكل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "151",
+      "text": "المهم بنبسر وان عمي باب البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "152",
+      "text": "قلت يعوه عمي باب الباب ماعيقل حن بيبسرنا بهذا المنظر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "153",
+      "text": "قالت حمود جي نلف من وراء البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "154",
+      "text": "ونحاول نطلع اتشلفطنا في الجدر ولا اقدرنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "155",
+      "text": "قلت حمود وطي وانا اطلع فوقش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "156",
+      "text": "قالت وانا قلت لما اطلع حد احاول اسحبش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "157",
+      "text": "المهم وطت وانا طلعتطلعت وياريتني ماطلعت..لو تبسروا من ابسرتزوجي يبست ودوخنين ارجلي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "158",
+      "text": "وكان قلبي يدق حتى وسط راسي كان يدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "159",
+      "text": "لا عد دريت اقفز لاعند حموده او اجلس بقعتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "160",
+      "text": "وانا قدنا عجماء قالت مالش عجمتي طلعيني قبل مايجي زوجش الجني يفعلها غارهقلت زوجي الحالي شلوش ياحموده اسكتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "161",
+      "text": "قال ارحبي قلت الله يرحب بكقال تطورتي قد بتدخلي من فوق الجدر انزلي برد عليش كم عتتجلسي معنقله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "162",
+      "text": "كيف انزل قال سعما طلعتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "163",
+      "text": "قال من فحرش بين الخلب هكذا..قلت نكعت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "164",
+      "text": "شل التلفون واتصل. ..حمود جي سريع يامنعاه اختك معنقله بين السماء والارض قلت في نفسي كل البلاء بلاش ياحموده..كيف عد اتخارج اليله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "165",
+      "text": "طبعا حموده لفت ودخلت من الباب..وعمتي ابسرتها ودوخت..كان شكلها يفجع البرقع والبالطو كله خلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "166",
+      "text": "كان تقلها يمه انا فدالش مش وقت تدوخي انا حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "167",
+      "text": "فاقت عمتي وبزتها حموده وخرجتها الحوي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "168",
+      "text": "قال مابش نزله لما يجي حمود",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "169",
+      "text": "قالت حموده عند الله وعندكم يمه وكان توطي وتحب ركب عمتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "170",
+      "text": "وعمتي شلت السلم وقالت لي ا نزلي..وانا قدنا قاعفه برد وفجيعه..قال انا حلفت ما تنزل الا لما يجي حمود",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "171",
+      "text": "قالت اخر ولله ان هيه عتنزل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "172",
+      "text": "المهم جاء حمود وانذهل من شكلي واين انا معنقله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "173",
+      "text": "ونزلت وعلى طول لافوق السياره بخلبي بكلي تخيلوا اول ماطلعت التكس..السواق فتح وهرب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "174",
+      "text": "ماندخلها فيها الا اذا واحده غثاها زوجها اوحانقه هيه تشكي واحنا ندعمها بالدعاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "175",
+      "text": "يوه جعل في الزوه ومن ابسره يقل لاحول ولاقوه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "176",
+      "text": "الغاثيه المهم لايوم..دعتني عمتي وفلت التلفون من يدي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "177",
+      "text": "جلس يقراء وكم فيها من شكوى وبكاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "178",
+      "text": "وقدوا احمر جلست جنبه وبين احس نفسي مهدده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "179",
+      "text": "قال انا وانا جني ومابش مثلي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "180",
+      "text": "قال انا وبتدعي عليا بل الهلاك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "181",
+      "text": "وقبالي تقلي لي اننا ملاك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "182",
+      "text": "قلت ايحين ولله ماقد قلت لك يوم ان انت ملاك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "183",
+      "text": "ورجعت تحت البطانيه..وبين ادعي ان زوجي يطول نومه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "184",
+      "text": "قمت وابسرت صورته وهو عيفتطر عيقرح..فيه شويه زكمه..وبيبسر مني شق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "185",
+      "text": "وابسرت اننا مابين اضحك الا انا وحدي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "186",
+      "text": "قلت .وهوبسرني بقزييفجع..قلت هه..مال.الربيشه مطبوعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "187",
+      "text": "سهل هيه زكمه قال..لو انتي مره سوى..ان قد ابسرتي ما تفعلي لزوجش..قلت ياسعم قدنت بتنازع..لما ابسر ما افعل لك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "188",
+      "text": "قلت لاتنازع والاهم يحزنون..اسير ابسر ما افعل لك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "189",
+      "text": "قلت في نفسي شلوك الجن ياذربه ولله مافيك مرض..اصتبحت اكثر مني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "190",
+      "text": "شرب اليم..وهو مقزز..وكإننا بين اشربه سم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "191",
+      "text": "قال..افعلي لي قهوة زنجبيل حاليه لزكمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "192",
+      "text": "قالرجعتي قومي افعلي لش مهره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "193",
+      "text": "قلت شلوك كن اتحاكى بأدب فجعتني وانا مادراني..وبعدا ماتفعل بالماء او عتولدقام لي ساع الاسد..وانا هربت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "194",
+      "text": "ابسرت اكبر طاسه..وفورت الماء..وطرحتها جنبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "195",
+      "text": "قلت في نفسي شلوك رجال وانا مانا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "196",
+      "text": "لوتبسري اخوش ادى لي زلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "197",
+      "text": "قال اشتتري لي حاجه تخليني انثىامانه مابتبسريني ياحموده شككني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "198",
+      "text": "قلت..لكن عيحرم كيف شخرج به وهو منقش وضيق حرام مايسبرش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "199",
+      "text": "المهم سرنا اشترينا بالطو وجعلنا وافتهنا ذيك اليوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "200",
+      "text": "قالت اتممكيجي وتكحلي وفاعليي ة لش رسمه.والبسي البرقع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "201",
+      "text": "فعلا تمريت وان قد انا انثى صدق طسوش ياحموده..فاهمه في كل شي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "202",
+      "text": "قلت اكيد زاغ عقله لمابسرني وقمت ابسر نفسي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "203",
+      "text": "قلت بالطوا قال ماهو..قلت بالطو لكن امانه ابسر على ذوق مع حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "204",
+      "text": "امانه ان قد خلاني عروسه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "205",
+      "text": "قال وعتخرجي به هذا الشارع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "206",
+      "text": "قلت ..قالت حموده الجلاباب. عيغطي..هو غر عندك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "207",
+      "text": "قالت حموده..هيا جي معي معي لش مفاجاءه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "208",
+      "text": "وجاء سكبه من فوق راسي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "209",
+      "text": "دقيت قلت يدي لي لداه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "210",
+      "text": "وهو ولا..سرت دقيت على حموده وانا قد بين انتفظ من البرد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "211",
+      "text": "قالت حموده قد خبيرتي عزمتني..قالت نجي نسمر عندها..عيجين خواتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "212",
+      "text": "قلت يوه نسير في العشي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "213",
+      "text": "قلت مانا الصدق ماعد اسيرش لاهاناك بعيد وزقازق وظلمي..وكلاب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "214",
+      "text": "قالت هيا امانه يافطوم..انتي داريه ماعيخلونيش اسير وحديوانا قد وعدتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "215",
+      "text": "ابسرتها غاثيه..وبتبسر مني شق..رحمتها.قلت خلاص يازعكمه شاجي معش وامري لله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "216",
+      "text": "قلت يوه افتحي نهرب قبل ماحد يبسرنا..قالت لمايسيرين الكلاب.بيدق الباب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "217",
+      "text": "ابسرنا خزان في الحوش حملنا تخبينا وراءه..وقد كان ارتعش بكلي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "218",
+      "text": "نزل العزي..ومدري ما قال له",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "219",
+      "text": "قالت حموده يوه يارب لك الحمد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "220",
+      "text": "ابسرنا فوق الباب وانم فاعلين زنق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "221",
+      "text": "ماقلتيش كيف عنخرج..ولو العزي هذا مثلا مايروحش..عنموت هانا ياحموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "222",
+      "text": "قلت جي نصلي وندعي..انو يفتتح الباب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "223",
+      "text": "كان تمر الساعه وكأنها سنه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "224",
+      "text": "وقعت الساعه وخلاص ضاقت عليا الدنيا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "225",
+      "text": "واناا خطيت افتح..واان قد افتتح البابكأنه افتتح باب الجنه..خرجنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "226",
+      "text": "وكان احمل وانا ماسكه بحموده..لانص الطريق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "227",
+      "text": "واحنا حملنا وخطينا من جنب العزي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "228",
+      "text": "قالت حموده ياعزي لك جني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "229",
+      "text": "ونسينا ان عاد زوجي في الطريق وبيمشي على مهله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "230",
+      "text": "قلت واصلي..مشينا من جنبه ساع الصاروخ",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "231",
+      "text": "نبعنا لافوق بطنه..وهو قام كان ينبح بمراره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "232",
+      "text": "واحموده ثبرين ارجلها وكان اسحبها وهيه ولاعد استرت تنسب..كان اقل عند الله وعندش سنبي..اخوش عيبدي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "233",
+      "text": "قلت ياحمودهقومي عيسبح واحنا هاناكودن على الله سنبت..روحنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "234",
+      "text": "قالت امركن الى الله لاذلحين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "235",
+      "text": "قد اجا زوجش..وسأل قد جيتين وقلت له زمان و ان انتن راقدات عندي..اطلعين بسرعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "236",
+      "text": "وانا بهررت..قلت الله يصيبش ياحموده عتفضحيناقالت عمتي مابهقلت تخيلوا ياعمه قالت مابه احد فعل بحموده شيانطقي لش العجم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "237",
+      "text": "قلت ..لايسير حسكم لابعيد ماتت خبيرت حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "238",
+      "text": "وجلسنا نفحر ونعدد لاذلحينقالت يوه الحمد لله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "239",
+      "text": "كل واحده بتحاول تفعل لها عمل..الذي بتخيط فنايل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "240",
+      "text": "والذي بتشتري خرز وتفعل سلوس وخواوتم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "241",
+      "text": "المهم وانا اسير اتفرط. ..ويمكنني شجعينا واشتريوانا اررحمهن واشتري..وبعدا مسكين زوجي لامعه خمس ميه اسرقها على سب اقضي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "242",
+      "text": "والله مازد ارحم احد ولا اشتري..وزوجي من عيرحمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "243",
+      "text": "المهم لايوم سررت موت اخو اعز صديقه عندي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "244",
+      "text": "وغثيت عليه وعليها من قلبي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "245",
+      "text": "وكنت اضن اننا عد اسلم عليها واقرح بكاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "246",
+      "text": "المهم بين ابسر واحده اعرفها..باب الديوان وفي يدها كرتون..قلت حتى انتي يا حظيه قد بدلي..ياعيباه الحرب هذه بهذلت كممن هو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "247",
+      "text": "قلت يا الله..احنا والااحراج اكيد عتقلي شجيعينا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "248",
+      "text": "ياهمتاه وانا كم جهدي اشجعوانا من عيشجعني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "249",
+      "text": "فعلت نفسي ما ابسرتهاش وفحطت من جنبها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "250",
+      "text": "وان هيه بتقل فطوم حيا كيف انتي..قلت يوه سامحيني ما ابسرتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "251",
+      "text": "جت لاعندي قالت زوجيني. بزوجش..وانا افعل لش الذي..تشتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "252",
+      "text": "فرحت. ..قلت اشتي غرفة نوم وفرن وتتنور",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "253",
+      "text": "المهم قلت لزوجي..قد عد اازوجك.بسوريه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "254",
+      "text": "وهو فرح..قلت شلوك بين اقل انك ماعترضاش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "255",
+      "text": "قال سعليش انتي في عين وهيه في عين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "256",
+      "text": "وانا زقرعة..وحملت ياسعم ادعي زوجي يجي يبسر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "257",
+      "text": "وانو طالعي في الدرج هو. الحريوه وهيه بتقل له ابن عميوانا قلت اقلدها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "258",
+      "text": "وهو تكركر..وقال للحريوه تقل ابن عمي..قال ابسري كيف نطقتها ساع الموسيقىوانا قرح قلبي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "259",
+      "text": "وحملت..ابسر التنور وان تنور المذحله جالسه على ماهيه..فرحت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "260",
+      "text": "قالت حموده احنا وفاطمة عنخرج تعب عليكم وانتي اوبهي للبيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "261",
+      "text": "إذن عصر وشلينا إبني معانا محرم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "262",
+      "text": "دخلنا. نتصرف وبه في الدور الثاني في هذا المركز ملابس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "263",
+      "text": "قالت حموده هيا نطلع نبسر مابه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "264",
+      "text": "قلت ابردي مابش زلط خلينا نشتري الذي قالوا عمتي ونروح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "265",
+      "text": "قالت اشتري لش ياخبلا رخيص",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "266",
+      "text": "قلت عتنقص الزلط قالت سهل عنختصر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "267",
+      "text": "قد حقش الده لو يدرين بطريق المحكمه لايشتكين بش منما قد رفستي بهن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "268",
+      "text": "قلت بغير جنان ياحموده هذا مصروف رمضان كود ن اخوش دبر الزلط خلينا نأكل ساع الناس حتى في رمضان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "269",
+      "text": "ونزلنا بنبسر الأسعار وهيه خياليه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "270",
+      "text": "وعمتي قد فعلت لنا بصيره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "271",
+      "text": "اشترينا الضروري بس ونص الكميه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "272",
+      "text": "لو ما قد احنا عند المحاسب قد مكناه الزلط وبيدخلهن داخل الدعايه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "273",
+      "text": "وأن قد به مره بتصيح عند المحاسب الثاني سرقوا زلطها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "274",
+      "text": "وانا زاغ عقلي عليهاو حملت ابسر مالها و كم سرقوا عليها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "275",
+      "text": "رحمتها كان تنزل دموع ساع المطر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "276",
+      "text": "قلت خلاص اهدئي. ياختي الله يصيبه من بياكل حرام ولابيخاف من الله وهيه كان تبكي بحرقه وتقل سرقوا مصروف عيالي زوجي ماعد عيخلينيش أدخل البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "277",
+      "text": "وأنا قدنا مبلوده قلت للمحاسب فتشوا باب الباب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "278",
+      "text": "قال يختي الله يرضا عليش كم عن نفتش وبعدا الناس كلهم معاهم زلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "279",
+      "text": "قلت والحل قال ما أفعل لها انا غر موضف وهيه بتغور",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "280",
+      "text": "قال واحد من الموجودين خلاص يختي اسكتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "281",
+      "text": "وصيح يفرقوا لها وبدئوا الناس يفرقوا امانه أننا حسيت أن عاد الدنيا بخير وأهل الخير خيرات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "282",
+      "text": "وفي اقل من ربع ساعه جمعوا لها أكثر منما كان في شنطتها وأنا جالسه انا وحموده جنبها نهدئها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "283",
+      "text": "لو اشتريتي لش لده مايشلوا المصروف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "284",
+      "text": "قلت جالسه تفكري في الداه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "285",
+      "text": "فكري. ماعنقل لهم وكيف عن ندخل البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "286",
+      "text": "تقلوا من وجهة نظركم ما نقل لهمفاطمه علي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "287",
+      "text": "قال زوجي هيا مالش اليوم أو قد. التذع الفيوز مالش بتجابري روحش قلت الله يصيبهم الرجالقال منهم الرجال هولا الذي بكرتي تدعي عليهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "288",
+      "text": "قال للمه ما فعلنا بش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "289",
+      "text": "قلت خونه وخرجت وجلسه اجابر روحي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "290",
+      "text": "وهو ابسرني وضحك قال الله يزكيش عقلش صلي على رسول الله وعوذبي من الشيطان أول الجنان تعلام",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "291",
+      "text": "المهم من قهري قلت له ما فعل جارنا وحلفته مايقل لاحدوهو شخر وفرح قال امانه أنه ذيبوسمع صوت ذيه جارنا في الشارع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "292",
+      "text": "وحمل خرج رأسه من الطاقه وبيصيح له",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "293",
+      "text": "وقال أهم شي طمني حللتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "294",
+      "text": "وأنا سحبته برجله بأقوى وقوتي قلت. لاتسمع جارتي لما دق فمه في الطاقه كان عد اكسر اسنانهقام بيهمس دقنته وقد مشافره مورمه وأنا ابسرته والهربه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "295",
+      "text": "قلت الحمد لله أن أنت بخير ودفيته وخرجتقلت شلوني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "296",
+      "text": "فقد الذاكره ياسعم أن عقله في دقنتهورجعت أفكر في صياد جارتي وكنت أنسى انو راقد وكودي أفتح الباب وهو ينكز ويصيح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "297",
+      "text": "آخر شي بز البطانية وسار المجلس يرقد قال رغم أن العيال مابحد لكن مااسترتش ارقد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "298",
+      "text": "خليني أشبع نوم بس وبعدا عنسدشويه وأن قد جت جارتي تشتي صحون معاها ضيوف اتصلت لعمتي أين مفتاح المخزان قالت داخل المزهريه الذي في المجلس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "299",
+      "text": "فتحت الباب دلا دلا لاينكز",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "300",
+      "text": "ابسر وانو راقد تحت الصفيف الذي فيه المزهريه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "301",
+      "text": "هربت وتيك جارتي ابسرتني بين اهرب وافتجعت وهربت معي ذلحين محاصرين والضيوف حقها أكيد قد روحو فاطمه علي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "302",
+      "text": "معي جاره مسكينه من حق البلاد لابتقراء ولا بتكتب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "303",
+      "text": "وبعدا كل يومين. ثلاث تقل زوجها سار الجبههوبعدا يجلس شويه ويرجع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "304",
+      "text": "جت لا عندي وهيه غاثيه وبتقل زوجي سار الجبهة كيف عيقع العيد قدنا غاثيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "305",
+      "text": "قلت ماحقكم الجبهه هذه غريبه مسرع بيسير ومسرع بيروح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "306",
+      "text": "هيا اوبهي وهيه جبهه ثانيهقالت كيف جبهة ثانيه قلت قد معه مره تقرح لش الجبهه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "307",
+      "text": "قالت ماشي أنا فداله مابش ساعه جعل يقبرني ويجعل يومي قبل يومه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "308",
+      "text": "قلت لايقبرش ولا شي عيتزوج يوم ثاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "309",
+      "text": "المهم روحت ومدري ما جابرت روحها ويمكن كلامي طن في اذنها ما ابسرتها اليوم إلا حن جت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "310",
+      "text": "قلت لها هيا مه به أخبار من زوجش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "311",
+      "text": "قالت قد رجع اليوم الصبح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "312",
+      "text": "بس يافاطمه رجع وهو نوم وتاعب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "313",
+      "text": "وأنا شليت تلفونه واديته تقري لي ما معه من رسايل قلت مايسبرش هذه خصوصياته مادخلني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "314",
+      "text": "قالت بحجر الله يافطوم لاماقريتي وطمنتيني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "315",
+      "text": "فتحت التلفون وأن به معه خمس جبهات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "316",
+      "text": "قلت خمس جبهات كل واحده ألعن من الثانيهقالت الله ينصره ابسرتي كم بيعاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "317",
+      "text": "بين اقرى وإن به جبهة قد تزوج بهاوأنا قلت يعوه والفعله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "318",
+      "text": "قلت هه قصدي واحده من الجبهات خلاص قد تم السيطره عليها قالت الله ينصره ويجعله يسيطر على الباقيات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "319",
+      "text": "قلت ماشي ياجنيه لو يسيطر على الباقيات عطيري انتيقالت كيف أطير",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "320",
+      "text": "كان زد تجابرني وأنا قدنا خارج التغطيه. قلت لو أقلها الصدق عد اخرب بيتها واقلب حياتها حزن ونكد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "321",
+      "text": "جعله ازاله والفعله تزوج عليها وعاد به أربع بيحبهن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "322",
+      "text": "وتيه مسكينه بتدعي له بالنصر والثبات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "323",
+      "text": "مكنتها التلفون وأنا غاثيه وقلبي بياكلنيوهيه روحت فارحه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "324",
+      "text": "وبتدعي أن الله يثبته في باقي الجبهات فاطمه علي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "325",
+      "text": "قام وبيصيح يشتي يدخل الحمام بين أدور المفتاح ولا لقيته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "326",
+      "text": "قلبت البيت قلب ولا من ما كان يصيح عماني وربشني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "327",
+      "text": "وبعدا نكزت وكنت اذكر أين أنا والدنيا ظلام ذكرت أن أنا في المخزان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "328",
+      "text": "قلت يوه شرق ذلحين قد أذن عصر ابسر التلفون وهو طافي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "329",
+      "text": "أفتح واخرج للجباء والدنيا ظلامقلت يا الله سترك كيف ظلام",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "330",
+      "text": "وعادنا دخلت المخزان ظهريمكن وقع كسوف لشمس نزلت بين اتسحب وبين اسمع صوت حموده وأخي حمود والعائلة كلها قلت يوه ماجرى ماجمعهم كلهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "331",
+      "text": "والصاله حقنا قبال الدرج بين اتشاقر وإن حموده قبالي أشرت لها تجي ابسر مازد فعلوا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "332",
+      "text": "قالت الحمد لله الذي لقيناشقلت لقيتيني وإلا لقيتي المفتاح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "333",
+      "text": "بيضحك وهو صايم اكيد أن عادوا نوم وبيحلم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "334",
+      "text": "حملت اهزه قلت ييه مالك صلي على رسول الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "335",
+      "text": "قال اللهم صلي وسلم عليه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "336",
+      "text": "قلت يعني أنت ذاهنقال الله يزكيش عقلش وضحك قلت الظاهر أننا بين احلم انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "337",
+      "text": "صيحت للعيال جو ابوكم اليوم سالي وبيضحك. وهو صدق والا بين احلمقالوا إلا بيضحكوحملوا جنبه كلهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "338",
+      "text": "حمل إبني شل التلفون وبيصوره قال ذكريات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "339",
+      "text": "وكل واحد بدى يطلب مايشتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "340",
+      "text": "الذي يشتي كسوة العيد والذي يشتي سيكل والذي يشتي آيباد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "341",
+      "text": "وهو كوده يقل لهم ناهي ومن عيني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "342",
+      "text": "وأنا قلت في نفسي الموضوع فيه انا ماسبب البهجه اليوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "343",
+      "text": "قلت أدي ذهبي قال أين ذهبشقلت عتنكر ياعديم الضمير..قد عرف لي للمه فارح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "344",
+      "text": "ذهبي الآن قال صلي على رسول الله وقلي يالله اليوم رضاك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "345",
+      "text": "منين آدي وانتي داريه بالوضع قلت أيوه ماعندي وضعك مشو سوى ذهبي الان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "346",
+      "text": "قال سيري افعلي العشاء وتقرطي العافيه قلتت للمه ماعد تفعل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "347",
+      "text": "كم تعبنا في رمضان فطور وعشاء وبعدا غسوله وقشاع ونظاف وكعك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "348",
+      "text": "المهم ماجاء العيد إلا وقد احنا يبسات من العمل والدويم طول اليوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "349",
+      "text": "ويوم العيد الصبح يقوم عقي والديهمقزز ياسعم حن مارقدش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "350",
+      "text": "وتيك المسكينه بتلبج عند العيال والبيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "351",
+      "text": "وتجهز له كل شي وهيه والكل ما قد حتى غمظت ومبتسمه ولو الإرهاق باين على وجهاا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "352",
+      "text": "و تقله قوم عادك كل عيد وكل عام وأنت عيوني وروحي وهو مورم ساع الطبل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "353",
+      "text": "وتحمل تجهز له حتى صندله وهيه فارحه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "354",
+      "text": "وهو ولا حتى اسلمي وإلا الله يحفضش وإلا الله يخليش كم بتتعبي يطيب نفسها ويجبر خاطرها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "355",
+      "text": "وأول ما يبسر واحده نشرت نخرتهايشخر والقات ملان لقفه والملاخيخ ينكعين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "356",
+      "text": "تنسيها تعبها ولبيجها طول اليومأنا للمه انتو هكذا قليلين ولف ولا يقطع فيكم قاطع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "357",
+      "text": "يقل أنا بين أعاني جفاف عاطفي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "358",
+      "text": "كيف جفاف عاطفي وتيه المسكينه الذي جنبك معاها نخره والكل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "359",
+      "text": "ذلحين قلدكم الله منو الذي بيعاني من الجفاف العاطفي..فاطمه عل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "360",
+      "text": "وكان مرت اخي حمود والده وانا عندها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "361",
+      "text": "و تيه العراقيه جلست يمكن اسبوعين وولدت والكل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "362",
+      "text": "وانا رحمتها مابش معاها أحد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "363",
+      "text": "فعلت لها معصوبه وقهوه ودقيت عليها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "364",
+      "text": "دخلت وهيه بشعرها وممكيجه كأن كانهيه في عرس وابنها جنبها ساع المدكا وما فوقه الا فنيله والحفاضه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "365",
+      "text": "والطاقه مفتوحهقلت يوه حجاب الله عليش انتي والده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "366",
+      "text": "حملت اديت مقرمه ومقامط من حق ابن أخي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "367",
+      "text": "ودفيت شويه زيت الزيتون قلت افعل لراسه ورأس امه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "368",
+      "text": "لثمتها قالت خنقتيني ورجمت بالمقرمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "369",
+      "text": "قلت عتستبردي وحملت اقمط الولد وهيه قالت للمه بتربطيه او هو حمار فكيه قلت كان غلقي الطاقه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "370",
+      "text": "قلت كان كلي المعصوبه على عسل وسمن بلدي من حق مرت اخي ..قالت والله اكلت خبز وجبنه ماعجبتني هي المعصوبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "371",
+      "text": "شمت ابنها قالت ماعجبني ريحته وحملت شلت الولد ودخلته الحمام تحممه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "372",
+      "text": "قلت يعوه مايحمموش الجاهل في الحمام قلت غريبه انتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "373",
+      "text": "قلت وبعدا لاقد تقوميش ضر عليش حملت اديت مر ونار قلت ابخر لاعد يقع بها شي هيه وابنها اطرد الشياطين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "374",
+      "text": "ماهيه قامت فتحت الطيقان كلهن يخرج الشميوم ثاني قمت وبين اشم ساع الحريق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "375",
+      "text": "ابسر من الطاقه وان العراقيه بتفعل مشاوي في الحوي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "376",
+      "text": "حملت قلت يوه حسبش الله عينفسوش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "377",
+      "text": "قلت ادخلي ادفي واختمدي انتي والده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "378",
+      "text": "قلت ياخضعا عتقع سم عتبسرش صاحبت البيت وام مرت اخي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "379",
+      "text": "قالت شو عم تعلطي يقع سم لأن صاحبت البيت بتشوف اللحمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "380",
+      "text": "وبتصيح لصاحبت البيت تنزل تسألها كيف بتحول المشاوي لاسمقلت خلاص عند الله وعندش لاتصيحيشتشتي تطردنا من البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "381",
+      "text": "قلت جي ابسري حقنا الوالده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "382",
+      "text": "وصلنا وام مرت اخي بتغسل اللحمهابسرتنا وزاغ عقلها لاعد درت كيف تغطي اللحمه لاتنفسها العراقيه اتشعكلت بنص الطيسان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "383",
+      "text": "دخلتها غرفت الوالده قالت ليه مكتمين الغرفه ماكو هواء افتحو الشبابيك قلت حقنا الوالده عتستبرد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "384",
+      "text": "ابسرت الولد مغطى وجهه بالشاشه حرام عليكم كيف بيتنفس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "385",
+      "text": "خرجته وهو معصور واحمر وبيلمص من كثر الدهان ابسرته وافتجعت قصدها مدري ماهوقلت سعليش هو هذا حقنا النونو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "386",
+      "text": "قلت لاتزعلي ولاشي مابلا ولدت بهذا الفار",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "387",
+      "text": "ماقمت يوم ثاني الا وهي بتضحي الده وهيه ساع القمر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "388",
+      "text": "وعيال صاحب البيت بيلعبوا كره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "389",
+      "text": "وهيه كملت تضحي وركضت الكرهوانا حملت قلت امرش الى الله مافعلتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "390",
+      "text": "قالت ماكو حجره وايش من خرابيط فضيعه انتي يافطوم انتي تخبلي قلت ما خبلا الا انتي افهمي قالو تجي سفال البطن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "391",
+      "text": "قالت يا الله حجره تانيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "392",
+      "text": "قلت مابلا حق امس قالت الحمد لله خلاص ماكو مشكله اتخلصت منها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "393",
+      "text": "وبعدا ولاكان تدري منين تجي له علمناها كيف تفتحه لأحد اتصل لها وكيف تغلق وبس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "394",
+      "text": "قالت لانص الليل وبدا التلفون يرن وهيه جاوبت وقصدها انو ابنها قالت مابه انت بخير وعيالك بخيرين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "395",
+      "text": "قال لها احبشقالت حبتك العافيه وجبرك وحفضك عهدي وبعدي وغلقت وهيه مجمله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "396",
+      "text": "قالت ياسعم انت بتعاكسني انا قدنا غر ساع امك الله يهديك يابنيوغلقت وهو اتصل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "397",
+      "text": "وغلقت وهو ولا كوده يتصل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "398",
+      "text": "وهيه مسكينه كان تعجن التلفون ولادرت منين تطفيه تشتي ترقد تاعبه بدئت تحاول تطفي التلفون والظاهر فتحت الكاميرا الاماميه وابسرت صورتها ماسمعنا الا صوتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "399",
+      "text": "حملنا جينا وهو مغمى عليها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "400",
+      "text": "رشرشناها وكان تبسر التلفون وقديه عجما من الفجيعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "401",
+      "text": "قالت ان التلفون حقها مسكون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "402",
+      "text": "المهم وجلست توصف لي كيف بيدلع المره الجديده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "403",
+      "text": "وانا كنت ابكي بكاء بمراره وهيه حاضنه لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "404",
+      "text": "نكزت من النوم وانا غاثيه وقد قلبي مريض",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "405",
+      "text": "قلت ياهل علمي مالها مازد اتصلت قدنفسي عتخرج علىيها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "406",
+      "text": "وجلست ضايقه طول اليوم واذكر ما مغثي لي وانو الحلم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "407",
+      "text": "المهم تغدينا ومابين اسمع الباب الا بيدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "408",
+      "text": "بين اقلم منالا وهو صوت خبيرتي قلت سبحان الله وانبعت فتحت وانا مشنا مصدقه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "409",
+      "text": "قلت يوه حيا لوتبسري كم انا فاقده لش والله اننا بين احلمش امس طول الليل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "410",
+      "text": "اين الغيبه وبين ابسر صورتها غاثيه وقديه ضعيفه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "411",
+      "text": "قلت ياالله سترك يمكن ان الحلم كله عيتحقق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "412",
+      "text": "شكل الجني حقي صدق تزوجوكان تجابرني وانا سارحه وحسي عند الخبير والمره الجديدهقلت لها قوي ضعفتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "413",
+      "text": "وبعدا للمه هكذا غاثيه وحزينهوهيه ساكته..وبتغالط في الحكى",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "414",
+      "text": "قلت بحجر الله لما تحاكيتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "415",
+      "text": "وبعدا سبحان الله قد حلمت كل شي امس العشي طز فيه يتزوج والا يشلوه الجن ياسعم على حلاه ..اتحاكي بس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "416",
+      "text": "وهيه قرحت بكاء قلت في نفسي يعوهيعني تزوج صدق والفعله واننا بين ابكي والكل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "417",
+      "text": "وهيه كان تتحاكا وانا الطم وابكي قالت خبيرتي لاتفعليش بنفسش هكذا والله ماعد في ذهنيوبعدا ععينصف لي الله منه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "418",
+      "text": "سمعت عمتي ونزلت وقد عد اقرح بكاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "419",
+      "text": "وقد صوابري حمر من الطم قالتيوه مابه ابني ماله ماتقلت لومات انو احسن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "420",
+      "text": "قالت حمود اخوش ماتقلت يموت والايشلوه الجنقالت كان مابه وانا جالسه ابكي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "421",
+      "text": "قالت لخبيرتي قلي لي انتي مالها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "422",
+      "text": "قالت زوجي حملت حضنتها وقلت يوه الحمد للهقالت كيف الحمد لله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "423",
+      "text": "قلت في الحلم كانو زوجي العريس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "424",
+      "text": "المهم قريت الرساله واتصلت لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "425",
+      "text": "قالت لو تبسري مشغوله بين انضم البيت وارتبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "426",
+      "text": "وبعدا لوتبسري معي قروب مغربي تعلمت منه حاجات خيرات اسمه كيف تجعلي بيتك جميلا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "427",
+      "text": "وبعدا المره المبدعه تجذب زوجها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "428",
+      "text": "جلسنا اسبوع الا وقد جت هيه وزوجها وهيه بتبكي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "429",
+      "text": "قال زوجها ياعمه بنتش جننتني حولت البيت الى كراتين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "430",
+      "text": "اول يوم بدئت غلفت كرتون وانا قلت اجبر بخاطرها ضحكت لها وقلت روعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "431",
+      "text": "والمره جننت ولاعد خلت شارع بتلقط كراتين وبعدا كملت لداتها في التغليف ورجعت صلى لداتي امس بين ادور البجامه وان قد غلفت بها كرتون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "432",
+      "text": "تخيلي ياعمه لاعد بتدخل المطبخ ولاحتى تهتم بنفسها ..كودها عند الكراتين ..قلت لها خلاص يكفي عجنتي البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "433",
+      "text": "قالت احنا مابنفهمش في الديكور المغربي خبيت عليها الصمغ ماجيت الا وقد شم اابيت جيفه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "434",
+      "text": "منين لقت لها كرتون ثلاجه كبير وقد خرجت السرير الحوي وراقده داخل الكرتون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "435",
+      "text": "سلامات كيف رجلش زد سرتي العرس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "436",
+      "text": "قلت اين اسير العرس رجلي مابين استرش ادسع عليها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "437",
+      "text": "اكيد اتصالحتوا ماذلحين تعادل ..انتي قرحتي جبهته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "438",
+      "text": "قلت اين تصالحناجالس مورم عيفتطر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "439",
+      "text": "قالت خلاص وانتي ورمي واحنقي اعظم منه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "440",
+      "text": "قلت مسترشقالت تعلمي ياخضعا بعض الرجال لابسروا المره مسكينه يتعنتروا ويزيد الزنط والغرور",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "441",
+      "text": "قلت انا بين ادور اصالحه وانتي بتقلي احنق ساعهقالت جربي ياخضعا ولا تعبريه وهو عيفسخ لها ويبطل الحنق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "442",
+      "text": "قلت حموده مادراش ان معي صديقه اسمها غرور انثىقصدش اديها واهنجم بها قبال اخوشقالت بطلي بعدا والله مازيد احاكيش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "443",
+      "text": "قلت وكيف اقع انثىقصدي مغروره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "444",
+      "text": "يعني اخطي واقلب عيون وابسري مطلعقالت ايوه وحسسيه ان حياتش جميله به او بدونهقلت شلوش ياحموده من علمش هذا كله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "445",
+      "text": "اسكه جي افعلي هولا انتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "446",
+      "text": "قالت حموده قد خبيرتي عزمتني..قالت نجي نسمر عندها..عيجين خواتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "447",
+      "text": "قلت يوه نسير في العشي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "448",
+      "text": "قلت مانا الصدق ماعد اسيرش لاهاناك بعيد وزقازق وظلمي..وكلاب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "449",
+      "text": "قالت هيا امانه يافطوم..انتي داريه ماعيخلونيش اسير وحديوانا قد وعدتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "450",
+      "text": "ابسرتها غاثيه..وبتبسر مني شق..رحمتها.قلت خلاص يازعكمه شاجي معش وامري لله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "451",
+      "text": "قلت يوه افتحي نهرب قبل ماحد يبسرنا..قالت لمايسيرين الكلاب.بيدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "452",
+      "text": "وبعد بتحكي لنا انهم في العيد ما يطبخوش وياكلوا في المطعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "453",
+      "text": "المهم روحت حموده بتحلم بالمطعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "454",
+      "text": "قالت واحنا ليش ما نسير",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "455",
+      "text": "قلت ضحكتيني احنا مش حق مطاعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "456",
+      "text": "قالت هيا امانه نسير..حتى يوم بس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "457",
+      "text": "قالت شاجنن عيالش يجننو ابوهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "458",
+      "text": "سارت جابرت العيال عن المطعم وان فيه العاب تجنن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "459",
+      "text": "جاء ابوهم قالوا يابابه شلنا غدوه المطعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "460",
+      "text": "قالمطعم مه من علمككم قالو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "461",
+      "text": "هكذا ولاحد علمنا كلهم الناس بيسيروا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "462",
+      "text": "قال انقلعوا من قبال وجهه لاقم اتعشيكم الليله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "463",
+      "text": "من ايحين يافاطمه قد تطورتي وتشتي مطعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "464",
+      "text": "قالت له انا ولا عاد اشتي حاجه..لا مطعم و لا دوره..قانعه انا اشتي بس اهداءنزلوا العيال لاعند عمتي جننوها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "465",
+      "text": "المهم اليوم الثاني قمنا عانينا العمل وبدلنا للعيال..وعمي وعمتي ساروا عند اخت عمي..اذن وخطيت اقيم زوجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "466",
+      "text": "قامقال ادي صبوح..قلت قد اذن قذا عنتغدي خارج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "467",
+      "text": "قام لبس وخرجنا..علمت حموده يقولوا لابوهم اسم المطعم الذي تشتي تسيره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "468",
+      "text": "قلت شلوش ياحموده هذا شكله غاليقالت مشو غالي قالت خبيرتي انو رخيص قوي..وانا ليش اديتكم هانا علاسب عسبي مايضيعش كله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "469",
+      "text": "دخلنا. ..وحموده فارحه باقوى قوتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "470",
+      "text": "وانا خايفه المهم جاء المباشر..قال زوجي رز ودجاج..قالت حموده ماهذا بناكله في البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "471",
+      "text": "قال اخوها كان ماتشتي طلي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "472",
+      "text": "جلست تفكر ما قالت لها خبيرتها ولا ذكرت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "473",
+      "text": "وحموده متحسرهسار اخوها الحمام وهيه فرحت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "474",
+      "text": "قلت حسبش الله قلتي رخيص",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "475",
+      "text": "ابسر زوجي الفاتوره..وان به حلايات وعصاير..قال احنا ما طلبناش..هولا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "476",
+      "text": "قالت حموده سهل حاسبه الله كريم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "477",
+      "text": "حلف زوجي ان احنا ما طلبناش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "478",
+      "text": "قال ابني لاتحلفوش يا بابه الا اكلنا حن سرتوا الحمامقال لنا خرجين الزلط..وحسابكن في البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "479",
+      "text": "خرجت حموده ما معاها و انا خرجت مامعي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "480",
+      "text": "قال الباقيقلنا مامعنا الا هيهفرتشش نفسه وخرج الباقي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "481",
+      "text": "وخرجنا وقد سار مافي بطوننا من الفجيعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "482",
+      "text": "قال ماذلحين رجل للبيت ولله مامعي فلس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "483",
+      "text": "بدٲنا نمشي وهو كان يذكر ان حق القات والتكسي طارت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "484",
+      "text": "ويركض واحد من العيال لما يبطحه ويقل مطعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "485",
+      "text": "مشينا يمكن ساعه بين الشمس..وان قد مر صاحب زوجي من حارتنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "486",
+      "text": "قال زوجي عادحنا بندور تكسينروح البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "487",
+      "text": "وبعدا بيجابره قال جي نخزن سوى عيجوا اليوم يخطبوا اختيقال تمام",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "488",
+      "text": "قال اين عتسير قال عادنا عد اسير ادي لي قات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "489",
+      "text": "قال ولله ماتدي خطوه القات اليوم موجود",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "490",
+      "text": "هو قال هكذا وانا كان نفسي اسير احب جارنا في ركبته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "491",
+      "text": "قالت عتسير تشتري رنج ومعجون ترنج المطبخ قدو شمات.. قلت لها ماتكفيش الرنج قدو غالي ماتفعل لكم العشره الالف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "492",
+      "text": "قالت عنشتري ثنتين علب رنج صغار وواحده مائي وشويه معجون وعيكفي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "493",
+      "text": "روحت بتقل لزوجي يدي مرنج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "494",
+      "text": "قالت ماهو مرنج وانا ما يفعلوا بي ادخل الان الانترنت ابسر كيف بيفعلوا وارنج انا.. قالت يابنتي لاتلعبي بالرنج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "495",
+      "text": "قلت مايعجبكم الا تخسروا منين لكم حق المرنج ياسعم عيجي بلاش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "496",
+      "text": "جربوني هذه المره وعتبسروا كيف الابداع والفن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "497",
+      "text": "المهم اقنعتها ..قلت زيدوا اشتروا دبه تينار ابسروا كيف انا فاهمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "498",
+      "text": "قالت نور قلبش يله غدوه عنبسر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "499",
+      "text": "بكرت بعد الفجرو بدل ما افعل صبوح.. قلت ارنج اول افعلهم مفاجئه سكبت الرنج لابين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "500",
+      "text": "طاسة العجين كسلت اسير ادور باردي وعلى سب الوقت والكل.. اشتي انجز بسرعه فعلت المائي وبعدا طهست المعجون بعده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "501",
+      "text": "المهم كل واحده ادت لي شويه قات وخزنت بجميع الانواع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "502",
+      "text": "روحت البيت وانا مبهررهمن قوة التخديره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "503",
+      "text": "سنبت وجلست اتسمع وماعدبش صوت رجعت امتد وان قد سمعت ساع السلحبه قلت اكيد سارق قدوه تحت الدرج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "504",
+      "text": "هزيت زوجي قلت سارق قوموهو سنب بطوله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "505",
+      "text": "سمعته فتح باب الحوي وبعدا مدري ماكان يسلحب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "506",
+      "text": "قام لصا السراج وان قد البطاريه فاضيه ماعد الا لصى كشفاف التلفون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "507",
+      "text": "حملت اديت له صميل ونزل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "508",
+      "text": "قلت في نفسي يوه لو يخنقه السارق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "509",
+      "text": "والالاهم عصابه ماعيسترش لهم وانا مالي ما انزل معه على الا قل اغور واقيم البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "510",
+      "text": "لبست روب وهزرت حقه الصماطه من فوق الشماعه غطيت بها شعري ونزلت بعده وانا مغطيه وجهي بطرف الشال لايبسرني السارقخرجت للحوي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "511",
+      "text": "وزوجي نكع عليه التلفون وبيدور البطاريه وانا مطننه ماله بيتعسعس القاع سنبت بين ابسره وهو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "512",
+      "text": "بسرني ماهو سنب وحمل ساع الجني وانا ضنيت ان السارق بيلحقه هربت وهو بعدي عادنا وصلت عندالدرج ماحسيت الاضربه بالصميل لوما انتذقت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "513",
+      "text": "وبعدا مكني ركض وضرب بين الضلمي وكان يصيح لحمايا ينزل ويدي حبل يربط السارق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "514",
+      "text": "قال عمي للحقك الله خير هذه فاطمه مرتكلعن ابوها تخديره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "515",
+      "text": "يوم سرنا انا وحموده عند الولاد وبعدا بيقلين مالش اليوم ساكته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "516",
+      "text": "وان قد كل واحده بتشكي كيف بيوجعها راسهاقلت خيرت الله ماعدبش احد بخير",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "517",
+      "text": "قالت حموده انتي راسش وانا ارجلي ماقد كملتش تقل ارجلي.. الا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "518",
+      "text": "و قد صاح المكان كله ارجله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "519",
+      "text": "وجيللك على امراض خرجت في ارجل المتفرطاتلوما طننت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "520",
+      "text": "ما واحده جلست تشكي لي من وجع ارجلها وضهرها لامغرب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "521",
+      "text": "وان قديه ممنوعه من العمل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "522",
+      "text": "لان الدكتور قال قد امتلطت عليها فقره من العمود الفقري",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "523",
+      "text": "المهم يوم ثاني بعداالغداء قلت ارقد بين احس نفسي تاعبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "524",
+      "text": "قال زوجي ..ماقد معانا اليوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "525",
+      "text": "قلت مريضهوالا مايسبرش امرض..سار يشتري له قات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "526",
+      "text": "وشويه وان قد اتصلت حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "527",
+      "text": "قالت انتي داريه ان عرس جيراننا اليوم قلت ماشي هو الاحد الثاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "528",
+      "text": "وانا قمت وانا بين اون بسرت وانو صدق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "529",
+      "text": "جاء زوجي قال الين قلت العرس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "530",
+      "text": "قال هوذا كان انتي مريضه وبتوني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "531",
+      "text": "قلت وجالسه غر قلت اسير لانا عد افتهن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "532",
+      "text": "وصلت وان قد الباص ملان ماعد بش بقعه ..قلت شلوكن وجيتين كلكلن . كيف نزلت عليكن العافيه.بين اقل محد عتجي..قالين سعما نزلت عليش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "533",
+      "text": "الا وتيك جارتي الذي قالت فيها العمود بتمتغج وترقص باقوى قوتها ..كملت وقديه بتعرق قالت حموده والفقره الذي امتلطتاكيد ماليوم خليتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "534",
+      "text": "العمود الفقري في البيت وجيتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "535",
+      "text": "اليوم روح زوجي وهو طبيعته حاليه وبيضحك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "536",
+      "text": "طننت قلت الظاهر لاقى له عملفرحت معه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "537",
+      "text": "قلت مشو حرام بس مشيه عادتك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "538",
+      "text": "قلت في نفسي وانا ماعليا يفرح وانا افرح معه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "539",
+      "text": "جلست شويه وقلبي بياكلني كيف نفرح هكذا بدون سبب اكيد ان به حاجه ضروري يقلي علاسب افرح سوىقلت خير اين كان انت اليوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "540",
+      "text": "وهو جاوبني بحماسقال لو تبسري يا حمودة اليوم عزمني صاحبي ذيك المحامي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "541",
+      "text": "قلت ايوه وفارح انو عزمك الله يجعله يعزمك يوميهوما تغديتوا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "542",
+      "text": "قال عصيد عمر امي ماقد طعمت مثلهاوسلته ماقالش ماشبعناش من طعمها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "543",
+      "text": "قلت ماشاء الله اكيد مرته حميش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "544",
+      "text": "قلت وانت هكذا فارح حن مع المره ولد حالي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "545",
+      "text": "والا اثرت عليك العصيد والاجننك طعم السلته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "546",
+      "text": "قلت اكيد عتقلوا هذا الولد كيف امه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "547",
+      "text": "حسسيت ان انا اشتي اطلع فوق الدولاب وانبع لاوسط بطنه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "548",
+      "text": "طول عمري وانا بين اعصد له ولا فرح يوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "549",
+      "text": "قال لوتبسري صاحبي ذيه المحامي كلما طلق واحده من زوجها اعجبته وتزوج بها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "550",
+      "text": "قمت من جنبه وهو جالس يوصف جمال ابن المره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "551",
+      "text": "قلت شكل المره زيدت الثوم في السلته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "552",
+      "text": "قلت خلاص قدنا داريه ان ابن المره حاليماعد تشتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "553",
+      "text": "قال راعي اقلش ماقلي صاحبي المحاميقال انو هذه المره عيطلق صاحبت العصيد من زوجها ويخليها لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "554",
+      "text": "قلت خلاص يخليها لك وانا ادي لي رقم صاحبك المحامي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "555",
+      "text": "مكنتني البسكوت والعصير وقالت انا فدالش يافطوم عمري لي المداعه افعلي نخس لوما تجي امش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "556",
+      "text": "وانا فرحت وزقرعت اشتي ارد لها الجميل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "557",
+      "text": "قلت اعمر لكم من عيوني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "558",
+      "text": "وكنت احمل ساع الريح فعلت ناره ولتيت وبدلت المداعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "559",
+      "text": "وجالسه بتشرب وانا جالسه جنبها بين انظر لها بكل حب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "560",
+      "text": "وبعدا قلت شكله مالصيش هوذا مابيخرجش دخان خيرات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "561",
+      "text": "قلت والله ماتتعبوا قمت شليت البوري افعل ثاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "562",
+      "text": "وانا حلفت يمين انهيه عتقوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "563",
+      "text": "وانا قلت ظهرشوحملت ادي ثنتين وسايد تفعلهن قفاها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "564",
+      "text": "جلست وانا بين افكر مازد اخدمهاقلت كيف البوري",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "565",
+      "text": "قالت اشكلقلت اسير ادي البخور الحالي حق امي وابخرها تتجمل مني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "566",
+      "text": "وفعلت بخور وبين انافخ النار وجيت قلت قوموا اتبخروا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "567",
+      "text": "طرحت المبخرهوجالسه افكر مازيد افعلها ابسرت المسجله فوقها في الصفيف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "568",
+      "text": "سنبتقالت ماقد معاناقلت ادي لكم المسجله تأنسوا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "569",
+      "text": "وانا اشتي انزل المسجله وكان جنبها مزهريه نحاس مدري",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "570",
+      "text": "كيف اهتزت وانااشتي ازقمها دسعت في حظن عمتي ونكعت المسجله والمزهريه وفدجت عمتي..وطار الدم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "571",
+      "text": "مره بعد ماتزوجت حموده بفتره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "572",
+      "text": "جت عندنا وقد صورتها مقلوبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "573",
+      "text": "مالش يابنتي قد صورتش هكذا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "574",
+      "text": "قالت حموده مدري مالي ولاعد اشتي اكل وحمى وخمول خلوها على الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "575",
+      "text": "قالت عمتي اكيد صرعنش عين ان بين اقل تكن ترقي نفسش حن تكن تخرجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "576",
+      "text": "و حموده فرحتقالت الظاهر صدق يمه عين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "577",
+      "text": "وزوجي بين احس اننا قدنا بين اتضايق منه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "578",
+      "text": "ماعد اشتيش ارجع عندهم خلوني هانا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "579",
+      "text": "المهم يوم ثاني جاء زوج حموده يروحها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "580",
+      "text": "قالت عمتي خليها عندنا يبني لاهيه عتفتهن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "581",
+      "text": "المهم جت جارتنا وعمتي بتجابرها على حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "582",
+      "text": "قالت جارتنا لاتتعجبيش على بنتش شليها عند صاحب كتاب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "583",
+      "text": "لاحد قد فعلها شي تكره زوجها قلت لها ياعمه لاتصدقيش جي نشلها االمستشفى",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "584",
+      "text": "قالت عمتي على الدكاتره الحاليين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "585",
+      "text": "عيقلوا بينها الف عله وعيفعلوا لها الف فحص ولا عنوصل احنا وهم لاطريق ..ماعدبش ذمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "586",
+      "text": "ماعد اشلها الا عند الذي قالت جارتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "587",
+      "text": "قامت عمتي يوم ثاني وشلينا حموده عند واحد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "588",
+      "text": "وبداء يسأل حموده ما بيوجعها قال لعمتي البنت مسحورهطننا من عيسحرها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "589",
+      "text": "قالت ولا شيوحمل زغطها في رقبتها لوما انا نزلت بطونيوكان يصيح اخرج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "590",
+      "text": "وانا قلت له اتقي الله عتخرج عيونها من هو هذا الذي عيخرجقال هذا جني يهودي مارضاش يعترفقلت افرض انو اعجمقال روحوا وادوها غدوه لاهو عيتفكفك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "591",
+      "text": "روحنا وقد كنت اجلس جنب حموده وازوب وعمتي ماصطتش ترقد عندها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "592",
+      "text": "قالت هذا جني يهودي ما يصافطش المهم جلست حموده تطرش طول الليل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "593",
+      "text": "وعمتي كان تقل قد بتطرش السحر..و جلسنا اسبوع وهو بيقرا عليها و يمشعنا زلط واحنا مراعيين يعترف اليهودياخريوم مابسرته الا بز خيزرانه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "594",
+      "text": "وبعدا حقش الجني ياحموده شكله مصملي يشتي ضربلوما يفصح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "595",
+      "text": "وانا قد قلبي بيدق لاينطق الجني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "596",
+      "text": "وعمتي زاقمه لها وقديه مصفره من الفجيعه وكان تصيح اجي ازقم حموده علاسب يوضع المسده الثانيهرجعت وانا بين انتفظ",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "597",
+      "text": "وهيه كان تسبنا وتقل فلتني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "598",
+      "text": "وهو يقل مشيه هيه وهو الجني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "599",
+      "text": "وهربت ..لحقتها عمتي قالت ماعليكم مني اديتوني عند هذا النصاب والله مافيني حاجه عد اروح عند زوجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "600",
+      "text": "قال مشو برضاها.لكن مادام وقد روحت عند زوجها به امل يخرج",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "601",
+      "text": "وانا جلست ابكي ان انا عد اتسمم من قحصت الجني ..وقلت لشيخ يبسر ما يفعل لي جلس الشيخ يقراء عليا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "602",
+      "text": "وقال ازيد ارجع يوم ثاني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "603",
+      "text": "اتصلت حموده بتصيح وتجنن وقالت والله مازد تدخل لنا بيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "604",
+      "text": "وهيه عتورينيقلت لزوجي تخيل اتصل الجني يهددنييعلم ماعيفل بي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "605",
+      "text": "و زوجي كان يضحك قال تستاهلي مستر لش الا جني حمودهاكيد عيحولش لاجنيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "606",
+      "text": "يوم ثاني اتصلت لنا حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "607",
+      "text": "قالت جاوبي انتي فتحت السماعه قلت لاعد الجني يقحص اذني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "608",
+      "text": "قالت ماشي ياصياد قلت الحمد لله خليه يجلس سهل الدنيا حق الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "609",
+      "text": "اسمعي مابش جني ياخضعا انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "610",
+      "text": "سرت افعل فحص وان انا واحمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "611",
+      "text": "مره دخلت واحده لي في الخاص",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "612",
+      "text": "بتشكي لي ان زوجها تزوج عليها ..قلت يوهجعلي مكسر عليش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "613",
+      "text": "وانا قد صبرت عليه وتجعجعتقلت يوه جعله ازاله زوجش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "614",
+      "text": "خلاص ياقلبي امانه لاقتهرتي مايستاهلش دموعش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "615",
+      "text": "كنت منما تعاطفت معاها احاول اخرجها من همها واضحكها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "616",
+      "text": "رغم ان انا بعض الاحيان اطنش الرسايل.. لكن قلت يوه تيه ترحم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "617",
+      "text": "ولايوم قالت لي يافطوم لو ماتجابرينيش يوم لاجنن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "618",
+      "text": "ابشري بمجابره مابش لها طرف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "619",
+      "text": "وكان اكثر شي نتناقش فيه في السياسه.. وكنت اختلف معها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "620",
+      "text": "وحاول اقنعها وهيه ولا راسها يابس..لايوم قالت لي فطوم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "621",
+      "text": "قلت يفداش الكون ياصديقتي الغاليه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "622",
+      "text": "قلت شلوه زوجش حن سخى عليش وانتي هكذا ذواقه وكلامش حالي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "623",
+      "text": "المهم يوم قالت لي هذه العباره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "624",
+      "text": "تقوم الصبح والكهرباء مولعه .. وتسأل اهلك باستغراب متى رجعت الكهرباء .. فيقولون لك بسخرية ليش واين كانت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "625",
+      "text": "تقول لهم هي قد لها مقطوعه منذ بداية العدوان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "626",
+      "text": "فتقول لهم العدوان حق السعودية",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "627",
+      "text": "هم ومتى اعتدت السعودية علينا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "628",
+      "text": "انت بعدما دخلوا الحوثيين صنعاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "629",
+      "text": "هم واصحاب حوث فلتوا حوث ودخلوا صنعاء ليش؟ وبعدين ما فيها لو دخلوا اصحاب حوث الى صنعاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "630",
+      "text": "انت لا لا مش اصحاب حوث .. الحوثيين انصار الله حق صعده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "631",
+      "text": "هم ايوه ومن عادهم هوليه انصار الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "632",
+      "text": "انت كيفه من هم انصار الله .. انصار الله اصحاب الحوثي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "633",
+      "text": "هم مالك يا ابني بتخدرس .. او انت مريض",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "634",
+      "text": "يوم قالت لي حموده جي نفعل لنا صفحات ثانيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "635",
+      "text": "ونفعل لنا خلفيه بنت حاليه ونختبر ازواجناقلت اتقرطي العافيه وابردي لاتدوريش لش وجع قلبقالت انا متأكده ان زوجي يرحم وبعد حاله لكن قلت ازيد اتأكد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "636",
+      "text": "قلت مانا الصدق اخوش عيقهرني ويحبني من اول حرف خلي لي حاليالمهم جلسنا فتره ونسيت الموضوع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "637",
+      "text": "ما ابسرت الاحموده الاجت وبتبكيقلت يوه مابه ابسرت وان ابنها مابحدقلت ماله ابنشقالت ولاشي بخير قلت وزوجش قالت يشلوه الجن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "638",
+      "text": "يوه جعلي مكسر عليش ياحمودهجننتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "639",
+      "text": "وانا كنت اهزهاوهيه بتبكي ان زوجها حبها وعيتز",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "640",
+      "text": "قلت لحموده صلي على رسول الله واجمعي حسش وبطلي جنان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "641",
+      "text": "وخلينا نفكر كيف تبردي قلبش في زوجش وعمتش ونفعل لهم درس ماينسوش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "642",
+      "text": "قالت والله ما ادي خطوه ماعد اشتيش ابسر صورته ولا اسمع صوته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "643",
+      "text": "قلت خلاص عنتعذر ان عمتي مريضه وعتجلسي عندنا يومين ثلاث",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "644",
+      "text": "المهم بعد مراشاه اتصلت له وقال حاظر اجلسي كم مشتيتي وهيه كملت تحاكيه وقرحت بكاءقالت ابسرتي يشتي يتخلص مني اجلس كما اشتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "645",
+      "text": "وهو كان يصيح لا قلت امسي لليلهالمهم مسكينه قد فوقها حزن الارض ورجمت التلفون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "646",
+      "text": "قلت اسكه افتحي لي الصفحه وانا عد اجابره انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "647",
+      "text": "فتحت لي وهو قد فعل عشرين الوهوبدئت اجابره انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "648",
+      "text": "قلت حموده زوجش قوي رومنسي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "649",
+      "text": "قلت له يا نظر اشتي منك قيمة تلفون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "650",
+      "text": "بس تلفون ضخم ازنط به قبال خبايرييبسرين خطيبي مابيهديني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "651",
+      "text": "قال اول نوقع خطيبين وبعدا ابشريقلت عتبخل على روحك بتلفون بميه وخمسين الف بسانا غر قلت اختبرك.. ابسر ماعتقل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "652",
+      "text": "والا بابي الله يحفظهم عيدو لي مانفسي فيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "653",
+      "text": "قال خلاص لاتزعلي ماهو التلفون الذي تشتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "654",
+      "text": "قلتخلاص كسرت نفسي مشتيشقال حرام وطلاق مايجي ظهر الا وهو معش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "655",
+      "text": "قلت بما انك حلفت ياخرفه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "656",
+      "text": "ارسل الزلط للكريمي اصلا التلفون عد اشتريه من خبيرتي بسعر حالي قوي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "657",
+      "text": "قالت لكن بطاقتي ضاعت ارسلهاوحنبت بسم من يرسلها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "658",
+      "text": "طفيت التلفون حموده قومي عيقع لش ميه وخمسين الف خلاص عيرسل زلطلكن بسم من اقله وهيه خلاص زاغ عقلهاقلت شلوش هيه لش ياخضعا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "659",
+      "text": "فكري معي بسم من يرسلها ذكرت جارتي فديتها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "660",
+      "text": "اتصلت لها قلت معي حواله ومشتيش زوجي يدرا بها عتستلميها انتيقالت ايه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "661",
+      "text": "رجعت فتحت واديت له اسم جارتنا وقلت هيه خبيرتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "662",
+      "text": "قلت بين احب زوج حموده قال ماهو قلت هابين احب راس حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "663",
+      "text": "اليوم استلمنا الزلط ومشعت صوره لتلفون من الانترنت ورسلت لزوج حموده تحياتي وتشكراتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "664",
+      "text": "لكن حموده غاثيه ومقهوره قويوساع الذي اصددمت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "665",
+      "text": "قلت لها ياحموده لاتغثيش ولاتقهري روحش والله مايستاهل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "666",
+      "text": "قالت يوه يافاطمه كيف لاغثاش وانا كنت واثقه فيه ثقه عميا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "667",
+      "text": "وضاق الحال وانا ولا كلمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "668",
+      "text": "كان كل همي لايغثا والا يهم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "669",
+      "text": "سهل انا اتبهذل سهل انا اغثى لكن هو ماشيتحملت هرم امه وحاولت اطيعها على سبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "670",
+      "text": "تجعجعت وتبهذلت ولا قلت اح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "671",
+      "text": "عمره ماروح وجغرته بماشاكلنا ..تحملت خواته وعيالهن.. وكنت اميزهن علاسب يطول الله عمره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "672",
+      "text": "قلت لاتضيق والاتغتلب يفداك كل غالي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "673",
+      "text": "اربع سنين وانا ولاطلبت لنفسي طلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "674",
+      "text": "قلت مابش معه البس الحاصل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "675",
+      "text": "لوما يفرجها الله ولا قد يوم كلفت عليه والا حملته فوق طاقته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "676",
+      "text": "عاملته وحنيت عليه اعظم من امه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "677",
+      "text": "امانه لوهو كلب وبين ارجم له كل يوم صغيره خبزه لايجمل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "678",
+      "text": "وانا فعلت من اجله المستحيل ولا قطع فيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "679",
+      "text": "قلت امانه ياحموده جي نفرح بالزلط ساع زمان كان لامعانا الف ريال ماعد نرقدش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "680",
+      "text": "وهذه ميه وخمسين الفكم عتديلي منها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "681",
+      "text": "قالت ابسرتي عمتي الجهنميه كيف بعدا خرجت الزلط لابنها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "682",
+      "text": "وياسعم بين اخدمها خدمه مقرشه بس هم عرق ولا يقطع فيهم قاطع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "683",
+      "text": "قلت حموده امانه لاعد تتذكري احزانش خليني افرح بالزلط قالت حموده قدو جرح في القلب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "684",
+      "text": "قلت يا الله حلهاهذا وهو انتي الذي حبها مالو حب واحده ثانيه ماعتفعلي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "685",
+      "text": "لودريت كان عد افعل ساعش وعيقع لي هذا الزلط بكلها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "686",
+      "text": "قالت هو غر تقلي والله لايقرح قلبش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "687",
+      "text": "المهم حاولت معاها بكل الطرق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "688",
+      "text": "اسكه قلو لي كيف اخرجها من حالة الغثى الذي هيه فيهافاطمه علي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "689",
+      "text": "قلت لزوجي قم ابسر اختك واجبر بخاطرها ماعد بترضاش تاكل عتموت سار لاعندها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "690",
+      "text": "قال اشهد لله ان انتي الغلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "691",
+      "text": "رجال سابر مسكين وبعد حاله وقمتي تختبريه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "692",
+      "text": "موذا النسوان مابش معاكن مهره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "693",
+      "text": "هو الدلع والغنج والا يتزوج حتى بربع ماعليش اعرفي كفاتش وبس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "694",
+      "text": "قلت شلوك مابش عندك لارحمه ولاضمير ولا احساس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "695",
+      "text": "قال اين خيانه هذا شرع الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "696",
+      "text": "وبعدا ياذكيه كان عتقلي له كلام الحب والغرام في الواقع وهو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "697",
+      "text": "وبعدا الرجال يتأثر بالكلام الحالي والرقه شتفتيه لان انتي في الواقع.. رجال ساعه نفس الجلافه ونفس الدعممه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "698",
+      "text": "قلت في نفسي هذا الكلام موجه لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "699",
+      "text": "قال قومي ياختي والعني ابليسس وبطلي البعسسه وعيشي حياتش ولا تدوريش على مايوجع قلبش ويخرب عمرش قد انتي معوله وماعيسيروا ضحيه الا الجهال",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "700",
+      "text": "دوري على مايسعدش انتي وزوجشوعيالش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "701",
+      "text": "كان كلامه شبه مقنع لي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "702",
+      "text": "المهم قمت فلت التلفون وسرت جلست جنبه وكنت ارفرف بعيوني واتمزمز قلت اقع رقيقه قال مالش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "703",
+      "text": "قلت بين احبكابسرني بنص عين ورجع يبسر التلفون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "704",
+      "text": "وانا جلست وكل شويه واتنهدقال مالش قلتالحب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "705",
+      "text": "قلت له اني ارى في عينك غزالا فماذاد ترى في عيني قال بين ابسر في عينش ربحا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "706",
+      "text": "قلت صح ربح شلوك الجن ومن يجلس جنبك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "707",
+      "text": "اسير اجابر زوج حموده اخرجاعوذ بالله على رجال وقللك عندهم جفاف عاطفي ويشتو كلام حالي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "708",
+      "text": "خرجت وسرت عند حموده اخطط كيف ننتقم من زوجها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "709",
+      "text": "بس اشتي انتقام علاسب يقع عبره لمن لايعتبر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "710",
+      "text": "انتقام يخليه لاكن سمع كلمة احبك يقع فيه حاله ويسد اذانه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "711",
+      "text": "راعوا لاغدوه وانا اقلكم ماعنفعل بهفاطمه علي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "712",
+      "text": "اليوم بين ابسر من الطاقه وان زوج حموده جاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "713",
+      "text": "نزلت بزيت بطانيه وقلت ياعمه تمددوا زوج حموده جاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "714",
+      "text": "وطلعت صلى حموده وانا زاقمه لراسي زوجش جاءقالت ما افعل له",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "715",
+      "text": "قلت انزلي وخلي كل شي عادي قوى ياحموده لاتخربيشوبعدا انزلي ابسري عاده بيبسر قد صدمته",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "716",
+      "text": "نزلت وهيه القهر كله باين في وجهاقال زوجها مالش ياحموده مصفرهقالت مابلا غاثيه على امي تاعبه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "717",
+      "text": "ودخل عند عمتيوهيه ياسعم راقده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "718",
+      "text": "قال خلاص سلمي عليها واي شي تشتوا انا حاضر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "719",
+      "text": "وبعدا سمعته بيجابرها في الدرج وانا قلت اسمع مابيقل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "720",
+      "text": "ومدري كيف طحست رجلي ولاعد استرت امسك بريك وولافوق زوج حموده.. لوما كان عد اكسر ضهرهجلس مكبود ساعه وانا فحطت مطلع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "721",
+      "text": "قلت حسبش الله يافاطمه جالسه مجنونه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "722",
+      "text": "قلت من اليوم انسي ياحموده ودعممي وارجعي على مكنتيوجي نخطط كيف نفعل بزوجش المهم خططنا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "723",
+      "text": "وكتبت حموده لزوجها اشتي اعترف لك قال ماهوقالت انا كذبت عليكقال كيف كذبتي عليا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "724",
+      "text": "قالت انا يتيمهقال انا ابوش وامش عادوه احسن نسلم وجع راس بيتكم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "725",
+      "text": "قالت وانا عايشه عند خالتي وجاء لي خطيب وطلبت منه مليون وعيجي بعد اسبوع يدفع وتزوجنيقال بغير جنان",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "726",
+      "text": "وانا لو اتزوج بغيرك والله لاقتل نفسي قال خلاص يومين ثلاث ادبر المليون وادي قاضي واجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "727",
+      "text": "ماجى العشي الا وهو بيقل خلاص عيجيجاهز المليون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "728",
+      "text": "طننت حموده منين ادى الزلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "729",
+      "text": "ومعقوله عمتها ادت له ذهب يبيعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "730",
+      "text": "قلت لاتفكري ولاشي اهم شي انو عيدي المليون",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "731",
+      "text": "اسكه شغلين عقولكن شويه وقلين لي كيف افعل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "732",
+      "text": "اليوم قمت شليت حموده عند الكوفيره تصبغ شعرها وتصلح حواجبها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "733",
+      "text": "وسرت حجزت لها فستان زفاف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "734",
+      "text": "قلت انفذ جزاء من الخطه لوما يسهل الله الباقي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "735",
+      "text": "شويه وان تلفوني بيرن وان هيه واحده من خبايري",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "736",
+      "text": "زوجها تزوج عليها ومقهوره ونفسها ننتقم من زوج حموده قالت جين بيتي معي مجلس وحمام وصاله مستقلات من البيت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "737",
+      "text": "قلت جبرش حليتي نص المشكله فعلا ماصديق الا وقت الضيق قلت باقي الخاله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "738",
+      "text": "ابسرت خادمه..قلت قديه تيه الخاله قديه تقع خاله وتسترزق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "739",
+      "text": "وجلست افهما ما عتفعل وقلت شدي لها عشره الف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "740",
+      "text": "يهنا في روحها تخزن وتفتهن من ضهر زوج حموده كله اجر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "741",
+      "text": "قلت كيف عد اتواصل معش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "742",
+      "text": "قلت معش تلفون قالت يه ومعي وتس وصفحه في الفيس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "743",
+      "text": "قالت جميله كا القمر طننت اول مره ابسر خادمه تستر تكتب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "744",
+      "text": "رجعت وانا فارحه كل شي سبر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "745",
+      "text": "قلت لحموده خلاص قلي لزوجش يجي الساعه اربع ومعه الزلط وقاضي واثنين شهود",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "746",
+      "text": "بزيت حموده وسرنا بيت خبيرتي واتصلت للخادمه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "747",
+      "text": "قالت حموده قالت تقلي الذي عنفعله صح وبعدا ماسرتي تدي لي من خالهعيبسرها ويهرب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "748",
+      "text": "قلت معش فاطمه فاعله حساب كل شي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "749",
+      "text": "لبست الخاله بالطو وكفوف وشرابات وفعلت لها كريم اساس وزيدت عند عيونها ووطت الطرحه حق البرقع وكان تبان من بعيد ان هيه بيضاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "750",
+      "text": "قد شرحت له حموده ان خالتها ملتزمه قوي عتسنب بعيد وانت مكنها الزلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "751",
+      "text": "قام القاضي قال اين البنت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "752",
+      "text": "قالت له خالتنا يخرج يسألها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "753",
+      "text": "وخرج سالها قالت موافقه ووكلته في العقد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "754",
+      "text": "عقد القاضي والخاله جت تمكنا الزلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "755",
+      "text": "قلت للخادمه هيا ماذلحين سيري افتشي واندعي صوت محجرهسارت لاعندهم فتشت وندعت صوت محجره ماشاء الله عليها على صوت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "756",
+      "text": "وزوج حموده ابسرها وزاغ عقله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "757",
+      "text": "وقال يشتي يبسر الحريوه قلت سيري بهذليه قلي عتبسرها لليلة الدخله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "758",
+      "text": "سالفنا هكذا واقلبي فوقه قلبت خادموهيه ماقصرت ندفت ابوه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "759",
+      "text": "وهو ولا قال حرام مايخرج الا وقد ابسرها رجعت تحاكيني قلت استعيني بالمحوى كله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "760",
+      "text": "وقلنا كان احنا في العياده بنعالج طرس حموده",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "761",
+      "text": "ومعنا المليون فاطمه علي الحميش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "762",
+      "text": "ما عبش مكان امانه ان ازيد اطرح الباقي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "763",
+      "text": "يويو ما هداش الله امانه شوفي لي مكان في",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "764",
+      "text": "شنطتك الباقي حاجاتي ما هو هذا الجنان يا بنتي احنا سايرين نعتمر مش نعمر ونجلس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "765",
+      "text": "هناك يما قذبت بسري ما شريت الا الضروريات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "766",
+      "text": "ان هو البجايم كلهن شكل مسافر ترقذي بس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "767",
+      "text": "غرفهم كلام يا اخي انا بين اقول لك ماشي اسافر الا عن طريق البيضاء",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "768",
+      "text": "يا اخي اصحابي قالوا والصحراء احسن واسرع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "769",
+      "text": "اخي انا ماشي اسافرش عن طريق الصحراء انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "770",
+      "text": "ما عادش اخطب برشه افهم كلام عقله احنا معانا عوايل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "771",
+      "text": "كان خير بعدك يا اخي انك قلتك الله ما بتمش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "772",
+      "text": "عجيلي ذحين ساعه الجني ان ما احد يقدر يتفائل في هذا البيت ما عاد اشتش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "773",
+      "text": "انسير كمل جهز شنطتك قد بتفسيرها جاهزه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "774",
+      "text": "عاد تسافر اثنتين فنايل وزياده ماش اتحمل ما هولا خلين فيدك ليش عط الشنطه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "775",
+      "text": "مشيت فعلتي انا عاد اسير بسر النشره حسبي الله بسي عقلك ممسوح سع صرعتك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "776",
+      "text": "ايش قلتي قلت من عيني شارته بشنطتك والله يا صاحبتي زي ما قلت لكش قدس مطاعم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "777",
+      "text": "في السعوديه انتظري انتظري شكلي ش ابطل سفر السعوديه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "778",
+      "text": "من اساسه لا تقولي يما ان اتشلي هذا العلاقه معيش السعوديه لا طبعا ماتشلهاش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "779",
+      "text": "الحمد لله ابوش عيشها صاحب ابوش بهارات يمنيه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "780",
+      "text": "كتاكديهن مكيسات سواء اولا ليش العلاقه هذه يمه الله يرضى علي ثانيا ليش عادل",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "781",
+      "text": "بهارات وقد بهارت ياسين بكله لحقهم للرياض",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "782",
+      "text": "وفتح محل هانك عاد عيبلشونا نتحمل لهم وهو اصلا ممنوع ندخل اي حاجه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "783",
+      "text": "ان وانا ما دراني بس والله ما فيها سخه هذا العلاقيه ما حد يطرح فيها حاجه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "784",
+      "text": "العلاقه هذا طرحي فيها لحوح وسيري بيعيهن في باب اليمن",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "785",
+      "text": "ايش هو دعاء السفر يا اياد سبحان الذي ذخر لنا هذا وكنا لهم مقرنين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "786",
+      "text": "وانا الى ربنا لمنقلبون شاطر شاطر هذا ابنك يا اخي وبنتك ليش ما تسالها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "787",
+      "text": "ايش هو دعاء السفر يا جناء هيا قولي له يا بنتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "788",
+      "text": "ما والله ما تتكلم هو سال اياد اول ما سالني انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "789",
+      "text": "عجباك بين اقول لك ونهدا الغيره بينهم اهم شيء يما مرتاحاه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "790",
+      "text": "مفتهني يا ابني فيدينا روحك انا قد قلت لك انا مشي لا تيا البقعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "791",
+      "text": "امانه يا عم صيحي لجنا جيك معش والله ما قد ذاقت شي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "792",
+      "text": "وابني اياد يا عمه صيحي والكل ماعا والله ماعه اناي قدام قدام بسيات",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "793",
+      "text": "اسكي يا ابني خلي بنتي تجي قدام وان ترجع ورا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "794",
+      "text": "ما في انا ود الولد يطلع كتب ما دخلك انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "795",
+      "text": "ولد انا ولد مث انا بنت وبعدها هذا ابي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "796",
+      "text": "انا اللي دستمب قدام مث انت ما دخلت هذا سيارتنا حق السياره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "797",
+      "text": "يما ضربني يما ضربني يما تستاهلي اي اي فلتي كسرو يدش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "798",
+      "text": "كسرو يد انت ليش بتدعوي على بنتي انين نريع مات انت الشعره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "799",
+      "text": "لو فيش خير انك خليتي ابنك يركب عندك وتصير البنت عند ابوها لكن يعجبش الحرش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "800",
+      "text": "انا اشعلش جهال عيسد في بنتي بالدعوه على بنتي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "801",
+      "text": "هجعيني لا قد السفره هكذا لكن بها سفره",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "802",
+      "text": "كل عملك قد قلت له نسير بسيارتنا لكن قال جمعه نستمتعين",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "803",
+      "text": "احنا اصحب احنا اصحب احنا اصحب احنا اصحب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "804",
+      "text": "انا شو اوقف افتهن شويه الصدق انا قد انا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "805",
+      "text": "تعب واللي يشتي حمام ينزل اذا هنا بمسجد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "806",
+      "text": "يلا ها انزلوا وانزلي يما وافتهني شويه ما جدتي قدي نوم يا خلاص لا احد يقومها",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "807",
+      "text": "خلوها ترقد افتح لها الباب الخلفي تتهوى الحين طفيت المكيف",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "808",
+      "text": "يوه انا فدالش يمه جعل ما يجيلكش وجع عمرش",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "809",
+      "text": "خلاص انا اجلس عند السياره وانت ادخل لك حيا والله حيا قدو هذا انتباه يو",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "810",
+      "text": "والله ما دريت بروحي يا اخي هيامه جيتو يلا الان نتحرك اطلعي عند ابوش بسرعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "811",
+      "text": "قد لها ساعه مرتي هنا وانت ما في الشحطه الساعه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "812",
+      "text": "مش وقت الهدر هذا شل الولد مني قد قتلني امسك ما اخرني الا ابنك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "813",
+      "text": "على غيري ما بش اهتمام تقولي زي الزوجي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "814",
+      "text": "المسكينه السواق اللي عادوا على سفر منتظر",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "815",
+      "text": "الحبل وقف عند البقاله نشتري الحبل انزل مع انزليشرب يلا توكلنا على الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "816",
+      "text": "يوفنا روحك قوميا قوم يا بني قوم منث وانات حقي يا بابا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "817",
+      "text": "انا شوصل السعودي واشتري لك من عيني ما دخلني هذا حق مسدس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "818",
+      "text": "يما يما قولي له حق يا مسدس وانت مكن يا بنتي العبي شوي هذا حقي هذا حقي بابا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "819",
+      "text": "ح اقسم بالله ما حرش الا انت ولا انت الدار",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "820",
+      "text": "بتجاهل وتاعد تشتري الاثنين والله ما انتبهت الحين وراقد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "821",
+      "text": "قلنا بغير عذر اخبال زوجي ما يشتري حاجه الا ويشتري لبنتك حتى لو يشتري جنبي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "822",
+      "text": "سيدي قومي اضربي مالك وهذا المسدس لاش ولا يقول يا من سكن في فوادي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "823",
+      "text": "ما شاء الله على امي ولا قد صحيت من الجنان هذا كله خليها تغذي قلبانه قديم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "824",
+      "text": "صدقت انا جاشم بسلاكبنا بحاجه غريبه في الورق والله ان حاجه غلط",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "825",
+      "text": "يا جدتي جدتي جدتي يابا جدتي ما حدا ايش بتخرفي يا بنتي انا عسير امي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "826",
+      "text": "انت متاكده دورتي سوا جدتي الضايعه مش جزمه جدتي اي يوجع لي على ابني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "827",
+      "text": "انت مركزاه اشبا ام رجال انا ضاعت قلي يا اخي ويني ويني امي يا اخي ويني امي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "828",
+      "text": "تقول امنا وسار الحين نعتمر مش وقت الجيه اقطب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "829",
+      "text": "نرجع للمسجد لا هي نزلت وبادرنا ايوه ايوه صح صح",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "830",
+      "text": "ان يا بابا رذمت ما يسمح تقول هكذا عيب هم قتلوها بس صح يا بابا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "831",
+      "text": "شبك شبكي شبكوش والله انش عديمه احساس بتبسريهم غاثيين رجموا عليهم المسدس",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "832",
+      "text": "حد يزعل مال امي ما بتتحركش اهدا اهدا ايوه ذا بتتنفس لك الحمد والشكر يا رب",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "833",
+      "text": "ناهي واخر يدك من وجهها علىطفها على نادي الحين انت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "834",
+      "text": "لا تصحيها اشلها هكذا على ماهي والله ما شلها الا انا فكرت جب لك ورد بالاول",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "835",
+      "text": "الناس عملك تديني قدامك وتع تخليني امتد ورع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "836",
+      "text": "ولا عاد امان قشخلك تسوقين السياره انت انه لا يتضايق اخوك ورع",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "837",
+      "text": "اخي ايش يرقد اطمني مفتن الحمد لله وصلنا المنفذ السعودي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "838",
+      "text": "يلا احنا ننزل نتصور ونبصم ماشتيش اي ازعاج ان انا قلت لك تمسكني",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "839",
+      "text": "يلا توكلنا بقي بس التفتش لو سمحت يا طيب اللي اسمها ننسي ترجع مكان ما بصمت",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "840",
+      "text": "ما تشت من بنتي ايش قد فعلتي يا مدبره قسما بالله يابا ما قد فعلت حاجه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "841",
+      "text": "يا فندم والله البنت انت عمي عمرها ما غثت مخلوق",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "842",
+      "text": "اديله اديله يا ابني كعك لوخلينا يا فندم احنا محكمين لو فعلك شي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "843",
+      "text": "خاطرك يماسامحه سامحوني لو قفيتكم سامحوني لو قصرت معكم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "844",
+      "text": "شي خاطركم دعوات يما دعواتك انت قدها يا بنت عمي انت قدها مع السلامه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "845",
+      "text": "لا تقلقي يا بنت اخي انا في ظهر لو يقرح راسي خلصتوا دراما؟ هي بس نازله تعيد",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "846",
+      "text": "البصمه ترى بصمتها بس ما ظهرت في الجهاز",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "847",
+      "text": "يا ابني شللك منه شويه وخلي لي الباقي هيا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "848",
+      "text": "على خرجتك من الوظيفه اشتري شويه فاكهه",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "849",
+      "text": "وشويه تمر من الطيبات قوي قوي وشله الامي",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "850",
+      "text": "صيت ما بتتنا مكسب المهم قذا بين اتحرك",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "851",
+      "text": "تكن تزيد لي الطعا ما انا شا اسر مرحبا",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "852",
+      "text": "بعيني وغري حتى مازم ابدي عليها بكيلو موز",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "853",
+      "text": "ونص كيلو تمر وهي جالسه عند ابنها الكبير",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "854",
+      "text": "حد بيشل منها شي الدنيا حق الله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "855",
+      "text": "الواحد القهر ويقول والجيد معروف بشمله",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "856",
+      "text": "كلامش واقع ان اكرمكم عند الله اتقاكم",
+      "dialect": [
+        "ye-sa"
+      ],
+      "source": "text_1",
+      "source_dialect": ""
+    }
+  ]
+}

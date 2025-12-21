@@ -1482,7 +1482,7 @@ def build_app():
         def show_login():
             return gr.update(visible=True), gr.update(visible=False), gr.update(visible=False)
 
-        def show_main():
+        def show_main()
             return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True)
 
         goto_register_btn.click(show_register, inputs=[], outputs=[login_view, register_view, main_view])
