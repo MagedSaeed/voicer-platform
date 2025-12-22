@@ -1081,16 +1081,16 @@ APP_CSS = """
     }
 
     /* Make buttons & controls easier to tap */
-    .gradio-container button,
-    .gradio-container .gr-button{
-      width: 100% !important;
-    }
+    # .gradio-container button,
+    # .gradio-container .gr-button{
+    #   width: 100% !important;
+    # }
 
-    .gradio-container input,
-    .gradio-container textarea,
-    .gradio-container select{
-      font-size: 14px !important;
-    }
+    # .gradio-container input,
+    # .gradio-container textarea,
+    # .gradio-container select{
+    #   font-size: 14px !important;
+    # }
   }
 </style>
 """
