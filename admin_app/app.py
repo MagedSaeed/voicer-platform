@@ -15,6 +15,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # CONFIG & GLOBALS 
 # ===============================
 
+
+EXCLUDED_USERS = [ "ahmed_ashraf_marzouk_abdelaal_e4753ae_eg-ca_m", "ahmed_a_b5fcd3f_ma-no_m", "ahmed_0ca7ef0_sa-sh_m", "ahmed_29f607", "ahmed_358e9fd_eg-ca_m", "ahmed_3aadf3a_sa-nj_m", "ahmed_43572b3_ma-ca_m", "ahmed_49114f", "ahmed_56a4e92_sa-jn_f", "ahmed_71ba3d7_ma-ca_m", "ahmed_744af44_ma-ca_m", "ahmed_7b335dc_eg-ca_m", "ahmed_9a121c", "ahmed_ac6477e_sa-nj_m", "ahmed_ashraf_2cdd34f_sa-hj_m", "ahmed_ashraf_2d5eb74_sa-hj_m", "ahmed_ashraf_2e5e46", "ahmed_ashraf_fe0a8ed_sa-hj_m", "ahmed_ashraf_marzouk_abdelaal_e4753ae_eg-ca_m", "ahmed_d5f5606_eg-nb_f", "ahmed_e235a54_ye-sa_m", "ahmed_e67f17a_ma-ca_m", "ahmed_moroco_35fca4", "ahmed_test_98e4dd1_ye-ta_m", "ahmed_test_d9082a5_ye-sa_m", "ahmed_test_f30700e_sa-hj_m", "ahmed_test_hj_b6b0a1d_sa-hj_m", "ahmed_test_new_cd9f3a0_eg-ca_m", "ahmed_test_saudi_7e025e4_sa-hj-bd_m", "ahmedtestegy_40231c4_eg-ca_m", "ahmedtestsaudi_8de4cdf_sa-hj_m", "testegy_5d7ce82_eg-ca_m", "newwebsite_6f5f1b", "testo_dell_4821fd6_eg-oth_m"]
+
 load_dotenv()
 
 BASE_DIR = Path(__file__).parent if "__file__" in globals() else Path(".").resolve()
@@ -172,6 +175,7 @@ def fetch_users():
             "username,name,email,country,dialect_code,gender,age,created_at"
         ).execute()
         data = resp.data or []
+        data = [u for u in data if u["username"] not in EXCLUDED_USERS]
         return data, ""
     except Exception as e:
         print("fetch_users error:", e)
@@ -190,6 +194,7 @@ def fetch_sessions():
             "username,completed_sentences,total_recording_duration"
         ).execute()
         data = resp.data or []
+        data = [u for u in data if u["username"] not in EXCLUDED_USERS]
         return data, ""
     except Exception as e:
         print("fetch_sessions error:", e)
