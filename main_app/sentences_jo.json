@@ -1,0 +1,4504 @@
+{
+  "sentences": [
+    {
+      "unique_id": "1",
+      "text": "لا يا جده رح تسمعي من ثمي و من عيني كمان",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "2",
+      "text": "ودي كسوة كاملة، و عشر نعاج، و مية نيرة زيادة بالسنة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "3",
+      "text": "و النعاج ما ينباعن و اسماعيل مايروح عالمدينة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "4",
+      "text": "لا بدي اسألك بخصوص الاستراحه هاي الي معلن عنها بالجريدة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "5",
+      "text": "اشرح، سولف، هاظ أنا بسمع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "6",
+      "text": "حاولتوا تفهموا بعض؟ تساعدوا بعض؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "7",
+      "text": "سوسن انا مش رايق لهيك حكي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "8",
+      "text": "آه يا أمجد طولت عليك؟ أنا رحت شفت المدير و وافق إنه يجمعلك شوية فلوس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "9",
+      "text": "ليش ما حكيتيلي لما صحيت إنه أمجد كان هون ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "10",
+      "text": "شو بدي أعملها؟ هي هي، بتستنى رحمة ربّها. المهم احكيلي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "11",
+      "text": "رحت ادرس عند صاحبي و صار معه مغص ، ابوه ما كان في البيت فرحت مع أمه على المستشفى و ضليت معها للصبح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "12",
+      "text": "جايب اكل عشان تاكلوا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "13",
+      "text": "صدقني إنه مش داخل جيبتي و لا قرش",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "14",
+      "text": "ياصباح الخير يا سكرتيرتنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "15",
+      "text": "تفضلوا حضراتكو فهموني شو الحكي اللي اله معنى؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "16",
+      "text": "آه، ضلّ تمام؟ اللي كانوا يحكوا فيه طلع صح؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "17",
+      "text": "سعره بسعر هالشباب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "18",
+      "text": "هلا يا سيد مرزوق بعد ما اطلعت على كل محتويات الاستراحه صار بامكانك تتصرف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "19",
+      "text": "شيل هالصحون و نظف هالطاولة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "20",
+      "text": "بدها بروتوكول بروتوكول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "21",
+      "text": "شو رأيك يا مروزق بيك أشوفلك خدامة سيريلانكية تريح المدام",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "22",
+      "text": "بدي أسألك اكمن سؤال و تجاوبني عليهم بصراحة مفهوم؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "23",
+      "text": "طيب و إذا كان أبوك هناك؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "24",
+      "text": "مبدئياً رح أكتب لك هاظ العلاج مشان يخفف عليها، و رح نشوف شو بصير معانا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "25",
+      "text": "الله يخليك ما تعمل معاه إشي، أي بكفي اللي هو فيه!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "26",
+      "text": "انت يا أخينا فز قوم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "27",
+      "text": "حكيتلك، في طالب عندي بالمدرسة جهّز إلنا شوية أكل.",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "28",
+      "text": "ميه و اربعه و سبعين دينار و سته و عشرين قرش كاش",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "29",
+      "text": "هاذي لسا غلة أول يوم، و البركة بالجايات",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "30",
+      "text": "عفواً ليش أوقف؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "31",
+      "text": "على كل حال هاي ملف المحاسبة قدامكم بتقدروا تطلعوا عليه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "32",
+      "text": "اهلا وسهلا يامرحب شرفتوا نورت الاستراحه تفضلي مدام",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "33",
+      "text": "انت قليل ادب لازم واحد غيرك يكون هان يعرف يتعامل مع الزباين المحترمين مثلي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "34",
+      "text": "مرقت ياسيدي عن الأشاره وكان لونها احمر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "35",
+      "text": "انا خدام طلبات المدام",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "36",
+      "text": "على كل حال يا سمعة بيك ويا مرزوق بيك، بنجيب كرسي ثاني لسمعة بيك وبنحل الإشكال",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "37",
+      "text": "أبو شي أربع دنانير و شوية قروش",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "38",
+      "text": "على كل حال بسيطة، هاي الفاتورة بندبرها، تفضل روح على شغلك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "39",
+      "text": "و ضروري تكون أنت على راسهم يا سيد يوسف أنت المتر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "40",
+      "text": "المثل بقول يا أبو موسى: إبنك إن ما علمته، الدهر بعلمه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "41",
+      "text": "الأثاث اللي بعثته يا سيد عباس وصل و قاعد بنفرش فوق في الغرف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "42",
+      "text": "كيفك يا آنسة نادية؟ إن شاء الله مرتاحة في الشغل؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "43",
+      "text": "إنه حفلة عرس كبيرة زي هاي بيحضروها الناس الأكابر بصيرلها طنة و رنة يعني بصيرلها دعاية مش مهم فيها المربح المادي بكرا العائلات الكبيرة بتتهافت على الإستراحة و كل يوم بصير فيها عرس و فرح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "44",
+      "text": "المطرب الهندي والمطرب المحلي والفرقه الموسيقيه مش داخله بهيك قائمه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "45",
+      "text": "بس ما هو في ورقة كربون بين النسختين!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "46",
+      "text": "الحمدلله على السلامه يا بكوات الحمدلله على السلامه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "47",
+      "text": "بنجيب مطرب بعد أميركاني، مش دافعين ألف و ميتين ليرة؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "48",
+      "text": "يا ابني كلامك ما إله معنى واضح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "49",
+      "text": "البيت بيتك انت تيجي بإي وقت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "50",
+      "text": "في مشوار ضروري بدي اروحه قبل ما اروح عالبيت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "51",
+      "text": "وأبوك قبل ما يدخل السجن بقضية الشكات الي حكيتلك عنها وانت بالسجن",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "52",
+      "text": "يا هلا، ياه من خمس دقايق بس كنت بفكر فيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "53",
+      "text": "يا رجل اللي بتحكيه هادا هو في منه هالأيام! لا جوا السجن و لا برا السجن حدا بعمل اللي عملته",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "54",
+      "text": "المهم شو أخبارك إنت؟ شو ناوي تعمل؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "55",
+      "text": "فاتن إذا شافت حدا بدفعها لاتخاذ قرار",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "56",
+      "text": "ماسكتيلي كلمة مخالفات ومخالفه على لسانك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "57",
+      "text": "ما هو وحدة من تنتين، يا إما غشاشين يا إما غُشما",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "58",
+      "text": "عظيم! إزا كانوا غُشما صار واجبك إنك تنبهيهم!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "59",
+      "text": "هذول مربح صافي لالكوا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "60",
+      "text": "هذا فرش لأربع غرف ديلوكس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "61",
+      "text": "و حاطه هالكلمتين اللي درستهم في المدرسة الفندقية براسها و مسكرة عليهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "62",
+      "text": "ياخوي بدي اطلبلي اربع خمس سندويشات و بصل اخضر و زيتون اسود جعت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "63",
+      "text": "لا معلش بفضّل أقعد على الطاولة في الزاوية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "64",
+      "text": "لو شفت هدول الناس بتقدري تتعرفي على أشكالهم؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "65",
+      "text": "ناس بتصرفوا بهذا الشكل لايمكن يكونوا ناس عاديين",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "66",
+      "text": "بس أنت هيك بتكون ورطت حالك، و إحنا عملياً ما بنكون استفدنا إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "67",
+      "text": "عشان هيك أنا بعتبر هاني مثل أخوي، وأنت كمان مثل أمي الله يرحمها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "68",
+      "text": "لا تزعلي مني يا نادية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "69",
+      "text": "انا في وراي ناس محتاجين القرش يلي بكسبه بعرق جبيني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "70",
+      "text": "يعطيكِ العافية يا آنسة ليلى، هاي قهوة الأستاذ صلاح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "71",
+      "text": "البيك بحب فطور كامل ولا بتحب فطور كونتينينتال ولا مقبلات مشكلة؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "72",
+      "text": "الكريم كراميل يا بيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "73",
+      "text": "إكسترا، بخمس و سبعين قرش بس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "74",
+      "text": "يا بيك أنت بس أطلب و اتمنى، أسعارنا رح تعجبك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "75",
+      "text": "بعدين يا بيك عنا في فوق غرف نوم على أحدث طراز",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "76",
+      "text": "يا وقعتك السودا يا سمعه و يا خراب بيتك يا مرزوق",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "77",
+      "text": "آخرتها بترجع و بتغز عراسك غز",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "78",
+      "text": "خلونا ياجماعه نوصل لدائرة السياحه عشان نلحق نخلص كل معاملاتنا قبل نهاية الدوام",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "79",
+      "text": "ايوا و ردت علي الآنسه سميرة سكرتيرة السيد عباس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "80",
+      "text": "بتسمحلي يامرزوق بيك اتدخل واوضح الموضوع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "81",
+      "text": "آه آه يا بيك هسا، لأنه أنا عندي موهبة الأغاني دايماً جاهزة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "82",
+      "text": "احكيها، أنا بحب حكاياتكوا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "83",
+      "text": "خلص تعالوا معي على الإستراحة و أنا بحكيلكو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "84",
+      "text": "و أنا كنت خايف إنه إنتِ ما بتبادليني نفس المشاعر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "85",
+      "text": "بس يا سيد سمعة الصندوق ما فيه غير سبع دنانير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "86",
+      "text": "سبعه سبعه إنت الثاني خلص بس افتح الصندوق خلينا نتفرج",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "87",
+      "text": "اسم الله عليك اسم الله عليك سموعتي، اسم الله عليك تعال، روق روق سموعتي، روق استريح استريح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "88",
+      "text": "مريول و لونه أبيض!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "89",
+      "text": "طيب لأيش بدك إياه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "90",
+      "text": "موتورها مثل الليره الذهب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "91",
+      "text": "لِحِق الزوج و الزوجة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "92",
+      "text": "آه؟ أنت نفسك اللي بتتكلم؟ يا مرحبا سدقني إني ما عرفت صوتك، أهلاً و سهلاً، كيف حالك يا أستاذ إن شاء الله مبسوط؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "93",
+      "text": "يا بيك مش الانسه ناديا قدمت إستقالتها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "94",
+      "text": "شفت ألآنسه ناديا بتحكي بالتلفون",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "95",
+      "text": "لا حيشاك سمعة، بس انت متأكد منه؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "96",
+      "text": "شايفة شايفة يا آنسة ليلى! شايفة! أنا، أنا اللي تركت الأستاذ صلاح و هو قاعد بكتب قصة و أنا بطلها، و إجيت عشان أحكي لي كلمتين مع الآنسة نادية، شايفة كيف جاوبتني!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "97",
+      "text": "على فكرة كل الطاولات على حسابك يا مدام و بدك رأيي انا بنصحك بهاي الطاولة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "98",
+      "text": "بتعرفي كويس إنه العالم بكوم و أنتي عندي كوم تاني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "99",
+      "text": "شافني معاه اكثر من مره فحب يسأل عنه ليعرف مين هو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "100",
+      "text": "يا رجل انت وين؟ ساعتين وانا بدور عليك ومش ملاقيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "101",
+      "text": "لأنه اللي شفته اليوم بعيوني خلاني أعرف قديش إنت بتحبيه و قديش إنت مرتبطة فيه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "102",
+      "text": "و أنا بحبه مثلك، بس مش على طريقتك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "103",
+      "text": "ليش؟ طريقتي مش عاجباك يعني!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "104",
+      "text": "حبيبي سامر ابني حبيبي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "105",
+      "text": "أستاذ صلاح ما بدك تكمل القصة؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "106",
+      "text": "خير يا عباس بيك خير خير؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "107",
+      "text": "سكر التلفون بوجهي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "108",
+      "text": "لازم نشتغل سمعة! لازم نشتغل!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "109",
+      "text": "مالك يا اخوي؟ احكي احكي يا ناجح شو فيه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "110",
+      "text": "يلا بخاطرك، بدك إشي؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "111",
+      "text": "أهلاً و سهلاً شرفت تفضل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "112",
+      "text": "بعدين ناجح كتير منيح هو يعني طبعه صعب شوي بس يمكن مع الأيام يتغيير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "113",
+      "text": "ما قصرت، بس يعني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "114",
+      "text": "شو قصتك اليوم سامر؟ أنت مش من عادتك تحكي بالألغاز",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "115",
+      "text": "هالمرة رح اخليك تتهرب من الموضوع لانه شكلك عن جد متدايق",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "116",
+      "text": "أنا فنان و حساس و ما بتحمل واحد، أعصابي ما بتتحمل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "117",
+      "text": "هاظا التلفون الموجود تلفون عباس الأسطواني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "118",
+      "text": "الزبون على طاوله اربعه طلب مني شغله وما قدرت افهم منه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "119",
+      "text": "انا ما باخذ أوامر من الانسة ناديا او من غيرها، انا هون المدير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "120",
+      "text": "بتتذكر مرزوق، صاحب الاستراحة؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "121",
+      "text": "هذا انسان طيب وقدملي خدمة كبيرة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "122",
+      "text": "اسمحلي احكي معك يا ابو سامر بمنتهى الصراحة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "123",
+      "text": "يا صباح الفل و الورد",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "124",
+      "text": "له له يامرزوق بيك المثل بقول السلام احلى من الكلام واذا كان يعني حصل بيناتنا سوء تفاهم بسيط اعتقد انو اجا الوقت المناسب عشان نجلي الموقف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "125",
+      "text": "على كل حال ضروري إنّا نلتقي عشان وضع الترتيبات والشروط",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "126",
+      "text": "طيب وليش مابتقدر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "127",
+      "text": "يا استاذ عباس، يعني هو انا جاي على شان اساعدك ولا عشان انت تساعدني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "128",
+      "text": "شو هي الشغلة الي اشتغلتها في حياتك كلها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "129",
+      "text": "آه، كنت ألعب رياضة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "130",
+      "text": "بشوف المدرا طلعوا لبره لوين رايحين؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "131",
+      "text": "و اللي بشوفهم بهالحالة شو رح يحكي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "132",
+      "text": "على فكرة، يعني لو ما كنت إجيت كنت ناوي أنا أتصل فيكو أطلب أشوفك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "133",
+      "text": "انا مش قادره اسدء يلي عم تحكيه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "134",
+      "text": "فرصة سعيدة يا كابتن",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "135",
+      "text": "سامر شب فيه كل المواصفات اللي بتتمناها إي بنت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "136",
+      "text": "لا، بخصوص بنتك فاتن",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "137",
+      "text": "قررت اتحرّى عن الشخص هاد قبل ما احكيلك اي شي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "138",
+      "text": "متل هيك مواضيع ما بنفع تتعالج بعصبيه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "139",
+      "text": "لا فواز، ممكن نحكي بهدوء؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "140",
+      "text": "هاظا أكيد انتي عرفتي ليش أنا تركت الشغل و اجيت لهون عشان اشوفك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "141",
+      "text": "يعني البيت مش بالمستوى المطلوب لكن يالله ماشي الحال",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "142",
+      "text": "اطبعيها و هاتيها اوقعها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "143",
+      "text": "ايش رأيك نتصل بقاعة المصارعة و نتطمن على النتيجة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "144",
+      "text": "كل زردة بجسمي فاهمة شو اللي بتقول، الله يسامحك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "145",
+      "text": "وبعدين ولا عليك امر بدي تدير بالك عالاستراحه احنا بدنا نبلش بشغلات المصارعه وما مصارعه و انت دير بالك عالاستراحه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "146",
+      "text": "بعدين فيه شغله غريبه جدا يعني بتستغربها، قد ما بوكل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "147",
+      "text": "شو بقول هاظ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "148",
+      "text": "الشركة و المكتب مفتوحين الك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "149",
+      "text": "حيدخل إلى هذه الحلبة بطلين من أبطال المصارعة الحرة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "150",
+      "text": "بعدين موقف أبوك معي موقف انساني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "151",
+      "text": "حاولت أوصللها المعلومة، أحكيلها، أفاتحها بالموضوع بس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "152",
+      "text": "أيوة يا جودت بس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "153",
+      "text": "مش برجليه، و لا بايديه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "154",
+      "text": "لكن بحس من واجبي إني أحطك بصورة الوضع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "155",
+      "text": "انا الحقيقة استثمرت في أكتر من مشروع على مستوى العالم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "156",
+      "text": "أنت هيك بتخليني أتفاءل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "157",
+      "text": "يا سيدي خذ الوقت اللي بدك إياه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "158",
+      "text": "الوقت ثمين يا شباب، خلونا ندخل بالموضوع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "159",
+      "text": "الدكتور حريص على راحة الناس اللي بشتغل معاهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "160",
+      "text": "و الحياة ثمينة، مش لازم نفرط فيها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "161",
+      "text": "ايوا بس احنا لهسا ماعرفنا شو المطلوب منا بالزبط",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "162",
+      "text": "أنا متأسفه أنا بعرف إنه سواقتي شوي خفيفة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "163",
+      "text": "شو رأيك تتركني انا اتصرف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "164",
+      "text": "لا ولا اشي بس شوية صداع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "165",
+      "text": "منتجاتنا صارت معروفة في البلد و بره البلد",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "166",
+      "text": "يعني باختصار الحسبة هيك مش لصالحنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "167",
+      "text": "على كلٍ خلينا نستنى كمان فترة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "168",
+      "text": "لو تشوفي جدة سمعة قديش طيبة و قلبها حنون",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "169",
+      "text": "انت ابو المفهوميه بنطولها بس تهدى الحاله شوي بنتقاسمها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "170",
+      "text": "أنا يا يوسف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "171",
+      "text": "هاد صار بدال السبب سببين",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "172",
+      "text": "و من هو اللي بده يخاطر بروحه بهالليل و يشعبط على السلم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "173",
+      "text": "الف صحتين وعافيه يا بيك صحتين وعافيه يا سمعه بيك بتؤمر شي ثاني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "174",
+      "text": "ريحت حالك هسا! ريحت حالك!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "175",
+      "text": "يا هلا، يا هلا بجدة سمعة هلا بجدتنا كلياتنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "176",
+      "text": "شوف يا شريكي سمعة، الحقيقة إنه يوسف مخلوق من مخلوقات الله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "177",
+      "text": "المنطق استوحيته من تصرفاتك من نظرتك للحياة أنا بس بترجم اللي بشوفه مش اكتر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "178",
+      "text": "انت عنجد مبسوط؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "179",
+      "text": "بشوفك صرت بعالم ثاني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "180",
+      "text": "يعني ما في مشاكل ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "181",
+      "text": "جدة أنادي لك سمعة خليه ييجي يحملها عنك؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "182",
+      "text": "بدي إذا سمحت يعني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "183",
+      "text": "يسلم ثمك يا بيك، صحيح صحيح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "184",
+      "text": "غريبة، عاد انا ما سدقت غير لما طلعت عالحديقة و شفت السلم بعيني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "185",
+      "text": "صباحك و مساك فل  و ورد و قشطة و ياسمين يا عباس بيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "186",
+      "text": "طب لعاد اطلب من عارف اكل وخله يسجله عليك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "187",
+      "text": "يا سيد عباس أنا اللي شفته في الصرة كان ذهب، ذهب صافي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "188",
+      "text": "حسابي يا طويل العمر و السلامه ميتين و سبعين ليرة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "189",
+      "text": "خايف لا نكون ما أخذناش إشي فعلاً من غرفة الجدة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "190",
+      "text": "عشان أنا كمان أصدق؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "191",
+      "text": "خير ويركه خير وبركه يا جده",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "192",
+      "text": "بدي أرجع على بيتي و قريتي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "193",
+      "text": "و ليش حضرتك بتسألي؟! كإنه مفكرة حالك صرت مديرة إنت الثانية؟! بكفيناش الآنسة نادية!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "194",
+      "text": "في سؤال ملّح حاب اسألك إياه و حاب اعرف إجابته",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "195",
+      "text": "اللي عرفته إنه صاحب محل المجوهرات غير أقواله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "196",
+      "text": "أنا حاسس إنه غلطنا لما دخلناه معنا شريك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "197",
+      "text": "إني حبل الانقاذ الوحيد بحياتك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "198",
+      "text": "بابا مانعني حتى اطلع من البيت او استعمل التلفون",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "199",
+      "text": "بس طبعاً بظلوا عمر و فتحي مسؤولين عن الشركة هون",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "200",
+      "text": "كنت احب إنه جلستنا اطول كمان شوي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "201",
+      "text": "قديش قلت حسابنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "202",
+      "text": "الحمدلله على السلامة يا بكوات، ألف الحمدلله على السلامة يا بكوات",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "203",
+      "text": "انت قبل تفوت لهون ما قريت انو الان نحن في جلسه منغلقه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "204",
+      "text": "جايب معاه سيارتين من أوروبا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "205",
+      "text": "يعني بدك تقولي انه انا المسؤول وانتي ما الك علاقة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "206",
+      "text": "على كل حال القصة مش محتاجة كل هالشرح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "207",
+      "text": "نادية و ليلى؟! و شو بشتغلوا؟ قصدي ايش بشتغلوا هون؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "208",
+      "text": "بس انا ما الي دخل بعلاقاتكم الخاصه من مسؤوليتي اني اتأكد من حساب كل نزيل و احاسبه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "209",
+      "text": "برافو عليكي يا مدموزيل بس احنا بناديله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "210",
+      "text": "انت شو مشتغل؟ بطلت اعرف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "211",
+      "text": "بس الأخبار الحلوة اللي أنا جايب لك إياها بتستاهل إني أستنى حتى أبلغك فيها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "212",
+      "text": "وصلنا لمرحلة انكسر علينا اجار البيت لسنة كاملة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "213",
+      "text": "يا حبيبي يا أمجد هاي تجارة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "214",
+      "text": "انو انا بحاجة لهاي الفرصة و يمكن أكثر منك بكثير كمان",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "215",
+      "text": "نبيل أرجوك مش أنت لحالك اللي بتحدد المنطق اللي لازم يكون بينا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "216",
+      "text": "معلش يا ليلى متأسفه لأنها كانت عائلية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "217",
+      "text": "بس المبلغ هاظا ما بكفي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "218",
+      "text": "أنا لازم اروح اشوف شو القصة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "219",
+      "text": "يا بيك يا بيك أنا شو اللي قلته؟ أنا قلتلها ما تقول مبروك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "220",
+      "text": "أرجوكي روقي روقي رووقي هاذا بطل الواحد يعرف يحكي معك اهلييين",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "221",
+      "text": "متى بدك تفهم إنه هاي مش مثالية، و إنه هيك الإنسان الصح لازم يتصرف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "222",
+      "text": "ما هو إنت ما سألتني يا مرزوق بيك، بس أنا جاهز أجاوبك.",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "223",
+      "text": "أشغالي كلها هناك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "224",
+      "text": "و الا بدك كل اشي على الجاهز و من غير تعب؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "225",
+      "text": "و كمان بتدافع عنها؟ طبعاَ معك حق! مهي حققتلك كل أحلامك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "226",
+      "text": "مش قلتلك مش قلتلكوا كلكو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "227",
+      "text": "لا لا معلش، الموضوع بده دراسات و حسابات، و أنا برجع بكرة إن شاء الله بقدم كافة التكاليف للأساتذة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "228",
+      "text": "انه ما كان يتوقع من انسانه مثلك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "229",
+      "text": "وهلأ برأيك دكتور شو الحل؟ يعني شو المطلوب مني اعمله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "230",
+      "text": "خلص ما رح اتأخر خلص يلا مع السلامة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "231",
+      "text": "و أنا بتمنى إنه يكون الموضوع إيجابي يعني، لأنه شوف يا أستاذ إذا أنا و إياك صار بيننا نسب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "232",
+      "text": "بالنسبه للعقود رح اخلي المحامي يجهزهم وبكرا بتمر بنوقعهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "233",
+      "text": "صحيح شو صار بموضوع فاتن ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "234",
+      "text": "احكي جودت احكي بقدر أفهمك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "235",
+      "text": "ئي قديش فكرك بدو راتب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "236",
+      "text": "لأ هذا صايره تحكي شعر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "237",
+      "text": "طيب يلا روحوا شوفوا شغلكوا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "238",
+      "text": "كيف يعني ما شفتوه! معقول طلع من الاستراحة بدون ما تشوفوه؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "239",
+      "text": "المهم انو مرزوق ينعمي قلبه عن الاستراحه و يضل دايما مشغول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "240",
+      "text": "آه صحيح، صحيح يا عباس، زكرتني أنا جاي لك عشان هيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "241",
+      "text": "صحيح يا سيد يوسف؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "242",
+      "text": "شو قصده يعني؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "243",
+      "text": "أنا بعرف يا دكتور إنك بتحب تختصر و ما بتحب تضييع الوقت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "244",
+      "text": "و بتقلي خذ حذرك منه المفروض انت تاخذ حذرك منه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "245",
+      "text": "ما في داعي تظلوا هون، انزلوا ارتاحوا شوي في غرفتكم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "246",
+      "text": "للأسف إنك تكوني إنت اللي اتصلت كل هالتلفونات",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "247",
+      "text": "و الكلام اللي بتحكيه عجيب غريب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "248",
+      "text": "و الكلام اللي بتحكيه أرجوكي ما تعيديه مره تانية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "249",
+      "text": "إي صدقيني صدقيني من غيرك مش عارفه شو كنت بدي اساوي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "250",
+      "text": "عن ازنك يا جارتنا هاظا جرس الباب برن مع السلامة، يلا يلا حاضر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "251",
+      "text": "ليش ياخوي؟ و شو بدك تساوي يعني؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "252",
+      "text": "أنا هسع بروح على الاستراحة و بعرف شغلي معه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "253",
+      "text": "طبعاً مش غلط يا عباس إذا كان فيش",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "254",
+      "text": "مش فاكه عنها غير لما اطفشها من الاستراحه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "255",
+      "text": "بس أنا هاد الصوت حافظته كويس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "256",
+      "text": "كيف هاي أتركها إلي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "257",
+      "text": "يا سيدي عصام غيّر كل نظام الشركة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "258",
+      "text": "إيش اللي عملته بزماني لإبني حتى يعمل فيي هيك!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "259",
+      "text": "رحت له أكتر من مرة و قلي ما معي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "260",
+      "text": "اخر مره رحتله وعدني انو يدبر المبلغ",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "261",
+      "text": "بعد ما استقر، الحقيقة ناوي أشوف لي بنت الحلال بالأول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "262",
+      "text": "ازا كان عندك صاحب نصيب و مخبية علي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "263",
+      "text": "ماشي الحال بتحب نطلبلك اي اشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "264",
+      "text": "بنت بتشتغل عندكوا هون بالاستراحة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "265",
+      "text": "شوفي احكيلك خيتي، اذا كان الرجل مثل ما حكيتي ومقرش انا ما عنديش اي مانع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "266",
+      "text": "بيني وبينك يا بيك مليح الي مارحت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "267",
+      "text": "والله إنت ما أنت قليل يا سيد جابر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "268",
+      "text": "هاظ إنت عن صحيح بتحب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "269",
+      "text": "و لسه بدك تربايه يا يوسف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "270",
+      "text": "صح النوم يا يوسف صح النوم عاملي حالك شاطر كثير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "271",
+      "text": "طيب ليش بتلوميني؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "272",
+      "text": "الإستراحة كويسة و بالمناسبة أصحاب الإستراحة كثير دمهم خفيف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "273",
+      "text": "لكن للاسف رجعت ومالقيت حد على حاله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "274",
+      "text": "عارف معروف، كله واحد. طالبة قهوة من ساعة ولسّه ما جابولي إياها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "275",
+      "text": "بس صارلي ساعة طالبة فنجان قهوة ولسا ما جابولي اياه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "276",
+      "text": "محتارة يا نادية!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "277",
+      "text": "طبعاً أنا الصحيح يعني ما بحبش أقعد في الغرفة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "278",
+      "text": "مالك؟ ليش خايفة و متوترة؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "279",
+      "text": "أمجد متل ما بتعرفي ساعد الزلمه كتير و هاد التاني بحاول يردله جميله عشان هيك أنا ما حبيت اكون موجود معهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "280",
+      "text": "هذا الحكي كان زمان يا سيد سمعة، إحنا هلقيت في عصر التطور و التكنولوجيا و الهمبرغر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "281",
+      "text": "لا حول الله ياربي انا قلت بتوكلك سنتين ثلاثه بيها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "282",
+      "text": "لولا كلامك الحلو و وقفتك بجنبي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "283",
+      "text": "يا حيالله برزق الله يا حيالله ها قول لي كيف الوالده",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "284",
+      "text": "عالعافية مرزوق بيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "285",
+      "text": "أيوة على كفالتي الشخصية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "286",
+      "text": "أهالبنت كثير ممتازة، يا رب يا رب تكون من نصيبك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "287",
+      "text": "إنت كيف بترجع معروف بعد ما أنا طرّيته؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "288",
+      "text": "إنتوا اللي بتقولوا إنها الحالة واقفة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "289",
+      "text": "أنا ما بمزح، بدي أقلكوا ما ظل عندي وقت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "290",
+      "text": "عشان أثبتلكوا إني أنا إنسان محترم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "291",
+      "text": "حبيبتي شو بدو يكون في اشي ثاني يعني مافي اشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "292",
+      "text": "نحكي فيها عن الطبيعة و المشاعر و والأحاسيس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "293",
+      "text": "ربنا ستره ربنا ستره وسترنا معه وكله منك يا رزق الله علي الجيره مابتقعد هون ولا دقيقه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "294",
+      "text": "أنا شغلي إني أراجعها و أدققها و بعدين أقدملها للإدارة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "295",
+      "text": "أزاً ليش مسجله هون؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "296",
+      "text": "أنا إذا بدي العب بطلع هسع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "297",
+      "text": "إذا قصدك فاتن أنا ما حكيتلها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "298",
+      "text": "انا بنيت كل هذا و انت اجيت لقيت كل اشي جاهز",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "299",
+      "text": "أنا من رأيي يا عمي إنك تسرعت لما رحت له و عرضت عليه كل شي هاد الحكي خلاه كثير يتمادى",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "300",
+      "text": "و إذا كانت الثروة و المال بدها تكسر ظهري ما بدي إياهم بعدين بالآخر مهو كل اشي عملته",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "301",
+      "text": "معناته أنا معي حق، إنت في إشي مخبيه عني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "302",
+      "text": "و بصراحة الموضوع إله علاقة فيك، عشان هيك لازم تعرفي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "303",
+      "text": "المفروض إني أوقف في وجهه و أمنعه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "304",
+      "text": "معقوله مش خايف من الفصل زي عادته؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "305",
+      "text": "يبدو انها من نوع الحموات الي كثير بتحب تدخل في حياة بناتهم وازواجهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "306",
+      "text": "أهلاً أهلين يا سيد عباس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "307",
+      "text": "شب ممتاز و وظيفته محترمة، و أخلاقه عالية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "308",
+      "text": "بس الي لاحظته انت مرتك عقلها وقلبها وموقفها معاك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "309",
+      "text": "مش مفرطة فيك أبداًّ",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "310",
+      "text": "و هساع بدنا نغنيلكوا غناوية كثير بتحبوها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "311",
+      "text": "أنت بتعرف إنه أنسان عايش حياة كلها غش و خداع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "312",
+      "text": "يمكن ما اعطوهم مصاري",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "313",
+      "text": "و إيش أسوي لك يعني؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "314",
+      "text": "أشتري لك سيارة؟ ما شاء الله حولك و حوليك ليش بدك السيارة؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "315",
+      "text": "فعلاً، أنا حققت كل اللي بدي إياه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "316",
+      "text": "طبعاً متأكد، أنا شايفها بعيوني هذول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "317",
+      "text": "لو سمحت يا سيد مرزوق اطلب منك خدمه صغيره للسيد يوسف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "318",
+      "text": "منو الي بلاني بيك انت منو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "319",
+      "text": "انا جدتك الي ربتك بعد موت امك وابوك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "320",
+      "text": "لازم تروح وتجيب حقك من الاستراحه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "321",
+      "text": "أنا مش عارف ليش طول هالمده هاي السابقة كنت أنا و إياكي دايماً بمناقرة و مداقرة مع العلم مبين عليكي طيبة و قلبك طيب و بتحبي كل الناس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "322",
+      "text": "حلو كتير مبروك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "323",
+      "text": "ليلى تنسيش إنه المدرا قلبهم طيب، شفتي لما الله وفقهم شو عملوا مع الموظفين و كيف كافئوهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "324",
+      "text": "هلا هلا الله يعافيكي عدم المؤاخذه رقبتي شوي ملووحه ف قلت له ادهنلي اياها بشوية منطولاته",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "325",
+      "text": "كنت كل ما احتاج او انزنق اروح واخد منه ولمين للست حماتي اه شايفه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "326",
+      "text": "هاي كل الأواعي اللي معاي جاهزة يا بيك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "327",
+      "text": "هاي السيارة جاهزة عمي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "328",
+      "text": "أنا كنت حابب أسويله عرس أرقّص المزرعة كلها بس جاسم بسلامته ما وافق",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "329",
+      "text": "أعرفوا أصول الحكي و الأدب و التعامل اتعلموا إنه لما واحد بحكي الثاني بسمع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "330",
+      "text": "ترا في الأخير ممكن تقلب على راسك، دير بالك ها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "331",
+      "text": "يابا الله يكون بعونك، صدقني يابا أنت بتنفخ بقربة مخزوقة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "332",
+      "text": "إنسى يابا إنسى، و بترجاك خليني أتصرف بطريقتي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "333",
+      "text": "يعني مرات بطلع روحي و مع ذلك يعني متحملاه عشان عيونك يا حبيبي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "334",
+      "text": "مع إني على قد حالي و من اسرة بسيطة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "335",
+      "text": "عنيد و راسه مثل الحجر، و أمي مش عارفة كيف تكسبه، مع إنه طيب كثير بكلمتين ممكن توخذي منه اللي بدك إياه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "336",
+      "text": "يعني حل مؤقت على بين يحلوا مشكلتهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "337",
+      "text": "عرفت إنه مرحبا بهالزمن ما حدا بحكيها إلا إذا بده مصلحة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "338",
+      "text": "لسا مبارح تجوزنا!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "339",
+      "text": "افرضي اليوم يعني!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "340",
+      "text": "عمو كمل فطورك معنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "341",
+      "text": "انا اتأخرت عالشغل الي بدو اوصله يقوم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "342",
+      "text": "بكرا بتتعودي اسمعي أنا بدي اروح ديري بالك هاه نظفي المطبخ تنظيف كويس لمعيه تلميع بعدين ديري بالك على الغدا سامعه؟ باي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "343",
+      "text": "شو جاي تعمل هون؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "344",
+      "text": "بساعدك يا زلمة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "345",
+      "text": "اسمع يا صبري بدي أحكي لك إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "346",
+      "text": "اليوم أهانتني في المكتب قدام السكرتيرة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "347",
+      "text": "على فكرة، بيني و بينك إنت محملة الموضوع أكبر من حجمه، خلص و لا يهمك أنا برجعه، ما هو إحنا الاثنين مثقفين و بنفهم على بعض",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "348",
+      "text": "ليش أنا رح اقدر اصبر ليومين ثلاث كمان ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "349",
+      "text": "اسمع اليوم انا فايق شخصيا قررت انو اقضي النهار كله معك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "350",
+      "text": "يابي لو انك مش ابو نسب كان ورجيتك مع انو انا معطيه الحل الصحيح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "351",
+      "text": "الناس بتحكي صباح الخير بالأول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "352",
+      "text": "أنا اشتريت قطعة أرض و حطيت فيها كل المصاري اللي معي و زيادة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "353",
+      "text": "في الحقيقه انا انانيه ومابحب غير نفسي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "354",
+      "text": "إنتي جاية تعطيني محاضرة و تسمعيني هالكلمتين؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "355",
+      "text": "قال إيش الأخ عاصي زعلان كثير كثير كثير كثير و حامل كل هموم الدنيا على أكتافه، قال ليش، عشان في أخ من إخوانه زعل و ترك البيت",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "356",
+      "text": "طيب يا أخوي، بس مش شايف إنها غريبة؟ نهيل تزعل واحد فيهم؟! نهيل طيبة كثير و قلبها كبير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "357",
+      "text": "و إنت شو عرفك؟ بتعرفها شي؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "358",
+      "text": "بس لا تنكد علي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "359",
+      "text": "الله يسامحك يما، بالعكس!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "360",
+      "text": "يما نوال إيش! نوال أنا أصلاً شايلها من مخي من زمان، أنا لو بدي إياها كان تجوزتها من زمان",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "361",
+      "text": "شفت شفت كيف بتحكي معي كأني عدوتها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "362",
+      "text": "المبلغ مش صغير هدول خمس تالاف دينار",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "363",
+      "text": "بدي احكيلك هالنكتة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "364",
+      "text": "أنا فاهم، هاي مش عملتك أنت، مش أفكارك، أكيد هي اللي وزتك و شجعتك، نهيل مش هيك؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "365",
+      "text": "لأني لأول مرة بحس إنك بتوخذ من وقتي أكثر بكثير من ما بتستحق",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "366",
+      "text": "شو يا أبو نسب لسه ما بلشناش من أولها هيك تخليني احاسب عنك سلامة خيرك يعني  أنا ما معيش لو معاي كان ما طلبت منك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "367",
+      "text": "دبرها يا أبو نسب دبرها، خلصنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "368",
+      "text": "كل الحق عليك، قلتلك آجي أنا و إياك لحالنا ما رديت علي إلا تجيبها معنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "369",
+      "text": "صدقيني فوزي بكذب، بكذب! إنت مش عارفيته بكذب يعني!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "370",
+      "text": "انا فعلاً ندمانة إني أقنعت أبوك و خليتك تشتغل لحالك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "371",
+      "text": "خمسين دينار مرة وحدة!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "372",
+      "text": "دمرت أجمل علاقة ربطتني فيكوا من غير ما ينهز لك رمش!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "373",
+      "text": "لا، الحقيقة هي مش موجودة يعني طلعت مشوار ما بعرف لأيمتى بترجع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "374",
+      "text": "يابا يعني واضح من كلامه إنه مش هي اللي شجعته على الغلط",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "375",
+      "text": "اتركنا من هالموضوع هسا خلينا نشوف فوزي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "376",
+      "text": "يا حياتي ليش حاطه أصبعك بدانك هيك؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "377",
+      "text": "عشان يا حبيبي الكلام اللي بتقولّي إياه يدخل من هاي الدان ما يطلع من هاي الدان",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "378",
+      "text": "ليش الليمونة لونها أصفر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "379",
+      "text": "شوف يا أبو جاسر همه كلمتين بدي أقولهم و بس زي ما دخلنا بالمعروف",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "380",
+      "text": "الحكي معك ما منه فايدة و بتمنى مهما صار نضل صحاب متل ما كنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "381",
+      "text": "أول ما شفت نهيل مبارح بالليل قلت لإبني صالح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "382",
+      "text": "خلص ما في منك فايدة أبداً و إحنا ما بدنا منك إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "383",
+      "text": "بدايقك؟ و أنا ما رح اكل و لا انام و اشرب عشان حضرتك متدايقة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "384",
+      "text": "انقعي اربع كاسات زي مابقلك تفضلي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "385",
+      "text": "ماحبيت حد بحياتي مثل ماحبيتكوا ولا رح احب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "386",
+      "text": "فكر بعقل و لا تخلي هواك يغرك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "387",
+      "text": "نتِ بتعرفي، أنا كنت لولادي بعد وفاة أمّهم الله يرحمها أم وأب وخدّام. ربّيتهم وتعبت عليهم قد ما ربّي قدّرني، وما قصّرت معهم. ولادي كبروا، وبكرا بطيروا وبتزوّجوا، وكل واحد بعيش لحاله",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "388",
+      "text": "من حقي يكون عندي امرأة تفهمني تستوعبني تواسيني تسليني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "389",
+      "text": "أنا بهنيكو من كل قلبي على اللي صار",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "390",
+      "text": "و أطيب قلب في الكون صفت هي اللي دمها فاسد",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "391",
+      "text": "يا صاحب نظرية المصلحة وراء كل موقف حتى لو كان انساني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "392",
+      "text": "و عارف كمان و رح ييجي اليوم اللي تكتشفي فيه حقيقتها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "393",
+      "text": "انا هلأ قايمه اضب شنتتي وياريت ماما توافق من غير ماازعلها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "394",
+      "text": "هذا الحكي صعب تفكري فيه لإنك ما حسيتي فيه، صدقيني يا ناهده صدقيني إني مرات كثيره بحس كيف هيك صار معنا! و ليش؟ و يا ترى اللي إحنا فيه حقيقة ولا وهم؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "395",
+      "text": "صاحبي مجدي كمان اسمه فريد",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "396",
+      "text": "يابا ولادك الستة بكوم و هاليزن هذا بكوم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "397",
+      "text": "لا بدها قصرة بال",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "398",
+      "text": "لو أنها شاطرة بتوفر من العشر ليرات اللي بزيدوا معاها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "399",
+      "text": "أنا كنت مستعدة أتحمل حتى ما أخسر شغلي، بس هو طلع إنسان سيء، ما بينطاق!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "400",
+      "text": "ببيع كل أنواع الخبز و الحلويات و الكعك، كل إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "401",
+      "text": "اسمعي هو قلي عشان خاطري مستعد يعطيك تسعين دينار و إذا شاف شغلك منيح يعني ممكن يزيدك و المخبز قريب يعني أنت مش بحاجة لمواصلات، يعني على بلاطة عشر ليرات بكفوك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "402",
+      "text": "خليهن خمس سيارات لكل واحد، روح كمل شغلك بلا حكي فاضي بس أطعمكم خبز هسا روح روح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "403",
+      "text": "يلا السلام عليكم، تنساش يوم الجمعة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "404",
+      "text": "ماشي يابا بحاول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "405",
+      "text": "مع السلامة طيب ارتاح شوي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "406",
+      "text": "تسلم تسلم يعطيك العافية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "407",
+      "text": "كثير منيح يابا ابشر رايحين نبيض وجهك كلنا يابا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "408",
+      "text": "ايمتى صايرين بتعملوا عزايم و بتعزموا في الناس؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "409",
+      "text": "هاظ اللي جاك المهم أنت بالذات ضروري تكون موجود",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "410",
+      "text": "بنوخدهم معنا يا حبيبي على المزرعة بيلعبوا عنده مزرعة كبيرة بيسرح و بيمرح فيها الخيال",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "411",
+      "text": "البني آدم اللي اسمه فرج بكرهني، عيونه عيونه بتقول إنه بكرهني مش عارفة ليش!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "412",
+      "text": "فهيمة ما رح تسكت يابا!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "413",
+      "text": "يابا يابا الله يخليك إلنا، يابا شو رايك نتقدم و نطلب له إياها؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "414",
+      "text": "نعم يا سيدي لقينا لها شغل بمحل ببيع طيور وعصافير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "415",
+      "text": "حسيت قديش حياتهم بسيطة و قديش بحبوا بعض",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "416",
+      "text": "لو بعرف هيك كان زمان مرضت مشان تزوريني",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "417",
+      "text": "لا ما بقدر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "418",
+      "text": "يعني القطعه كلها بحدود سبعين الف دينار",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "419",
+      "text": "طيب و إذا ما قدرت أدفع!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "420",
+      "text": "لا ما في إشي ما في إشي، وين أمي؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "421",
+      "text": "ولا شو بتسمي اللي أنت فيه؟ عين في الجنة و عين في النار",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "422",
+      "text": "لأنه أنا ما بقدر أتخلى عن أمي، أو بالأحرى مستحيل أتخلى عنها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "423",
+      "text": "و انت شو الي مدايقك، المفروض تكون فرحان لفرح أخوك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "424",
+      "text": "سلامتك ألف سلامة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "425",
+      "text": "قدم عروض لشركات التأمين، لمكاتب تأجير السيارات السياحية",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "426",
+      "text": "من بكرة بدنا نبلش عروض على قد ما بنقدر، و رجلي على رجلك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "427",
+      "text": "إذا بتحب بضل بالسيارة ما في مشكلة و رح نبدا بجار اخوك ناجح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "428",
+      "text": "انتي الي لازم تفهمي وانتي الي لازم تديري بالك على بيتك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "429",
+      "text": "معناته في إشي! إيش فيه احكي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "430",
+      "text": "على كل حال إحنا سمعنا إنكم بتبنوا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "431",
+      "text": "بتحكي عنجد! عنجد بتحكي! الله يخلي لي إياك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "432",
+      "text": "مو اتفقنا إنه ما تتحركي من مكانك؟ أنا بروح بفتح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "433",
+      "text": "اسماء بنت ممتازه كتير وجارتنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "434",
+      "text": "هاي زامور جاسر أكيد وصل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "435",
+      "text": "أنت بدك تعمل من الحبة قبة عشان تحمل المسؤولية لغيرك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "436",
+      "text": "بارك الله فيكوا، بدبر حالي، السلام عليكم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "437",
+      "text": "ماشي، جيبلي جكيتي معك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "438",
+      "text": "وين كان كل هالكلام الحلو؟! وين كانت كل هالطيبة اللي مخبيها عني ؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "439",
+      "text": "صحه و هنا يابا بلحقكم بعدين اتغدوا انتو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "440",
+      "text": "خلص تعبان توكلي على الله انتي اتغدي انتي و الولاد بعدين أنا بتغدى",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "441",
+      "text": "و لا يهمك! بعدين المشاكل موجودة في كل بيت مش في بيتنا بس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "442",
+      "text": "يا ستي ما بدنا نجيب سيرة حدا فيهم، الله يوفقهم و يرضى عليهم وين ما راحوا و شو ما عملوا هم حرين",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "443",
+      "text": "بحياة الله ما تحكي لأبوي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "444",
+      "text": "شو فيه طمنني؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "445",
+      "text": "مش معاهم أنا بعرف فوزي تركهم من أولها اتقاتل معاهم من أولها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "446",
+      "text": "ناهده؟ إي هي ناهده فاضيه لحدا صحيح هي وين؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "447",
+      "text": "ما بتقدر تمدد إجازتك بالتلفون؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "448",
+      "text": "بلومك و أنا عارف إنه ملكيش ذنب",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "449",
+      "text": "لا يكلف الله نفساً إلا وسعها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "450",
+      "text": "أنا بحكي لك لأني محتاجة لقلب كبير يسمعني و يفهمني، لكن ما بدي إياك تزعل و لا بدي إياك تروح له و تحكي معه أبداً يابا، سدقني يابا أنا بقدر أحل كل مشاكلي لحالي ما تعمل أي إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "451",
+      "text": "أنا تركت البيت و اليوم يزن سافر و ترك البيت و العالم الله الدور بكرا على مين",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "452",
+      "text": "لا إنت ما غلطت يابا، الشر بقلب ناجح و يزن بس",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "453",
+      "text": "لا توخذ على خاطرك، أنا بعرف إنك شباب و إن شاء الله يا رب بتظل شباب على طول",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "454",
+      "text": "يابا شو رايك أوخدك عند عمي فرج خلينا نخلص من لسانه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "455",
+      "text": "و حقك يختي وين رحتي فيه؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "456",
+      "text": "و شو بتقدر تشتغل؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "457",
+      "text": "شو اللي هيني جوعان! روحوا من هون غسلوا أيديكم، روحوا، روحوا من خلقتي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "458",
+      "text": "طب روح روح، روح على شغلك روح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "459",
+      "text": "خير شو في؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "460",
+      "text": "ليش فكرك أنا رح أعتمد عليك في الشغل؟ أنا اللي رايحة أدور لها على شغل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "461",
+      "text": "شو شو فيه! نسيت اتفاقنا يا زلمة!؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "462",
+      "text": "يلا يا زلمة هسا إذا صحيوا بنقدرش نطلع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "463",
+      "text": "يا جماعة يا جماعة أنا قصدي الخير",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "464",
+      "text": "خلينا نسمع اللي عنده",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "465",
+      "text": "و في بيت و بأجرة قليلة، أنا فضيت عندي شقة بالعمارة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "466",
+      "text": "الظاهر صعب نتفق",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "467",
+      "text": "أنا من رأيي إنكو تفكروا باللي أنا حكيته",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "468",
+      "text": "هلأ الاولاد برجعوا من المدرسه",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "469",
+      "text": "ليش أنت مهتم؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "470",
+      "text": "يا فهيمة، بيت الإنسان انوجد لهداة البال وراحة الإنسان، أنا بصراحة بشوف راحتي برا البيت أكثر",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "471",
+      "text": "أنا بعد الشغل بفتح مشروع صغير بفيدنا و بفيدها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "472",
+      "text": "لا ولا اشي بس اداقرت أنا و جاسر بهدلني قدام العمال وقلي ترك العدة و روح",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "473",
+      "text": "تغسل له أواعيه، تكوي له إياهم، تعمل له كل إشي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "474",
+      "text": "كل الشنتة هاي عشان يومين؟!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "475",
+      "text": "صغيرة صح؟ برضو أنا قلت هيك في عندك أكبر قصدي يعني أصغر؟ مهو انتي عارفة أنا محتاجها بحط فيها أواعي و ملابس و كذا بعدين أنا رايح مسافر عالبحر بدي اتسبح و كذا يعني بحتاجلي اكمن غيار يلا سلام",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "476",
+      "text": "البكب واقف على راس الشارع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "477",
+      "text": "شو الي قاعد بتحكيه يا فرج",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "478",
+      "text": "كان دايماً يطلب مني مصاري",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "479",
+      "text": "ما بدي أحكي كلام يدايقك، عشان هيك بفضل ما نحكي بهالموضوع",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "480",
+      "text": "و العاقلة هي الي بتعرف كيف تقدر مشاعر حماتها و تراعيها مثل ما بتراعي جوزها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "481",
+      "text": "ول! يابي ما ألئمك ليش يا زلمة!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "482",
+      "text": "يابا حبة الفواكه اللي بتوقع عن غصنها ما حد بوقعها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "483",
+      "text": "أنا مش قادر اصدق و لا كأنك  بنتي كأنك عدوتي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "484",
+      "text": "ما هو يا حبيبي هالقليل بكثر، شو قصتك! يعني صاير تكره الشغل ما بدك تشتغل!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "485",
+      "text": "اي حاضر يابه بشوف شغلي بشوف شغلي انا رايح اشوف شغلي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "486",
+      "text": "خذ يمينك شوي، اللي عملته عشانك أكثر من اللي عملته إلنا كلنا",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "487",
+      "text": "ما شاء الله ما شاء الله شو هاللمة الحلوة هاي لهدرجة نهيل غالية عليكو",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "488",
+      "text": "بعدين هاذي حياتها و إنت كمان ياخي ثقلتها شوي!",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "489",
+      "text": "خليكِ قاعدة و مرتاحة أحسن لي أنا بعملها لحالي",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "490",
+      "text": "اجيت ارتاحلي ساعة دوشوني بمناقرتهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "491",
+      "text": "أنا لازم أروح أجيب الولاد و أطعميهم",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "492",
+      "text": "شو رأيك يختي أروح على المستشفى بلكي بدهم مني اشي ؟",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "493",
+      "text": "أنا مبسوطة عم بشوفكم صايرين مثل السمنة على العسل",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "494",
+      "text": "ولا يهمك لأنهم ما رح يعترضوا، و بعدين كل الشقق زي بعضها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "495",
+      "text": "أنا بتجربتي بالعزوبية تعلمت قلاية البندورة رح اعمللكو الليلة قلاية بندورة من اقدع ما يمكن",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "496",
+      "text": "إذا كان في شي جواك قلي إياه مباشرةً و بصراحة",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "497",
+      "text": "بس من حقها كمان يعني تضمن مستقبلها اكتبلها مبلغ كبير باسمها بالبنك اقولك اكتبلها المزرعه باسمها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "498",
+      "text": "و أنا برعاكم كأنّي أم و أب بنفس الوقت، أكثر من خمس طعشر سنة على هالحال",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "499",
+      "text": "أنا كنت قادرة اوقف على رجلي و اتخطى كل المشاكل الي في حياتي و ارجع اوقف على رجلي من جديد من غيرك",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "500",
+      "text": "أنا بشجعك على هالخطوة وان شاء الله ما بتفشلوا فيها",
+      "dialect": [
+        "jo-oth"
+      ],
+      "source": "casablanca_Jordan",
+      "source_dialect": ""
+    }
+  ]
+}

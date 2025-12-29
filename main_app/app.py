@@ -75,7 +75,7 @@ S3_CLIENT = _create_s3_client()
 # COUNTRIES & DIALECTS
 # ===============================
 
-AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen"]
+AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan"]
 
 COUNTRY_EMOJIS = {
     "dz": "🇩🇿",
@@ -361,7 +361,8 @@ CONSENT_DETAILS = """
     </li>
     <li>
       <strong>التعويض:</strong><br>
-      يدرك المشارك أن المشاركة لا تتضمن أي مقابل مادي، والمساهمة هنا لدعم وتطوير البحث العلمي فقط.
+      يدرك المشارك أن المشاركة لا تتضمن أي مقابل مادي، والمساهمة هنا لدعم وتطوير البحث العلمي فقط.<br>
+      بمجرد إنشاء حساب فأنت موافق علي جميع الشروط المذكورة أعلاه. ويمكن للباحثين التعديل علي الشروط في أي وقت دون إشعار مسبق.
     </li>
   </ol>
 </section>
@@ -1366,8 +1367,8 @@ def build_app():
 
             with gr.Column():
                 gr.HTML('<div class="card rtl"><h3>تسجيل الدخول</h3>')
-                login_email = gr.Textbox(label="Email", placeholder="name@example.com")
-                login_pw = gr.Textbox(label="Password", type="password", placeholder="••••••••")
+                login_email = gr.Textbox(label="الإيميل", placeholder="name@example.com")
+                login_pw = gr.Textbox(label="كلمة السر", type="password", placeholder="••••••••")
                 login_btn = gr.Button("تسجيل الدخول", variant="primary")
                 login_msg = gr.HTML("")
                 goto_register_btn = gr.Button("إنشاء حساب جديد")
@@ -1387,13 +1388,13 @@ def build_app():
 
         with gr.Column(visible=False) as register_view:
             gr.HTML('<div class="app-shell"><div class="card rtl"><h3>إنشاء حساب جديد</h3>')
-            reg_name = gr.Textbox(label="Name (Latin)", placeholder="e.g., Ahmed Ali")
-            reg_email = gr.Textbox(label="Email", placeholder="name@example.com")
-            reg_pw = gr.Textbox(label="Password", type="password", placeholder="Create a password")
-            reg_country = gr.Dropdown(choices=AVAILABLE_COUNTRIES, value="Saudi Arabia", label="Country")
-            reg_dialect = gr.Dropdown(choices=get_dialects_for_country("Saudi Arabia"), value=None, label="Dialect")
-            reg_gender = gr.Dropdown(choices=GENDER, value=None, label="Gender")
-            reg_age = gr.Dropdown(choices=AGES, value=None, label="Age Group")
+            reg_name = gr.Textbox(label="الاسم (بالإنجليزية)", placeholder="e.g., Ahmed Ali")
+            reg_email = gr.Textbox(label="الإيميل", placeholder="name@example.com")
+            reg_pw = gr.Textbox(label="كلمة السر", type="password", placeholder="قم بحفظ كلمة السر هذه لتسجيل الدخول لاحقًا")
+            reg_country = gr.Dropdown(choices=AVAILABLE_COUNTRIES, value="Saudi Arabia", label="الدولة")
+            reg_dialect = gr.Dropdown(choices=get_dialects_for_country("Saudi Arabia"), value=None, label="اللهجة")
+            reg_gender = gr.Dropdown(choices=GENDER, value=None, label="النوع")
+            reg_age = gr.Dropdown(choices=AGES, value=None, label="الفئة العمرية")
 
             with gr.Accordion("إتفاقية التسجيل واستخدام البيانات", open=False):
                 gr.Markdown(CONSENT_DETAILS)
@@ -1436,9 +1437,9 @@ def build_app():
 
             # Recording card
             gr.HTML('<div class="card rtl"><h3>التسجيل</h3>')
-            username_box = gr.Textbox(label="👤 Username", interactive=False, visible=False)
+            username_box = gr.Textbox(label="👤 اسم المستخدم", interactive=False, visible=False)
             sentence_box = gr.Textbox(label="✍️ الجملة (يمكنك تعديلها)", interactive=True, lines=3)
-            sentence_id_box = gr.Textbox(label="Sentence ID", interactive=False, visible=False)
+            sentence_id_box = gr.Textbox(label="رمز الجملة", interactive=False, visible=False)
 
             audio_rec = gr.Audio(
                 sources=["microphone"],
@@ -1449,8 +1450,8 @@ def build_app():
             temp_audio_path = gr.Textbox(label="Temp audio path", visible=False)
 
             with gr.Row():
-                save_btn = gr.Button("Save & Next", variant="primary", interactive=False)
-                skip_btn = gr.Button("Skip", variant="secondary")
+                save_btn = gr.Button("حفظ", variant="primary", interactive=False)
+                skip_btn = gr.Button("تخطي", variant="secondary")
             msg_box = gr.HTML("")
             gr.HTML('</div>')  # card
 
