@@ -75,7 +75,7 @@ S3_CLIENT = _create_s3_client()
 # COUNTRIES & DIALECTS
 # ===============================
 
-AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan"]
+AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan", "Palestine"]
 
 COUNTRY_EMOJIS = {
     "dz": "🇩🇿",
