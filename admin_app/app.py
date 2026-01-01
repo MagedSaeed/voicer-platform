@@ -231,7 +231,7 @@ def get_users_with_sessions(country_filter=None):
             "name": u.get("name") or "",
             "email": u.get("email") or "",
             "country": u.get("country") or "",
-            "dialect_code": u.get("dialect_code") or "",
+            "dialect_code": u.get("dialect_code") or "Saudi Arabia",
             "gender": u.get("gender") or "",
             "age": u.get("age") or "",
             "created_at": u.get("created_at") or "",
