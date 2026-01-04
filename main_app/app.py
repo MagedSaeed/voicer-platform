@@ -72,7 +72,7 @@ def _create_s3_client():
 S3_CLIENT = _create_s3_client()
 
 # ===============================
-# COUNTRIES & DIALECTS 
+# COUNTRIES & DIALECTS  
 # ===============================
 
 AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan", "Palestine", "Algeria"]
