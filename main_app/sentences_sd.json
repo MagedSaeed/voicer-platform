@@ -1,0 +1,976 @@
+{
+  "sentences": [
+    {
+      "unique_id": "1",
+      "text": "سمح الغنا في خشم سيدو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "2",
+      "text": "قام قعد يكورك ساكت.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "3",
+      "text": "المال تلتوا ولا كتلتوا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "4",
+      "text": "التسويها بايدك تغلب اجاويدك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "5",
+      "text": "الجمرة تحرق الواطيها.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "6",
+      "text": "بحسب فى ثوانى الليل شان الصباح القاك ما انت عارف انو محال يوم اطولو سماك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "7",
+      "text": "بليلة مباشر ولا ضبيحة مكاشر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "8",
+      "text": "مشتاقين وبركة الشفناك طيب وجيدن جيت.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "9",
+      "text": "قلبي على جناى وقلب جناي على حجر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "10",
+      "text": "إن جاتك في مالك سامحتك ... وإن جاتك في نفسك بكتك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "11",
+      "text": "الخير في الملعون زي الشرة في القندول.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "12",
+      "text": "غلبك الحفظ بقيت تنجر من راسك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "13",
+      "text": "إن غلبك سدها وسع قدها.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "14",
+      "text": "قاعدين معاك هنا لانو عاجبنا و نستك و نضميك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "15",
+      "text": "المحتاج بفتش خشم البقرة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "16",
+      "text": "كلامك فيو شك وكان ما فيو شك ما قال طق.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "17",
+      "text": "بخيت شكروه ... قال داك شهر تاني.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "18",
+      "text": "نمرة 2 دي ما دايرة شرح اسمع الاغنية و بتفهمها و هي طايرة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "19",
+      "text": "أنا أصلي مارق للربا والتلاف.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "20",
+      "text": "الما يهدي الكريم تعبان.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "21",
+      "text": "أمسح إسمو من خارطة ضميرك حكو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "22",
+      "text": "الود دا ود اليابا والتابا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "23",
+      "text": "شتتو في الخلا ,, وعكس الهبايب فكو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "24",
+      "text": "الدين لو درهمين بسود الخدين.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "25",
+      "text": "كدي أدي الجماعة فرصة وبعدين تحلها لينا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "26",
+      "text": "هيييي ... أرعى بقيدك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "27",
+      "text": "بادر الضيف ولو ببرش وقرعة موية.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "28",
+      "text": "يا زول أكان كدي انت جيت قريب خالص.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "29",
+      "text": "الريد الكتير لابد تعقبو عداوة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "30",
+      "text": "لصيق الطين فى الكرعين ما ببقى نعلين.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "31",
+      "text": "انا مولود في ديم النور والجماعة ديل جيرانا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "32",
+      "text": "القارصوا الدبيب يخاف من جر الحبل.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "33",
+      "text": "اتنين كان قالوا ليك اضانك مافى اهبشها.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "34",
+      "text": "غيرت رايي في آخر لحظة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "35",
+      "text": "ام جركم مابتاكل خريفين.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "36",
+      "text": "والفولة بتتملى و بقارة بجو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "37",
+      "text": "الدنيا مابتدوم زى الزيق الفى الهدوم.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "38",
+      "text": "كان فيها خير ما كان رماها الطير.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "39",
+      "text": "صنعة فى اليد امانة من الفقر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "40",
+      "text": "ان عجبك مالك شوف ضل الضحى....وان عجبوك رجالك شوف التراب.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "41",
+      "text": "البفكك من اكل التوم قل اكلو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "42",
+      "text": "نديك قرشك وتنزل طوالي.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "43",
+      "text": "رزقاً تكوسلوا ورزقا يكوسلك. مابنفع الجس بعد الضبح.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "44",
+      "text": "ان جادت بخيط العنكبوت تنقاد....وكان عاقت تقطع سلسل الحداد.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "45",
+      "text": "يا معلم براحة على الزبائن.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "46",
+      "text": "حشاش بدقنو. صاحب بالين كضاب.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "47",
+      "text": "السمح سمح كان زرعوا يقوم قمح.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "48",
+      "text": "جنك اكل كدى مالك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "49",
+      "text": "كراع البقر جيابه. بجى الخريف واللوارى بتقيف.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "50",
+      "text": "درب السلامة للحول قريب.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "51",
+      "text": "عليك الله ما تكتر المحلبية.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "52",
+      "text": "المال تلتوا ولا كتلتوا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "53",
+      "text": "خت الخمسة فى الاتنين.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "54",
+      "text": "كتر الف خيرك مرقتني من جنس زنقة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "55",
+      "text": "التسوى كريت فى القرض تلقاهو فى جلدها.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "56",
+      "text": "الويكاب بعرفو لكن والله ما حصل يوم أكلتو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "57",
+      "text": "الماشاف البحر تخلعوا الترعة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "58",
+      "text": "السبب الرئيسي هو إنو أنا طلعت من السودان وعمري 19 سنة لزوم الدراسة وكده ومن ديك وعيييك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "59",
+      "text": "القلم ما بزيل بلم. الجاياك ما بتختاك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "60",
+      "text": "أكان شالتك خير، وإن ختتك خيرين.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "61",
+      "text": "اول حاجة من دربك دا شوفي ليك محل فحص نظر وبعدين نشوف الحاصل.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "62",
+      "text": "أها ... خم وصر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "63",
+      "text": "الناس زي الهدوم فيها الراقي وفيها الزي جناح أم جكو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "64",
+      "text": "كمان بقيتو ما بتفرزو العنقريب من البنبر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "65",
+      "text": "الزائد عن حدو بيقلب ضددو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "66",
+      "text": "البيرقص ما بيغطي دقنو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "67",
+      "text": "استـر عـيب رفيــقــك... وســـــرو أوعـــى تفكُّـــو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "68",
+      "text": "الكحل ما بنفع في العين الحجر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "69",
+      "text": "الولادة صغرة والمشي صباح.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "70",
+      "text": "الزول كان أباك من غير سبب... ما تسُكُّـــو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "71",
+      "text": "درب السلامة للحول قريب.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "72",
+      "text": "وكلامي ضربتو بيو نص الحيطة ... وما بسألكم النشوف اخرتا معاكم شنو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "73",
+      "text": "شوكة حوت لا بتنبلع لا بتفوت.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "74",
+      "text": "البيتو من قزاز مايفلق بالحجار.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "75",
+      "text": "ود أبو عاقلة يا أخوي إنت متأكد إنو الكلام الفوق ده من التراث السوداني.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "76",
+      "text": "جا يكحلها عماها.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "77",
+      "text": "تعيس الحظ يلاقي العضمة في الفشفاش.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "78",
+      "text": "يا حسن أنا عارفك ما رطاني لكن جبت الكلام ده من وين .",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "79",
+      "text": "الما دارك ما خربشك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "80",
+      "text": "دا من اجمل البوستات البلقى فيها نفسي.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "81",
+      "text": "ايد براها مابتصفق.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "82",
+      "text": "عشان ما نمرق من موضوع البوست و يجوا يطردوني بي سببك كمان.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "83",
+      "text": "جلد ماجلدك كر فيهو الشوك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "84",
+      "text": "الشوق بشتني بشتنه ما يعلم بيها الا الله .",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "85",
+      "text": "كان كترت عليك الهموم ادمدم نوم.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "86",
+      "text": "تغطس دهر وتظهر شهر ... وشوقنا بحر.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "87",
+      "text": "الباب البجيب الريح سدو واستريح.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "88",
+      "text": "يا حبوب اعمل حساب الخوة و العشرة و الزمالة و ما تبهتنا بكلام زي دا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "89",
+      "text": "الكلمة الطيبة بتمرق الدابى من بيتو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "90",
+      "text": "ما في مشكلة نشوف جيرانا ديل.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "91",
+      "text": "حيلة العاجز دموعه.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "92",
+      "text": "شحدناهم كتير لامن خجلنا ودخلنا في أضافرينا.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "93",
+      "text": "قدم السبت تلقى الاحد.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "94",
+      "text": "أديناكم مثل عامي قبل فترة ولا واحد فيكم عبـّرنا بكلمة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "95",
+      "text": "مد رجليك قدر لحافك.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "96",
+      "text": "اها يا حبوب المثل دا بالذات عندنا معناه مختلف كتير بالحيل من عندكم و كدة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "97",
+      "text": "يوم عسل ويوم بصل.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "98",
+      "text": "زمنك كلو تاكل باردة ما ضق حارة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "99",
+      "text": "العارف عزو مستريح.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "100",
+      "text": "انت لابد وين و مجخنن الايام دي.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "101",
+      "text": "انت يا معلم الليلة ما فطرت ولا شنو.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "102",
+      "text": "اخبار حاجاتنا الفي الفرن شنو؟؟ لسة ما استوت.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "103",
+      "text": "قبل كدا اديتك ليو مملح ... بقيت تكوس ليو يابس.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "104",
+      "text": "غايتو العين الما بملاها التراب دي مشكلة.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "105",
+      "text": "الحوت ما بهددو بالغرق.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "106",
+      "text": "اسمع كلام الكبير ولو كان عوير.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "107",
+      "text": "اصله مارق في الربا والتلاف.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "108",
+      "text": "الخيل تجقلب والشكر لحماد.",
+      "dialect": [
+        "sd-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    }
+  ]
+}
