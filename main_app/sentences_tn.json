@@ -1,0 +1,1408 @@
+{
+  "sentences": [
+    {
+      "unique_id": "1",
+      "text": "عم لخضر، علاش ما تعلمنيش نزرع كيفك؟ نحب نزرع فولة لأمي، ويسمينة لي أنا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "2",
+      "text": "كل حاجة يحط عليها إيده، غير ما عاد تسأل عليها جملة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "3",
+      "text": "لا أعمل حسابات هكاك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "4",
+      "text": "مدام هي اللي قلت",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "5",
+      "text": "ما لا منك ليها؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "6",
+      "text": "هاي أخلط ورايا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "7",
+      "text": "قولها هي تخلصك في الزيداة كلها",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "8",
+      "text": "وش قولك لو كان أنا البراد نكبوهلك فوق راسك انتي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "9",
+      "text": ".يا ناري على بنتي يا ناري",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "10",
+      "text": "توا باش نوريلك حاجة مش نرمال",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "11",
+      "text": "هاو كأنا عليها فرشيات التوامة وجراريهم",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "12",
+      "text": "ندخلوهم للدار قبل ما يجيو التوام.",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "13",
+      "text": "يقولو مش مليح",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "14",
+      "text": "نشربوك حاجة مسيلش إن شاء الله في السابع نشربو ونتعشيو ونأكلو",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "15",
+      "text": "فرغ الفقفة خلنا نشوف",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "16",
+      "text": "إن شاء الله ما عطلتكش برشا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "17",
+      "text": ".فماش ما قهوتك تولي تشبه للقهوة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "18",
+      "text": "الرونديفو الجاي وقتاش",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "19",
+      "text": "أخويا نعملك قهوة أخرى؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "20",
+      "text": "باهي. هتا نرجعوا في العشية. موخر. وقت لي يرجعوامالدار",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "21",
+      "text": ".تنجم ترجعلي العشية مع الستة؟ هاك تشوف قدام عينيك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "22",
+      "text": "كالعادة تخدم مغير رخصة؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "23",
+      "text": ".مول المحل عنده الحق يوري الدار للي ناوي يكرها",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "24",
+      "text": ".وهو فما صبباب يصب بصبابه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "25",
+      "text": "حاول دايما باش ما تتدخلش في اللي ما يعنيكش",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "26",
+      "text": "مشكلتي الأولى هي البلبل اللي نحلها في العائلة كي ندخل في حاجة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "27",
+      "text": "ومشكلتي الثانية في خدمتي. حد من زملائي ما يتقني",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "28",
+      "text": "أعرف اللي فما شكون مسميني الشاف كلوف",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "29",
+      "text": "ديجا تعدت نص ساعة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "30",
+      "text": "الوقت فيسع  فيسع يتعدى معاك دكتور ولا؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "31",
+      "text": "مشكلة الباسيون ما يقلقش ويقعد ديما متشوق للسيانس اللي جاية",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "32",
+      "text": "شفت ماو كيفاش؟ هك رجعت الكلوف",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "33",
+      "text": ".تي به باركه حفظناه الدرس",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "34",
+      "text": "هك تحشمو فيا قدام الباسيون",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "35",
+      "text": "؟ والله فكرة باهي قدش يعمل سومها؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "36",
+      "text": "أعطني حق التاكسي. يظهر لك تاكسي. شد. هاو دينار. خذ الكار. دينار؟ شقيت بحر وبروار وطلعت للنصر العالي. لاكار صفرة ولا مطور.",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "37",
+      "text": "اي نعم سيدي نعم. تفضل خلص الراجل. لا لا خلص السكرتير",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "38",
+      "text": ".نكتبه باسم الدكتور سليمان الأبيض ولا؟ نكتبه بوراوي شيفور",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "39",
+      "text": "يزي من التخمام",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "40",
+      "text": "أمان من فضلك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "41",
+      "text": "قادش عمرك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "42",
+      "text": "انت ديما في بالي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "43",
+      "text": "حانوت صبابة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "44",
+      "text": "حانوت لعب",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "45",
+      "text": "عدينا وقت تحفون",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "46",
+      "text": "عندو ازهر",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "47",
+      "text": "عندك الحق",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "48",
+      "text": "على خاطر",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "49",
+      "text": "عملنا جو",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "50",
+      "text": "خمسطشنمية",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "51",
+      "text": "حاشتي بيك تو تو",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "52",
+      "text": "هاني نستنا فيك لوط",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "53",
+      "text": "أنت مايعجبك شي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "54",
+      "text": "أمشي لعطار جيب حكة تن و حارة عظام",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "55",
+      "text": "شايب و عزوزا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "56",
+      "text": "إنا ديمة إنخمم فيك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "57",
+      "text": "باش نوصي علي صاع فلفل أحمر هروس",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "58",
+      "text": "تعرضت لحادثة طريق ضربتني فيه كرهبة معناها وكانت مسرعة برشا هيا الحمد لله",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "59",
+      "text": "ايجا بين اديا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "60",
+      "text": "من غير مزيا العفو",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "61",
+      "text": "موش كيف كيف",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "62",
+      "text": "موش ممكن مستحيل",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "63",
+      "text": "نمشي نقضي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "64",
+      "text": "رد بالك على روحك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "65",
+      "text": "بالهي أكتبلي هذا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "66",
+      "text": "دقيقة بلأهي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "67",
+      "text": "تبارك الله على الأولاد عمه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "68",
+      "text": "يظهرلي وقيت تمشي تقيد أولادك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "69",
+      "text": "نحب نقولكم  حاجة وما تتغشوش عليا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "70",
+      "text": "خليتكم تختاروا في عوضي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "71",
+      "text": "إيش قولك في سارة؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "72",
+      "text": "إش عندي ما نقول",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "73",
+      "text": "اللي تعملوه مبروك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "74",
+      "text": "إيش قولك في اسم سارة؟ والله حلو، مش خايب",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "75",
+      "text": "تبرى مبروك عليك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "76",
+      "text": "هز الدفتر العائلي متاعك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "77",
+      "text": "خطي خير من خطك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "78",
+      "text": "ياخي يتكلم بجد والا يفدلك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "79",
+      "text": "شوف، عندي حل آخر",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "80",
+      "text": "ربي يفضلك ليه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "81",
+      "text": "يلزمني نمشي أنا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "82",
+      "text": "الموضوع هذا نحكيو فيه مرة أخرى",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "83",
+      "text": "إيش عندك هاليمات؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "84",
+      "text": "خليني نفرغ اللي في قلبي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "85",
+      "text": "ما عندكش حاجة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "86",
+      "text": "على خاطر سيادتك معرس",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "87",
+      "text": "وباللامرة هاو في الفيشة متاعك مكتوب الحالة المدنية متزوج",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "88",
+      "text": "يعطيك الصحة في هالزرير",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "89",
+      "text": "بشفاء ليكم، بشفاء",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "90",
+      "text": "وعليش ما ثبتش في الكرني",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "91",
+      "text": "بالكش ناوي باش تخليها",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "92",
+      "text": "تعرفش كيفاش برا ارجع اسأل",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "93",
+      "text": "خليني نمشي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "94",
+      "text": "أطلع بهاك المبروك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "95",
+      "text": "نعم بابا شكون اللي يتلف؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "96",
+      "text": "حتى شي أمان شكون اللي كرشه كبيرة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "97",
+      "text": "وحده من غادي لغادي؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "98",
+      "text": "الله يبارك فيك الله يفرحك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "99",
+      "text": "يا عمري عيشك قعد نخدم راو",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "100",
+      "text": "إيه علاش ما نزيدش؟",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "101",
+      "text": "ما عنديش خدمة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "102",
+      "text": "الكل في ساعة من الزمان",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "103",
+      "text": "أولادها محسوب كي أولادي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "104",
+      "text": "أختي زينب إن شاء الله نرجعهولك في فرحة لبنات",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "105",
+      "text": "الحق ما طعمتش مليح",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "106",
+      "text": "يعيشك إن شاء الله  يا أخوي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "107",
+      "text": "ربي يعطي كل واحد على قد قلبه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "108",
+      "text": "حطيت المغرفة في فومي ذاب",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "109",
+      "text": "هذيك هي الفايدة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "110",
+      "text": "اليوم بش نعمل ملوخية، يلزمها صبر وطولة بال",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "111",
+      "text": "كي تطيب الماكلة بالنية، يبان طعمها من أوّل ملعقة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "112",
+      "text": "الشربة راهي تستوى، خلّيها تزيد تغلي شوية وتولي هايلة",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "113",
+      "text": "جيبت زيت زيتون بلدي، من غيرو ما يزين حتى طبخ",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "114",
+      "text": "عجبني كيفاه متصالح مع روحك يا احمد",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "115",
+      "text": "تحكي عل مخاوفك و مواقفك بكل مصداقية",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "116",
+      "text": "برافو. و ان شاء الله ربي يوفقك باش تحقق الي تحب عليه الكل",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "117",
+      "text": "تخيل روحك تتفرج في أحسن يوتوبرز عندك",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "118",
+      "text": "وإنت في وسط الحلقة معاهم",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "119",
+      "text": "تخيلو اش حسيت أنا كي تفرجت في الحلقة هاذي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "120",
+      "text": "ربي يبقي ستر إن شاء الله ديمة ملمومين",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "121",
+      "text": "جربو اعملو طلة على تحريشة في اريانة الصغرى",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "122",
+      "text": "عندهم كل شي عربي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "123",
+      "text": "اعملو حلقة مع جهاد الشارني",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "124",
+      "text": "طفل متربي و عندو انرجي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "125",
+      "text": "مش هذاك معناها الحب المثالي انهم يكونوا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "126",
+      "text": "عائله متماسكه مترابطه وعندها قيم ومباد",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "127",
+      "text": "ويجيبوا صغار وصغار هذكم يكبروهم فهمت",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "128",
+      "text": "ويربيوهم وهذك هي فازات هي الحياه معنا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "129",
+      "text": "واقعد كسر راسك وشوف كيفاش",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "130",
+      "text": "خاطر انت حكيت كلمه مهمه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "131",
+      "text": "وتحسهم يحبوا يختاروا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "132",
+      "text": "تحسهم ما يرضوش باقدار ربي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "133",
+      "text": "يعني فيها مكتوب",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "134",
+      "text": "كان جينا مشش الحاجه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "135",
+      "text": "صعبنا على رواحنا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "136",
+      "text": "ما يسبوناش نحنا باش تروح",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "137",
+      "text": "اكثر الحلقات اللي تكلمت فيها على فكره",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "138",
+      "text": "حطك في مازق معايا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "139",
+      "text": "كبيره برشا هكا ولا مش حاجه ساهله",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "140",
+      "text": "العبد اللي معك فم هكا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "141",
+      "text": "لا والله لا انا في الحب ا ما نعرفش",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "142",
+      "text": "ما تسالنيش علاش",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "143",
+      "text": "العباد اللي يحكوا هكا هما الرومانسيين",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "144",
+      "text": "انا سامحني في الكلمه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "145",
+      "text": "يعني انت ماكش رومانسي حتى طرف",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "146",
+      "text": "باش مايقولوش ماش في تركيا",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "147",
+      "text": "تحس تشكيله بيزار",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "148",
+      "text": "يا جماعه انا معناتها نورمالمون",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "149",
+      "text": "قلنا لازم نعمل انا بدي",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "150",
+      "text": "اخيب واحد في الجوجل عنده نجمه على خمسه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "151",
+      "text": "برسمي احسن واحد معناها على 77",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "152",
+      "text": "اسطنبول مش نورمال",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "153",
+      "text": "عندك من عند اخوك شاورما خالص",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "154",
+      "text": "قتلك غالي برشا غالي على الاخر",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "155",
+      "text": "بعد ما جيت عملنا قهوه",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "156",
+      "text": "هك ضايع سي بون",
+      "dialect": [
+        "tn-oth"
+      ],
+      "source": "data",
+      "source_dialect": ""
+    }
+  ]
+}
