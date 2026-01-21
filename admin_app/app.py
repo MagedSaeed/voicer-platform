@@ -86,7 +86,7 @@ COUNTRY_CODES = {
 
 COUNTRY_FILTER_CHOICES = ["All"] + sorted(COUNTRY_CODES.keys())
 
-RECORDING_TARGET_MINUTES = 30
+RECORDING_TARGET_MINUTES = 15
 RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
 
 
@@ -902,7 +902,7 @@ Manage admins, view user recordings from S3, and monitor progress.
             avg_h   = avg_min / 60
             avg_sec_rem = int(avg_sec % 60)
 
-            # How many users hit / did not hit the 30-min target
+            # How many users hit / did not hit the 15-min target
             users_above_target = sum(
                 1 for r in rows if r["total_duration"] >= RECORDING_TARGET_SECONDS
             )
