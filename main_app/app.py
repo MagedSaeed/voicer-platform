@@ -1650,27 +1650,27 @@ def build_app():
         def handle_save(audio_path, edited_sentence, temp_path, st):
             if not st.get("logged_in"):
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "الرجاء تسجيل الدخول أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, "", gr.update(value=None), gr.update(interactive=True)
+                return st, _status("warn", "الرجاء تسجيل الدخول أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
             if not audio_path and not temp_path:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ سجّل الصوت أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, "", gr.update(value=None), gr.update(interactive=True)
+                return st, _status("warn", "⚠️ سجّل الصوت أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
             sentence_text = (edited_sentence or st["current_sentence_text"]).strip()
             if not sentence_text:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ نص الجملة فارغ."), st["current_sentence_text"], st["current_sentence_id"], progress, "", gr.update(value=None), gr.update(interactive=True)
+                return st, _status("warn", "⚠️ نص الجملة فارغ."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
             sid = st["current_sentence_id"]
             if not sid:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ لا توجد جملة نشطة الآن."), st["current_sentence_text"], st["current_sentence_id"], progress, "", gr.update(value=None), gr.update(interactive=True)
+                return st, _status("warn", "⚠️ لا توجد جملة نشطة الآن."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
             tmp_path = audio_path or temp_path
             ok, msg, _dur = validate_audio(tmp_path)
             if not ok:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("bad", f"❌ مشكلة في الصوت: {msg}"), st["current_sentence_text"], st["current_sentence_id"], progress, "", gr.update(value=None), gr.update(interactive=True)
+                return st, _status("bad", f"❌ مشكلة في الصوت: {msg}"), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
 
             active_dialect = st.get("active_dialect_code") or st.get("dialect_code")
             user_dialect = st.get("user_dialect_code") or st.get("dialect_code") or "unk-gen"
@@ -1716,7 +1716,7 @@ def build_app():
             next_sentence_for_state(st)
             progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
 
-            return st, _status("warn", "⏭️ تم التخطي."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+            return st, _status("warn", "⏭️ تم التخطي."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=False)
 
         save_btn.click(
             disable_skip, inputs=[], outputs=[skip_btn]
