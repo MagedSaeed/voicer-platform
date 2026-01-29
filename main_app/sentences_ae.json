@@ -1,0 +1,1759 @@
+{
+  "sentences": [
+    {
+      "unique_id": "1",
+      "text": "طلبت أكل وليلحين ما يت الطلبية",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "2",
+      "text": "يدتي قالت أن أمس عمتي وصلت البيت متأخر وقالت أنها حتاجت أتييب ولدها من الحضانه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "3",
+      "text": "قوموا نسير نحوط فالفريج و نرد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "4",
+      "text": "تو ما نور المكان حياكم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "5",
+      "text": "امس مريت اخذلي قهوه بس قالولي ماشي بن، ف سرت مكان ثاني",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "6",
+      "text": "هاتيلي غرشة ماي معاج و انتي راده",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "7",
+      "text": "باجر بروح دبي ويا ربيعاتي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "8",
+      "text": "هلا والله سلام عليكم محمد كيفك؟ اقلك تعرف وين الحمام؟ ياخي تعال أنا فل كلاس",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "9",
+      "text": "البارحه ما نمت عدل وييت الجامعه من وقت اليوم وحسيت بتعب وصداع وما لي خلق",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "10",
+      "text": "شو عندك مسطن عند الباب طوف",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "11",
+      "text": "باجر تعالي عندنا خاطريه نتيمع",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "12",
+      "text": "اقولج تخيلي شو استوا اليوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "13",
+      "text": "البارحه كنت تعبانه من الجامعه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "14",
+      "text": "لو اتشوفون فاتورة ٢٠٠ درهم هو ها الخاتم مطلي فظى. حسيته وايد حلو فخذته كهديه حق نفسي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "15",
+      "text": "امس كنت وايد يوعانه لدرجة خذتلي اكل وانا راده البيت ماقدرت اتريا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "16",
+      "text": "بسير صوب هليه بتين معايه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "17",
+      "text": "شو رايج نروح ناخذ كوفي اليوم المغرب",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "18",
+      "text": "تراني مشغوله الحين، بكلمج بعدين",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "19",
+      "text": "انا اليوم معزومه عند يارتيه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "20",
+      "text": "امس جيت البيت متاخره،كنت تعبانه للاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "21",
+      "text": "وديني بيت امايه نسلم عليها",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "22",
+      "text": "خلصت أول امتحان، الثاني بخلصه ان شاء الله الساعة ٢٣٠، وبوصل البيت ٣",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "23",
+      "text": "بتيين معانا نسير نقعد فالرمله",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "24",
+      "text": "خالو موزة مب هني، بس الأولاد هني. أعطي عبدالله",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "25",
+      "text": "باي عقب شوي انا بعدني في الطريق",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "26",
+      "text": "سير الشيشه عبي موتري بترول",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "27",
+      "text": "برايكن لاتون الصبح تعالن العصر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "28",
+      "text": "بنسرح من بوظبي و بنروح العين",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "29",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "30",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "31",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "32",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "33",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "34",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "35",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "36",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "37",
+      "text": "امس كنت اتعشى في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "38",
+      "text": "رحت البحر و رديت عطشانه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "39",
+      "text": "كنت رايح العب بادل امس فليل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "40",
+      "text": "الجو كان بارد وجميل يوم كنت العب كورة قدم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "41",
+      "text": "في الصباح الجامعة كانت زحمة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "42",
+      "text": "ماحصلت موقف في الجامعة الا بعد نصف ساعة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "43",
+      "text": "الدكتور كان مب حاضر في المحاضره اول دقيقه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "44",
+      "text": "صليت الظهر في مصلي الجامعة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "45",
+      "text": "شربت شراب بروتين بعد الجم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "46",
+      "text": "سويت غدا مجبوس في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "47",
+      "text": "سويت سلطة مفيده حق الغدا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "48",
+      "text": "لعبت في البليستيشن قليلا على العصر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "49",
+      "text": "ذهبت الي الحديريات و اجرت سيكل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "50",
+      "text": "سقطت عندما كنت اسوق السيكل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "51",
+      "text": "استيقظت باكرا شربت قهوة صباحا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "52",
+      "text": "قرأت كتابا جميلا في البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "53",
+      "text": "ذهبت مع صديق الى السوق",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "54",
+      "text": "مارست رياضة خفيفة مساء امس",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "55",
+      "text": "شاهدت فيلما طويلا بعد العشاء",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "56",
+      "text": "حليت واجبات قليله قبل النوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "57",
+      "text": "نمت مبكرا بسبب تعب شديد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "58",
+      "text": "تحدثت مع عائلتي وقت العشاء",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "59",
+      "text": "طبخت وجبة بسيطة في المطبخ",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "60",
+      "text": "خرجت للمشي حول الحي مساء",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "61",
+      "text": "استمعت موسيقى هادئة اثناء العم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "62",
+      "text": "استمعت موسيقى هادئة اثناء العمل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "63",
+      "text": "رتبت غرفتي ونظفت المكتب جيدا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "64",
+      "text": "تعلمت مهارة جديدة عبر الانترنت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "65",
+      "text": "شربت ماء كثير بعد التمرين",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "66",
+      "text": "أنا بسير ارقد لان باجر عندي محاضرة بالجامعة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "67",
+      "text": "عيل لازم نسير هناك عشان نسوي هالمعاملة الحكومية",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "68",
+      "text": "نشيت اليوم من وقت، و أنضغطت في الجامعة و تعبت وايد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "69",
+      "text": "ليش ما يبت القهوة عشان الكشتة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "70",
+      "text": "والله امس ابطيت في الجامعه مامدانيه اسير صوب الربع، ولا فوق هذا كله السياره بندت ف مارمت اسوي شي امس",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "71",
+      "text": "عيل برمسه باجر عشان اجوف إذا هو فاضي ولا لا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "72",
+      "text": "لازم نروح صلاة اليمعة باجر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "73",
+      "text": "لا اجوف هالشي تسويه مره ثانية",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "74",
+      "text": "قلت بخلي المشوار لباجر لاني ماكنت فاضي اليوم. البارحه سرت مهرجان الحصن و كان وايد وناسه بس زحمه. شو رايج نطلع نطلع ناخذ قهوه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "75",
+      "text": "امس ييت البيت متأخر، كنت وايد تعبانه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "76",
+      "text": "ماعندنا شي اسمه مستحيل علني افداك",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "77",
+      "text": "امس وصلت البيت متأخره ، الانه كنت في دبي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "78",
+      "text": "تعبان وايد والله مافيني انش",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "79",
+      "text": "الجو امس كان وايد حلو",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "80",
+      "text": "نشيت الصبح تعبانه، خذت دواء",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "81",
+      "text": "امس سرت بيت خالتيه و رديت عشر فاليل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "82",
+      "text": "اليوم يت الجامعه من الصبح و كان يوم طويل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "83",
+      "text": "امس تعشيت مكدونالدز و صل بارد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "84",
+      "text": "بنروح المول بعد الغدا تجهزوا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "85",
+      "text": "ليش تبند الخط في ويهي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "86",
+      "text": "اتفقنا نطلع فجأة وبدون تخطيط",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "87",
+      "text": "وين سرتوا امس؟ أنا سرت الحصن",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "88",
+      "text": "مهرجان قصر الحصن وايد حلو يستاهل الزياره",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "89",
+      "text": "عندج قلم؟، نسيت مالي فالسياره",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "90",
+      "text": "اليوم كنت مشغول طول اليوم وما فضيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "91",
+      "text": "كنت تعبان امس لاني رديت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "92",
+      "text": "عندي امتحان باجر مب متفيج",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "93",
+      "text": "امس كنت تعبان و رديت البيت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "94",
+      "text": "تعالي نمشي بدال يلست البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "95",
+      "text": "تعبت امس و رديت البيت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "96",
+      "text": "طلعت مع ربيعاتي سرنا سوق الجمعة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "97",
+      "text": "باجر بروح العين و برد الأحد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "98",
+      "text": "اقولك لا تسولف وايد صدعتني",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "99",
+      "text": "مابا اطلع من البيت اليوم، مب متفيج",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "100",
+      "text": "رديت البيت متاخر و حسيت ب تعب",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "101",
+      "text": "امس رديت البيت متأخر، وايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "102",
+      "text": "امر وتدلل مابقصر وياك تم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "103",
+      "text": "خذت رقمج، بكلمج عقب عن المشروع",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "104",
+      "text": "امس رديت البيت البيت متاخر لاني كنت تعبات",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "105",
+      "text": "خذنا منحاز حق المطبخ عشان نطحن في المحلب و الزعفران",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "106",
+      "text": "ضربني تعب امس و رديت البيت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "107",
+      "text": "طلعت مع الربع سرنا الرملة وتيلسنا ورينا ضو وشربنا جاي واستانسنا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "108",
+      "text": "حد جاف نظارتي ، كانت فالسياره",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "109",
+      "text": "كنا ف العزبة امس ، وايد استانسا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "110",
+      "text": "تعرفون وين المصلى؟، ما حصلته فالطابق الاول",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "111",
+      "text": "وايد تعبت امس جان ارد البيت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "112",
+      "text": "مرحبا الساع يا بو شهاب نورت الميلس",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "113",
+      "text": "في اجازة العيد بنسافر لندن",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "114",
+      "text": "ما رديت الا يوم الوقت اتاخر، كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "115",
+      "text": "امس وصلت البيت متأخر ، ووايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "116",
+      "text": "البارحه ييت البيت و رقدت من التعب",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "117",
+      "text": "امس يوم ميلاد اخوي الصغير وديته كوفي واحتفلنا فيه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "118",
+      "text": "امس وصلت البيت متأخر ، ووايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "119",
+      "text": "رحت أنا و أبويه البحر و فرشنا على السيفا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "120",
+      "text": "وديت اختي العياده كانت تعبانه شوي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "121",
+      "text": "رديت البيت متاخر امس لاني كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "122",
+      "text": "امس وصلت البيت متأخر ، ووايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "123",
+      "text": "امبارحه طلعت مع اهلي اتعشا في القناه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "124",
+      "text": "امس وصلت البيت متأخر ، ووايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "125",
+      "text": "وانا رايحة الجامعة شفت عصفور احمر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "126",
+      "text": "امس وصلت البيت متأخر ، ووايد كنت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "127",
+      "text": "الحق عليه تراه يربع وايد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "128",
+      "text": "متى بتيون اليامعه بكره و اي مبنى",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "129",
+      "text": "اليوم بسير العين عند اهلي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "130",
+      "text": "اليوم قمت بدري و ما قدرت أكمل نوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "131",
+      "text": "كنت محتاج هالراحة من زمان بصراحة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "132",
+      "text": "ما كنت متوقع السالفة تطول بهالشكل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "133",
+      "text": "عقب الغدا حسيت بالكسل وما تحركت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "134",
+      "text": "ما صار شي بس كنت متوتر اليوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "135",
+      "text": "الحين الجو برد شوي ولازم ألبس زين",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "136",
+      "text": "قمت متأخر وضيعت وقت وايد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "137",
+      "text": "ما عندي طاقة أسوي شي اليوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "138",
+      "text": "اليوم حسيت بالتعب وبغيت آخذ بريك",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "139",
+      "text": "البيت كان هادي والحمدلله ارتحت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "140",
+      "text": "عقب شوي بطلع أتمشى وأغير جو",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "141",
+      "text": "ضيعت الجرج مالي، حد شافه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "142",
+      "text": "من الصبح وأنا مشغول وما فضيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "143",
+      "text": "اليوم كنت فالصناعية ناقع ساعيتن، خاري ويالس عالقار وماعندهم كراسي فالقراج جان ايي اربيعي ويقولي اركب يزاه الله خير",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "144",
+      "text": "كلاس الساعه ثمان وايد متعب و يصدع",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "145",
+      "text": "امس يت البيت و محد كان موجود",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "146",
+      "text": "بطلع من البيت الساعه عشر الصبح",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "147",
+      "text": "شو رايج نطلع اليوم غاليريا مول",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "148",
+      "text": "امس المطر كان يجنن على البحر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "149",
+      "text": "اليوم الجو كان حار وايد وما قدرت أطلع",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "150",
+      "text": "عقب الدوام رجعت البيت وتغديت ونمت شوي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "151",
+      "text": "الحين قاعد أفكر أغير الروتين وأرتاح",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "152",
+      "text": "استاذ ممكن تكنسل كلاس اليوم",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "153",
+      "text": "موعد الطياره الساعه عشر لا تتاخرون",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "154",
+      "text": "تعبت وايد امس و رديت البيت متاخر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "155",
+      "text": "سرحت الجامعة لنا عندي مشروع لازم أقدمه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "156",
+      "text": "اشرب الماي وانت جالس الافضل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "157",
+      "text": "حد عنده جدول السمستر والاجازات ؟ الحين لو انا بعدني اخذ مواد جنرل و بغير تخصصيه بيعادلون المواد ولا مايخصه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "158",
+      "text": "من الصبح أنا برع توني راد البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "159",
+      "text": "اليوم طلعت من الدوام بدري ورحت البيت ارتاح شوي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "160",
+      "text": "اليوم الجو حر وايد، ما قدرت أطلع برا خلنا نتلاقى عقب المغرب",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "161",
+      "text": "اليوم صحيت متأخر شوي وما كان لي خلق أطلع من البيت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "162",
+      "text": "شحالك.. اليوم بسير العزبه.. سير تخبر احمد لو بيي ولا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "163",
+      "text": "سرت البوم الجامعه و شربت اساي و رحت الكلاس عقب",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "164",
+      "text": "امس ييت لبيت وايد متأخر احسني وايد تعبانه",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "165",
+      "text": "احمد.. شو ها الرمسه.. ارمس عدل",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "166",
+      "text": "ماعرف شو بتسوين لو مايت",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "167",
+      "text": "هود هود ، هدى ابويه هدى",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "168",
+      "text": "يوعانه بسير بيت يدو اتغدى",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "169",
+      "text": "سرت الجامعه ويا عبيد خلاف سرنا تقهوينا في ستاربكس",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "170",
+      "text": "بسير الجامعه وخلاف برد البيت بتغذى",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "171",
+      "text": "غناتي اليوم سرت يوفي تياقو",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "172",
+      "text": "هو هذا الي تباه.. ولا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "173",
+      "text": "بتخبرك وين بتروح عقب باجر",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "174",
+      "text": "بسير ارقد بوطي راسي شوي",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "175",
+      "text": "سرت اليوم الجامعه، تأخرت على الكلاس لنه ماشي باركنات",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "176",
+      "text": "هي، هو ها الي طلبته",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "177",
+      "text": "باجر بروح الدوام و بستانس وايد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "178",
+      "text": "ان يو يو وان مايو مايو",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "179",
+      "text": "ان يو ، يو وأن مايو مايو",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "180",
+      "text": "خلي ولدج يتدثر عن البرد",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "181",
+      "text": "سويتي الكيكه الي قلت لج تسويها",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "182",
+      "text": "يالله تحيد كيف ذاك اليوم من ظهرنا من الجامعة ضربنا البرد، اسميك تلتهنا",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "183",
+      "text": "اليوم سرت الجامعة عسبت احضر المقابلة",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "184",
+      "text": "اليوم سرت الجامعة ورديت البيت تعبان",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "185",
+      "text": "اختربت سيارتي و وديتها الصناعية اشوف شو فيها",
+      "dialect": [
+        "ae-ad"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "186",
+      "text": "أمس نهايت هنوك و ما حصلت شي",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "187",
+      "text": "هوما دا انتي هوما تشوفي",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "188",
+      "text": "هيه لعبت هاي اللعبة يحيها مب وايد حلوة",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "189",
+      "text": "هاي الكرفاية وايئ حلوه عيبتني",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "190",
+      "text": "احس الكلاس ما وايد صعب، احسوا يمشي الحال",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "191",
+      "text": "امس رحت ياس مول مع ماما",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "192",
+      "text": "نهايت معى امي، و اشترينا فلافل صوب دوار السفينة",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "193",
+      "text": "هلا الغالي، علومك، عساك بخير، تريقت شورما ولا لا",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "194",
+      "text": "اقلش وين كنتي امس، كنا نتريش عند اليبال بس ما بينت",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    },
+    {
+      "unique_id": "195",
+      "text": "لا تقالني كدا، تراني بعصب ليك",
+      "dialect": [
+        "ae-sh"
+      ],
+      "source": "UAE",
+      "source_dialect": ""
+    }
+  ]
+}

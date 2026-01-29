@@ -75,7 +75,7 @@ S3_CLIENT = _create_s3_client()
 # COUNTRIES & DIALECTS  
 # ===============================
 
-AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan", "Palestine", "Algeria", "Sudan", "Tunisia", "Syria"]
+AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan", "Palestine", "Algeria", "Sudan", "Tunisia", "Syria", "United Arab Emirates"]
 
 COUNTRY_EMOJIS = {
     "dz": "🇩🇿",
@@ -201,10 +201,10 @@ COUNTRY_DIALECTS = {
         "أخرى": "oth"
     },
     "United Arab Emirates": {
-        "إماراتية": "em",
-        "دبية": "du",
-        "أبوظبية": "ad",
-        "شارقية": "shr",
+        "شرقية": "es",
+        "شمالية": "no",
+        "أبوظبي": "ad",
+        "بدوية": "bd",
         "أخرى": "oth"
     },
     "Kuwait": {
