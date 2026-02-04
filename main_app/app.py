@@ -1721,7 +1721,7 @@ def build_app():
 
         save_btn.click(
             disable_skip, inputs=[], outputs=[skip_btn]
-        ).then(
+        ).then(disable_save, inputs=[], outputs=[save_btn]).then(
             handle_save,
             inputs=[audio_rec, sentence_box, temp_audio_path, state],
             outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec, skip_btn],
