@@ -433,7 +433,6 @@ def save_annotation(
         "sample_id": make_sample_id(sample),
         "country_code": sample.country_code,
         "country_name": sample.country_name,
-        "user_folder": sample.user_folder,
         "audio_file": sample.audio_file,
         "s3_audio_key": s3_audio_key,
         "text_sample": sample.text or "",
@@ -560,24 +559,21 @@ def handle_login(email, pw, st):
 def handle_logout(st):
     st = empty_state()
     return st, gr.update(visible=True), gr.update(visible=False), ""
-
-
+# --- Update: when decision changes to reject, populate reject_sub as Radio
 def on_decision_change(dec: str):
-    """
-    If reject -> show main reason + comment, and auto-populate sub dropdown if available.
-    """
     show = (dec == "reject")
     if not show:
         return (
-            gr.update(visible=False, value=REJECT_REASONS[0]),            # reject_main
-            gr.update(visible=False, choices=[], value=None),            # reject_sub
-            gr.update(visible=False, value=""),                          # comment
+            gr.update(visible=False, value=REJECT_REASONS[0]),  # reject_main
+            gr.update(visible=False, choices=[], value=None),  # reject_sub (radio)
+            gr.update(visible=False, value=""),                # comment
         )
 
     main = REJECT_REASONS[0]
     subs = REJECT_SUBREASONS.get(main, [])
     sub_update = (
-        gr.update(visible=True, choices=subs, value=subs[0]) if subs
+        gr.update(visible=True, choices=subs, value=subs[0])
+        if subs
         else gr.update(visible=False, choices=[], value=None)
     )
 
@@ -588,12 +584,13 @@ def on_decision_change(dec: str):
     )
 
 
+# --- Update: when main reason changes, return an update compatible with gr.Radio
 def on_main_reason_change(main_reason: str):
     subs = REJECT_SUBREASONS.get(main_reason, [])
     if subs:
+        # show radio with choices; default to first to reduce clicks
         return gr.update(visible=True, choices=subs, value=subs[0])
     return gr.update(visible=False, choices=[], value=None)
-
 
 def ui_load_current(st: dict):
     """
@@ -856,13 +853,13 @@ def build_app():
                 visible=False,
             )
 
-            reject_sub = gr.Dropdown(
-                choices=[],
+         # Replace the Dropdown with a Radio (single-choice)
+            reject_sub = gr.Radio(
+                choices=[],          # will be filled dynamically
                 value=None,
-                label="تفاصيل (اختياري)",
+                label="تفاصيل سبب الرفض",
                 visible=False,
             )
-
             comment = gr.Textbox(
                 label="ملاحظة (اختياري)",
                 placeholder="اكتب تعليق إضافي إذا احتجت…",
