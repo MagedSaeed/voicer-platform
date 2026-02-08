@@ -1,0 +1,53 @@
+{
+  "by_country": {
+    "sa": {
+      "seen": {
+        "sa|sa/adnan_faisal_alsayed_daad9e1_sa-hj_m/|adnan_faisal_alsayed_daad9e1_sa-hj_m_91262.wav": true,
+        "sa|sa/adnan_faisal_alsayed_daad9e1_sa-hj_m/|adnan_faisal_alsayed_daad9e1_sa-hj_m_58860.wav": true,
+        "sa|sa/adnan_faisal_alsayed_daad9e1_sa-hj_m/|adnan_faisal_alsayed_daad9e1_sa-hj_m_83496.wav": true,
+        "sa|sa/adnan_faisal_alsayed_daad9e1_sa-hj_m/|adnan_faisal_alsayed_daad9e1_sa-hj_m_85054.wav": true,
+        "sa|sa/adnan_faisal_alsayed_daad9e1_sa-hj_m/|adnan_faisal_alsayed_daad9e1_sa-hj_m_68351.wav": true
+      },
+      "last_index": 5
+    },
+    "eg": {
+      "seen": {},
+      "last_index": 0
+    },
+    "ma": {
+      "seen": {
+        "ma|ma/ahmed_43572b3_ma-ca_m/|ahmed_43572b3_ma-ca_m_3729.wav": true,
+        "ma|ma/ahmed_43572b3_ma-ca_m/|ahmed_43572b3_ma-ca_m_157.wav": true,
+        "ma|ma/ahmed_43572b3_ma-ca_m/|ahmed_43572b3_ma-ca_m_633.wav": true
+      },
+      "last_index": 3
+    },
+    "ps": {
+      "seen": {
+        "ps|ps/abdallah_abdaljalil_b5141cd_ps-oth_m/|abdallah_abdaljalil_b5141cd_ps-oth_m_1839.wav": true,
+        "ps|ps/abdallah_abdaljalil_b5141cd_ps-oth_m/|abdallah_abdaljalil_b5141cd_ps-oth_m_714.wav": true
+      },
+      "last_index": 2
+    },
+    "ae": {
+      "seen": {},
+      "last_index": 0
+    },
+    "bh": {
+      "seen": {},
+      "last_index": 0
+    },
+    "iq": {
+      "seen": {},
+      "last_index": 0
+    },
+    "jo": {
+      "seen": {},
+      "last_index": 0
+    },
+    "dz": {
+      "seen": {},
+      "last_index": 0
+    }
+  }
+}

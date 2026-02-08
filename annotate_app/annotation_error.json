@@ -1,0 +1,16 @@
+[
+  {
+    "country": "Morocco",
+    "country_code": "ma",
+    "audio_file": "ahmed_43572b3_ma-ca_m_3729.wav",
+    "text": "الله يوفقك يارب لي التقافة الله انور طريقكوم الى الجنه ان شاء الله اللهم صل على محمد وعلى اله وصحبه اجمعين يارب",
+    "reason": "no complete",
+    "ts_unix": 1770522925.582804,
+    "user_folder": "ma/ahmed_43572b3_ma-ca_m/",
+    "s3_audio_key": "ma/ahmed_43572b3_ma-ca_m/wavs/ahmed_43572b3_ma-ca_m_3729.wav",
+    "csv_row": {
+      "audio_file": "ahmed_43572b3_ma-ca_m_3729.wav",
+      "text": "الله يوفقك يارب لي التقافة الله انور طريقكوم الى الجنه ان شاء الله اللهم صل على محمد وعلى اله وصحبه اجمعين يارب"
+    }
+  }
+]
