@@ -18,7 +18,7 @@ from supabase import create_client, Client
 # CONFIG
 # =========================
 BASE_DIR = Path(__file__).resolve().parent
-ENV_PATH = BASE_DIR.parent / ".env"
+ENV_PATH = BASE_DIR / ".env"
 load_dotenv(ENV_PATH)
 
 AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY", "")
@@ -26,10 +26,10 @@ AWS_SECRET_KEY = os.environ.get("AWS_SECRET_KEY", "")
 AWS_REGION = os.environ.get("AWS_REGION", "me-south-1")
 S3_BUCKET = os.environ.get("S3_BUCKET", "voicer-storage")
 
-SUPABASE_URL = os.environ.get("SUPABASE_URL_2", "")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_KEY = (
     os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
-    or os.environ.get("SUPABASE_KEY_2")
+    or os.environ.get("SUPABASE_KEY")
     or os.environ.get("SUPABASE_ANON_KEY")
     or ""
 )
