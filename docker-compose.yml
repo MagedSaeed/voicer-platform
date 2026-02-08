@@ -54,6 +54,35 @@ services:
     networks:
       - voicer-network
 
+  # Annotation Tool
+  voicer-annotate:
+    build:
+      context: .
+      dockerfile: Dockerfile.annotate
+    container_name: voicer-annotate
+    ports:
+      - "7862:7862"
+    environment:
+      # Supabase
+      - SUPABASE_URL_2=${SUPABASE_URL_2:-${SUPABASE_URL}}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - SUPABASE_KEY_2=${SUPABASE_KEY_2}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY:-${SUPABASE_KEY}}
+      # AWS S3
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}
+      - S3_BUCKET=${S3_BUCKET:-voicer-storage}
+      - AWS_REGION=${AWS_REGION:-me-south-1}
+      # Gradio / App
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7862
+      - PORT=7862
+    volumes:
+      - ./annotate_app:/app/annotate_app:ro
+    restart: unless-stopped
+    networks:
+      - voicer-network
+
 networks:
   voicer-network:
     driver: bridge
