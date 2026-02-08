@@ -13,12 +13,13 @@ import numpy as np
 import soundfile as sf
 from dotenv import load_dotenv
 from supabase import create_client, Client
+from werkzeug.security import generate_password_hash, check_password_hash
 
-# =========================
-# CONFIG
-# =========================
+# =========================================================
+# ENV / CONFIG
+# =========================================================
 BASE_DIR = Path(__file__).resolve().parent
-ENV_PATH = BASE_DIR / ".env"
+ENV_PATH = BASE_DIR / ".env"   # one folder up (as you requested)
 load_dotenv(ENV_PATH)
 
 AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY", "")
@@ -57,31 +58,36 @@ COUNTRY_CODES = {
     "Yemen": "ye",
 }
 
+# Bucket layout (your structure):
+#   {country_code}/{username}/wavs/*.wav
+#   {country_code}/{username}/metadata.csv
+#   {country_code}/{username}/metadata_oth.csv (optional)
 WAVS_FOLDER = "wavs"
 METADATA_CSV_NAME = "metadata.csv"
 METADATA_OTH_CSV_NAME = "metadata_oth.csv"
 
+# Annotation selection behavior
+RANDOM_TRIES = int(os.environ.get("RANDOM_TRIES", "150"))  # random candidates per pick
+SUPABASE_IN_CHUNK = int(os.environ.get("SUPABASE_IN_CHUNK", "100"))  # keep small to avoid PostgREST issues
+
+# Rejection reasons (2 levels)
+REASON_SEP = " | "
 REJECT_REASONS = [
-    "Noisy",
-    "Wrong text",
-    "Silence",
-    "Clipped / Cut",
-    "Distortion",
-    "Wrong speaker",
+    "غير واضح",
+    "نص غير مطابق",
+    "سكوت طويل",
+    "صوت مقطوع",
+    "لهجة مختلفة",
     "Other",
 ]
+REJECT_SUBREASONS = {
+    "غير واضح": ["أصوات في الخلفية", "أكثر من متحدث", "صدي صوت", "صوت منخفض"],
+    "نص غير مطابق": ["غير مطابق تماما", "مطابق جزئيا", "اختلاف بسيط (مثلا في نطق كلمة أو اثنين)"],
+}
 
-# S3 listing safety
-MAX_KEYS_LIST = int(os.environ.get("MAX_KEYS_LIST", "200000"))
-
-# Random "next" sampling size
-RANDOM_TRIES = int(os.environ.get("RANDOM_TRIES", "150"))
-SUPABASE_IN_CHUNK = int(os.environ.get("SUPABASE_IN_CHUNK", "100"))
-
-
-# =========================
+# =========================================================
 # CLIENTS
-# =========================
+# =========================================================
 def _create_s3_client():
     if not AWS_ACCESS_KEY or not AWS_SECRET_KEY:
         return boto3.client("s3", region_name=AWS_REGION)
@@ -94,25 +100,15 @@ def _create_s3_client():
 
 
 S3_CLIENT = _create_s3_client()
-supabase: Optional[Client] = create_client(SUPABASE_URL, SUPABASE_KEY) if SUPABASE_URL and SUPABASE_KEY else None
+supabase: Optional[Client] = create_client(SUPABASE_URL, SUPABASE_KEY) if (SUPABASE_URL and SUPABASE_KEY) else None
 
 
-# =========================
-# DATA STRUCTURES
-# =========================
-@dataclass
-class Sample:
-    country_name: str
-    country_code: str
-    user_folder: str  # internal only
-    audio_file: str
-    text: str
-    row: Dict[str, Any]
+def ensure_supabase() -> Client:
+    if not supabase:
+        raise RuntimeError("Supabase is not configured.")
+    return supabase
 
 
-# =========================
-# VALIDATION / SANITIZATION
-# =========================
 def config_error_message() -> Optional[str]:
     missing = []
     if not S3_BUCKET:
@@ -126,32 +122,23 @@ def config_error_message() -> Optional[str]:
     if not SUPABASE_URL:
         missing.append("SUPABASE_URL")
     if not SUPABASE_KEY:
-        missing.append("SUPABASE_SERVICE_ROLE_KEY (or SUPABASE_KEY)")
+        missing.append("SUPABASE_SERVICE_ROLE_KEY (or SUPABASE_KEY / SUPABASE_ANON_KEY)")
 
     if missing:
         return (
             "⚠️ **Configuration is missing.**\n\n"
             f"Missing env vars: `{', '.join(missing)}`\n\n"
-            f"Local: ensure `{ENV_PATH}` contains them.\n"
+            f"Local: ensure `{ENV_PATH}` exists and contains the required keys.\n"
             "HF Spaces: set them under **Space → Settings → Secrets**.\n"
         )
     return None
 
 
-def sanitize_id(s: str) -> str:
-    """
-    Remove control chars that can break PostgREST / HTTP encoding.
-    """
-    if not s:
-        return ""
-    return "".join(ch for ch in s if ch >= " " and ch not in "\x7f").strip()
-
-
-def _to_str(v) -> str:
-    """
-    Robust conversion for CSV values; sometimes DictReader values become lists
-    if a row has extra columns.
-    """
+# =========================================================
+# UTIL / SAFE STRING
+# =========================================================
+def _to_str(v: Any) -> str:
+    """Defensive conversion to string; handles list values too."""
     if v is None:
         return ""
     if isinstance(v, list):
@@ -159,9 +146,86 @@ def _to_str(v) -> str:
     return str(v).strip()
 
 
-# =========================
+def sanitize_id(s: str) -> str:
+    """Stable-ish sample id string (no control chars)."""
+    if not s:
+        return ""
+    return "".join(ch for ch in s if ch >= " " and ch not in "\x7f").strip()
+
+
+# =========================================================
+# AUTH (annotators table, like admins)
+# =========================================================
+def get_annotator_by_email(email: str) -> Optional[dict]:
+    sb = ensure_supabase()
+    try:
+        resp = sb.table("annotators").select("*").eq("email", (email or "").lower()).limit(1).execute()
+        data = resp.data or []
+        return data[0] if data else None
+    except Exception as e:
+        print("get_annotator_by_email error:", e)
+        return None
+
+
+def create_annotator(name: str, email: str, password: str) -> Tuple[bool, str]:
+    """
+    Signup -> approved=false. You approve manually in Supabase.
+    Table: public.annotators(name,email,password,approved,created_at)
+    """
+    sb = ensure_supabase()
+    name = (name or "").strip()
+    email = (email or "").strip().lower()
+    password = password or ""
+
+    if not (name and email and password):
+        return False, "Please fill all fields."
+
+    existing = get_annotator_by_email(email)
+    if existing:
+        return False, "Email already registered."
+
+    payload = {
+        "name": name,
+        "email": email,
+        "password": generate_password_hash(password),
+        "approved": False,
+        "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+    }
+
+    try:
+        resp = sb.table("annotators").insert(payload).execute()
+        if resp.data:
+            return True, "Registered successfully. Waiting for approval."
+        return False, "Failed to create annotator."
+    except Exception as e:
+        print("create_annotator error:", e)
+        return False, f"Signup failed. Raw: {e}"
+
+
+def authenticate_annotator(email: str, password: str) -> Tuple[bool, str, Optional[dict]]:
+    sb = ensure_supabase()
+    email = (email or "").strip().lower()
+    password = password or ""
+
+    if not (email and password):
+        return False, "Please enter email and password.", None
+
+    user = get_annotator_by_email(email)
+    if not user:
+        return False, "Invalid email or password.", None
+
+    if not check_password_hash(user.get("password", ""), password):
+        return False, "Invalid email or password.", None
+
+    if not user.get("approved", False):
+        return False, "Your account is not approved yet.", None
+
+    return True, "OK", user
+
+
+# =========================================================
 # S3 HELPERS
-# =========================
+# =========================================================
 def s3_get_bytes(key: str) -> bytes:
     obj = S3_CLIENT.get_object(Bucket=S3_BUCKET, Key=key)
     return obj["Body"].read()
@@ -175,44 +239,31 @@ def s3_key_exists(key: str) -> bool:
         return False
 
 
-def list_s3_common_prefixes(prefix: str, delimiter: str = "/") -> List[str]:
+def list_user_folders(country_code: str) -> List[str]:
     """
-    List "folders" under a prefix using Delimiter.
-    Example: prefix="sa/" returns ["sa/userA/", "sa/userB/", ...]
+    Returns folder prefixes like: "sa/username/"
     """
-    prefixes = []
+    prefixes: List[str] = []
     token = None
-    listed = 0
+    prefix = f"{country_code}/"
 
     while True:
-        kwargs = {
-            "Bucket": S3_BUCKET,
-            "Prefix": prefix,
-            "Delimiter": delimiter,
-            "MaxKeys": 1000,
-        }
+        kwargs = {"Bucket": S3_BUCKET, "Prefix": prefix, "Delimiter": "/", "MaxKeys": 1000}
         if token:
             kwargs["ContinuationToken"] = token
 
         resp = S3_CLIENT.list_objects_v2(**kwargs)
-
-        for p in resp.get("CommonPrefixes", []) or []:
-            cp = p.get("Prefix")
-            if cp:
-                prefixes.append(cp)
-            listed += 1
-            if listed >= MAX_KEYS_LIST:
-                break
-
-        if listed >= MAX_KEYS_LIST:
-            break
+        for cp in (resp.get("CommonPrefixes") or []):
+            p = cp.get("Prefix")
+            if p and p != prefix:
+                prefixes.append(p)
 
         if resp.get("IsTruncated"):
             token = resp.get("NextContinuationToken")
         else:
             break
 
-    return prefixes
+    return sorted(prefixes)
 
 
 def load_audio_from_s3(key: str) -> Optional[Tuple[int, np.ndarray]]:
@@ -225,37 +276,37 @@ def load_audio_from_s3(key: str) -> Optional[Tuple[int, np.ndarray]]:
         return None
 
 
-# =========================
-# METADATA CSV PARSING
-# =========================
+# =========================================================
+# METADATA
+# =========================================================
 def parse_metadata_csv_bytes(b: bytes) -> List[Dict[str, str]]:
+    """
+    Robust CSV parsing. Supports comma or pipe separators.
+    """
     text = b.decode("utf-8", errors="replace")
-
-    delimiter = ","
-    if text.count("|") > text.count(","):
-        delimiter = "|"
+    delimiter = "|" if text.count("|") > text.count(",") else ","
 
     reader = csv.DictReader(io.StringIO(text), delimiter=delimiter)
-    rows = []
+    rows: List[Dict[str, str]] = []
     for row in reader:
-        clean = {_to_str(k): _to_str(v) for k, v in row.items()}
-        clean = {k: v for k, v in clean.items() if k}  # drop empty keys
+        clean = {_to_str(k): _to_str(v) for k, v in (row or {}).items()}
+        clean = {k: v for k, v in clean.items() if k}
         rows.append(clean)
     return rows
 
 
 def extract_audio_and_text(row: Dict[str, str]) -> Optional[Tuple[str, str]]:
-    audio_candidates = ["audio_file", "audio", "file", "filename", "wav", "path"]
-    text_candidates = ["text", "sentence", "transcript", "prompt"]
+    audio_keys = ["audio_file", "audio", "file", "filename", "wav", "path"]
+    text_keys = ["text", "sentence", "transcript", "prompt"]
 
     audio = ""
-    for k in audio_candidates:
+    for k in audio_keys:
         if k in row and row[k]:
             audio = row[k]
             break
 
     text = ""
-    for k in text_candidates:
+    for k in text_keys:
         if k in row and row[k]:
             text = row[k]
             break
@@ -267,10 +318,9 @@ def extract_audio_and_text(row: Dict[str, str]) -> Optional[Tuple[str, str]]:
 
 def load_user_metadata(user_folder: str) -> List[Dict[str, str]]:
     """
-    Loads:
-      - {user_folder}/metadata.csv (required)
-      - {user_folder}/metadata_oth.csv (optional)
-    Returns combined rows.
+    user_folder like: "sa/userA/"
+    key: "sa/userA/metadata.csv"
+    optional: "sa/userA/metadata_oth.csv"
     """
     rows: List[Dict[str, str]] = []
 
@@ -279,23 +329,26 @@ def load_user_metadata(user_folder: str) -> List[Dict[str, str]]:
     rows.extend(parse_metadata_csv_bytes(b_main))
 
     key_oth = f"{user_folder}{METADATA_OTH_CSV_NAME}"
-    try:
-        if s3_key_exists(key_oth):
+    if s3_key_exists(key_oth):
+        try:
             b_oth = s3_get_bytes(key_oth)
             rows.extend(parse_metadata_csv_bytes(b_oth))
-    except Exception as e:
-        print("Skipping metadata_oth.csv for", user_folder, "error:", e)
+        except Exception as e:
+            print("Skipping metadata_oth.csv for", user_folder, "error:", e)
 
     return rows
 
 
-def resolve_audio_key(country_code: str, user_folder: str, audio_file: str) -> str:
-    audio_file = (audio_file or "").lstrip("/")
-
+def resolve_audio_key(user_folder: str, audio_file: str) -> str:
+    """
+    audio_file might be 'x.wav' or 'wavs/x.wav' etc.
+    We try reasonable candidates and return first existing.
+    """
+    af = (audio_file or "").lstrip("/")
     candidates = [
-        f"{user_folder}{WAVS_FOLDER}/{audio_file}",
-        f"{user_folder}{audio_file}",  # if metadata already includes wavs/...
-        f"{country_code}/{audio_file}",  # fallback
+        f"{user_folder}{WAVS_FOLDER}/{af}",
+        f"{user_folder}{af}",
+        f"{user_folder}{WAVS_FOLDER}/{Path(af).name}",
     ]
     for k in candidates:
         if s3_key_exists(k):
@@ -303,19 +356,113 @@ def resolve_audio_key(country_code: str, user_folder: str, audio_file: str) -> s
     return candidates[0]
 
 
-# =========================
-# BUILD SAMPLES
-# =========================
-def build_country_samples(country_name: str, country_code: str) -> List[Sample]:
-    country_prefix = f"{country_code}/"
-    user_prefixes = sorted(list_s3_common_prefixes(country_prefix))
+# =========================================================
+# DATA MODEL
+# =========================================================
+@dataclass
+class Sample:
+    country_name: str
+    country_code: str
+    user_folder: str
+    audio_file: str
+    text: str
 
+
+def make_sample_id(s: Sample) -> str:
+    # Identity (conceptual): country | user_folder | audio_file name
+    raw = f"{s.country_code}|{s.user_folder}|{(s.audio_file or '').lstrip('/')}"
+    return sanitize_id(raw)
+
+
+# =========================================================
+# SUPABASE (annotations)
+# =========================================================
+def fetch_annotated_ids(sample_ids: List[str]) -> Set[str]:
+    """
+    Query Supabase for already annotated sample_ids.
+    Uses chunked .in_ to avoid PostgREST 400 errors.
+    """
+    sb = ensure_supabase()
+    cleaned: List[str] = []
+    seen: Set[str] = set()
+
+    for x in sample_ids:
+        x = sanitize_id(x)
+        if not x or x in seen:
+            continue
+        seen.add(x)
+        cleaned.append(x)
+
+    out: Set[str] = set()
+    if not cleaned:
+        return out
+
+    for i in range(0, len(cleaned), SUPABASE_IN_CHUNK):
+        chunk = cleaned[i : i + SUPABASE_IN_CHUNK]
+        if not chunk:
+            continue
+        resp = sb.table("annotations").select("sample_id").in_("sample_id", chunk).execute()
+        rows = resp.data or []
+        for r in rows:
+            sid = r.get("sample_id")
+            if sid:
+                out.add(sid)
+    return out
+
+
+def save_annotation(
+    annotator_email: str,
+    annotator_name: str,
+    sample: Sample,
+    s3_audio_key: str,
+    decision: str,
+    reject_reason_combined: Optional[str],
+    comment: Optional[str],
+):
+    """
+    Table expected:
+      public.annotations(
+        sample_id, country_code, country_name,
+        user_folder, audio_file, s3_audio_key, text_sample,
+        annotator_email, annotator_name,
+        decision, reject_reason, comment, created_at
+      )
+    """
+    sb = ensure_supabase()
+    payload = {
+        "sample_id": make_sample_id(sample),
+        "country_code": sample.country_code,
+        "country_name": sample.country_name,
+        "user_folder": sample.user_folder,
+        "audio_file": sample.audio_file,
+        "s3_audio_key": s3_audio_key,
+        "text_sample": sample.text or "",
+        "annotator_email": annotator_email,
+        "annotator_name": annotator_name,
+        "decision": decision,
+        "reject_reason": reject_reason_combined if decision == "reject" else None,
+        "comment": (comment or "").strip() if decision == "reject" else None,
+        "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+    }
+    sb.table("annotations").insert(payload).execute()
+
+
+# =========================================================
+# SAMPLE LOADING / PICKING
+# =========================================================
+def build_country_samples(country_name: str, country_code: str) -> List[Sample]:
+    """
+    Loads all users under {country_code}/ and merges their metadata.csv (+ metadata_oth.csv).
+    Returns a flat list of samples.
+    """
     samples: List[Sample] = []
-    for user_folder in user_prefixes:
+    folders = list_user_folders(country_code)
+
+    for user_folder in folders:
         try:
             rows = load_user_metadata(user_folder)
         except Exception as e:
-            print("Skipping folder (metadata read/parse issue):", user_folder, e)
+            print("Skipping folder (no metadata.csv?):", user_folder, e)
             continue
 
         for row in rows:
@@ -330,265 +477,294 @@ def build_country_samples(country_name: str, country_code: str) -> List[Sample]:
                     user_folder=user_folder,
                     audio_file=audio_file,
                     text=text,
-                    row=row,
                 )
             )
+
     return samples
 
 
-def sample_id_from(s: Sample) -> str:
-    raw = f"{s.country_code}|{s.user_folder}|{(s.audio_file or '').lstrip('/')}"
-    return sanitize_id(raw)
-
-
-# =========================
-# SUPABASE HELPERS
-# =========================
-def ensure_supabase() -> Client:
-    if not supabase:
-        raise RuntimeError("Supabase is not configured.")
-    return supabase
-
-def register_annotator(name: str) -> Tuple[bool, str]:
-    """
-    Get-or-create:
-      - If name exists -> OK (returning user)
-      - If not -> insert -> OK (new user)
-    """
-    sb = ensure_supabase()
-    name = (name or "").strip()
-    if not name:
-        return False, "❌ Please enter a name."
-    if len(name) < 3:
-        return False, "❌ Name is too short (min 3 chars)."
-    if len(name) > 40:
-        return False, "❌ Name is too long (max 40 chars)."
-
-    # 1) Check if it exists
-    try:
-        resp = sb.table("annotators").select("name").eq("name", name).limit(1).execute()
-        data = resp.data or []
-        if data:
-            return True, f"✅ Welcome back: **{name}**"
-    except Exception as e:
-        return False, f"❌ Failed to check name: `{e}`"
-
-    # 2) If not exists, create it
-    try:
-        sb.table("annotators").insert({"name": name}).execute()
-        return True, f"✅ Name reserved: **{name}**"
-    except Exception:
-        # Race case: someone created same name between check & insert
-        return True, f"✅ Welcome back: **{name}**"
-
-
-def fetch_annotated_ids(sample_ids: List[str], chunk_size: int = SUPABASE_IN_CHUNK) -> Set[str]:
-    """
-    Chunked .in_() to avoid PostgREST 'JSON could not be generated' / request size limits.
-    Also sanitizes + de-dups.
-    """
-    sb = ensure_supabase()
-    out: Set[str] = set()
-
-    cleaned: List[str] = []
-    seen: Set[str] = set()
-    for x in sample_ids:
-        x = sanitize_id(x)
-        if not x or x in seen:
-            continue
-        seen.add(x)
-        cleaned.append(x)
-
-    for i in range(0, len(cleaned), chunk_size):
-        chunk = cleaned[i : i + chunk_size]
-        if not chunk:
-            continue
-        resp = sb.table("annotations").select("sample_id").in_("sample_id", chunk).execute()
-        rows = resp.data or []
-        out.update(r["sample_id"] for r in rows if "sample_id" in r)
-
-    return out
-
-
-def save_annotation(
-    annotator_name: str,
-    s: Sample,
-    decision: str,
-    reject_reason: str,
-    comment: str,
-    s3_audio_key: str,
-):
-    sb = ensure_supabase()
-    payload = {
-        "sample_id": sample_id_from(s),
-        "country_code": s.country_code,
-        "country_name": s.country_name,
-        "s3_audio_key": s3_audio_key,
-        "audio_file": s.audio_file,
-        "text_sample": s.text,
-        "annotator_name": annotator_name,
-        "decision": decision,
-        "reject_reason": reject_reason if decision == "reject" else None,
-        "comment": (comment or "").strip() if decision == "reject" else None,
-    }
-    sb.table("annotations").insert(payload).execute()
-
-
-# =========================
-# RANDOM NEXT SAMPLE
-# =========================
 def pick_random_unannotated_index(samples: List[Sample]) -> Optional[int]:
+    """
+    Randomly choose from samples that are not annotated in Supabase.
+    Strategy:
+      - sample K random indices
+      - ask Supabase which sample_ids are already annotated (chunked)
+      - pick random among remaining
+    """
     n = len(samples)
     if n == 0:
         return None
 
     k = min(RANDOM_TRIES, n)
     idxs = random.sample(range(n), k)
+    sids = [make_sample_id(samples[i]) for i in idxs]
 
-    sids = [sample_id_from(samples[i]) for i in idxs]
     annotated = fetch_annotated_ids(sids)
-
     available = [i for i, sid in zip(idxs, sids) if sid not in annotated]
     if not available:
         return None
     return random.choice(available)
 
 
-# =========================
-# UI CALLBACKS
-# =========================
-def on_start_name(state: dict, name: str):
-    state = state or {}
+def build_reject_reason(main_reason: str, sub_reason: Optional[str]) -> str:
+    main_reason = (main_reason or "").strip()
+    sub_reason = (sub_reason or "").strip()
+    if main_reason and sub_reason:
+        return f"{main_reason}{REASON_SEP}{sub_reason}"
+    return main_reason
 
+
+# =========================================================
+# GRADIO STATE + CALLBACKS
+# =========================================================
+def empty_state() -> dict:
+    return {
+        "logged_in": False,
+        "annotator_email": None,
+        "annotator_name": None,
+        "country_name": None,
+        "country_code": None,
+        "samples": [],
+        "current_index": None,
+        "error": None,
+    }
+
+
+def handle_signup(name, email, pw):
     err = config_error_message()
     if err:
-        state["error"] = err
-        return state, err, gr.update(interactive=False), gr.update(interactive=False)
+        return "❌ " + err
+    ok, msg = create_annotator(name, email, pw)
+    return ("✅ " if ok else "❌ ") + msg
 
-    ok, msg = register_annotator(name)
+
+def handle_login(email, pw, st):
+    err = config_error_message()
+    if err:
+        st = empty_state()
+        st["error"] = err
+        return st, "❌ " + err, gr.update(visible=True), gr.update(visible=False), ""
+
+    ok, msg, user = authenticate_annotator(email, pw)
     if not ok:
-        state["annotator_name"] = None
-        return state, msg, gr.update(interactive=False), gr.update(interactive=False)
+        return st, f"❌ {msg}", gr.update(visible=True), gr.update(visible=False), ""
 
-    state["annotator_name"] = name.strip()
-    return state, msg, gr.update(interactive=True), gr.update(interactive=True)
+    st["logged_in"] = True
+    st["annotator_email"] = user.get("email")
+    st["annotator_name"] = user.get("name")
 
-
-def on_country_change(state: dict, country_name: str):
-    state = state or {}
-    err = config_error_message()
-    if err:
-        state["error"] = err
-        return ui_load_current(state)
-
-    if not state.get("annotator_name"):
-        return (state, "⚠️ Enter a unique name first.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
-
-    country_code = COUNTRY_CODES[country_name]
-    samples = build_country_samples(country_name, country_code)
-
-    state["country_name"] = country_name
-    state["country_code"] = country_code
-    state["samples"] = samples
-    state["current_index"] = None
-
-    return ui_load_current(state)
+    header_text = f"### Logged in as **{st['annotator_name']}**"
+    return st, "", gr.update(visible=False), gr.update(visible=True), header_text
 
 
-def ui_load_current(state: dict):
-    # Outputs: state, header, text, audio, decision, reject_reason, comment, msg
-    if not state:
-        return (state, "⚠️ Not initialized yet.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
+def handle_logout(st):
+    st = empty_state()
+    return st, gr.update(visible=True), gr.update(visible=False), ""
 
-    if state.get("error"):
-        return (state, state["error"], "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
 
-    if not state.get("annotator_name"):
-        return (state, "⚠️ Enter a unique name first.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
+def on_decision_change(dec: str):
+    """
+    If reject -> show main reason + comment, and auto-populate sub dropdown if available.
+    """
+    show = (dec == "reject")
+    if not show:
+        return (
+            gr.update(visible=False, value=REJECT_REASONS[0]),            # reject_main
+            gr.update(visible=False, choices=[], value=None),            # reject_sub
+            gr.update(visible=False, value=""),                          # comment
+        )
 
-    samples: List[Sample] = state.get("samples") or []
-    country_name = state.get("country_name", "")
+    main = REJECT_REASONS[0]
+    subs = REJECT_SUBREASONS.get(main, [])
+    sub_update = (
+        gr.update(visible=True, choices=subs, value=subs[0]) if subs
+        else gr.update(visible=False, choices=[], value=None)
+    )
 
-    if not samples:
-        return (state, f"⚠️ No samples found for **{country_name}**.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
-
-    idx = pick_random_unannotated_index(samples)
-    if idx is None:
-        return (state, f"✅ No more unannotated samples found for **{country_name}**.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
-
-    state["current_index"] = idx
-    s = samples[idx]
-
-    audio_key = resolve_audio_key(s.country_code, s.user_folder, s.audio_file)
-    audio = load_audio_from_s3(audio_key)
-
-    header = f"**{country_name}** — Random unannotated sample"
     return (
-        state,
-        header,
-        s.text or "(no text found)",
-        audio,
-        "accept",
-        gr.update(visible=False, value=REJECT_REASONS[0]),
-        gr.update(visible=False, value=""),
-        "",
+        gr.update(visible=True, value=main),
+        sub_update,
+        gr.update(visible=True, value=""),
     )
 
 
-def on_toggle(decision: str):
-    show = (decision == "reject")
-    return gr.update(visible=show), gr.update(visible=show)
+def on_main_reason_change(main_reason: str):
+    subs = REJECT_SUBREASONS.get(main_reason, [])
+    if subs:
+        return gr.update(visible=True, choices=subs, value=subs[0])
+    return gr.update(visible=False, choices=[], value=None)
 
 
-def submit_and_next(state: dict, decision: str, reject_reason: str, comment: str):
-    if not state:
-        return ui_load_current(state)
+def ui_load_current(st: dict):
+    """
+    Load a random unannotated sample and return UI updates.
+    """
+    if not st or not st.get("logged_in"):
+        return (
+            st,
+            gr.update(value="⚠️ Please login first.", visible=True),
+            gr.update(value="", visible=True),
+            None,
+            gr.update(value="accept"),
+            gr.update(visible=False, value=REJECT_REASONS[0]),
+            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=""),
+            gr.update(value=""),
+        )
 
-    if state.get("error"):
-        return ui_load_current(state)
+    samples: List[Sample] = st.get("samples") or []
+    if not samples:
+        cn = st.get("country_name") or ""
+        return (
+            st,
+            gr.update(value=f"⚠️ No samples loaded for **{cn}**.", visible=True),
+            gr.update(value="", visible=True),
+            None,
+            gr.update(value="accept"),
+            gr.update(visible=False, value=REJECT_REASONS[0]),
+            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=""),
+            gr.update(value=""),
+        )
 
-    annotator_name = state.get("annotator_name")
-    if not annotator_name:
-        return (state, "⚠️ Enter a unique name first.", "", None, "accept", gr.update(visible=False), gr.update(visible=False), "")
+    idx = pick_random_unannotated_index(samples)
+    if idx is None:
+        cn = st.get("country_name") or ""
+        return (
+            st,
+            gr.update(value=f"✅ No more unannotated samples found for **{cn}**.", visible=True),
+            gr.update(value="", visible=True),
+            None,
+            gr.update(value="accept"),
+            gr.update(visible=False, value=REJECT_REASONS[0]),
+            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=""),
+            gr.update(value=""),
+        )
 
-    samples: List[Sample] = state.get("samples") or []
-    idx = state.get("current_index")
+    st["current_index"] = idx
+    s = samples[idx]
+    audio_key = resolve_audio_key(s.user_folder, s.audio_file)
+    audio = load_audio_from_s3(audio_key)
+
+    header = f"**{s.country_name}** — random unannotated sample"
+    return (
+        st,
+        gr.update(value=header, visible=True),
+        gr.update(value=(s.text or "(no text found)"), visible=True),
+        audio,
+        gr.update(value="accept"),
+        gr.update(visible=False, value=REJECT_REASONS[0]),
+        gr.update(visible=False, choices=[], value=None),
+        gr.update(visible=False, value=""),
+        gr.update(value=""),
+    )
+
+
+def on_country_change(st: dict, country_name: str):
+    """
+    Build samples list for the selected country, then load a sample.
+    """
+    if not st or not st.get("logged_in"):
+        return (
+            st,
+            gr.update(value="⚠️ Please login first.", visible=True),
+            gr.update(value="", visible=True),
+            None,
+            gr.update(value="accept"),
+            gr.update(visible=False, value=REJECT_REASONS[0]),
+            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=""),
+            gr.update(value=""),
+        )
+
+    country_code = COUNTRY_CODES[country_name]
+    st["country_name"] = country_name
+    st["country_code"] = country_code
+
+    # Build all samples for the selected country (can be heavy if huge)
+    try:
+        st["samples"] = build_country_samples(country_name, country_code)
+    except Exception as e:
+        st["samples"] = []
+        st["current_index"] = None
+        return (
+            st,
+            gr.update(value=f"❌ Failed loading samples: `{e}`", visible=True),
+            gr.update(value="", visible=True),
+            None,
+            gr.update(value="accept"),
+            gr.update(visible=False, value=REJECT_REASONS[0]),
+            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=""),
+            gr.update(value=""),
+        )
+
+    return ui_load_current(st)
+
+
+def submit_and_next(st: dict, decision: str, reject_main: str, reject_sub: Optional[str], comment: str):
+    """
+    Save current annotation to Supabase and load next random unannotated sample.
+    """
+    if not st or not st.get("logged_in"):
+        return ui_load_current(st)
+
+    samples: List[Sample] = st.get("samples") or []
+    idx = st.get("current_index")
     if idx is None or idx < 0 or idx >= len(samples):
-        return ui_load_current(state)
+        return ui_load_current(st)
 
     s = samples[idx]
-    audio_key = resolve_audio_key(s.country_code, s.user_folder, s.audio_file)
+    audio_key = resolve_audio_key(s.user_folder, s.audio_file)
 
     try:
+        if decision == "reject":
+            reason_combined = build_reject_reason(reject_main, reject_sub)
+            comment_clean = (comment or "").strip()
+        else:
+            reason_combined = None
+            comment_clean = None
+
         save_annotation(
-            annotator_name=annotator_name,
-            s=s,
-            decision=decision,
-            reject_reason=(reject_reason or "").strip(),
-            comment=(comment or "").strip(),
+            annotator_email=st["annotator_email"],
+            annotator_name=st["annotator_name"],
+            sample=s,
             s3_audio_key=audio_key,
+            decision=decision,
+            reject_reason_combined=reason_combined,
+            comment=comment_clean,
         )
     except Exception as e:
-        msg = f"❌ Failed to save annotation: `{e}`"
+        # Keep current sample loaded and show error
         return (
-            state,
-            state.get("country_name", ""),
-            s.text or "(no text found)",
+            st,
+            gr.update(value="❌ Failed to save annotation.", visible=True),
+            gr.update(value=(s.text or "(no text found)"), visible=True),
             load_audio_from_s3(audio_key),
-            decision,
-            gr.update(visible=(decision == "reject")),
-            gr.update(visible=(decision == "reject")),
-            msg,
+            gr.update(value=decision),
+            gr.update(visible=(decision == "reject"), value=reject_main or REJECT_REASONS[0]),
+            gr.update(
+                visible=(decision == "reject" and bool(REJECT_SUBREASONS.get(reject_main or REJECT_REASONS[0]))),
+                choices=REJECT_SUBREASONS.get(reject_main or REJECT_REASONS[0], []),
+                value=reject_sub,
+            ),
+            gr.update(visible=(decision == "reject"), value=comment),
+            gr.update(value=f"❌ `{e}`"),
         )
 
-    return ui_load_current(state)
+    return ui_load_current(st)
 
 
-# =========================
+# =========================================================
 # UI
-# =========================
-with gr.Blocks(title="Annotation Tool") as demo:
-    gr.HTML("""
+# =========================================================
+def build_app():
+    with gr.Blocks(title="Arabic Speech Annotation Tool") as demo:
+        st = gr.State(empty_state())
+
+        gr.HTML(
+            """
 <script>
 (function(){
   function enhanceAudio(){
@@ -622,91 +798,137 @@ with gr.Blocks(title="Annotation Tool") as demo:
   });
 })();
 </script>
-""")
-
-    state = gr.State({})
-
-    gr.Markdown("## Simple Annotation Tool")
-
-    with gr.Row():
-        annotator_name = gr.Textbox(
-            label="Annotator Name (must be unique)",
-            placeholder="e.g., sara, ali_1, qa_team_ahmed",
+"""
         )
-        start_btn = gr.Button("Start", variant="primary")
 
-    start_msg = gr.Markdown("")
+        gr.Markdown("# ✅ Annotation Tool")
 
-    with gr.Row():
-        country_dropdown = gr.Dropdown(
-            choices=list(COUNTRY_CODES.keys()),
-            value="Saudi Arabia" if "Saudi Arabia" in COUNTRY_CODES else list(COUNTRY_CODES.keys())[0],
-            label="Country",
-            interactive=False,
+        # ---------- AUTH VIEW ----------
+        with gr.Row(visible=True) as auth_view:
+            with gr.Column(scale=1):
+                gr.Markdown("## Login")
+                login_email = gr.Textbox(label="Email")
+                login_pw = gr.Textbox(label="Password", type="password")
+                login_btn = gr.Button("Login", variant="primary")
+                login_msg = gr.Markdown("")
+
+            with gr.Column(scale=1):
+                gr.Markdown("## Sign up")
+                su_name = gr.Textbox(label="Name")
+                su_email = gr.Textbox(label="Email")
+                su_pw = gr.Textbox(label="Password", type="password")
+                su_btn = gr.Button("Sign up")
+                su_msg = gr.Markdown("")
+
+        # ---------- MAIN VIEW ----------
+        with gr.Column(visible=False) as main_view:
+            header_md = gr.Markdown("")
+            logout_btn = gr.Button("Logout")
+
+            country_dropdown = gr.Dropdown(
+                choices=list(COUNTRY_CODES.keys()),
+                value="Saudi Arabia" if "Saudi Arabia" in COUNTRY_CODES else list(COUNTRY_CODES.keys())[0],
+                label="Country",
+            )
+
+            header = gr.Markdown("")
+            text_box = gr.Textbox(label="Text Sample", interactive=False, lines=4, max_lines=10)
+
+            audio = gr.Audio(
+                label="Audio Sample",
+                interactive=False,
+                type="numpy",
+                elem_id="player",
+                show_download_button=False,
+                autoplay=True,
+            )
+
+            decision = gr.Radio(
+                choices=[("Accept ✅", "accept"), ("Reject ❌", "reject")],
+                value="accept",
+                label="Decision",
+            )
+
+            reject_main = gr.Radio(
+                choices=REJECT_REASONS,
+                value=REJECT_REASONS[0],
+                label="سبب الرفض",
+                visible=False,
+            )
+
+            reject_sub = gr.Dropdown(
+                choices=[],
+                value=None,
+                label="تفاصيل (اختياري)",
+                visible=False,
+            )
+
+            comment = gr.Textbox(
+                label="ملاحظة (اختياري)",
+                placeholder="اكتب تعليق إضافي إذا احتجت…",
+                visible=False,
+                lines=2,
+                max_lines=4,
+            )
+
+            msg = gr.Markdown("")
+
+            with gr.Row():
+                next_btn = gr.Button("Submit & Next", variant="primary", elem_id="next_btn")
+                reload_btn = gr.Button("Reload current")
+
+        # --- AUTH callbacks
+        su_btn.click(fn=handle_signup, inputs=[su_name, su_email, su_pw], outputs=[su_msg])
+
+        login_btn.click(
+            fn=handle_login,
+            inputs=[login_email, login_pw, st],
+            outputs=[st, login_msg, auth_view, main_view, header_md],
         )
-        load_btn = gr.Button("Load / Next sample", interactive=False)
 
-    header = gr.Markdown("")
-    text = gr.Textbox(label="Text Sample", interactive=False, lines=4, max_lines=10)
+        logout_btn.click(
+            fn=handle_logout,
+            inputs=[st],
+            outputs=[st, auth_view, main_view, header_md],
+        )
 
-    audio = gr.Audio(
-        label="Audio Sample",
-        interactive=False,
-        type="numpy",
-        elem_id="player",
-        show_download_button=False,
-        autoplay=True,
-    )
+        # --- Decision / reject UI
+        decision.change(
+            fn=on_decision_change,
+            inputs=[decision],
+            outputs=[reject_main, reject_sub, comment],
+        )
 
-    decision = gr.Radio(
-        choices=[("Accept ✅", "accept"), ("Reject ❌", "reject")],
-        value="accept",
-        label="Decision",
-    )
+        reject_main.change(
+            fn=on_main_reason_change,
+            inputs=[reject_main],
+            outputs=[reject_sub],
+        )
 
-    reject_reason = gr.Radio(
-        choices=REJECT_REASONS,
-        value=REJECT_REASONS[0],
-        label="Reject reason",
-        visible=False,
-    )
+        # --- Country change -> load samples -> load a random sample
+        country_dropdown.change(
+            fn=on_country_change,
+            inputs=[st, country_dropdown],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+        )
 
-    comment = gr.Textbox(
-        label="Optional comment",
-        placeholder="Add details if needed…",
-        visible=False,
-        lines=2,
-        max_lines=4,
-    )
+        # --- Reload
+        reload_btn.click(
+            fn=ui_load_current,
+            inputs=[st],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+        )
 
-    msg = gr.Markdown("")
-    next_btn = gr.Button("Submit & Next", variant="primary", elem_id="next_btn")
+        # --- Submit & Next
+        next_btn.click(
+            fn=submit_and_next,
+            inputs=[st, decision, reject_main, reject_sub, comment],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+        )
 
-    decision.change(fn=on_toggle, inputs=[decision], outputs=[reject_reason, comment])
+    return demo
 
-    start_btn.click(
-        fn=on_start_name,
-        inputs=[state, annotator_name],
-        outputs=[state, start_msg, country_dropdown, load_btn],
-    )
-
-    load_btn.click(
-        fn=on_country_change,
-        inputs=[state, country_dropdown],
-        outputs=[state, header, text, audio, decision, reject_reason, comment, msg],
-    )
-
-    country_dropdown.change(
-        fn=on_country_change,
-        inputs=[state, country_dropdown],
-        outputs=[state, header, text, audio, decision, reject_reason, comment, msg],
-    )
-
-    next_btn.click(
-        fn=submit_and_next,
-        inputs=[state, decision, reject_reason, comment],
-        outputs=[state, header, text, audio, decision, reject_reason, comment, msg],
-    )
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", "7860")))
+    app = build_app()
+    app.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", "7860")), debug=False)
