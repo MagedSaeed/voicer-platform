@@ -19,7 +19,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # ENV / CONFIG
 # =========================================================
 BASE_DIR = Path(__file__).resolve().parent
-ENV_PATH = BASE_DIR / ".env"   # one folder up (as you requested)
+ENV_PATH = BASE_DIR / ".env"  # one folder up (as you requested)
 load_dotenv(ENV_PATH)
 
 AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY", "")
@@ -74,6 +74,9 @@ REJECT_SUBREASONS = {
     "غير واضح": ["أصوات في الخلفية", "أكثر من متحدث", "صدي صوت", "صوت منخفض"],
     "نص غير مطابق": ["غير مطابق تماما", "مطابق جزئيا", "اختلاف بسيط (مثلا في نطق كلمة أو اثنين)"],
 }
+
+# Only these mains will show sub-reason components (the ones in the dict)
+SUB_MAIN_REASONS = list(REJECT_SUBREASONS.keys())  # e.g. ["غير واضح", "نص غير مطابق"]
 
 # =========================================================
 # CLIENTS
@@ -359,7 +362,6 @@ class Sample:
 
 
 def make_sample_id(s: Sample) -> str:
-    # Identity (conceptual): country | user_folder | audio_file name
     raw = f"{s.country_code}|{s.user_folder}|{(s.audio_file or '').lstrip('/')}"
     return sanitize_id(raw)
 
@@ -495,12 +497,23 @@ def pick_random_unannotated_index(samples: List[Sample]) -> Optional[int]:
     return random.choice(available)
 
 
-def build_reject_reason(main_reason: str, sub_reason: Optional[str]) -> str:
-    main_reason = (main_reason or "").strip()
-    sub_reason = (sub_reason or "").strip()
-    if main_reason and sub_reason:
-        return f"{main_reason}{REASON_SEP}{sub_reason}"
-    return main_reason
+def build_reject_reasons_multi(selected_mains: List[str], sub_map: Dict[str, Optional[str]]) -> str:
+    """
+    Build one string containing multiple mains. Only mains in SUB_MAIN_REASONS use their sub reason.
+    Example:
+      "غير واضح | أصوات في الخلفية ; سكوت طويل ; نص غير مطابق | مطابق جزئيا"
+    """
+    selected_mains = selected_mains or []
+    parts: List[str] = []
+    for m in selected_mains:
+        m = (m or "").strip()
+        if not m:
+            continue
+        if m in sub_map and sub_map.get(m):
+            parts.append(f"{m}{REASON_SEP}{(sub_map.get(m) or '').strip()}")
+        else:
+            parts.append(m)
+    return " ; ".join(parts)
 
 
 # =========================================================
@@ -549,40 +562,61 @@ def handle_login(email, pw, st):
 def handle_logout(st):
     st = empty_state()
     return st, gr.update(visible=True), gr.update(visible=False), ""
-# --- Update: when decision changes to reject, populate reject_sub as Radio
+
+
+# --- Decision change: show/hide reject UI + reset sub widgets
 def on_decision_change(dec: str):
     if dec != "reject":
+        # hide everything + clear
         return (
-            gr.update(visible=False, value=REJECT_REASONS[0]),  # reject_main hidden
-            gr.update(visible=False, choices=[], value=None),  # reject_sub hidden+cleared
-            gr.update(visible=False, value=""),                # comment hidden+cleared
+            gr.update(visible=False, value=[]),      # reject_main (checkboxes)
+            gr.update(visible=False, value=None),    # sub for "غير واضح"
+            gr.update(visible=False, value=None),    # sub for "نص غير مطابق"
+            gr.update(visible=False, value=""),      # comment
         )
 
-    main = REJECT_REASONS[0]
-    subs = REJECT_SUBREASONS.get(main, [])
-    sub_update = (
-        gr.update(visible=True, choices=subs, value=subs[0])
-        if subs
-        else gr.update(visible=False, choices=[], value=None)
-    )
-
+    # show reject_main and comment; subs appear only if their main selected
     return (
-        gr.update(visible=True, value=main),
-        sub_update,
-        gr.update(visible=True, value=""),
+        gr.update(visible=True, value=[]),          # reject_main
+        gr.update(visible=False, value=None),       # sub1 hidden until selected
+        gr.update(visible=False, value=None),       # sub2 hidden until selected
+        gr.update(visible=True, value=""),          # comment
     )
 
 
-# --- Update: when main reason changes, return an update compatible with gr.Radio
-def on_main_reason_change(main_reason: str, decision: str):
+def on_main_reasons_change(selected, decision, sub_state):
     if decision != "reject":
-        # hard reset if we're not rejecting
-        return gr.update(visible=False, choices=[], value=None)
+        return (
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
+        )
 
-    subs = REJECT_SUBREASONS.get(main_reason, [])
-    if subs:
-        return gr.update(visible=True, choices=subs, value=subs[0])
-    return gr.update(visible=False, choices=[], value=None)
+    selected = selected or []
+    sub_state = sub_state or {}
+
+    # غير واضح
+    if "غير واضح" in selected:
+        sub1 = gr.update(
+            visible=True,
+            choices=REJECT_SUBREASONS["غير واضح"],
+            value=sub_state.get("غير واضح") or REJECT_SUBREASONS["غير واضح"][0],
+        )
+    else:
+        sub1 = gr.update(visible=False)
+
+    # نص غير مطابق
+    if "نص غير مطابق" in selected:
+        sub2 = gr.update(
+            visible=True,
+            choices=REJECT_SUBREASONS["نص غير مطابق"],
+            value=sub_state.get("نص غير مطابق") or REJECT_SUBREASONS["نص غير مطابق"][0],
+        )
+    else:
+        sub2 = gr.update(visible=False)
+
+    return sub1, sub2
+
+
 def ui_load_current(st: dict):
     """
     Load a random unannotated sample and return UI updates.
@@ -594,9 +628,10 @@ def ui_load_current(st: dict):
             gr.update(value="", visible=True),
             None,
             gr.update(value="accept"),
-            gr.update(visible=False, value=REJECT_REASONS[0]),
-            gr.update(visible=False, choices=[], value=None),
-            gr.update(visible=False, value=""),
+            gr.update(visible=False, value=[]),        # reject_main
+            gr.update(visible=False, value=None),      # sub1
+            gr.update(visible=False, value=None),      # sub2
+            gr.update(visible=False, value=""),        # comment
             gr.update(value=""),
         )
 
@@ -609,8 +644,9 @@ def ui_load_current(st: dict):
             gr.update(value="", visible=True),
             None,
             gr.update(value="accept"),
-            gr.update(visible=False, value=REJECT_REASONS[0]),
-            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=[]),
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
             gr.update(visible=False, value=""),
             gr.update(value=""),
         )
@@ -624,8 +660,9 @@ def ui_load_current(st: dict):
             gr.update(value="", visible=True),
             None,
             gr.update(value="accept"),
-            gr.update(visible=False, value=REJECT_REASONS[0]),
-            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=[]),
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
             gr.update(visible=False, value=""),
             gr.update(value=""),
         )
@@ -642,9 +679,10 @@ def ui_load_current(st: dict):
         gr.update(value=(s.text or "(no text found)"), visible=True),
         audio,
         gr.update(value="accept"),
-        gr.update(visible=False, value=REJECT_REASONS[0]),
-        gr.update(visible=False, choices=[], value=None),
-        gr.update(visible=False, value=""),
+        gr.update(visible=False, value=[]),     # reject_main hidden by default
+        gr.update(visible=False, value=None),   # sub1
+        gr.update(visible=False, value=None),   # sub2
+        gr.update(visible=False, value=""),     # comment
         gr.update(value=""),
     )
 
@@ -660,8 +698,9 @@ def on_country_change(st: dict, country_name: str):
             gr.update(value="", visible=True),
             None,
             gr.update(value="accept"),
-            gr.update(visible=False, value=REJECT_REASONS[0]),
-            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=[]),
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
             gr.update(visible=False, value=""),
             gr.update(value=""),
         )
@@ -670,7 +709,6 @@ def on_country_change(st: dict, country_name: str):
     st["country_name"] = country_name
     st["country_code"] = country_code
 
-    # Build all samples for the selected country (can be heavy if huge)
     try:
         st["samples"] = build_country_samples(country_name, country_code)
     except Exception as e:
@@ -682,18 +720,24 @@ def on_country_change(st: dict, country_name: str):
             gr.update(value="", visible=True),
             None,
             gr.update(value="accept"),
-            gr.update(visible=False, value=REJECT_REASONS[0]),
-            gr.update(visible=False, choices=[], value=None),
+            gr.update(visible=False, value=[]),
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
             gr.update(visible=False, value=""),
             gr.update(value=""),
         )
 
     return ui_load_current(st)
 
+def on_sub_reason_change(value, main_reason, sub_state):
+    sub_state = dict(sub_state or {})
+    sub_state[main_reason] = value
+    return sub_state
 
-def submit_and_next(st: dict, decision: str, reject_main: str, reject_sub: Optional[str], comment: str):
+def submit_and_next(st, decision, reject_mains, sub_state, comment):
     """
     Save current annotation to Supabase and load next random unannotated sample.
+    Uses sub_state (cached radio selections) as the source of truth.
     """
     if not st or not st.get("logged_in"):
         return ui_load_current(st)
@@ -706,10 +750,14 @@ def submit_and_next(st: dict, decision: str, reject_main: str, reject_sub: Optio
     s = samples[idx]
     audio_key = resolve_audio_key(s.user_folder, s.audio_file)
 
+    # Normalize
+    reject_mains = reject_mains or []
+    sub_state = sub_state or {}
+
     try:
         if decision == "reject":
-            reason_combined = build_reject_reason(reject_main, reject_sub)
-            comment_clean = (comment or "").strip()
+            reason_combined = build_reject_reasons_multi(reject_mains, sub_state)
+            comment_clean = (comment or "").strip() or None
         else:
             reason_combined = None
             comment_clean = None
@@ -723,20 +771,32 @@ def submit_and_next(st: dict, decision: str, reject_main: str, reject_sub: Optio
             reject_reason_combined=reason_combined,
             comment=comment_clean,
         )
+
     except Exception as e:
-        # Keep current sample loaded and show error
+        # Pull the last remembered sub selections for UI restore
+        sub_unclear = sub_state.get("غير واضح")
+        sub_text_mismatch = sub_state.get("نص غير مطابق")
+
         return (
             st,
             gr.update(value="❌ Failed to save annotation.", visible=True),
             gr.update(value=(s.text or "(no text found)"), visible=True),
             load_audio_from_s3(audio_key),
             gr.update(value=decision),
-            gr.update(visible=(decision == "reject"), value=reject_main or REJECT_REASONS[0]),
+            gr.update(visible=(decision == "reject"), value=reject_mains),  # reject_main
+
+            # Sub radios: visible only if their main is selected; value restored from sub_state
             gr.update(
-                visible=(decision == "reject" and bool(REJECT_SUBREASONS.get(reject_main or REJECT_REASONS[0]))),
-                choices=REJECT_SUBREASONS.get(reject_main or REJECT_REASONS[0], []),
-                value=reject_sub,
+                visible=(decision == "reject" and ("غير واضح" in reject_mains) and bool(REJECT_SUBREASONS.get("غير واضح"))),
+                choices=REJECT_SUBREASONS.get("غير واضح", []),
+                value=sub_unclear,
             ),
+            gr.update(
+                visible=(decision == "reject" and ("نص غير مطابق" in reject_mains) and bool(REJECT_SUBREASONS.get("نص غير مطابق"))),
+                choices=REJECT_SUBREASONS.get("نص غير مطابق", []),
+                value=sub_text_mismatch,
+            ),
+
             gr.update(visible=(decision == "reject"), value=comment),
             gr.update(value=f"❌ `{e}`"),
         )
@@ -750,6 +810,10 @@ def submit_and_next(st: dict, decision: str, reject_main: str, reject_sub: Optio
 def build_app():
     with gr.Blocks(title="Arabic Speech Annotation Tool") as demo:
         st = gr.State(empty_state())
+        sub_state = gr.State({
+            "غير واضح": None,
+            "نص غير مطابق": None,
+        })
 
         gr.HTML(
             """
@@ -837,20 +901,29 @@ def build_app():
                 label="Decision",
             )
 
-            reject_main = gr.Radio(
+            # Main reject reasons: MULTI-SELECT
+            reject_main = gr.CheckboxGroup(
                 choices=REJECT_REASONS,
-                value=REJECT_REASONS[0],
-                label="سبب الرفض",
+                value=[],
+                label="أسباب الرفض (يمكن اختيار أكثر من سبب)",
                 visible=False,
             )
 
-         # Replace the Dropdown with a Radio (single-choice)
-            reject_sub = gr.Radio(
-                choices=[],          # will be filled dynamically
+            # Only two sub-reason radios (for dict keys), stacked
+            reject_sub_unclear = gr.Radio(
+                choices=REJECT_SUBREASONS.get("غير واضح", []),
                 value=None,
-                label="تفاصيل سبب الرفض",
+                label="تفاصيل سبب الرفض: غير واضح",
                 visible=False,
             )
+
+            reject_sub_text = gr.Radio(
+                choices=REJECT_SUBREASONS.get("نص غير مطابق", []),
+                value=None,
+                label="تفاصيل سبب الرفض: نص غير مطابق",
+                visible=False,
+            )
+
             comment = gr.Textbox(
                 label="ملاحظة (اختياري)",
                 placeholder="اكتب تعليق إضافي إذا احتجت…",
@@ -884,34 +957,44 @@ def build_app():
         decision.change(
             fn=on_decision_change,
             inputs=[decision],
-            outputs=[reject_main, reject_sub, comment],
+            outputs=[reject_main, reject_sub_unclear, reject_sub_text, comment],
         )
 
         reject_main.change(
-            fn=on_main_reason_change,
-            inputs=[reject_main, decision],
-            outputs=[reject_sub],
+            fn=on_main_reasons_change,
+            inputs=[reject_main, decision, sub_state],
+            outputs=[reject_sub_unclear, reject_sub_text],
+        )
+        reject_sub_unclear.change(
+            fn=on_sub_reason_change,
+            inputs=[reject_sub_unclear, gr.State("غير واضح"), sub_state],
+            outputs=[sub_state],
         )
 
+        reject_sub_text.change(
+            fn=on_sub_reason_change,
+            inputs=[reject_sub_text, gr.State("نص غير مطابق"), sub_state],
+            outputs=[sub_state],
+        )
         # --- Country change -> load samples -> load a random sample
         country_dropdown.change(
             fn=on_country_change,
             inputs=[st, country_dropdown],
-            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub_unclear, reject_sub_text, comment, msg],
         )
 
         # --- Reload
         reload_btn.click(
             fn=ui_load_current,
             inputs=[st],
-            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub_unclear, reject_sub_text, comment, msg],
         )
 
         # --- Submit & Next
         next_btn.click(
             fn=submit_and_next,
-            inputs=[st, decision, reject_main, reject_sub, comment],
-            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub, comment, msg],
+            inputs=[st, decision, reject_main, sub_state, comment],
+            outputs=[st, header, text_box, audio, decision, reject_main, reject_sub_unclear, reject_sub_text, comment, msg],
         )
 
     return demo
