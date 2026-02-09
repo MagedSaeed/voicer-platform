@@ -37,20 +37,11 @@ SUPABASE_KEY = (
 
 COUNTRY_CODES = {
     "Algeria": "dz",
-    "Bahrain": "bh",
     "Egypt": "eg",
-    "Iraq": "iq",
     "Jordan": "jo",
-    "Kuwait": "kw",
-    "Lebanon": "lb",
-    "Libya": "ly",
-    "Mauritania": "mr",
     "Morocco": "ma",
-    "Oman": "om",
     "Palestine": "ps",
-    "Qatar": "qa",
     "Saudi Arabia": "sa",
-    "Somalia": "so",
     "Sudan": "sd",
     "Syria": "sy",
     "Tunisia": "tn",
@@ -76,7 +67,6 @@ REJECT_REASONS = [
     "غير واضح",
     "نص غير مطابق",
     "سكوت طويل",
-    "صوت مقطوع",
     "لهجة مختلفة",
     "Other",
 ]
@@ -561,12 +551,11 @@ def handle_logout(st):
     return st, gr.update(visible=True), gr.update(visible=False), ""
 # --- Update: when decision changes to reject, populate reject_sub as Radio
 def on_decision_change(dec: str):
-    show = (dec == "reject")
-    if not show:
+    if dec != "reject":
         return (
-            gr.update(visible=False, value=REJECT_REASONS[0]),  # reject_main
-            gr.update(visible=False, choices=[], value=None),  # reject_sub (radio)
-            gr.update(visible=False, value=""),                # comment
+            gr.update(visible=False, value=REJECT_REASONS[0]),  # reject_main hidden
+            gr.update(visible=False, choices=[], value=None),  # reject_sub hidden+cleared
+            gr.update(visible=False, value=""),                # comment hidden+cleared
         )
 
     main = REJECT_REASONS[0]
@@ -585,13 +574,15 @@ def on_decision_change(dec: str):
 
 
 # --- Update: when main reason changes, return an update compatible with gr.Radio
-def on_main_reason_change(main_reason: str):
+def on_main_reason_change(main_reason: str, decision: str):
+    if decision != "reject":
+        # hard reset if we're not rejecting
+        return gr.update(visible=False, choices=[], value=None)
+
     subs = REJECT_SUBREASONS.get(main_reason, [])
     if subs:
-        # show radio with choices; default to first to reduce clicks
         return gr.update(visible=True, choices=subs, value=subs[0])
     return gr.update(visible=False, choices=[], value=None)
-
 def ui_load_current(st: dict):
     """
     Load a random unannotated sample and return UI updates.
@@ -824,7 +815,7 @@ def build_app():
 
             country_dropdown = gr.Dropdown(
                 choices=list(COUNTRY_CODES.keys()),
-                value="Saudi Arabia" if "Saudi Arabia" in COUNTRY_CODES else list(COUNTRY_CODES.keys())[0],
+                value="" if "Saudi Arabia" in COUNTRY_CODES else list(COUNTRY_CODES.keys())[0],
                 label="Country",
             )
 
@@ -898,7 +889,7 @@ def build_app():
 
         reject_main.change(
             fn=on_main_reason_change,
-            inputs=[reject_main],
+            inputs=[reject_main, decision],
             outputs=[reject_sub],
         )
 
