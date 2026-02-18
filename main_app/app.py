@@ -524,27 +524,29 @@ def authenticate(email: str, password: str):
 
 def load_session(username: str):
     if not supabase:
-        return {"completed_sentences": [], "total_recording_duration": 0.0}
+        return {"completed_sentences": [], "recorded_sentences": [], "total_recording_duration": 0.0}
     try:
         resp = supabase.table("sessions").select("*").eq("username", username).execute()
         if resp.data:
             row = resp.data[0]
             return {
                 "completed_sentences": row.get("completed_sentences", []) or [],
+                "recorded_sentences": row.get("recorded_sentences", []) or [],
                 "total_recording_duration": float(row.get("total_recording_duration", 0.0) or 0.0),
             }
     except Exception as e:
         print("load_session error:", e)
-    return {"completed_sentences": [], "total_recording_duration": 0.0}
+    return {"completed_sentences": [], "recorded_sentences": [], "total_recording_duration": 0.0}
 
 
-def save_session(username: str, completed_sentences, total_duration: float):
+def save_session(username: str, completed_sentences, recorded_sentences, total_duration: float):
     if not supabase:
         return
     try:
         supabase.table("sessions").upsert({
             "username": username,
             "completed_sentences": completed_sentences,
+            "recorded_sentences": recorded_sentences,
             "total_recording_duration": total_duration,
             "updated_at": datetime.utcnow().isoformat(),
         }).execute()
@@ -1345,6 +1347,7 @@ def build_app():
             "active_dialect_code": None,
             "dialect_code": None,  # backward compat
             "completed_sentences": [],
+            "recorded_sentences": [],
             "total_duration": 0.0,
             "current_sentence_id": "",
             "current_sentence_text": "",
@@ -1576,6 +1579,7 @@ def build_app():
 
             sess = load_session(username)
             completed = sess["completed_sentences"]
+            recorded = sess["recorded_sentences"]
             total_dur = sess["total_recording_duration"]
 
             available = filter_sentences(user_dialect_code, completed, allow_fallback=True)
@@ -1593,6 +1597,7 @@ def build_app():
                 "active_dialect_code": active_dialect_code,
                 "dialect_code": user_dialect_code,
                 "completed_sentences": completed,
+                "recorded_sentences": recorded,
                 "total_duration": total_dur,
                 "current_sentence_id": sentence_id,
                 "current_sentence_text": sentence_text,
@@ -1688,8 +1693,10 @@ def build_app():
             st["total_duration"] += duration
             if sid not in st["completed_sentences"]:
                 st["completed_sentences"].append(sid)
+            if sid not in st["recorded_sentences"]:
+                st["recorded_sentences"].append(sid)
 
-            save_session(st["username"], st["completed_sentences"], st["total_duration"])
+            save_session(st["username"], st["completed_sentences"], st["recorded_sentences"], st["total_duration"])
 
             next_sentence_for_state(st)
             progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
@@ -1712,7 +1719,7 @@ def build_app():
             sid = st["current_sentence_id"]
             if sid and sid not in st["completed_sentences"]:
                 st["completed_sentences"].append(sid)
-                save_session(st["username"], st["completed_sentences"], st["total_duration"])
+                save_session(st["username"], st["completed_sentences"], st["recorded_sentences"], st["total_duration"])
 
             next_sentence_for_state(st)
             progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
