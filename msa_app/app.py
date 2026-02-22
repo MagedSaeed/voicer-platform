@@ -1,26 +1,10 @@
-# Arabic Speech Dataset Recorder (Professional UI + Lifetime Country Leaderboard)
-# ---------------------------------------------------------------------------
-# What changed vs your original:
-# ✅ Professional layout (cards, spacing, typography, consistent RTL handling)
-# ✅ Clean status alerts + less “boring” UI
-# ✅ Lifetime anonymous leaderboard per COUNTRY (Arabic aliases + emojis)
-# ✅ Highlights current user row + rank number on the LEFT
-# ✅ Leaderboard is inside a collapsed Accordion (does NOT disrupt recording workflow)
-#
-# Notes:
-# - Logic (auth/sentences/storage) is kept very close to your original for safety.
-# - You MUST run the SQL setup for leaderboard tables in Supabase (provided at bottom).
-#
-# ---------------------------------------------------------------------------
-
 import os
 import json
 import uuid
 import time
 import random
-import hashlib
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime
 
 import boto3
 import gradio as gr
@@ -72,10 +56,23 @@ def _create_s3_client():
 S3_CLIENT = _create_s3_client()
 
 # ===============================
-# COUNTRIES & DIALECTS  
+# COUNTRIES & DIALECTS
+# (kept for registration + storage paths)
 # ===============================
 
-AVAILABLE_COUNTRIES = ["Egypt", "Saudi Arabia", "Morocco", "Yemen", "Jordan", "Palestine", "Algeria", "Sudan", "Tunisia", "Syria", "United Arab Emirates"]
+AVAILABLE_COUNTRIES = [
+    "Egypt",
+    "Saudi Arabia",
+    "Morocco",
+    "Yemen",
+    "Jordan",
+    "Palestine",
+    "Algeria",
+    "Sudan",
+    "Tunisia",
+    "Syria",
+    "United Arab Emirates",
+]
 
 COUNTRY_EMOJIS = {
     "dz": "🇩🇿",
@@ -94,7 +91,7 @@ COUNTRY_EMOJIS = {
     "sa": "🇸🇦",
     "so": "🇸🇴",
     "sd": "🇸🇩",
-    "sy": "🇱🇾",  # (kept from your code, though it's a typo)
+    "sy": "🇸🇾",  # fixed typo
     "tn": "🇹🇳",
     "ae": "🇦🇪",
     "ye": "🇾🇪",
@@ -123,7 +120,7 @@ COUNTRY_CODES = {
     "Syria": "sy",
     "Tunisia": "tn",
     "United Arab Emirates": "ae",
-    "Yemen": "ye"
+    "Yemen": "ye",
 }
 
 COUNTRY_DIALECTS = {
@@ -139,7 +136,7 @@ COUNTRY_DIALECTS = {
         "حساوية": "hs",
         "قطيفية": "qt",
         "سيهاتية": "sy",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Egypt": {
         "قاهرية": "ca",
@@ -147,7 +144,7 @@ COUNTRY_DIALECTS = {
         "صعيدية": "sa",
         "بورسعيدية": "si",
         "نوبية": "nb",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Morocco": {
         "فاسية": "fe",
@@ -155,7 +152,7 @@ COUNTRY_DIALECTS = {
         "مراكشية": "ma",
         "شمالية": "no",
         "شرقية": "shar",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Iraq": {
         "بغدادية": "ba",
@@ -163,7 +160,7 @@ COUNTRY_DIALECTS = {
         "موصلية": "mo",
         "كردية": "ku",
         "جنوبية": "so",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Yemen": {
         "صنعانية": "sa",
@@ -171,69 +168,69 @@ COUNTRY_DIALECTS = {
         "حضرمية": "ha",
         "تهامية": "ti",
         "تعزية": "ta",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Jordan": {
         "عمانية": "am",
         "شمالية": "no",
         "جنوبية": "so",
         "بدوية": "be",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Lebanon": {
         "بيروتية": "be",
         "جبلية": "mo",
         "جنوبية": "so",
         "شمالية": "no",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Syria": {
         "حلبية": "al",
         "حمصية": "ho",
         "شامية": "sh",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Palestine": {
         "قدسية": "je",
         "غزاوية": "ga",
         "خليلية": "he",
         "شمالية": "no",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "United Arab Emirates": {
         "شرقية": "es",
         "شمالية": "no",
         "أبوظبي": "ad",
         "بدوية": "bd",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Kuwait": {
         "كويتية": "ku",
         "بدوية": "be",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Qatar": {
         "قطرية": "qa",
         "بدوية": "be",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Bahrain": {
         "بحرينية": "ba",
         "مدنية": "ur",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Oman": {
         "عمانية": "om",
         "ظفارية": "dh",
         "داخلية": "in",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Algeria": {
         "شرقية": "al",
         "غربية": "co",
         "جنوبية": "or",
         "وسط": "ka",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Tunisia": {
         "جنوبية": "tu",
@@ -241,31 +238,31 @@ COUNTRY_DIALECTS = {
         "ساحل شرقي": "so",
         "شمالية": "no",
         "وسطى": "me",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Libya": {
         "طرابلسية": "tr",
         "بنغازية": "be",
         "فزانية": "fe",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Sudan": {
         "خرطومية": "kh",
         "شمالية": "no",
         "دارفورية": "da",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Somalia": {
         "صومالية": "so",
         "شمالية": "no",
         "جنوبية": "so",
-        "أخرى": "oth"
+        "أخرى": "oth",
     },
     "Mauritania": {
         "موريتانية": "mr",
         "حسانية": "ha",
-        "أخرى": "oth"
-    }
+        "أخرى": "oth",
+    },
 }
 
 RECORDING_INSTRUCTIONS = """
@@ -309,21 +306,21 @@ CONSENT_DETAILS = """
 <section dir="rtl" lang="ar" style="text-align: right">
   <h1>الموافقة على جمع واستخدام البيانات</h1>
   <p>
-    هذه الاتفاقية بين <strong>المشارك </strong> وفريق البحث من 
-    <strong>جامعة الملك فهد للبترول والمعادن</strong> و<strong>جامعة طيبة</strong> 
-    (والتي سنشير إليها فيما يلي بـ "الجامعتين").  
+    هذه الاتفاقية بين <strong>المشارك </strong> وفريق البحث من
+    <strong>جامعة الملك فهد للبترول والمعادن</strong> و<strong>جامعة طيبة</strong>
+    (والتي سنشير إليها فيما يلي بـ "الجامعتين").
     الهدف من الاتفاقية هو جمع واستخدام وتوزيع تسجيلات صوتية لدعم أبحاث كشف الأصوات المزيفة (Deepfake) وغيرها من الأبحاث غير التجارية.
   </p>
   <ol>
     <li>
       <strong>هدف جمع البيانات:</strong><br>
-      يقوم الفريق بجمع تسجيلات صوتية لإنشاء مجموعة بيانات (Dataset) خاصة بالكشف عن الأصوات المصنعة بالذكاء الاصطناعي 
-      باستخدام تقنيات تحويل النص إلى صوت (TTS) أو تقليد الأصوات (Voice Conversion) وطرق أخرى.  
+      يقوم الفريق بجمع تسجيلات صوتية لإنشاء مجموعة بيانات (Dataset) خاصة بالكشف عن الأصوات المصنعة بالذكاء الاصطناعي
+      باستخدام تقنيات تحويل النص إلى صوت (TTS) أو تقليد الأصوات (Voice Conversion) وطرق أخرى.
       ستُستخدم هذه البيانات في أبحاث علمية وأكاديمية لتطوير طرق أفضل لاكتشاف الأصوات المزيفة وغيرها من الأبحاث غير التجارية.
     </li>
     <li>
       <strong>طبيعة البيانات التي سيتم جمعها:</strong><br>
-      يوافق المشارك على تقديم:  
+      يوافق المشارك على تقديم:
       <ul>
         <li>تسجيلات صوتية بصوته الطبيعي أو من خلال نصوص/جمل يطلب منه قراءتها.</li>
         <li>بيانات اختيارية مثل: النوع (ذكر/أنثى)، الفئة العمرية، اللهجة، وغيرها.</li>
@@ -332,7 +329,7 @@ CONSENT_DETAILS = """
     </li>
     <li>
       <strong>الحقوق الممنوحة:</strong><br>
-      يمنح المشارك الفريق الحق الكامل (بدون مقابل مالي أو قيود) في:  
+      يمنح المشارك الفريق الحق الكامل (بدون مقابل مالي أو قيود) في:
       <ul>
         <li>تسجيل ومعالجة واستخدام الصوت الطبيعي والنسخ المصنعة منه.</li>
         <li>توزيع مجموعة البيانات (الطبيعية والمصنعة) للباحثين في المجتمع العلمي لأغراض بحثية غير تجارية فقط.</li>
@@ -341,8 +338,8 @@ CONSENT_DETAILS = """
     </li>
     <li>
       <strong>إتاحة البيانات:</strong><br>
-      سيتم نشر المجموعة الصوتية (الطبيعية والمصنعة) بترخيص مفتوح 
-      <em>(Creative Commons Attribution 4.0)</em> 
+      سيتم نشر المجموعة الصوتية (الطبيعية والمصنعة) بترخيص مفتوح
+      <em>(Creative Commons Attribution 4.0)</em>
       مما يسمح لأي باحث باستخدامها ومشاركتها لأغراض أكاديمية غير تجارية.
     </li>
     <li>
@@ -370,7 +367,6 @@ CONSENT_DETAILS = """
 """
 
 AGES = ["4–9", "10–14", "15–19", "20–24", "25–34", "35–44", "45–54", "55–64", "65–74", "75–84", "85+"]
-
 GENDER = ["ذكر", "أنثى"]
 
 
@@ -387,58 +383,51 @@ def split_dialect_code(dialect_code: str):
     return parts[0], "gen"
 
 
-def get_fallback_dialect_code(user_dialect_code: str) -> str:
-    country_code, _ = split_dialect_code(user_dialect_code)
-    return f"{country_code}-oth"
-
-
 def get_country_code_from_dialect_code(dialect_code: str) -> str:
     return split_dialect_code(dialect_code)[0] or "unk"
 
 
 # ===============================
-# SENTENCES (per-country, cached)
+# SENTENCES (GLOBAL FILE ONLY)
+# Everyone reads from sentences_msa.json
+# No dialect filtering, no fallback
 # ===============================
 
-SENTENCES_CACHE = {}  # {country_code: [(id, text, [dialects]), ...]}
+SENTENCES_CACHE = None  # [(id, text), ...]
 
 
-def get_sentences_file_for_country(country_code: str) -> Path:
-    return BASE_DIR / f"sentences_{country_code}.json"
+def get_sentences_file_msa() -> Path:
+    return BASE_DIR / "sentences_msa.json"
 
 
-def load_sentences_for_country(country_code: str):
-    if country_code in SENTENCES_CACHE:
-        return SENTENCES_CACHE[country_code]
+def load_sentences_msa():
+    global SENTENCES_CACHE
+    if SENTENCES_CACHE is not None:
+        return SENTENCES_CACHE
 
-    path = get_sentences_file_for_country(country_code)
+    path = get_sentences_file_msa()
     if not path.exists():
         path.write_text(json.dumps({"sentences": []}, ensure_ascii=False, indent=2), encoding="utf-8")
 
     data = json.loads(path.read_text(encoding="utf-8"))
     raw_sentences = data.get("sentences", [])
 
-    SENTENCES_CACHE[country_code] = [(s["unique_id"], s["text"], s.get("dialect", [])) for s in raw_sentences]
-    return SENTENCES_CACHE[country_code]
+    # Your JSON may include extra fields (dialect/source/etc). We ignore them.
+    SENTENCES_CACHE = [
+        (str(s.get("unique_id", "")).strip(), str(s.get("text", "")).strip())
+        for s in raw_sentences
+        if str(s.get("unique_id", "")).strip() and str(s.get("text", "")).strip()
+    ]
+    return SENTENCES_CACHE
 
 
-def filter_sentences(dialect_code: str, completed_ids, allow_fallback: bool = True):
+def filter_sentences(_dialect_code_unused, completed_ids, allow_fallback=False):
     completed_set = set(completed_ids or [])
-    dialect_code = (dialect_code or "").strip().lower() or "unk-gen"
-    country_code, _ = split_dialect_code(dialect_code)
-    all_sentences = load_sentences_for_country(country_code)
+    all_sentences = load_sentences_msa()
 
-    def _pick(dcode: str):
-        return [(sid, text, dcode) for sid, text, dialects in all_sentences if sid not in completed_set and dcode in (dialects or [])]
-
-    primary = _pick(dialect_code)
-    if primary:
-        return primary
-
-    if allow_fallback:
-        return _pick(get_fallback_dialect_code(dialect_code))
-
-    return []
+    # Return same pool for everyone: only exclude completed.
+    # We still return a 3rd value to keep your downstream code unchanged.
+    return [(sid, text, None) for sid, text in all_sentences if sid not in completed_set]
 
 
 # ===============================
@@ -632,8 +621,14 @@ def append_row_to_s3_metadata(s3_key: str, row_line: str):
         pass
 
 
-def save_recording_and_upload(username: str, active_dialect_code: str, user_dialect_code: str,
-                              sentence_id: str, sentence_text: str, audio_path: str):
+def save_recording_and_upload(
+    username: str,
+    active_dialect_code: str,
+    user_dialect_code: str,
+    sentence_id: str,
+    sentence_text: str,
+    audio_path: str,
+):
     user_dir = ensure_user_dirs(username, active_dialect_code)
     wav_dir = user_dir / "wavs"
 
@@ -694,9 +689,6 @@ def compute_progress(completed_count: int, total_duration: float):
     return f"{bar}\n{mins}m {secs:02d}s / {target_mins}m target • {completed_count} sentences"
 
 
-# ===============================
-
-
 APP_CSS = """
 <style>
   :root{
@@ -711,7 +703,6 @@ APP_CSS = """
     --shadow-lg: 0 14px 44px rgba(2,6,23,0.14);
   }
 
-  /* Dark mode friendliness */
   @media (prefers-color-scheme: dark){
     :root{
       --card-bg: rgba(255,255,255,0.04);
@@ -726,11 +717,6 @@ APP_CSS = """
     }
   }
 
-  /* ============================
-     Gradio layout fixes (mobile)
-     ============================ */
-
-  /* Stop "centered narrow app" on phones */
   .gradio-container,
   .gradio-container .main,
   .gradio-container .wrap,
@@ -739,13 +725,11 @@ APP_CSS = """
     width: 100% !important;
   }
 
-  /* Use screen width */
   .gradio-container .contain{
     padding-left: 12px !important;
     padding-right: 12px !important;
   }
 
-  /* Prevent dropdown/autofill/popovers being clipped by overflow hidden/auto */
   .gradio-container,
   .gradio-container .main,
   .gradio-container .wrap,
@@ -753,12 +737,10 @@ APP_CSS = """
     overflow: visible !important;
   }
 
-  /* Ensure Gradio children can shrink instead of "vertical letters" */
   .gradio-container *{
     min-width: 0;
   }
 
-  /* Your app wrapper */
   .app-shell{
     max-width: 980px;
     margin: 0 auto;
@@ -864,7 +846,6 @@ APP_CSS = """
   }
   .rtl{ direction: rtl; text-align: right; }
 
-  /* RTL accordion header alignment + arrow direction */
   .rtl .gr-accordion .label-wrap,
   .rtl .gr-accordion .label-wrap > div{
     direction: rtl !important;
@@ -875,9 +856,6 @@ APP_CSS = """
     transform: scaleX(-1);
   }
 
-  /* ============================
-     Mobile tightening
-     ============================ */
   @media (max-width: 640px){
     .gradio-container .contain{
       padding-left: 8px !important;
@@ -889,7 +867,7 @@ APP_CSS = """
     .hero{
       padding: 14px;
       border-radius: 16px;
-      backdrop-filter: none !important; /* avoids stacking bugs on some mobile browsers */
+      backdrop-filter: none !important;
     }
     .hero h1{ font-size: 18px; }
 
@@ -900,7 +878,6 @@ APP_CSS = """
     .card h3{ font-size: 15px; }
     .hint{ font-size: 11.5px; }
 
-    /* Force rows to stack instead of squeezing */
     .gradio-container .gr-row{
       flex-wrap: wrap !important;
       gap: 10px !important;
@@ -908,189 +885,9 @@ APP_CSS = """
     .gradio-container .gr-row > *{
       flex: 1 1 100% !important;
     }
-
-    /* Make buttons & controls easier to tap */
-    # .gradio-container button,
-    # .gradio-container .gr-button{
-    #   width: 100% !important;
-    # }
-
-    # .gradio-container input,
-    # .gradio-container textarea,
-    # .gradio-container select{
-    #   font-size: 14px !important;
-    # }
   }
 </style>
 """
-
-
-LEADERBOARD_CSS = """
-<style>
-  .lb-wrap{
-    border: 1px solid rgba(15,23,42,0.12);
-    border-radius: 14px;
-    padding: 14px;
-    background: rgba(255,255,255,0.72);
-    box-shadow: 0 10px 28px rgba(2,6,23,0.10);
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-wrap{
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(255,255,255,0.03);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.30);
-    }
-  }
-
-  .lb-header{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    margin-bottom: 10px;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .lb-title{
-    font-size: 16px;
-    font-weight: 900;
-  }
-  .lb-sub{
-    font-size: 12px;
-    opacity: 0.75;
-    white-space: nowrap;
-  }
-
-  .lb-colhdr{
-    display:grid;
-    grid-template-columns: 44px 1fr 110px 110px;
-    gap: 10px;
-    padding: 8px 10px;
-    font-size: 12px;
-    opacity: 0.70;
-    border-radius: 10px;
-    background: rgba(15,23,42,0.04);
-    margin-bottom: 6px;
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-colhdr{ background: rgba(255,255,255,0.05); }
-  }
-
-  .lb-row{
-    display:grid;
-    grid-template-columns: 44px 1fr 110px 110px;
-    gap: 10px;
-    padding: 10px 10px;
-    align-items:center;
-    border-top: 1px solid rgba(15,23,42,0.08);
-    border-radius: 10px;
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-row{ border-top: 1px solid rgba(255,255,255,0.08); }
-  }
-
-  .lb-row:first-child{ border-top:none; }
-
-  .lb-rank{
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight: 900;
-    background: rgba(15,23,42,0.06);
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-rank{ background: rgba(255,255,255,0.06); }
-  }
-
-  .lb-name{
-    display:flex;
-    align-items:center;
-    gap: 8px;
-    font-weight: 900;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0 !important;
-  }
-
-  .lb-meta{
-    text-align:right;
-    font-variant-numeric: tabular-nums;
-    opacity: 0.95;
-    font-weight: 800;
-    white-space: nowrap;
-  }
-
-  .lb-highlight{
-    background: rgba(15,23,42,0.04);
-    border: 1px solid rgba(15,23,42,0.10);
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-highlight{
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-  }
-
-  .lb-badge{
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: rgba(15,23,42,0.08);
-    font-weight: 900;
-    font-size: 12px;
-    white-space: nowrap;
-  }
-  @media (prefers-color-scheme: dark){
-    .lb-badge{ background: rgba(255,255,255,0.08); }
-  }
-
-  .lb-you{
-    font-size: 12px;
-    opacity: 0.85;
-    margin-top: 10px;
-    display:flex;
-    justify-content:space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  /* ============================
-     Mobile leaderboard: stacked rows
-     ============================ */
-  @media (max-width: 640px){
-    .lb-sub{ white-space: normal !important; }
-    .lb-colhdr{ display:none !important; }
-
-    .lb-row{
-      grid-template-columns: 44px 1fr;
-      grid-template-rows: auto auto;
-      row-gap: 6px;
-    }
-
-    /* rank stays left, name top-right */
-    .lb-rank{ grid-row: 1 / span 2; }
-
-    /* Put time+sentences on row 2 */
-    .lb-row .lb-meta:nth-of-type(1){
-      grid-column: 2;
-      grid-row: 2;
-      justify-self: start;
-      opacity: 0.90;
-    }
-    .lb-row .lb-meta:nth-of-type(2){
-      grid-column: 2;
-      grid-row: 2;
-      justify-self: end;
-      opacity: 0.90;
-    }
-  }
-</style>
-"""
-
-
-
 
 
 # ===============================
@@ -1099,7 +896,6 @@ LEADERBOARD_CSS = """
 
 def build_app():
     with gr.Blocks(title="Arabic Speech Recorder", css="") as demo:
-        # Inject CSS once
         gr.HTML(APP_CSS)
 
         state = gr.State({
@@ -1173,12 +969,10 @@ def build_app():
         with gr.Column(visible=False) as main_view:
             gr.HTML('<div class="app-shell">')
 
-            # Topbar
             with gr.Row():
                 info = gr.HTML("")
                 logout_btn = gr.Button("تسجيل الخروج")
 
-            # Stats card
             gr.HTML('<div class="grid-2">')
             with gr.Column():
                 gr.HTML('<div class="card rtl"><h3>تعليمات سريعة</h3>')
@@ -1206,21 +1000,17 @@ def build_app():
 
             with gr.Row():
                 save_btn = gr.Button("حفظ", variant="primary", interactive=False)
-                skip_btn = gr.Button("تخطي", variant="secondary")
             msg_box = gr.HTML("")
-            gr.HTML('</div>')  # card
+            gr.HTML('</div>')  # grid-2
 
             gr.HTML("</div>")  # app-shell
-            
+
         # ---------- Navigation helpers ----------
         def show_register():
             return gr.update(visible=False), gr.update(visible=True), gr.update(visible=False)
 
         def show_login():
             return gr.update(visible=True), gr.update(visible=False), gr.update(visible=False)
-
-        def show_main():
-            return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True)
 
         goto_register_btn.click(show_register, inputs=[], outputs=[login_view, register_view, main_view])
         back_to_login_btn.click(show_login, inputs=[], outputs=[login_view, register_view, main_view])
@@ -1250,23 +1040,22 @@ def build_app():
 
         # ---------- Audio recording interactions ----------
         def on_start_recording():
-            # Disable Save/Skip while recording (clean UX)
-            return gr.update(interactive=False), gr.update(interactive=False), ""
+            return gr.update(interactive=False), ""
 
-        audio_rec.start_recording(fn=on_start_recording, outputs=[save_btn, skip_btn, msg_box])
+        audio_rec.start_recording(fn=on_start_recording, outputs=[save_btn, msg_box])
 
         def on_stop_recording(audio_path, st):
             if not audio_path:
-                return st, "", gr.update(value=None), gr.update(interactive=True), gr.update(interactive=True)
+                return st, "", gr.update(value=None), gr.update(interactive=True)
 
             st["last_temp_audio_path"] = audio_path
             time.sleep(0.2)
-            return st, audio_path, gr.update(value=audio_path), gr.update(interactive=True), gr.update(interactive=True)
+            return st, audio_path, gr.update(value=audio_path), gr.update(interactive=True)
 
         audio_rec.stop_recording(
             fn=on_stop_recording,
             inputs=[audio_rec, state],
-            outputs=[state, temp_audio_path, audio_rec, save_btn, skip_btn],
+            outputs=[state, temp_audio_path, audio_rec, save_btn],
         )
 
         audio_rec.clear(fn=lambda: gr.update(interactive=False), outputs=[save_btn])
@@ -1277,17 +1066,19 @@ def build_app():
             return f'<div class="{cls} rtl">{text}</div>'
 
         def next_sentence_for_state(st):
-            user_dialect = st.get("user_dialect_code") or st.get("dialect_code")
-            available = filter_sentences(user_dialect, st["completed_sentences"], allow_fallback=True)
+            # global pool, no dialect filtering
+            available = filter_sentences(None, st["completed_sentences"], allow_fallback=False)
             if not available:
                 st["current_sentence_id"] = ""
                 st["current_sentence_text"] = "No more sentences."
-                st["active_dialect_code"] = user_dialect
+                # keep active dialect for storage paths (user dialect)
+                st["active_dialect_code"] = st.get("user_dialect_code") or st.get("dialect_code")
             else:
-                sid, text, used_dialect = random.choice(available)
+                sid, text, _ = random.choice(available)
                 st["current_sentence_id"] = sid
                 st["current_sentence_text"] = text
-                st["active_dialect_code"] = used_dialect
+                # keep active dialect for storage paths (user dialect)
+                st["active_dialect_code"] = st.get("user_dialect_code") or st.get("dialect_code")
 
         def do_login(email, pw, st):
             ok, result = authenticate(email, pw)
@@ -1315,20 +1106,19 @@ def build_app():
             recorded = sess["recorded_sentences"]
             total_dur = sess["total_recording_duration"]
 
-            available = filter_sentences(user_dialect_code, completed, allow_fallback=True)
+            available = filter_sentences(None, completed, allow_fallback=False)
             if not available:
                 sentence_id = ""
-                sentence_text = "No more sentences for your dialect (including general)."
-                active_dialect_code = user_dialect_code
+                sentence_text = "No more sentences."
             else:
-                sentence_id, sentence_text, active_dialect_code = random.choice(available)
+                sentence_id, sentence_text, _ = random.choice(available)
 
             st.update({
                 "logged_in": True,
                 "username": username,
                 "user_dialect_code": user_dialect_code,
-                "active_dialect_code": active_dialect_code,
-                "dialect_code": user_dialect_code,
+                "active_dialect_code": user_dialect_code,   # for storage paths only
+                "dialect_code": user_dialect_code,          # backward compat
                 "completed_sentences": completed,
                 "recorded_sentences": recorded,
                 "total_duration": total_dur,
@@ -1373,39 +1163,71 @@ def build_app():
             ],
         )
 
-        # ---------- Save / Skip ----------
-        def disable_skip():
-            return gr.update(interactive=False)
-
         def disable_save():
             return gr.update(interactive=False)
 
         def handle_save(audio_path, edited_sentence, temp_path, st):
             if not st.get("logged_in"):
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "الرجاء تسجيل الدخول أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return (
+                    st,
+                    _status("warn", "الرجاء تسجيل الدخول أولاً."),
+                    st["current_sentence_text"],
+                    st["current_sentence_id"],
+                    progress,
+                    gr.update(value=None),
+                )
 
             if not audio_path and not temp_path:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ سجّل الصوت أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return (
+                    st,
+                    _status("warn", "⚠️ سجّل الصوت أولاً."),
+                    st["current_sentence_text"],
+                    st["current_sentence_id"],
+                    progress,
+                    gr.update(value=None),
+                )
 
             sentence_text = (edited_sentence or st["current_sentence_text"]).strip()
             if not sentence_text:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ نص الجملة فارغ."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return (
+                    st,
+                    _status("warn", "⚠️ نص الجملة فارغ."),
+                    st["current_sentence_text"],
+                    st["current_sentence_id"],
+                    progress,
+                    gr.update(value=None),
+                )
 
             sid = st["current_sentence_id"]
             if not sid:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "⚠️ لا توجد جملة نشطة الآن."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return (
+                    st,
+                    _status("warn", "⚠️ لا توجد جملة نشطة الآن."),
+                    st["current_sentence_text"],
+                    st["current_sentence_id"],
+                    progress,
+                    gr.update(value=None),
+                )
 
             tmp_path = audio_path or temp_path
             ok, msg, _dur = validate_audio(tmp_path)
             if not ok:
                 progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("bad", f"❌ مشكلة في الصوت: {msg}"), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
+                return (
+                    st,
+                    _status("bad", f"❌ مشكلة في الصوت: {msg}"),
+                    st["current_sentence_text"],
+                    st["current_sentence_id"],
+                    progress,
+                    gr.update(value=None),
+                )
 
-            active_dialect = st.get("active_dialect_code") or st.get("dialect_code")
+            # Keep dialect only for folder structure / metadata filename logic
+            active_dialect = st.get("active_dialect_code") or st.get("dialect_code") or "unk-gen"
             user_dialect = st.get("user_dialect_code") or st.get("dialect_code") or "unk-gen"
 
             duration = save_recording_and_upload(
@@ -1435,39 +1257,16 @@ def build_app():
                 st["current_sentence_id"],
                 progress,
                 gr.update(value=None),
-                gr.update(interactive=True),
             )
 
-        def handle_skip(st):
-            if not st.get("logged_in"):
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-                return st, _status("warn", "الرجاء تسجيل الدخول أولاً."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=True)
-
-            sid = st["current_sentence_id"]
-            if sid and sid not in st["completed_sentences"]:
-                st["completed_sentences"].append(sid)
-                save_session(st["username"], st["completed_sentences"], st["recorded_sentences"], st["total_duration"])
-
-            next_sentence_for_state(st)
-            progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
-
-            return st, _status("warn", "⏭️ تم التخطي."), st["current_sentence_text"], st["current_sentence_id"], progress, gr.update(value=None), gr.update(interactive=False)
-
         save_btn.click(
-            disable_skip, inputs=[], outputs=[skip_btn]
-        ).then(disable_save, inputs=[], outputs=[save_btn]).then(
-            handle_save,
-            inputs=[audio_rec, sentence_box, temp_audio_path, state],
-            outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec, skip_btn],
-        )
-
-        skip_btn.click(
             disable_save, inputs=[], outputs=[save_btn]
         ).then(
-            handle_skip,
-            inputs=[state],
-            outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec, save_btn],
+            handle_save,
+            inputs=[audio_rec, sentence_box, temp_audio_path, state],
+            outputs=[state, msg_box, sentence_box, sentence_id_box, progress_box, audio_rec],
         )
+
 
         # ---------- Logout ----------
         def do_logout(st):
