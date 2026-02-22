@@ -695,182 +695,7 @@ def compute_progress(completed_count: int, total_duration: float):
 
 
 # ===============================
-# LEADERBOARD (LIFETIME, PER-COUNTRY, ANON, ARABIC ALIASES)
-# ===============================
 
-LEADERBOARD_ENABLED = True
-LEADERBOARD_TOP_N = 8
-LEADERBOARD_MIN_SECONDS_TO_SHOW = 60  # 1 minute minimum to appear
-
-AR_ADJECTIVES = [
-    "صامت", "هادئ", "واضح", "عميق", "نقي", "ثابت", "سريع", "ذكي",
-    "رنان", "دافئ", "قوي", "خفيف", "موزون", "سلس", "مشرق", "راقي",
-    "متقن", "ثري", "مرن", "نادر"
-]
-AR_NOUNS = [
-    "الصوت", "الصدى", "النبرة", "الموجة", "الوتر", "الإيقاع",
-    "الهمس", "الرنين", "المدى", "النبض", "اللحن", "الأثر", "الانسجام"
-]
-AR_EMOJIS = ["🎙️", "🦅", "🐪", "🦉", "🎧", "🌙", "✨", "🛡️", "🌵", "⭐"]
-
-
-def _stable_int_hash(s: str, mod: int) -> int:
-    if mod <= 0:
-        return 0
-    h = hashlib.sha256(s.encode("utf-8")).hexdigest()
-    return int(h[:12], 16) % mod
-
-
-def build_arabic_alias(seed: str) -> tuple[str, str]:
-    emoji = AR_EMOJIS[_stable_int_hash(seed + "|emo", len(AR_EMOJIS))]
-    noun = AR_NOUNS[_stable_int_hash(seed + "|noun", len(AR_NOUNS))]
-    adj = AR_ADJECTIVES[_stable_int_hash(seed + "|adj", len(AR_ADJECTIVES))]
-    num = _stable_int_hash(seed + "|num", 90) + 10
-    return emoji, f"{noun}-{adj}-{num}"
-
-
-def get_or_create_lifetime_alias_country(username: str, country_code: str) -> dict | None:
-    if not supabase or not LEADERBOARD_ENABLED:
-        return None
-    country_code = (country_code or "unk").lower()
-
-    try:
-        resp = (
-            supabase.table("leaderboard_aliases_country_lifetime")
-            .select("*")
-            .eq("username", username)
-            .eq("country_code", country_code)
-            .execute()
-        )
-        if resp.data:
-            return resp.data[0]
-
-        seed = f"{username}|{country_code}|lifetime_leaderboard_ar"
-        emoji, alias = build_arabic_alias(seed)
-
-        ins = (
-            supabase.table("leaderboard_aliases_country_lifetime")
-            .insert({
-                "username": username,
-                "country_code": country_code,
-                "emoji": emoji,
-                "alias": alias,
-                "created_at": datetime.utcnow().isoformat(),
-            })
-            .execute()
-        )
-        return ins.data[0] if ins.data else {"username": username, "country_code": country_code, "emoji": emoji, "alias": alias}
-    except Exception as e:
-        print("get_or_create_lifetime_alias_country error:", e)
-        return None
-
-
-def upsert_lifetime_leaderboard_entry_country(username: str, user_dialect_code: str):
-    if not supabase or not LEADERBOARD_ENABLED:
-        return
-
-    try:
-        country_code = get_country_code_from_dialect_code(user_dialect_code)
-        alias_row = get_or_create_lifetime_alias_country(username, country_code)
-        if not alias_row:
-            return
-
-        sess = load_session(username)
-        total_seconds = float(sess.get("total_recording_duration", 0.0) or 0.0)
-        if total_seconds < LEADERBOARD_MIN_SECONDS_TO_SHOW:
-            return
-
-        payload = {
-            "country_code": country_code,
-            "username": username,
-            "emoji": alias_row.get("emoji", "🎙️"),
-            "alias": alias_row.get("alias", "الصوت-النقي-10"),
-            "time_seconds": total_seconds,
-            "sentences": int(len(sess.get("completed_sentences", []) or [])),
-            "updated_at": datetime.utcnow().isoformat(),
-        }
-
-        supabase.table("leaderboard_lifetime_country").upsert(
-            payload, on_conflict="country_code,username"
-        ).execute()
-
-    except Exception as e:
-        print("upsert_lifetime_leaderboard_entry_country error:", e)
-
-
-def _fmt_mmss(seconds: float) -> str:
-    seconds = max(0, int(seconds))
-    m = seconds // 60
-    s = seconds % 60
-    return f"{m}m {s:02d}s"
-
-
-def fetch_top_lifetime_country(country_code: str, limit: int = 8) -> list[dict]:
-    if not supabase or not LEADERBOARD_ENABLED:
-        return []
-    country_code = (country_code or "unk").lower()
-    try:
-        resp = (
-            supabase.table("leaderboard_lifetime_country")
-            .select("username,emoji,alias,time_seconds,sentences")
-            .eq("country_code", country_code)
-            .order("time_seconds", desc=True)
-            .limit(limit)
-            .execute()
-        )
-        return resp.data or []
-    except Exception as e:
-        print("fetch_top_lifetime_country error:", e)
-        return []
-
-
-def fetch_user_row_country(country_code: str, username: str) -> dict | None:
-    if not supabase:
-        return None
-    try:
-        resp = (
-            supabase.table("leaderboard_lifetime_country")
-            .select("username,emoji,alias,time_seconds,sentences")
-            .eq("country_code", country_code)
-            .eq("username", username)
-            .limit(1)
-            .execute()
-        )
-        return (resp.data or [None])[0]
-    except Exception as e:
-        print("fetch_user_row_country error:", e)
-        return None
-
-
-def get_user_rank_country(country_code: str, username: str) -> int | None:
-    if not supabase:
-        return None
-    try:
-        me = (
-            supabase.table("leaderboard_lifetime_country")
-            .select("time_seconds")
-            .eq("country_code", country_code)
-            .eq("username", username)
-            .limit(1)
-            .execute()
-        ).data
-        if not me:
-            return None
-
-        my_seconds = float(me[0].get("time_seconds", 0) or 0)
-
-        higher = (
-            supabase.table("leaderboard_lifetime_country")
-            .select("id", count="exact")
-            .eq("country_code", country_code)
-            .gt("time_seconds", my_seconds)
-            .execute()
-        )
-        higher_count = int(getattr(higher, "count", None) or 0)
-        return higher_count + 1
-    except Exception as e:
-        print("get_user_rank_country error:", e)
-        return None
 
 APP_CSS = """
 <style>
@@ -1265,70 +1090,7 @@ LEADERBOARD_CSS = """
 """
 
 
-def render_leaderboard_html_country(country_code: str, current_username: str | None) -> str:
-    country_code = (country_code or "unk").lower()
-    flag = COUNTRY_EMOJIS.get(country_code, "🏳️")
-    top = fetch_top_lifetime_country(country_code, limit=LEADERBOARD_TOP_N)
 
-    title = f"🏆 لوحة الشرف — {flag} {country_code.upper()} <span class='lb-sub'>(مدى الحياة)</span>"
-
-    html = [LEADERBOARD_CSS, "<div class='lb-wrap rtl'>"]
-    html.append(
-        "<div class='lb-header'>"
-        f"<div class='lb-title'>{title}</div>"
-        "<div class='lb-sub'>🔒 مجهولة بالكامل</div>"
-        "</div>"
-    )
-    html.append(
-        "<div class='lb-colhdr'>"
-        "<div>#</div><div>المشارك</div>"
-        "<div style='text-align:right;'>الوقت</div>"
-        "<div style='text-align:right;'>الجمل</div>"
-        "</div>"
-    )
-
-    if not top:
-        html.append(
-            "<div class='lb-row'>"
-            "<div class='lb-rank'>—</div>"
-            "<div class='lb-name'>لا يوجد بيانات كافية بعد… كن أول بطل 🎙️✨</div>"
-            "<div class='lb-meta'></div><div class='lb-meta'></div>"
-            "</div>"
-        )
-    else:
-        for idx, r in enumerate(top, start=1):
-            is_me = (current_username is not None) and (r.get("username") == current_username)
-            row_cls = "lb-row lb-highlight" if is_me else "lb-row"
-            emoji = r.get("emoji", "🎙️")
-            alias = r.get("alias", "الصوت-النقي-10")
-            t = _fmt_mmss(r.get("time_seconds", 0))
-            s = int(r.get("sentences", 0) or 0)
-            html.append(
-                f"<div class='{row_cls}'>"
-                f"<div class='lb-rank'>{idx}</div>"
-                f"<div class='lb-name'>{emoji} <span title='{alias}'>{alias}</span>{emoji}</div>"
-                f"<div class='lb-meta'>{t}</div>"
-                f"<div class='lb-meta'>{s}</div>"
-                f"</div>"
-            )
-
-    if current_username:
-        my_rank = get_user_rank_country(country_code, current_username)
-        my_row = fetch_user_row_country(country_code, current_username)
-        if my_rank and my_row:
-            my_t = _fmt_mmss(my_row.get("time_seconds", 0))
-            my_s = int(my_row.get("sentences", 0) or 0)
-            my_alias = my_row.get("alias", "—")
-            my_emo = my_row.get("emoji", "🎙️")
-            html.append(
-                "<div class='lb-you'>"
-                f"<div>🔎 ترتيبك الحالي: <b>#{my_rank}</b> — {my_emo} <b>{my_alias}</b></div>"
-                f"<div><span class='lb-badge'>{my_t}</span> <span class='lb-badge'>📝 {my_s}</span></div>"
-                "</div>"
-            )
-
-    html.append("</div>")
-    return "".join(html)
 
 
 # ===============================
@@ -1429,18 +1191,7 @@ def build_app():
                 progress_box = gr.Textbox(label="📊 الإنجاز", interactive=False, elem_classes=["mono"])
                 gr.HTML('<div class="hint">الإنجاز يعتمد على <b>مدة التسجيل</b> وليس عدد الجمل فقط.</div>')
                 gr.HTML('</div>')
-                # Leaderboard (collapsed, non-disruptive)
-                with gr.Accordion("🏆 لوحة الشرف (مجهولة) — بلدك", open=False):
-                    with gr.Row():
-                        lb_refresh_btn = gr.Button("🔄 تحديث", size="sm")
-                        lb_hint = gr.HTML('<div style="opacity:0.65;font-size:12px;direction:rtl;text-align:right;">'
-                                        'لن يؤثر على التسجيل — مجرد تحديث للعرض</div>')
-                    leaderboard_html = gr.HTML("")
-            gr.HTML('</div>')  # grid
 
-
-            # Recording card
-            gr.HTML('<div class="card rtl"><h3>التسجيل</h3>')
             username_box = gr.Textbox(label="👤 اسم المستخدم", interactive=False, visible=False)
             sentence_box = gr.Textbox(label="✍️ الجملة (يمكنك تعديلها)", interactive=True, lines=3)
             sentence_id_box = gr.Textbox(label="رمز الجملة", interactive=False, visible=False)
@@ -1461,24 +1212,6 @@ def build_app():
 
             gr.HTML("</div>")  # app-shell
             
-        def refresh_leaderboard(st):
-            """
-            Re-render leaderboard for current user's country.
-            Optionally upserts ONLY this user's latest totals (fast + accurate).
-            """
-            if not st.get("logged_in") or not st.get("username"):
-                return ""
-
-            username = st["username"]
-            user_dialect = st.get("user_dialect_code") or st.get("dialect_code") or "unk-gen"
-            country_code = get_country_code_from_dialect_code(user_dialect)
-
-            # Optional but recommended: update ONLY current user row so their numbers are accurate
-            # (this is NOT "update on each save"; it's only when user clicks refresh)
-            upsert_lifetime_leaderboard_entry_country(username, user_dialect)
-
-            return render_leaderboard_html_country(country_code, username)
-
         # ---------- Navigation helpers ----------
         def show_register():
             return gr.update(visible=False), gr.update(visible=True), gr.update(visible=False)
@@ -1610,17 +1343,12 @@ def build_app():
 
             progress = compute_progress(len(completed), total_dur)
 
-            # ✅ leaderboard update & render (non-disruptive: only on login)
-            upsert_lifetime_leaderboard_entry_country(username, user_dialect_code)
-            lb_html = render_leaderboard_html_country(country_code, username)
-
             return (
                 st,
                 _status("ok", "✅ تم تسجيل الدخول بنجاح"),
                 info_text,
                 username,
                 progress,
-                lb_html,
                 sentence_text,
                 sentence_id,
                 gr.update(visible=False),
@@ -1637,7 +1365,6 @@ def build_app():
                 info,
                 username_box,
                 progress_box,
-                leaderboard_html,
                 sentence_box,
                 sentence_id_box,
                 login_view,
@@ -1762,7 +1489,6 @@ def build_app():
                 "",
                 "",
                 _status("ok", "تم تسجيل الخروج."),
-                "",
                 gr.update(visible=True),
                 gr.update(visible=False),
                 gr.update(visible=False),
@@ -1771,12 +1497,7 @@ def build_app():
         logout_btn.click(
             do_logout,
             inputs=[state],
-            outputs=[state, info, username_box, progress_box, msg_box, leaderboard_html, login_view, register_view, main_view],
-        )
-        lb_refresh_btn.click(
-            refresh_leaderboard,
-            inputs=[state],
-            outputs=[leaderboard_html],
+            outputs=[state, info, username_box, progress_box, msg_box, login_view, register_view, main_view],
         )
 
     return demo
@@ -1791,38 +1512,3 @@ if __name__ == "__main__":
     app = build_app()
     app.queue()
     app.launch(server_name="0.0.0.0", server_port=port, debug=False)
-
-# ===============================
-# SUPABASE SQL SETUP (RUN ONCE)
-# ===============================
-"""
--- 1) Lifetime alias per country (anonymous identity)
-create table if not exists public.leaderboard_aliases_country_lifetime (
-  id bigserial primary key,
-  country_code text not null,
-  username text not null,
-  emoji text not null,
-  alias text not null,
-  created_at timestamptz default now(),
-  unique (country_code, username)
-);
-
-create index if not exists leaderboard_aliases_country_lifetime_country_idx
-on public.leaderboard_aliases_country_lifetime (country_code);
-
--- 2) Lifetime leaderboard per country (aggregated)
-create table if not exists public.leaderboard_lifetime_country (
-  id bigserial primary key,
-  country_code text not null,
-  username text not null,
-  emoji text not null,
-  alias text not null,
-  time_seconds double precision not null default 0,
-  sentences integer not null default 0,
-  updated_at timestamptz default now(),
-  unique (country_code, username)
-);
-
-create index if not exists leaderboard_lifetime_country_rank_idx
-on public.leaderboard_lifetime_country (country_code, time_seconds desc);
-"""
