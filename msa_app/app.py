@@ -43,7 +43,7 @@ USERS_ROOT.mkdir(parents=True, exist_ok=True)
 
 AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY", "")
 AWS_SECRET_KEY = os.environ.get("AWS_SECRET_KEY", "")
-S3_BUCKET = os.environ.get("S3_BUCKET", "voicer-storage")
+S3_BUCKET = os.environ.get("S3_BUCKET", "voicer-msa")
 AWS_REGION = os.environ.get("AWS_REGION", "me-south-1")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "")
@@ -499,7 +499,7 @@ def create_user(name: str, email: str, password: str, country: str, dialect_labe
     try:
         resp = supabase.table("users").insert(payload).execute()
         if resp.data:
-            supabase.table("sessions").insert({
+            supabase.table("sessions_MSA").insert({
                 "username": username,
                 "completed_sentences": [],
                 "total_recording_duration": 0.0,
@@ -526,7 +526,7 @@ def load_session(username: str):
     if not supabase:
         return {"completed_sentences": [], "recorded_sentences": [], "total_recording_duration": 0.0}
     try:
-        resp = supabase.table("sessions").select("*").eq("username", username).execute()
+        resp = supabase.table("sessions_MSA").select("*").eq("username", username).execute()
         if resp.data:
             row = resp.data[0]
             return {
@@ -543,7 +543,7 @@ def save_session(username: str, completed_sentences, recorded_sentences, total_d
     if not supabase:
         return
     try:
-        supabase.table("sessions").upsert({
+        supabase.table("sessions_MSA").upsert({
             "username": username,
             "completed_sentences": completed_sentences,
             "recorded_sentences": recorded_sentences,
