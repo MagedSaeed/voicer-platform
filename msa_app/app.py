@@ -407,7 +407,7 @@ def load_sentences_msa(source):
 
     if source in SENTENCES_CACHE:
         return SENTENCES_CACHE[source]
-
+ 
     path = get_sentences_file_msa()
     if not path.exists():
         path.write_text(json.dumps({"sentences": []}, ensure_ascii=False, indent=2), encoding="utf-8")
