@@ -99,6 +99,7 @@ COUNTRY_EMOJIS = {
 
 RECORDING_TARGET_MINUTES = 30
 RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
+RECORDING_TARGET_COUNT = 200
 
 COUNTRY_CODES = {
     "Algeria": "dz",
@@ -393,17 +394,19 @@ def get_country_code_from_dialect_code(dialect_code: str) -> str:
 # No dialect filtering, no fallback
 # ===============================
 
-SENTENCES_CACHE = None  # [(id, text), ...]
+SENTENCES_CACHE = {}  # [(id, text), ...]
 
 
 def get_sentences_file_msa() -> Path:
     return BASE_DIR / "sentences_msa.json"
 
 
-def load_sentences_msa():
+def load_sentences_msa(source):
     global SENTENCES_CACHE
-    if SENTENCES_CACHE is not None:
-        return SENTENCES_CACHE
+    source = str(source).strip()
+
+    if source in SENTENCES_CACHE:
+        return SENTENCES_CACHE[source]
 
     path = get_sentences_file_msa()
     if not path.exists():
@@ -412,18 +415,20 @@ def load_sentences_msa():
     data = json.loads(path.read_text(encoding="utf-8"))
     raw_sentences = data.get("sentences", [])
 
-    # Your JSON may include extra fields (dialect/source/etc). We ignore them.
-    SENTENCES_CACHE = [
+    SENTENCES_CACHE[source] = [
         (str(s.get("unique_id", "")).strip(), str(s.get("text", "")).strip())
         for s in raw_sentences
-        if str(s.get("unique_id", "")).strip() and str(s.get("text", "")).strip()
+        if str(s.get("unique_id", "")).strip()
+        and str(s.get("text", "")).strip()
+        and str(s.get("source", "")).strip() == source
     ]
-    return SENTENCES_CACHE
+    return SENTENCES_CACHE[source]
 
 
-def filter_sentences(_dialect_code_unused, completed_ids, allow_fallback=False):
+def filter_sentences(st):
+    completed_ids = st["completed_sentences"]
     completed_set = set(completed_ids or [])
-    all_sentences = load_sentences_msa()
+    all_sentences = load_sentences_msa(st["source"])
 
     # Return same pool for everyone: only exclude completed.
     # We still return a 3rd value to keep your downstream code unchanged.
@@ -670,23 +675,23 @@ def save_recording_and_upload(
 # PROGRESS UI
 # ===============================
 
-def make_progress_bar(current_seconds: float, target_seconds: float, bar_length: int = 24) -> str:
-    if target_seconds <= 0:
+def make_progress_bar(completed_count: float, target_count: float, bar_length: int = 24) -> str:
+    if target_count <= 0:
         bar = "░" * bar_length
         return f"[{bar}] 0.0%"
 
-    ratio = max(0.0, min(1.0, current_seconds / target_seconds))
+    ratio = max(0.0, min(1.0, completed_count / target_count))
     filled = int(bar_length * ratio)
     bar = "█" * filled + "░" * (bar_length - filled)
     return f"[{bar}] {ratio * 100:.1f}%"
 
 
-def compute_progress(completed_count: int, total_duration: float):
-    bar = make_progress_bar(total_duration, RECORDING_TARGET_SECONDS)
-    mins = int(total_duration // 60)
-    secs = int(total_duration % 60)
-    target_mins = int(RECORDING_TARGET_SECONDS // 60)
-    return f"{bar}\n{mins}m {secs:02d}s / {target_mins}m target • {completed_count} sentences"
+def compute_progress(completed_count: int):
+    bar = make_progress_bar(completed_count, RECORDING_TARGET_COUNT)
+    # mins = int(total_duration // 60)
+    # secs = int(total_duration % 60)
+    # target_mins = int(RECORDING_TARGET_SECONDS // 60)
+    return f"{bar}\n{completed_count} sentences"
 
 
 APP_CSS = """
@@ -910,6 +915,7 @@ def build_app():
             "current_sentence_id": "",
             "current_sentence_text": "",
             "last_temp_audio_path": "",
+            "source": "MSA",  # default to MSA for everyone
         })
 
         gr.HTML("""
@@ -985,6 +991,8 @@ def build_app():
                 progress_box = gr.Textbox(label="📊 الإنجاز", interactive=False, elem_classes=["mono"])
                 gr.HTML('<div class="hint">الإنجاز يعتمد على <b>مدة التسجيل</b> وليس عدد الجمل فقط.</div>')
                 gr.HTML('</div>')
+            
+            choose_source = gr.Dropdown(choices=["MSA", "CA"], value="MSA", label="اختيار اللهجة للتسجيل")
 
             username_box = gr.Textbox(label="👤 اسم المستخدم", interactive=False, visible=False)
             sentence_box = gr.Textbox(label="✍️ الجملة (يمكنك تعديلها)", interactive=True, lines=3)
@@ -1067,7 +1075,7 @@ def build_app():
 
         def next_sentence_for_state(st):
             # global pool, no dialect filtering
-            available = filter_sentences(None, st["completed_sentences"], allow_fallback=False)
+            available = filter_sentences(st)
             if not available:
                 st["current_sentence_id"] = ""
                 st["current_sentence_text"] = "No more sentences."
@@ -1091,7 +1099,6 @@ def build_app():
                     "",
                     "",
                     "",
-                    "",
                     gr.update(visible=True),
                     gr.update(visible=False),
                     gr.update(visible=False),
@@ -1106,7 +1113,7 @@ def build_app():
             recorded = sess["recorded_sentences"]
             total_dur = sess["total_recording_duration"]
 
-            available = filter_sentences(None, completed, allow_fallback=False)
+            available = filter_sentences(st)
             if not available:
                 sentence_id = ""
                 sentence_text = "No more sentences."
@@ -1131,7 +1138,7 @@ def build_app():
             username_show = " ".join(username.split("_")[:-3]).title() or "User"
             info_text = f'<div class="chip rtl">👤 <b>{username_show}</b> &nbsp; {flag} {country_code.upper()}</div>'
 
-            progress = compute_progress(len(completed), total_dur)
+            progress = compute_progress(len(completed))
 
             return (
                 st,
@@ -1165,10 +1172,20 @@ def build_app():
 
         def disable_save():
             return gr.update(interactive=False)
+        
+        def handle_change_source(st):
+            next_sentence_for_state(st)
+            progress = compute_progress(len(st["completed_sentences"]))
+            return (
+                st,
+                st["current_sentence_text"],
+                st["current_sentence_id"],
+                progress,
+            )
 
         def handle_save(audio_path, edited_sentence, temp_path, st):
             if not st.get("logged_in"):
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+                progress = compute_progress(len(st["completed_sentences"]))
                 return (
                     st,
                     _status("warn", "الرجاء تسجيل الدخول أولاً."),
@@ -1179,7 +1196,7 @@ def build_app():
                 )
 
             if not audio_path and not temp_path:
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+                progress = compute_progress(len(st["completed_sentences"]))
                 return (
                     st,
                     _status("warn", "⚠️ سجّل الصوت أولاً."),
@@ -1191,7 +1208,7 @@ def build_app():
 
             sentence_text = (edited_sentence or st["current_sentence_text"]).strip()
             if not sentence_text:
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+                progress = compute_progress(len(st["completed_sentences"]))
                 return (
                     st,
                     _status("warn", "⚠️ نص الجملة فارغ."),
@@ -1203,7 +1220,7 @@ def build_app():
 
             sid = st["current_sentence_id"]
             if not sid:
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+                progress = compute_progress(len(st["completed_sentences"]))
                 return (
                     st,
                     _status("warn", "⚠️ لا توجد جملة نشطة الآن."),
@@ -1216,7 +1233,7 @@ def build_app():
             tmp_path = audio_path or temp_path
             ok, msg, _dur = validate_audio(tmp_path)
             if not ok:
-                progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+                progress = compute_progress(len(st["completed_sentences"]))
                 return (
                     st,
                     _status("bad", f"❌ مشكلة في الصوت: {msg}"),
@@ -1248,7 +1265,7 @@ def build_app():
             save_session(st["username"], st["completed_sentences"], st["recorded_sentences"], st["total_duration"])
 
             next_sentence_for_state(st)
-            progress = compute_progress(len(st["completed_sentences"]), st["total_duration"])
+            progress = compute_progress(len(st["completed_sentences"]))
 
             return (
                 st,
@@ -1298,6 +1315,17 @@ def build_app():
             inputs=[state],
             outputs=[state, info, username_box, progress_box, msg_box, login_view, register_view, main_view],
         )
+        
+        def on_source_change(new_source, st):
+            st["source"] = new_source
+            return st
+        choose_source.change(on_source_change, 
+                             inputs=[choose_source, state], outputs=[state]).then(
+                                 handle_change_source,
+                                    inputs=state,
+                                    outputs=[state, sentence_box, sentence_id_box, progress_box],
+                             )
+
 
     return demo
 
