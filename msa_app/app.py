@@ -889,6 +889,12 @@ APP_CSS = """
       flex: 1 1 100% !important;
     }
   }
+
+#sentence_box textarea,
+#sentence_box input {
+  direction: rtl;
+  text-align: right;
+}
 </style>
 """
 
@@ -993,7 +999,7 @@ def build_app():
             choose_source = gr.Dropdown(choices=["MSA", "CA"], value="MSA", label="اختيار نوع الجملة")
 
             username_box = gr.Textbox(label="👤 اسم المستخدم", interactive=False, visible=False)
-            sentence_box = gr.Textbox(label="✍️ الجملة", interactive=False, lines=3)
+            sentence_box = gr.Textbox(label="✍️ الجملة", interactive=False, lines=3, elem_id="sentence_box")
             sentence_id_box = gr.Textbox(label="رمز الجملة", interactive=False, visible=False)
 
             audio_rec = gr.Audio(
