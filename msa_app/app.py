@@ -97,9 +97,7 @@ COUNTRY_EMOJIS = {
     "ye": "🇾🇪",
 }
 
-RECORDING_TARGET_MINUTES = 30
-RECORDING_TARGET_SECONDS = RECORDING_TARGET_MINUTES * 60
-RECORDING_TARGET_COUNT = 200
+RECORDING_TARGET_COUNT = 400
 
 COUNTRY_CODES = {
     "Algeria": "dz",
@@ -992,10 +990,10 @@ def build_app():
                 gr.HTML('<div class="hint">الإنجاز يعتمد على <b>مدة التسجيل</b> وليس عدد الجمل فقط.</div>')
                 gr.HTML('</div>')
             
-            choose_source = gr.Dropdown(choices=["MSA", "CA"], value="MSA", label="اختيار اللهجة للتسجيل")
+            choose_source = gr.Dropdown(choices=["MSA", "CA"], value="MSA", label="اختيار نوع الجملة")
 
             username_box = gr.Textbox(label="👤 اسم المستخدم", interactive=False, visible=False)
-            sentence_box = gr.Textbox(label="✍️ الجملة (يمكنك تعديلها)", interactive=True, lines=3)
+            sentence_box = gr.Textbox(label="✍️ الجملة", interactive=False, lines=3)
             sentence_id_box = gr.Textbox(label="رمز الجملة", interactive=False, visible=False)
 
             audio_rec = gr.Audio(
