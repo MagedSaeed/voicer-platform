@@ -27,8 +27,8 @@ USERS_ROOT.mkdir(parents=True, exist_ok=True)
 
 AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY", "")
 AWS_SECRET_KEY = os.environ.get("AWS_SECRET_KEY", "")
-S3_BUCKET = os.environ.get("S3_BUCKET", "voicer-msa")
-AWS_REGION = os.environ.get("AWS_REGION", "me-south-1")
+S3_BUCKET = os.environ.get("S3_BUCKET", "voicer-msa-new")
+AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "")
 
